@@ -131,4 +131,4 @@ export const userConstants = {
   DELETE_FAILURE: "USERS_DELETE_FAILURE",
 };
 
-export const ItemTypes = { ASSET: "asset" };
+export const ItemTypes = { SEGMENT: "firing" };

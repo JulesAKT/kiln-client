@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-//import { Text, ScrollView, Alert, StyleSheet, View } from "react-native";
-//import { Card, ListItem, Button } from "react-native-elements";
 import { Card, Image, Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { fetchKiln } from "../actions";
@@ -11,7 +9,6 @@ import { kilnLogo } from "../helpers/logoHelpers";
 const KilnShowScreen = (props) => {
   const dispatch = useDispatch();
   const id = props.match.params.id;
-  const navigation = props.navigation;
 
   useEffect(() => {
     dispatch(fetchKiln(id));
@@ -26,13 +23,16 @@ const KilnShowScreen = (props) => {
   return (
     <div>
       <Card>
-        <Image src={kilnLogo(kiln.manufacturer)} avatar />
-        <span>{kiln.manufacturer}</span>
+        <Card.Header>{kiln.name}</Card.Header>
+        <Card.Content>
+          <Image src={kilnLogo(kiln.manufacturer)} avatar />
+          <span>{kiln.manufacturer}</span>
+        </Card.Content>
       </Card>
       <Card>
-        <Button onPress={() => navigation.navigate("KilnEdit", { id: id })}>
-          Edit
-        </Button>
+        <Link to={`/kilns/edit/${id}`}>
+          <Button>Edit</Button>
+        </Link>
         <Link to={`/kiln/delete/${id}`}>
           <Button>Delete</Button>
         </Link>

@@ -179,7 +179,15 @@ export const renderStars = (field) => {
   //const errorMessage = touched ? error : "";
   return (
     <>
-      <Rating onChange={input.onChange} rating={input.value} maxRating={5} />
+      <Rating
+        onRate={(e, { rating }) => {
+          //console.log(input);
+          //console.log(data);
+          input.onChange(rating);
+        }}
+        rating={input.value}
+        maxRating={5}
+      />
     </>
   );
 };

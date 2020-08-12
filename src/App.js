@@ -23,6 +23,7 @@ import KilnCreate from "./components/KilnCreate.js";
 import KilnShow from "./components/KilnShow";
 import KilnEdit from "./components/KilnEdit";
 //import KilnDelete from "./components/KilnDelete";
+import SegmentCreate from "./components/SegmentCreate";
 import alertActions from "./actions/alertActions";
 
 class App extends React.Component {
@@ -86,6 +87,11 @@ class App extends React.Component {
                   path="/kilns/edit/:id"
                   exact
                   component={KilnEdit}
+                />
+                <PrivateRoute
+                  path="/new_segment/:id"
+                  exact
+                  component={SegmentCreate}
                 />
               </Switch>
             </DndProvider>

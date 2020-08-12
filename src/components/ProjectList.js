@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { Card, Icon, Button, Image } from "semantic-ui-react";
+import { Card, Icon, Button, Image, Rating } from "semantic-ui-react";
 import DataTable from "react-data-table-component";
 import { fetchProjects, fetchKilns } from "../actions";
 import history from "../history";
@@ -79,6 +79,16 @@ const ProjectList = ({ navigation }) => {
       selector: "glass",
       sortable: true,
       cell: (row) => <div>{row.glass}</div>,
+    },
+    {
+      name: "Rating",
+      selector: "rating",
+      sortable: true,
+      cell: (row) => (
+        <div>
+          <Rating maxRating={5} rating={row.stars} disabled={true} />
+        </div>
+      ),
     },
   ];
   //console.log(project_array);

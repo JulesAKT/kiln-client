@@ -1,19 +1,7 @@
 import React, { Component } from "react";
-/* import {
-  Card,
-  Grid,
-  Message,
-  Icon, 
-  Image,
-  Form,
-  Button
-} from "semantic-ui-react";
-*/
-import { Card, Button } from "react-native-elements";
-import { View } from "react-native";
+import { Card, Button, Form } from "semantic-ui-react";
 import { Field, reduxForm } from "redux-form";
-import { Picker } from "react-native";
-import { Input, Select } from "../helpers/formHelpers";
+import { Input } from "../helpers/formHelpers";
 
 class SegmentForm extends Component {
   onSubmit = (formValues) => {

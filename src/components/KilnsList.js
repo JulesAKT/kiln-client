@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 //import { View, Text, ScrollView, FlatList } from "react-native";
-import { List } from "semantic-ui-react";
+import { Card } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { fetchKilns } from "../actions";
 
@@ -22,19 +22,16 @@ const KilnsList = ({ navigation }) => {
   const kiln_array = Object.values(kilns);
   return (
     <div>
-      <List>
+      <Card.Group>
         {kiln_array.map((kiln) => (
-          <List.Item>
-            <KilnCard {...kiln} />
-          </List.Item>
+          <KilnCard {...kiln} key={kiln.id} />
         ))}
 
-        <List.Item>
-          <Link to="/new_kiln">
-            <KilnCard name="Add New Kiln" />
-          </Link>
-        </List.Item>
-      </List>{" "}
+        <Card as={Link} to={`/new_kiln/`}>
+          <Card.Header>Add New Kiln</Card.Header>
+          <Card.Content extra></Card.Content>
+        </Card>
+      </Card.Group>
     </div>
   );
 };

@@ -86,7 +86,9 @@ const ProjectShowScreen = (props) => {
         </List.Item>
       </List>
       <div>
-        <Link to={`/projects/edit/${id}`}>Edit</Link>
+        <Link to={`/projects/edit/${id}`}>
+          <Button>Edit</Button>
+        </Link>
         <Link to={`/projects/delete/${id}`}>
           <Button>Delete</Button>
         </Link>
@@ -96,15 +98,19 @@ const ProjectShowScreen = (props) => {
 
       <List>
         <List.Header>Firings</List.Header>
-        {firings_array.map((firing) => (
+        {firings_array.map((firing, index) => (
           <Link to={`/firings/${firing.id}`}>
-            <FiringCard {...firing} />
+            <FiringCard {...firing} index={index} />
           </Link>
         ))}
 
         <div>
-          <Link to={`/new_firing/${id}`}>Add Firing</Link>
-          <Link to="'/new_favourite_firing">Add Favourite</Link>
+          <Link to={`/new_firing/${id}`}>
+            <Button>Add Firing</Button>
+          </Link>
+          <Link to="'/new_favourite_firing">
+            <Button>Add Favourite</Button>
+          </Link>
         </div>
       </List>
     </div>

@@ -4,7 +4,6 @@ import KilnForm from "../components/KilnForm";
 import { fetchKiln, editKiln } from "../actions";
 
 const KilnEditScreen = (props) => {
-  const navigation = props.navigation;
   const dispatch = useDispatch();
   const id = props.match.params.id;
 
@@ -18,8 +17,6 @@ const KilnEditScreen = (props) => {
   if (!kiln) {
     return <div>Loading...</div>;
   }
-  //console.log(id);
-  navigation.setOptions({ title: kiln.name });
   return (
     <div>
       <KilnForm onSubmit={handleSubmit} initialValues={kiln} />
