@@ -1,9 +1,9 @@
-import * as firebase from "firebase";
+//import * as firebase from "firebase";
 import { store } from "../store";
-
-//import "firebase/auth";
-//import "firebase/database";
-//import "firebase/storage";
+import firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/database";
+import "firebase/storage";
 
 export const fbConfig = {
   apiKey: "AIzaSyD7s_UHLUN4gyxuN_KVoDLYXsHh_JLdBGs",

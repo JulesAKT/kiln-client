@@ -22,8 +22,9 @@ import KilnsList from "./components/KilnsList";
 import KilnCreate from "./components/KilnCreate.js";
 import KilnShow from "./components/KilnShow";
 import KilnEdit from "./components/KilnEdit";
-//import KilnDelete from "./components/KilnDelete";
+import KilnDelete from "./components/KilnDelete";
 import SegmentCreate from "./components/SegmentCreate";
+//import FirebaseAuthListener from "./components/FirebaseAuthListener";
 import alertActions from "./actions/alertActions";
 
 class App extends React.Component {
@@ -87,6 +88,11 @@ class App extends React.Component {
                   path="/kilns/edit/:id"
                   exact
                   component={KilnEdit}
+                />
+                <PrivateRoute
+                  path="/kilns/delete/:id"
+                  exact
+                  component={KilnDelete}
                 />
                 <PrivateRoute
                   path="/new_segment/:id"

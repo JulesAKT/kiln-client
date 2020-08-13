@@ -9,7 +9,7 @@ class SegmentForm extends Component {
   };
 
   render() {
-    let segment = this.props;
+    //let segment = this.props;
     return (
       <div>
         <Form error onSubmit={this.props.handleSubmit(this.onSubmit)}>

@@ -5,11 +5,9 @@ import Root from "./root";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Root>
-      <App />
-    </Root>
-  </React.StrictMode>,
+  <Root>
+    <App />
+  </Root>,
   document.getElementById("root")
 );
 

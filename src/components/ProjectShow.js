@@ -70,21 +70,24 @@ const ProjectShowScreen = (props) => {
 
   return (
     <div>
-      <List>
-        <List.Item>
-          <span>{kiln.name}</span>
+      <div>
+        Kiln:<span>{kiln.name}</span>
+        <span>
           <Image avatar src={glassImage(project.glass)} />
-        </List.Item>
-        <List.Item>
-          <Icon name="move-resize" />
+        </span>
+      </div>
+      <div>
+        <span>
+          <Icon name="move" />
+        </span>
+        <span>
           {`${project.width}x${project.depth}x${project.thickness}(mm)`}
-        </List.Item>
-        <List.Item>
-          <Icon name="rate-review" />
-
-          <Rating maxRating={5} rating={project.stars} disabled={true} />
-        </List.Item>
-      </List>
+        </span>
+      </div>
+      <div>
+        Rating:
+        <Rating maxRating={5} rating={project.stars} disabled={true} />
+      </div>
       <div>
         <Link to={`/projects/edit/${id}`}>
           <Button>Edit</Button>
@@ -93,13 +96,11 @@ const ProjectShowScreen = (props) => {
           <Button>Delete</Button>
         </Link>
       </div>
-
       <Divider />
-
       <List>
         <List.Header>Firings</List.Header>
         {firings_array.map((firing, index) => (
-          <Link to={`/firings/${firing.id}`}>
+          <Link to={`/firings/${firing.id}`} key={firing.id}>
             <FiringCard {...firing} index={index} />
           </Link>
         ))}

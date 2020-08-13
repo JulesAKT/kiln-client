@@ -5,6 +5,8 @@ import { stopSubmit } from "redux-form";
 //import NavigationService from "../NavigationService";
 //import * as firebase from "firebase";
 import Firebase, { db } from "../api/firebase";
+//import { getFirebase } from "react-redux-firebase";
+
 //import * as FileSystem from "expo-file-system";
 import { store } from "../store";
 import history from "../history";
@@ -61,6 +63,8 @@ import {
   FETCH_SEGMENTS_REQUEST,
   FETCH_SEGMENTS_BY_FIRING_REQUEST,
   DELETE_SEGMENT_REQUEST,
+  FETCH_PROJECTS_BY_KILN_REQUEST,
+  FETCH_PROJECTS_BY_KILN_SUCCESS,
 } from "./types";
 
 const UNKNOWN_ERROR = "Unknown Error";
@@ -94,6 +98,24 @@ export const fetchProjects = () => async (dispatch, getState) => {
     });
   });
 };
+
+export const fetchProjectsByKiln = (id) => async (dispatch, getState) => {
+  dispatch({ type: FETCH_PROJECTS_BY_KILN_REQUEST });
+  //console.log("FetchProjectsByKiln");
+  db.ref(userPath() + "/projects")
+    .orderByChild("kiln")
+    .equalTo(id)
+    .once("value", (snapshot) => {
+      //console.log("fetchProjectsByKiln returned");
+      //console.log(snapshot.val());
+      dispatch({
+        type: FETCH_PROJECTS_BY_KILN_SUCCESS,
+        payload: snapshot.val(),
+        id: id,
+      });
+    });
+};
+
 export const fetchProject = (id) => async (dispatch, getState) => {
   dispatch({ type: FETCH_PROJECT_REQUEST });
   db.ref(userPath() + `/projects/${id}`).once("value", (snapshot) => {
@@ -201,7 +223,7 @@ export const deleteKiln = (id) => async (dispatch, getState) => {
     type: DELETE_KILN_SUCCESS,
     payload: id,
   });
-  history.goBack();
+  history.push("/kilns");
 };
 
 // FIRINGs Action Creators
@@ -415,21 +437,23 @@ export const deleteSegment = (id) => async (dispatch, getState) => {
 };
 
 export const attemptLogin = (formProps) => async (dispatch) => {
+  //const rFirebase = getFirebase();
   dispatch(alertActions.clear());
   console.log("attempting Login");
+  console.log(Firebase);
   try {
     const response = await Firebase.auth().signInWithEmailAndPassword(
       formProps.email,
       formProps.password
     );
     //console.log("Response");
-    console.log(response);
+    //console.log(response);
     dispatch({ type: SIGN_IN_SUCCESS, payload: response });
   } catch (err) {
     dispatch({ type: SIGN_IN_FAILURE });
-    console.log("Err");
-    console.log(err);
-    console.log("Enderr");
+    //console.log("Err");
+    //console.log(err);
+    //console.log("Enderr");
     //console.log("Err.Response");
     //console.log(err.response);
     //console.log("Err.Response.Data");

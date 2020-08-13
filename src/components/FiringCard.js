@@ -7,7 +7,7 @@ const FiringCard = (props) => {
   return (
     <List.Item>
       {!props.hideIndex ? (
-        <List.Content floated>
+        <List.Content>
           {props.index + 1}. {props.name}
         </List.Content>
       ) : (
@@ -16,7 +16,7 @@ const FiringCard = (props) => {
 
       {props.favourite && (
         <List.Content floated="right">
-          <Icon name="star-border" />
+          <Icon name="star" />
         </List.Content>
       )}
     </List.Item>
