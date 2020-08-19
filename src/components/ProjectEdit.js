@@ -1,19 +1,23 @@
-import React, { useEffect } from "react";
-
-import { useDispatch, useSelector } from "react-redux";
-
+import React from "react";
+import { useFirebaseConnect } from "react-redux-firebase";
+import { useSelector, useDispatch } from "react-redux";
+import useFirebaseKilns from "../hooks/useFirebaseKilns";
 import ProjectForm from "../components/ProjectForm";
-import { fetchKilns, editProject } from "../actions";
+import { editProject } from "../actions";
 
 const ProjectEditScreen = (props) => {
   const dispatch = useDispatch();
+  const kilns = useFirebaseKilns();
   const id = props.match.params.id;
+  const uid = useSelector((state) => state.firebase.auth.uid);
 
-  const kilns = useSelector((state) => state.kilns);
-  const project = useSelector((state) => state.projects[id]);
-  useEffect(() => {
-    dispatch(fetchKilns());
-  }, [dispatch]);
+  useFirebaseConnect([{ path: `/userdata/${uid}/projects/${id}` }]);
+
+  const project = useSelector(
+    ({ firebase: { data } }) =>
+      data.userdata && data.userdata[uid] && data.userdata[uid].projects[id]
+  );
+
   //const kiln_array = Object.values(kilns);
   if (!kilns) {
     return <div>Please create a kiln first</div>;

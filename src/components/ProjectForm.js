@@ -1,19 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Card, Button, Form } from "semantic-ui-react";
 
 import { Field, reduxForm } from "redux-form";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchKilns } from "../actions";
-
+import useFirebaseKilns from "../hooks/useFirebaseKilns";
 import { Input, Select, renderStars } from "../helpers/formHelpers";
 
 const ProjectForm = (props) => {
-  const kilns = useSelector((state) => state.kilns);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchKilns());
-  }, [dispatch]);
-
+  const kilns = useFirebaseKilns();
   if (!kilns) {
     return <div>Loading...</div>;
   }

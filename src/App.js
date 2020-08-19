@@ -16,7 +16,7 @@ import ProjectEdit from "./components/ProjectEdit";
 //import ProjectDelete from "./components/ProjectDelete";
 import FiringShow from "./components/FiringShow";
 import FiringEdit from "./components/FiringEdit";
-//import FiringDelete from "./components/FiringDelete";
+import FiringDelete from "./components/FiringDelete";
 import FiringCreate from "./components/FiringCreate";
 import KilnsList from "./components/KilnsList";
 import KilnCreate from "./components/KilnCreate.js";
@@ -72,9 +72,14 @@ class App extends React.Component {
                   component={FiringShow}
                 />
                 <PrivateRoute
-                  path="/new_firing"
+                  path="/new_firing/:id"
                   exact
                   component={FiringCreate}
+                />
+                <PrivateRoute
+                  path="/firing/delete/:id"
+                  exact
+                  component={FiringDelete}
                 />
                 <PrivateRoute
                   path="/firings/edit/:id"

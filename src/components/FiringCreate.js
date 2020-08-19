@@ -14,7 +14,7 @@ const FiringCreateScreen = (props) => {
     <div>
       <FiringForm
         onSubmit={handleSubmit}
-        initialValues={{ project_id: props.route.params.project_id }}
+        initialValues={{ project_id: props.match.params.id }}
       />
     </div>
   );

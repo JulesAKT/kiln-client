@@ -1,14 +1,18 @@
-import React, { useEffect } from "react";
+import React from "react";
 //import { Text, ScrollView, Button, Alert } from "react-native";
 import { Container, Button, Header } from "semantic-ui-react";
 import { useDispatch, useSelector } from "react-redux";
 import SegmentForm from "../components/SegmentForm";
 import { fetchSegment, editSegment, deleteSegment } from "../actions";
+import { useFirebaseConnect } from "react-redux-firebase";
 
 const SegmentEditScreen = (props) => {
   const navigation = props.navigation;
   const dispatch = useDispatch();
   const id = props.route.params.id;
+
+  const uid = useSelector((state) => state.firebase.auth.uid);
+  useFirebaseConnect([{ path: `/userdata/${uid}/segments` }]);
 
   const popupDeleteAlert = () => {
     Alert.alert(
@@ -27,10 +31,15 @@ const SegmentEditScreen = (props) => {
   const handleSubmit = (formValues) => {
     dispatch(editSegment(id, formValues));
   };
-  useEffect(() => {
-    dispatch(fetchSegment(id));
-  }, [dispatch, id]);
-  const segment = useSelector((state) => state.segments[id]);
+
+  const segment = useSelector(
+    ({ firebase: { data } }) =>
+      data.userdata &&
+      data.userdata[uid] &&
+      data.userdata[uid].segments &&
+      data.userdata[uid].segments[id]
+  );
+
   if (!segment) {
     return <Text>Loading...</Text>;
   }

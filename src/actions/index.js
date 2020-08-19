@@ -333,7 +333,7 @@ export const deleteFiring = (id) => async (dispatch, getState) => {
     payload: id,
   });
   console.log("Navigating back");
-  history.goBack();
+  history.go(-2);
   //history.goBack();
 };
 
@@ -465,10 +465,14 @@ export const attemptLogin = (formProps) => async (dispatch) => {
 };
 
 export const signOut = () => async (dispatch) => {
-  //console.log("Signout Called (action Creator)");
-  dispatch({
-    type: SIGN_OUT_SUCCESS,
-  });
+  Firebase.auth()
+    .signOut()
+    .then(() => {
+      //console.log("Signout Called (action Creator)");
+      dispatch({
+        type: SIGN_OUT_SUCCESS,
+      });
+    });
   //NavigationService.navigate("Login");
 };
 
@@ -513,5 +517,5 @@ export const attemptSignup = (formProps) => async (dispatch) => {
 };
 
 const userPath = () => {
-  return "/userdata/" + store.getState().auth.uid;
+  return "/userdata/" + store.getState().firebase.auth.uid;
 };

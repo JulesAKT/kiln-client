@@ -1,23 +1,20 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
 import { Card, Icon, Button, Image, Rating } from "semantic-ui-react";
 import DataTable from "react-data-table-component";
-import { fetchProjects, fetchKilns } from "../actions";
+
+import useFirebaseKilns from "../hooks/useFirebaseKilns";
 import history from "../history";
 import ProjectCard from "../components/ProjectCard";
+import useFirebaseProjects from "../hooks/useFirebaseProjects";
 
 const ProjectList = ({ navigation }) => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchProjects());
-    dispatch(fetchKilns());
-  }, [dispatch]);
   const [detail, setDetail] = useState(false);
 
-  const projects = useSelector((state) => state.projects);
-  const kilns = useSelector((state) => state.kilns);
+  const projects = useFirebaseProjects();
 
+  const kilns = useFirebaseKilns();
   if (!projects) {
     return <div>Loading...</div>;
   }

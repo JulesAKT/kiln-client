@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { attemptLogin } from "../actions";
-import { Container, Header } from "semantic-ui-react";
+import { Container, Header, Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import LoginForm from "./LoginForm";
+import { signInWithGoogle } from "../api/firebase";
 
 class LoginPage extends Component {
   onSubmit = (formValues) => {
@@ -23,6 +24,7 @@ class LoginPage extends Component {
             Forgotten your password?{" "}
             <Link to="/reset-user">Reset Password</Link>
           </Header>
+          <Button onClick={signInWithGoogle}>Sign In With Google</Button>
         </Container>
       </div>
     );

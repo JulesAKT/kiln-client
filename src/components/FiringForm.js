@@ -19,7 +19,7 @@ class FiringForm extends Component {
           <Field name="name" component={Input} label="Firing Name" />
         </Card>
         <Card>
-          <Button title="Update" onPress={this.props.handleSubmit} />
+          <Button onClick={this.props.handleSubmit}>Update</Button>
         </Card>
       </div>
     );

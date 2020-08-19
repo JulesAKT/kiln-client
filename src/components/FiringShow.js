@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { Button, Icon, Segment, Header, Table, Ref } from "semantic-ui-react";
 //import DataTable from "react-data-table-component";
+import useFirebaseSegments from "../hooks/useFirebaseSegments";
+
 import {
   fetchFiring,
   fetchSegmentsByFiring,

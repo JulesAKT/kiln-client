@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { signOut } from "../actions";
+import { isLoaded } from "react-redux-firebase";
+import { isEmpty } from "lodash";
 
 class LoginButton extends Component {
   attemptSignOut = () => {
@@ -9,7 +11,11 @@ class LoginButton extends Component {
   };
 
   render() {
-    if (this.props.loggedIn) {
+    if (
+      isLoaded(this.props.auth) &&
+      !isEmpty(this.props.auth) &&
+      this.props.auth.uid
+    ) {
       return (
         <button className="ui button negative" onClick={this.attemptSignOut}>
           Logout
@@ -26,7 +32,7 @@ class LoginButton extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return { loggedIn: state.auth.loggedIn };
+  return { auth: state.firebase.auth };
 };
 
 export default connect(mapStateToProps, { signOut })(LoginButton);

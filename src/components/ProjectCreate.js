@@ -1,18 +1,16 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { useDispatch } from "react-redux";
 import { createProject } from "../actions";
 import ProjectForm from "../components/ProjectForm";
-import { fetchKilns } from "../actions";
+
+import useFirebaseKilns from "../hooks/useFirebaseKilns";
 
 const ProjectCreateScreen = (props) => {
   const dispatch = useDispatch();
 
-  const kilns = useSelector((state) => state.kilns);
-  useEffect(() => {
-    dispatch(fetchKilns());
-  }, [dispatch]);
-  const kiln_array = Object.values(kilns);
-  const first_kiln = kiln_array[0];
+  const kilns = useFirebaseKilns();
+  const first_kiln = kilns && Object.values(kilns)[0];
+
   if (!first_kiln) {
     return <div>Please create a kiln first</div>;
   }

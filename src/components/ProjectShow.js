@@ -1,52 +1,36 @@
-import React, { useEffect } from "react";
-//import { ScrollView, Alert, FlatList, InteractionManager } from "react-native";
-//import { StyleSheet, View } from "react-native";
-//import { ListItem, Button, Divider, Text } from "react-native-elements";
+import React from "react";
 import { List, Rating, Button, Divider, Image, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import {
-  fetchKiln,
-  fetchProject,
-  // fetchFirings,
-  fetchFiringsByProject,
-} from "../actions";
-import { useDispatch, useSelector } from "react-redux";
-//import StarRating from "react-native-star-rating";
+import { useFirebaseConnect } from "react-redux-firebase";
+import useFirebaseKiln from "../hooks/useFirebaseKiln";
+import { useSelector } from "react-redux";
+
 import FiringCard from "../components/FiringCard";
 import _ from "lodash";
-//import { TouchableOpacity } from "react-native-gesture-handler";
 
 const ProjectShowScreen = (props) => {
-  const dispatch = useDispatch();
   const id = props.match.params.id;
+  const uid = useSelector((state) => state.firebase.auth.uid);
 
-  useEffect(() => {
-    dispatch(fetchProject(id));
-  }, [dispatch, id]);
+  useFirebaseConnect([{ path: `/userdata/${uid}/projects/${id}` }]);
+  useFirebaseConnect([{ path: `/userdata/${uid}/firings` }]);
 
-  useEffect(() => {
-    dispatch(fetchFiringsByProject(id));
-  }, [dispatch, id]);
+  const project = useSelector(
+    ({ firebase: { data } }) =>
+      data.userdata && data.userdata[uid] && data.userdata[uid].projects[id]
+  );
 
-  const project = useSelector((state) => state.projects[id]);
-  //const refreshing = useSelector((state) => state["FETCH_PROJECTS"].pending);
+  const kiln = useFirebaseKiln(project.kiln);
 
-  useEffect(() => {
-    if (project) {
-      dispatch(fetchKiln(project.kiln));
-    }
-  }, [dispatch, project]);
-
-  const firings = useSelector((state) => {
-    //console.log(state.firings);
-    //console.log("looking for: " + id);
-    const filtered_firings = _.filter(state.firings, (firing) => {
-      return firing.project_id === id;
-    });
-    //console.log(filtered_firings);
-    return filtered_firings;
-  });
-  const kiln = useSelector((state) => project && state.kilns[project.kiln]);
+  const firings = useSelector(
+    ({ firebase: { data } }) =>
+      data.userdata &&
+      data.userdata[uid] &&
+      data.userdata[uid].firings &&
+      _.filter(data.userdata[uid].firings, (firing) => {
+        return firing && firing.project_id === id;
+      })
+  );
 
   let firings_array;
   if (firings) {
@@ -99,11 +83,15 @@ const ProjectShowScreen = (props) => {
       <Divider />
       <List>
         <List.Header>Firings</List.Header>
-        {firings_array.map((firing, index) => (
-          <Link to={`/firings/${firing.id}`} key={firing.id}>
-            <FiringCard {...firing} index={index} />
-          </Link>
-        ))}
+        {firings_array &&
+          firings_array.map(
+            (firing, index) =>
+              firing && (
+                <Link to={`/firings/${firing.id}`} key={firing.id}>
+                  <FiringCard {...firing} index={index} />
+                </Link>
+              )
+          )}
 
         <div>
           <Link to={`/new_firing/${id}`}>

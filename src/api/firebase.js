@@ -37,4 +37,9 @@ export const cloudstore = firebase.storage();
 //export const firebase_kiln = (uid) => db.ref(`kilns/${uid}`);
 //export const firebase_kilns = () => db.ref("kilns");
 
+const googleProvider = new firebase.auth.GoogleAuthProvider();
+export const signInWithGoogle = () => {
+  firebase.auth().signInWithPopup(googleProvider);
+};
+
 export default Firebase;
