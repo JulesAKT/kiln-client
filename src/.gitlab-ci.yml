@@ -1,0 +1,26 @@
+image:
+    name: sonarsource/sonar-scanner-cli:latest
+    entrypoint: [""]
+  
+variables:
+    SONAR_TOKEN: "3bdd61914ea030c255314b24540703670d2c6ef9"
+    SONAR_HOST_URL: "http://nas.ourhouse.local:32768"
+    GIT_DEPTH: 0
+      
+test:
+    script:
+        - npm install
+        - npm test
+        - npm test -- --ci --coverage
+
+sonarqube-check:
+    stage: test
+    script:
+        - npm install
+        - npm test
+        - npm test -- --ci --coverage
+        - sonar-scanner -Dsonar.qualitygate.wait=true -D"sonar.projectKey=kiln-client"
+    allow_failure: true
+    only:
+        - master    
+

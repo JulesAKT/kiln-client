@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { Button, Icon, Segment, Header, Table, Ref } from "semantic-ui-react";
-//import DataTable from "react-data-table-component";
-import useFirebaseSegments from "../hooks/useFirebaseSegments";
+import FiringGraph from "./FiringGraph";
 
 import {
   fetchFiring,
@@ -35,8 +34,6 @@ class FiringShowScreen extends Component {
     }
 
     const reorderSegments = (data) => {
-      //console.log("reorderSegments");
-      //console.log(data);
       data.forEach((element, index) => {
         if (element.order !== index) {
           console.log("Changed entry: " + index);
@@ -211,6 +208,7 @@ class FiringShowScreen extends Component {
 
           {renderFavouriteButton()}
         </div>
+        <FiringGraph sortedSegments={sorted_segments_array} />
       </DragDropContext>
     );
   }
