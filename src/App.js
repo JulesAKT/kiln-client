@@ -26,6 +26,7 @@ import KilnDelete from "./components/KilnDelete";
 import SegmentCreate from "./components/SegmentCreate";
 //import FirebaseAuthListener from "./components/FirebaseAuthListener";
 import alertActions from "./actions/alertActions";
+import { AuthProvider } from "./helpers/Auth";
 
 class App extends React.Component {
   constructor(props) {
@@ -39,75 +40,77 @@ class App extends React.Component {
     const { alert } = this.props;
     return (
       <div className="ui container">
-        <Router history={history}>
-          <Header />
-          {alert && alert.message && (
-            <div className={`ui ${alert.type} message `}>{alert.message}</div>
-          )}
-          <div>
-            <DndProvider backend={HTML5Backend}>
-              <Switch>
-                <Route path="/login" exact component={LoginPage} />
-                <Route path="/signup" exact component={SignupPage} />
-                <Route path="/signedup" exact component={SignedupPage} />
-                <PrivateRoute path="/" exact component={ProjectList} />
-                <PrivateRoute
-                  path="/projects/:id"
-                  exact
-                  component={ProjectShow}
-                />
-                <PrivateRoute
-                  path="/new_project"
-                  exact
-                  component={ProjectCreate}
-                />
-                <PrivateRoute
-                  path="/projects/edit/:id"
-                  exact
-                  component={ProjectEdit}
-                />
-                <PrivateRoute
-                  path="/firings/:id"
-                  exact
-                  component={FiringShow}
-                />
-                <PrivateRoute
-                  path="/new_firing/:id"
-                  exact
-                  component={FiringCreate}
-                />
-                <PrivateRoute
-                  path="/firing/delete/:id"
-                  exact
-                  component={FiringDelete}
-                />
-                <PrivateRoute
-                  path="/firings/edit/:id"
-                  exact
-                  component={FiringEdit}
-                />
-                <PrivateRoute path="/kilns" exact component={KilnsList} />
-                <PrivateRoute path="/new_kiln" exact component={KilnCreate} />
-                <PrivateRoute path="/kilns/:id" exact component={KilnShow} />
-                <PrivateRoute
-                  path="/kilns/edit/:id"
-                  exact
-                  component={KilnEdit}
-                />
-                <PrivateRoute
-                  path="/kilns/delete/:id"
-                  exact
-                  component={KilnDelete}
-                />
-                <PrivateRoute
-                  path="/new_segment/:id"
-                  exact
-                  component={SegmentCreate}
-                />
-              </Switch>
-            </DndProvider>
-          </div>
-        </Router>
+        <AuthProvider>
+          <Router history={history}>
+            <Header />
+            {alert && alert.message && (
+              <div className={`ui ${alert.type} message `}>{alert.message}</div>
+            )}
+            <div>
+              <DndProvider backend={HTML5Backend}>
+                <Switch>
+                  <Route path="/login" exact component={LoginPage} />
+                  <Route path="/signup" exact component={SignupPage} />
+                  <Route path="/signedup" exact component={SignedupPage} />
+                  <PrivateRoute path="/" exact component={ProjectList} />
+                  <PrivateRoute
+                    path="/projects/:id"
+                    exact
+                    component={ProjectShow}
+                  />
+                  <PrivateRoute
+                    path="/new_project"
+                    exact
+                    component={ProjectCreate}
+                  />
+                  <PrivateRoute
+                    path="/projects/edit/:id"
+                    exact
+                    component={ProjectEdit}
+                  />
+                  <PrivateRoute
+                    path="/firings/:id"
+                    exact
+                    component={FiringShow}
+                  />
+                  <PrivateRoute
+                    path="/new_firing/:id"
+                    exact
+                    component={FiringCreate}
+                  />
+                  <PrivateRoute
+                    path="/firing/delete/:id"
+                    exact
+                    component={FiringDelete}
+                  />
+                  <PrivateRoute
+                    path="/firings/edit/:id"
+                    exact
+                    component={FiringEdit}
+                  />
+                  <PrivateRoute path="/kilns" exact component={KilnsList} />
+                  <PrivateRoute path="/new_kiln" exact component={KilnCreate} />
+                  <PrivateRoute path="/kilns/:id" exact component={KilnShow} />
+                  <PrivateRoute
+                    path="/kilns/edit/:id"
+                    exact
+                    component={KilnEdit}
+                  />
+                  <PrivateRoute
+                    path="/kilns/delete/:id"
+                    exact
+                    component={KilnDelete}
+                  />
+                  <PrivateRoute
+                    path="/new_segment/:id"
+                    exact
+                    component={SegmentCreate}
+                  />
+                </Switch>
+              </DndProvider>
+            </div>
+          </Router>
+        </AuthProvider>
       </div>
     );
   }
