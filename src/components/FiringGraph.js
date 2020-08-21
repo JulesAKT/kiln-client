@@ -39,6 +39,13 @@ const FiringGraph = ({ sortedSegments }) => {
         dependantAxis
         tickFormat={(x) => Math.floor(x / 60)}
         label="Hours"
+        style={{ axisLabel: { padding: 32 } }}
+        theme={VictoryTheme.material}
+      />
+      <VictoryAxis
+        dependentAxis
+        label="Temperature"
+        style={{ axisLabel: { padding: 40 } }}
         theme={VictoryTheme.material}
       />
       <VictoryLine data={data} x={"time"} y={"temperature"} />
@@ -46,6 +53,7 @@ const FiringGraph = ({ sortedSegments }) => {
         data={data}
         x={"time"}
         y={"temperature"}
+        dx={-12}
         size={4}
         style={{ data: { fill: "red", strokeWidth: 30, stroke: "none" } }}
       />

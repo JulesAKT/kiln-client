@@ -22,10 +22,13 @@ class KilnForm extends Component {
 
   render() {
     const kilnTypes = [
-      { label: "Paragon", value: "Paragon" },
-      { label: "Olympic", value: "Olympic" },
+      { label: "Evenheat", value: "Evenheat" },
       { label: "Kilncare", value: "Kilncare" },
       { label: "Nabatherm", value: "Nabatherm" },
+      { label: "Northern", value: "Northern" },
+      { label: "Olympic", value: "Olympic" },
+      { label: "Paragon", value: "Paragon" },
+      { label: "Skutt", value: "Skutt" },
     ];
 
     //console.log("kilnTypes = ");

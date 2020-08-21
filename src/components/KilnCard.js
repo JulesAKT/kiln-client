@@ -10,7 +10,7 @@ const KilnCard = (props) => {
     <Card as={Link} to={`/kilns/${props.id}`}>
       <Card.Header>{props.name}</Card.Header>
       <Card.Content extra>
-        <Image avatar src={kilnLogo(props.manufacturer)} />
+        <Image size="massive" src={kilnLogo(props.manufacturer)} />
       </Card.Content>
     </Card>
   );
