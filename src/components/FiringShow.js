@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { Button, Icon, Segment, Header, Table, Ref } from "semantic-ui-react";
 import FiringGraph from "./FiringGraph";
-
+import TinyRoomForm from "./tinyFiringForm";
 import {
   fetchFiring,
   fetchSegmentsByFiring,
@@ -19,6 +19,10 @@ import _ from "lodash";
 //import { defined } from "react-native-reanimated";
 
 class FiringShowScreen extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isEditing: false };
+  }
   componentDidMount() {
     this.props.dispatch(fetchSegmentsByFiring(this.props.match.params.id));
     this.props.dispatch(fetchFiring(this.props.match.params.id));
@@ -59,21 +63,38 @@ class FiringShowScreen extends Component {
           </span>
         );
       } else {
-        return (
-          <span>
-            <Icon name="trash" type="feather" disabled floated="right" />
-          </span>
-        );
+        return <Icon name="trash" type="feather" disabled floated="right" />;
       }
+    };
+    const editClicked = () => {
+      this.setState({ isEditing: !this.state.isEditing });
+    };
+    const onSubmit = (formValues) => {
+      this.props.dispatch(editFiring(firing.id, formValues, false));
+      this.setState({ isEditing: false });
     };
 
     const renderHeader = () => {
       return (
         <Header as="h3" attached="top">
-          <Link to={`/firings/edit/${id}`}>
-            <Icon name="edit" type="feather" />
-          </Link>
-          {firing.name}
+          <Icon
+            name="edit"
+            type="feather"
+            onClick={editClicked}
+            floated="left"
+          />
+          <Header.Content>
+            {this.state.isEditing ? (
+              <TinyRoomForm
+                initialValues={{ name: firing.name }}
+                formName={`tinyroomform-${firing.id}`}
+                onSubmit={onSubmit}
+              />
+            ) : (
+              <>{firing.name}</>
+            )}
+          </Header.Content>
+
           {renderDeleteIcon()}
         </Header>
       );
@@ -83,22 +104,24 @@ class FiringShowScreen extends Component {
       if (!firing.favourite) {
         return (
           <Button
-            title="Mark as Favourite"
             onClick={() => {
               firing.favourite = true;
               this.props.dispatch(editFiring(id, firing, false));
             }}
-          />
+          >
+            Mark as Favourite
+          </Button>
         );
       } else {
         return (
           <Button
-            title="Unmark as Favourite"
             onClick={() => {
               firing.favourite = false;
               this.props.dispatch(editFiring(id, firing, false));
             }}
-          />
+          >
+            Unmark as Favourite
+          </Button>
         );
       }
     };
