@@ -4,9 +4,9 @@ import useFirebaseKilns from "../hooks/useFirebaseKilns";
 import { Card } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
-import KilnCard from "../components/KilnCard";
+import KilnCard from "./KilnCard";
 
-const KilnsList = ({ navigation }) => {
+const KilnsListPage = ({ navigation }) => {
   const kilns = useFirebaseKilns();
 
   return (
@@ -26,4 +26,4 @@ const KilnsList = ({ navigation }) => {
   );
 };
 
-export default KilnsList;
+export default KilnsListPage;

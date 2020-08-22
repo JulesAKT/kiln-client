@@ -2,11 +2,11 @@ import React from "react";
 //import { Text, ScrollView, Button, Alert } from "react-native";
 import { Container, Button, Header } from "semantic-ui-react";
 import { useDispatch, useSelector } from "react-redux";
-import SegmentForm from "../components/SegmentForm";
+import SegmentForm from "./SegmentForm";
 import { fetchSegment, editSegment, deleteSegment } from "../actions";
 import { useFirebaseConnect } from "react-redux-firebase";
 
-const SegmentEditScreen = (props) => {
+const SegmentEditPage = (props) => {
   const navigation = props.navigation;
   const dispatch = useDispatch();
   const id = props.route.params.id;
@@ -57,4 +57,4 @@ const SegmentEditScreen = (props) => {
   );
 };
 
-export default SegmentEditScreen;
+export default SegmentEditPage;

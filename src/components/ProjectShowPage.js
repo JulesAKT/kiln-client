@@ -5,10 +5,10 @@ import { useFirebaseConnect } from "react-redux-firebase";
 import useFirebaseKiln from "../hooks/useFirebaseKiln";
 import { useSelector } from "react-redux";
 
-import FiringCard from "../components/FiringCard";
+import FiringCard from "./FiringCard";
 import _ from "lodash";
 
-const ProjectShowScreen = (props) => {
+const ProjectShowPage = (props) => {
   const id = props.match.params.id;
   const uid = useSelector((state) => state.firebase.auth.uid);
 
@@ -106,4 +106,4 @@ const ProjectShowScreen = (props) => {
   );
 };
 
-export default ProjectShowScreen;
+export default ProjectShowPage;

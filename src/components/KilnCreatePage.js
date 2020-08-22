@@ -2,9 +2,9 @@ import React from "react";
 //import { Text, ScrollView } from "react-native";
 import { useDispatch } from "react-redux";
 import { createKiln } from "../actions";
-import KilnForm from "../components/KilnForm";
+import KilnForm from "./KilnForm";
 
-const KilnCreateScreen = (props) => {
+const KilnCreatePage = (props) => {
   const dispatch = useDispatch();
 
   const handleSubmit = (formValues) => {
@@ -21,4 +21,4 @@ const KilnCreateScreen = (props) => {
   );
 };
 
-export default KilnCreateScreen;
+export default KilnCreatePage;

@@ -6,10 +6,10 @@ import DataTable from "react-data-table-component";
 
 import useFirebaseKilns from "../hooks/useFirebaseKilns";
 import history from "../history";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "./ProjectCard";
 import useFirebaseProjects from "../hooks/useFirebaseProjects";
 
-const ProjectList = ({ navigation }) => {
+const ProjectListPage = ({ navigation }) => {
   const [detail, setDetail] = useState(false);
 
   const projects = useFirebaseProjects();
@@ -120,4 +120,4 @@ const ProjectList = ({ navigation }) => {
   );
 };
 
-export default ProjectList;
+export default ProjectListPage;

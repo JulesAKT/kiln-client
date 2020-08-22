@@ -6,7 +6,7 @@ import Modal from "../Modal";
 import history from "../history";
 import _ from "lodash";
 
-class KilnDelete extends Component {
+class KilnDeletePage extends Component {
   componentDidMount() {
     this.props.fetchKiln(this.props.match.params.id);
     this.props.fetchProjectsByKiln(this.props.match.params.id);
@@ -76,4 +76,4 @@ export default connect(mapStateToProps, {
   fetchKiln,
   fetchProjectsByKiln,
   deleteKiln,
-})(KilnDelete);
+})(KilnDeletePage);

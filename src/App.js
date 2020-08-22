@@ -9,21 +9,21 @@ import Header from "./components/Header";
 import LoginPage from "./components/LoginPage";
 import SignupPage from "./components/SignupPage";
 import SignedupPage from "./components/SignedupPage";
-import ProjectList from "./components/ProjectList";
-import ProjectShow from "./components/ProjectShow.js";
-import ProjectCreate from "./components/ProjectCreate";
-import ProjectEdit from "./components/ProjectEdit";
+import ProjectListPage from "./components/ProjectListPage";
+import ProjectShowPage from "./components/ProjectShowPage.js";
+import ProjectCreatePage from "./components/ProjectCreatePage";
+import ProjectEditPage from "./components/ProjectEditPage";
 //import ProjectDelete from "./components/ProjectDelete";
-import FiringShow from "./components/FiringShow";
-import FiringEdit from "./components/FiringEdit";
-import FiringDelete from "./components/FiringDelete";
-import FiringCreate from "./components/FiringCreate";
-import KilnsList from "./components/KilnsList";
-import KilnCreate from "./components/KilnCreate.js";
-import KilnShow from "./components/KilnShow";
-import KilnEdit from "./components/KilnEdit";
-import KilnDelete from "./components/KilnDelete";
-import SegmentCreate from "./components/SegmentCreate";
+import FiringShowPage from "./components/FiringShowPage";
+import FiringEditPage from "./components/FiringEditPage";
+import FiringDeletePage from "./components/FiringDeletePage";
+import FiringCreatePage from "./components/FiringCreatePage";
+import KilnsListPage from "./components/KilnsListPage";
+import KilnCreatePage from "./components/KilnCreatePage.js";
+import KilnShowPage from "./components/KilnShowPage";
+import KilnEditPage from "./components/KilnEditPage";
+import KilnDeletePage from "./components/KilnDeletePage";
+import SegmentCreatePage from "./components/SegmentCreatePage";
 //import FirebaseAuthListener from "./components/FirebaseAuthListener";
 import alertActions from "./actions/alertActions";
 import { AuthProvider } from "./helpers/Auth";
@@ -52,59 +52,67 @@ class App extends React.Component {
                   <Route path="/login" exact component={LoginPage} />
                   <Route path="/signup" exact component={SignupPage} />
                   <Route path="/signedup" exact component={SignedupPage} />
-                  <PrivateRoute path="/" exact component={ProjectList} />
+                  <PrivateRoute path="/" exact component={ProjectListPage} />
                   <PrivateRoute
                     path="/projects/:id"
                     exact
-                    component={ProjectShow}
+                    component={ProjectShowPage}
                   />
                   <PrivateRoute
                     path="/new_project"
                     exact
-                    component={ProjectCreate}
+                    component={ProjectCreatePage}
                   />
                   <PrivateRoute
                     path="/projects/edit/:id"
                     exact
-                    component={ProjectEdit}
+                    component={ProjectEditPage}
                   />
                   <PrivateRoute
                     path="/firings/:id"
                     exact
-                    component={FiringShow}
+                    component={FiringShowPage}
                   />
                   <PrivateRoute
                     path="/new_firing/:id"
                     exact
-                    component={FiringCreate}
+                    component={FiringCreatePage}
                   />
                   <PrivateRoute
                     path="/firing/delete/:id"
                     exact
-                    component={FiringDelete}
+                    component={FiringDeletePage}
                   />
                   <PrivateRoute
                     path="/firings/edit/:id"
                     exact
-                    component={FiringEdit}
+                    component={FiringEditPage}
                   />
-                  <PrivateRoute path="/kilns" exact component={KilnsList} />
-                  <PrivateRoute path="/new_kiln" exact component={KilnCreate} />
-                  <PrivateRoute path="/kilns/:id" exact component={KilnShow} />
+                  <PrivateRoute path="/kilns" exact component={KilnsListPage} />
+                  <PrivateRoute
+                    path="/new_kiln"
+                    exact
+                    component={KilnCreatePage}
+                  />
+                  <PrivateRoute
+                    path="/kilns/:id"
+                    exact
+                    component={KilnShowPage}
+                  />
                   <PrivateRoute
                     path="/kilns/edit/:id"
                     exact
-                    component={KilnEdit}
+                    component={KilnEditPage}
                   />
                   <PrivateRoute
                     path="/kilns/delete/:id"
                     exact
-                    component={KilnDelete}
+                    component={KilnDeletePage}
                   />
                   <PrivateRoute
                     path="/new_segment/:id"
                     exact
-                    component={SegmentCreate}
+                    component={SegmentCreatePage}
                   />
                 </Switch>
               </DndProvider>

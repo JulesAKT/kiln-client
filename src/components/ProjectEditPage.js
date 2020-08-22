@@ -2,10 +2,10 @@ import React from "react";
 import { useFirebaseConnect } from "react-redux-firebase";
 import { useSelector, useDispatch } from "react-redux";
 import useFirebaseKilns from "../hooks/useFirebaseKilns";
-import ProjectForm from "../components/ProjectForm";
+import ProjectForm from "./ProjectForm";
 import { editProject } from "../actions";
 
-const ProjectEditScreen = (props) => {
+const ProjectEditPage = (props) => {
   const dispatch = useDispatch();
   const kilns = useFirebaseKilns();
   const id = props.match.params.id;
@@ -34,4 +34,4 @@ const ProjectEditScreen = (props) => {
   );
 };
 
-export default ProjectEditScreen;
+export default ProjectEditPage;

@@ -18,7 +18,7 @@ import _ from "lodash";
 
 //import { defined } from "react-native-reanimated";
 
-class FiringShowScreen extends Component {
+class FiringShowPage extends Component {
   constructor(props) {
     super(props);
     this.state = { isEditing: false };
@@ -246,4 +246,4 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-export default connect(mapStateToProps)(FiringShowScreen);
+export default connect(mapStateToProps)(FiringShowPage);

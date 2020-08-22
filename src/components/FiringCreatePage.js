@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { createFiring } from "../actions";
-import FiringForm from "../components/FiringForm";
+import FiringForm from "./FiringForm";
 
-const FiringCreateScreen = (props) => {
+const FiringCreatePage = (props) => {
   const dispatch = useDispatch();
 
   const handleSubmit = (formValues) => {
@@ -20,4 +20,4 @@ const FiringCreateScreen = (props) => {
   );
 };
 
-export default FiringCreateScreen;
+export default FiringCreatePage;

@@ -9,7 +9,7 @@ import history from "../history";
 import useFirebaseSegments from "../hooks/useFirebaseSegments";
 import useFirebaseFiring from "../hooks/useFirebaseFiring";
 
-const FiringDelete = (props) => {
+const FiringDeletePage = (props) => {
   const firing = useFirebaseFiring(props.match.params.id);
   const segments = useFirebaseSegments();
   const dispatch = useDispatch();
@@ -67,4 +67,4 @@ const FiringDelete = (props) => {
   );
 };
 
-export default FiringDelete;
+export default FiringDeletePage;

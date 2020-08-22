@@ -1,11 +1,11 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import KilnForm from "../components/KilnForm";
+import KilnForm from "./KilnForm";
 import { editKiln } from "../actions";
 
 import useFirebaseKiln from "../hooks/useFirebaseKiln";
 
-const KilnEditScreen = (props) => {
+const KilnEditPage = (props) => {
   const dispatch = useDispatch();
   const id = props.match.params.id;
 
@@ -24,4 +24,4 @@ const KilnEditScreen = (props) => {
   );
 };
 
-export default KilnEditScreen;
+export default KilnEditPage;

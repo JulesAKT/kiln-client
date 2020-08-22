@@ -2,9 +2,9 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { editFiring } from "../actions";
 import { useFirebaseConnect } from "react-redux-firebase";
-import FiringForm from "../components/FiringForm";
+import FiringForm from "./FiringForm";
 
-const FiringEditScreen = (props) => {
+const FiringEditPage = (props) => {
   //const navigation = props.navigation;
   const dispatch = useDispatch();
   const id = props.match.params.id;
@@ -29,4 +29,4 @@ const FiringEditScreen = (props) => {
   );
 };
 
-export default FiringEditScreen;
+export default FiringEditPage;

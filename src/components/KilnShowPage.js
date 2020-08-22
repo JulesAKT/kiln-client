@@ -5,7 +5,7 @@ import useFirebaseKiln from "../hooks/useFirebaseKiln";
 
 import { kilnLogo } from "../helpers/logoHelpers";
 
-const KilnShowScreen = (props) => {
+const KilnShowPage = (props) => {
   console.log(props);
   const id = props.match.params.id;
   const kiln = useFirebaseKiln(id);
@@ -34,4 +34,4 @@ const KilnShowScreen = (props) => {
   );
 };
 
-export default KilnShowScreen;
+export default KilnShowPage;

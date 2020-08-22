@@ -1,11 +1,11 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { createProject } from "../actions";
-import ProjectForm from "../components/ProjectForm";
+import ProjectForm from "./ProjectForm";
 
 import useFirebaseKilns from "../hooks/useFirebaseKilns";
 
-const ProjectCreateScreen = (props) => {
+const ProjectCreatePage = (props) => {
   const dispatch = useDispatch();
 
   const kilns = useFirebaseKilns();
@@ -35,4 +35,4 @@ const ProjectCreateScreen = (props) => {
   );
 };
 
-export default ProjectCreateScreen;
+export default ProjectCreatePage;

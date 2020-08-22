@@ -2,9 +2,9 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { createSegment } from "../actions";
 import { Container, Header } from "semantic-ui-react";
-import SegmentForm from "../components/SegmentForm";
+import SegmentForm from "./SegmentForm";
 
-const SegmentCreate = (props) => {
+const SegmentCreatePage = (props) => {
   const dispatch = useDispatch();
 
   const handleSubmit = (formValues) => {
@@ -26,4 +26,4 @@ const SegmentCreate = (props) => {
   );
 };
 
-export default SegmentCreate;
+export default SegmentCreatePage;
