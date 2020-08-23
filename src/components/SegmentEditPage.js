@@ -1,20 +1,18 @@
 import React from "react";
 //import { Text, ScrollView, Button, Alert } from "react-native";
-import { Container, Button, Header } from "semantic-ui-react";
-import { useDispatch, useSelector } from "react-redux";
+import { Segment, Header } from "semantic-ui-react";
+import { useDispatch } from "react-redux";
 import SegmentForm from "./SegmentForm";
-import { fetchSegment, editSegment, deleteSegment } from "../actions";
-import { useFirebaseConnect } from "react-redux-firebase";
+import { editSegment } from "../actions";
+import useFirebaseSegment from "../hooks/useFirebaseSegment";
 
 const SegmentEditPage = (props) => {
-  const navigation = props.navigation;
   const dispatch = useDispatch();
-  const id = props.route.params.id;
+  const id = props.match.params.id;
 
-  const uid = useSelector((state) => state.firebase.auth.uid);
-  useFirebaseConnect([{ path: `/userdata/${uid}/segments` }]);
+  const segment = useFirebaseSegment(id);
 
-  const popupDeleteAlert = () => {
+  /*   const popupDeleteAlert = () => {
     Alert.alert(
       "Confirm",
       "Delete Segment?",
@@ -27,21 +25,13 @@ const SegmentEditPage = (props) => {
       { cancelable: false }
     );
   };
-
+*/
   const handleSubmit = (formValues) => {
     dispatch(editSegment(id, formValues));
   };
 
-  const segment = useSelector(
-    ({ firebase: { data } }) =>
-      data.userdata &&
-      data.userdata[uid] &&
-      data.userdata[uid].segments &&
-      data.userdata[uid].segments[id]
-  );
-
   if (!segment) {
-    return <Text>Loading...</Text>;
+    return <div>Loading...</div>;
   }
   //console.log(id);
   return (
@@ -49,10 +39,9 @@ const SegmentEditPage = (props) => {
       <Header as="h2" attached="top">
         Edit Segment
       </Header>
-      <Container attached>
+      <Segment attached>
         <SegmentForm onSubmit={handleSubmit} initialValues={segment} />
-        <Button title="Delete Segment" onPress={popupDeleteAlert} />
-      </Container>
+      </Segment>
     </>
   );
 };

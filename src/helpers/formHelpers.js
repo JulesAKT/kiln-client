@@ -32,6 +32,40 @@ export const renderError = ({ error, warning, touched }) => {
   );
 };
 
+export const FileInput = ({ input, label, meta }) => {
+  const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+  delete input.value; // Can't render a file input box with a non-null default value
+  const handleChange = (event, input) => {
+    event.preventDefault();
+    let imageFile = event.target.files[0];
+    console.log(imageFile);
+    if (imageFile) {
+      const localImageUrl = URL.createObjectURL(imageFile);
+      console.log(localImageUrl);
+      const imageObject = new window.Image();
+
+      imageObject.onload = () => {
+        imageFile.width = imageObject.naturalWidth;
+        imageFile.height = imageObject.naturalHeight;
+        input.onChange(imageFile);
+        URL.revokeObjectURL(imageFile);
+      };
+      imageObject.src = localImageUrl;
+    }
+  };
+  return (
+    <div className={className}>
+      <label>{label}</label>
+      <input
+        type="file"
+        onChange={(event) => handleChange(event, input)}
+        {...input}
+      />
+      {renderError(meta)}
+    </div>
+  );
+};
+
 export const Input = ({ input, type, label, meta }) => {
   const className = `field ${meta.error && meta.touched ? "error" : ""}`;
   return (

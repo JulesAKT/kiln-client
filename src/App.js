@@ -24,7 +24,8 @@ import KilnShowPage from "./components/KilnShowPage";
 import KilnEditPage from "./components/KilnEditPage";
 import KilnDeletePage from "./components/KilnDeletePage";
 import SegmentCreatePage from "./components/SegmentCreatePage";
-//import FirebaseAuthListener from "./components/FirebaseAuthListener";
+import SegmentEditPage from "./components/SegmentEditPage";
+import SegmentDeletePage from "./components/SegmentDeletePage";
 import alertActions from "./actions/alertActions";
 import { AuthProvider } from "./helpers/Auth";
 
@@ -110,9 +111,19 @@ class App extends React.Component {
                     component={KilnDeletePage}
                   />
                   <PrivateRoute
-                    path="/new_segment/:id"
+                    path="/new_segment/:id/:order"
                     exact
                     component={SegmentCreatePage}
+                  />
+                  <PrivateRoute
+                    path="/segments/edit/:id"
+                    exact
+                    component={SegmentEditPage}
+                  />
+                  <PrivateRoute
+                    path="/segments/delete/:id"
+                    exact
+                    component={SegmentDeletePage}
                   />
                 </Switch>
               </DndProvider>

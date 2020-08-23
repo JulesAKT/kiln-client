@@ -11,6 +11,7 @@ import {
 } from "victory";
 
 const FiringGraph = ({ sortedSegments }) => {
+  console.log(sortedSegments);
   let elapsedMins = 0;
   let currentTemperature = 20;
   let data = [{ time: elapsedMins, temperature: currentTemperature }];
@@ -19,6 +20,9 @@ const FiringGraph = ({ sortedSegments }) => {
     const timeToTemp =
       Math.abs(parseFloat(segment.temperature) - currentTemperature) /
       (parseFloat(segment.rate) / 60);
+    /*console.log(
+      `${segment.name}:${timeToTemp} mins - Start Temp: ${currentTemperature}`
+    ); */
     elapsedMins = elapsedMins + timeToTemp;
     data = data.concat([
       { time: elapsedMins, temperature: parseFloat(segment.temperature) },
@@ -30,6 +34,7 @@ const FiringGraph = ({ sortedSegments }) => {
         { time: elapsedMins, temperature: parseFloat(segment.temperature) },
       ]);
     }
+    currentTemperature = segment.temperature;
   });
 
   console.log(data);
@@ -48,14 +53,21 @@ const FiringGraph = ({ sortedSegments }) => {
         style={{ axisLabel: { padding: 40 } }}
         theme={VictoryTheme.material}
       />
-      <VictoryLine data={data} x={"time"} y={"temperature"} />
+      <VictoryLine
+        data={data}
+        x={"time"}
+        y={"temperature"}
+        style={{
+          data: { strokeWidth: 1.5, strokeLinecap: "round" },
+        }}
+      />
       <VictoryScatter
         data={data}
         x={"time"}
         y={"temperature"}
         dx={-12}
-        size={4}
-        style={{ data: { fill: "red", strokeWidth: 30, stroke: "none" } }}
+        size={3}
+        style={{ data: { fill: "red", strokeWidth: 5, stroke: "none" } }}
       />
     </VictoryChart>
   );

@@ -145,9 +145,12 @@ class FiringShowPage extends Component {
     });
     const reorderList = (list, startIndex, endIndex) => {
       const result = Array.from(list);
+      //      console.log(result);
       const [removed] = result.splice(startIndex, 1);
+      // console.log(removed);
+      // console.log(result);
       result.splice(endIndex, 0, removed);
-
+      //  console.log(result);
       return result;
     };
 
@@ -161,7 +164,7 @@ class FiringShowPage extends Component {
       const new_sorted_segments = reorderList(
         sorted_segments_array,
         result.source.index,
-        result.destination
+        result.destination.index
       );
       reorderSegments(new_sorted_segments);
 
@@ -179,6 +182,7 @@ class FiringShowPage extends Component {
                   <Table.HeaderCell>Rate</Table.HeaderCell>
                   <Table.HeaderCell>Temperature</Table.HeaderCell>
                   <Table.HeaderCell>Hold</Table.HeaderCell>
+                  <Table.HeaderCell>Actions</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
               <Droppable droppableId="segments_table">
@@ -210,6 +214,14 @@ class FiringShowPage extends Component {
                                   <Table.Cell>{segment.rate}</Table.Cell>
                                   <Table.Cell>{segment.temperature}</Table.Cell>
                                   <Table.Cell>{segment.hold}</Table.Cell>
+                                  <Table.Cell>
+                                    <Link to={`/segments/edit/${segment.id}`}>
+                                      <Icon name="edit" type="feather" />
+                                    </Link>
+                                    <Link to={`/segments/delete/${segment.id}`}>
+                                      <Icon name="trash" type="feather" />
+                                    </Link>
+                                  </Table.Cell>
                                 </Table.Row>
                               </Ref>
                             )}
@@ -223,7 +235,11 @@ class FiringShowPage extends Component {
               </Droppable>
             </Table>
 
-            <Link to={`/new_segment/${id}`}>
+            <Link
+              to={`/new_segment/${id}/${
+                Math.max(...sorted_segments_array.map((s) => s.order), 0) + 1
+              }`}
+            >
               <Icon name="add" />
               Add Segment
             </Link>

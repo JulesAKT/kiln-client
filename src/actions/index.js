@@ -4,7 +4,7 @@ import { stopSubmit } from "redux-form";
 //import { exportDate } from "../helpers/dates";
 //import NavigationService from "../NavigationService";
 //import * as firebase from "firebase";
-import Firebase, { db } from "../api/firebase";
+import Firebase, { db, cloudstore } from "../api/firebase";
 //import { getFirebase } from "react-redux-firebase";
 
 //import * as FileSystem from "expo-file-system";
@@ -75,10 +75,39 @@ export const createProject = (formProps) => async (dispatch, getState) => {
   //console.log(token);
   dispatch({ type: CREATE_PROJECT_REQUEST });
   formProps.id = uuid();
-  db.ref(userPath() + `/projects/${formProps.id}`).set({
-    ...formProps,
-  });
+  if (formProps.photo) {
+    const uploadName = userPath() + `/${formProps.id}.jpg`;
+    const uploadTask = cloudstore.ref(uploadName).put(formProps.photo[0]);
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {},
+      (error) => {
+        console.log(error);
+      },
+      () => {
+        cloudstore
+          .ref(uploadName)
+          .getDownloadURL()
+          .then((url) => {
+            console.log("Uploaded to: " + url);
+            formProps.photo = url;
+            db.ref(userPath() + `/projects/${formProps.id}`).set({
+              ...formProps,
+            });
 
+            dispatch({
+              type: CREATE_PROJECT_SUCCESS,
+              payload: { ...formProps },
+            });
+            history.goBack();
+          });
+      }
+    );
+  } else {
+    db.ref(userPath() + `/projects/${formProps.id}`).set({
+      ...formProps,
+    });
+  }
   dispatch({
     type: CREATE_PROJECT_SUCCESS,
     payload: { ...formProps },
@@ -132,18 +161,47 @@ export const editProject = (id, formProps, ignoreNavigate = false) => async (
   dispatch,
   getState
 ) => {
-  dispatch({ type: EDIT_PROJECT_REQUEST });
+  console.log(formProps);
+  dispatch({ type: EDIT_PROJECT_REQUEST, payload: { ...formProps } });
   formProps.id = id;
+  if (formProps.photo) {
+    const uploadName = userPath() + `/${formProps.id}.jpg`;
+    const uploadTask = cloudstore.ref(uploadName).put(formProps.photo[0]);
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {},
+      (error) => {
+        console.log(error);
+      },
+      () => {
+        cloudstore
+          .ref(uploadName)
+          .getDownloadURL()
+          .then((url) => {
+            console.log("Uploaded to: " + url);
+            formProps.photo = url;
+            db.ref(userPath() + `/projects/${formProps.id}`).set({
+              ...formProps,
+            });
 
-  db.ref(userPath() + `/projects/${id}`).set({
-    ...formProps,
-  });
+            dispatch({
+              type: CREATE_PROJECT_SUCCESS,
+              payload: { ...formProps },
+            });
+            history.goBack();
+          });
+      }
+    );
+  } else {
+    db.ref(userPath() + `/projects/${id}`).set({
+      ...formProps,
+    });
 
-  dispatch({
-    type: EDIT_PROJECT_SUCCESS,
-    payload: { ...formProps },
-  });
-
+    dispatch({
+      type: EDIT_PROJECT_SUCCESS,
+      payload: { ...formProps },
+    });
+  }
   if (!ignoreNavigate) {
     history.goBack();
   }

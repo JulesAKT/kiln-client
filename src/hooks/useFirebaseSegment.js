@@ -1,21 +1,18 @@
 import { useSelector } from "react-redux";
 import { useFirebaseConnect } from "react-redux-firebase";
 
-const useFirebaseKiln = (kiln_id) => {
+const useFirebaseSegment = (segment_id) => {
   const uid = useSelector((state) => state.firebase.auth.uid);
-  useFirebaseConnect(
-    [{ path: `/userdata/${uid}/kilns/${kiln_id}` }],
-    [kiln_id]
-  );
+  useFirebaseConnect([{ path: `/userdata/${uid}/segments/${segment_id}` }]);
 
-  const kiln = useSelector(
+  const segment = useSelector(
     (state) =>
       state.firebase.data.userdata &&
       state.firebase.data.userdata[uid] &&
-      state.firebase.data.userdata[uid].kilns[kiln_id]
+      state.firebase.data.userdata[uid].segments[segment_id]
   );
 
-  return kiln;
+  return segment;
 };
 
-export default useFirebaseKiln;
+export default useFirebaseSegment;

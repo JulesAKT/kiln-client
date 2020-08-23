@@ -19,7 +19,10 @@ const SegmentCreatePage = (props) => {
       <Container attached>
         <SegmentForm
           onSubmit={handleSubmit}
-          initialValues={{ firing_id: props.match.params.id }}
+          initialValues={{
+            firing_id: props.match.params.id,
+            order: props.match.params.order,
+          }}
         />
       </Container>
     </>
