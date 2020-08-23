@@ -8,16 +8,14 @@ const useFirebaseKiln = (kiln_id) => {
     [kiln_id]
   );
 
-  const kiln = useSelector((state) => {
-    console.log(kiln_id);
-    return (
+  const kiln = useSelector(
+    (state) =>
       kiln_id &&
       state.firebase.data.userdata &&
       state.firebase.data.userdata[uid] &&
       state.firebase.data.userdata[uid].kilns &&
       state.firebase.data.userdata[uid].kilns[kiln_id]
-    );
-  });
+  );
 
   return kiln;
 };
