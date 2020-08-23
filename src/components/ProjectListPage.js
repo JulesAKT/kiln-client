@@ -105,7 +105,7 @@ const ProjectListPage = ({ navigation }) => {
       ) : (
         <Card.Group>
           {project_array.map((item) => (
-            <ProjectCard {...item} key={item.id} />
+            item && <ProjectCard {...item} key={item.id} />
           ))}
 
           <Card as={Link} to={`/new_project`}>

@@ -3,6 +3,7 @@ import { List, Rating, Button, Divider, Image, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { useFirebaseConnect } from "react-redux-firebase";
 import useFirebaseKiln from "../hooks/useFirebaseKiln";
+import useFirebaseProject from '../hooks/useFirebaseProject'
 import { useSelector } from "react-redux";
 
 import FiringCard from "./FiringCard";
@@ -12,16 +13,10 @@ const ProjectShowPage = (props) => {
   const id = props.match.params.id;
   const uid = useSelector((state) => state.firebase.auth.uid);
 
-  useFirebaseConnect([{ path: `/userdata/${uid}/projects/${id}` }]);
   useFirebaseConnect([{ path: `/userdata/${uid}/firings` }]);
 
-  const project = useSelector(
-    ({ firebase: { data } }) =>
-      data.userdata && data.userdata[uid] && data.userdata[uid].projects[id]
-  );
-
+  const project = useFirebaseProject(id)
   const kiln = useFirebaseKiln(project && project.kiln);
-
   const firings = useSelector(
     ({ firebase: { data } }) =>
       data.userdata &&

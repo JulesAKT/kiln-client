@@ -13,7 +13,7 @@ import ProjectListPage from "./components/ProjectListPage";
 import ProjectShowPage from "./components/ProjectShowPage.js";
 import ProjectCreatePage from "./components/ProjectCreatePage";
 import ProjectEditPage from "./components/ProjectEditPage";
-//import ProjectDelete from "./components/ProjectDelete";
+import ProjectDeletePage from "./components/ProjectDeletePage";
 import FiringShowPage from "./components/FiringShowPage";
 import FiringEditPage from "./components/FiringEditPage";
 import FiringDeletePage from "./components/FiringDeletePage";
@@ -68,6 +68,11 @@ class App extends React.Component {
                     path="/projects/edit/:id"
                     exact
                     component={ProjectEditPage}
+                  />
+                  <PrivateRoute
+                    path="/projects/delete/:id"
+                    exact
+                    component={ProjectDeletePage}
                   />
                   <PrivateRoute
                     path="/firings/:id"
