@@ -20,7 +20,7 @@ const ProjectShowPage = (props) => {
       data.userdata && data.userdata[uid] && data.userdata[uid].projects[id]
   );
 
-  const kiln = useFirebaseKiln(project.kiln);
+  const kiln = useFirebaseKiln(project && project.kiln);
 
   const firings = useSelector(
     ({ firebase: { data } }) =>
