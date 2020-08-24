@@ -1,6 +1,5 @@
 import React from "react";
 
-import { useDispatch } from "react-redux";
 import { List } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import FiringCard from "./FiringCard";
@@ -10,7 +9,6 @@ import _ from "lodash";
 import useFirebaseTemplateFirings from "../hooks/useFirebaseTemplateFirings";
 
 const FiringFavouriteCreatePage = (props) => {
-  const dispatch = useDispatch();
   const project_id = props.match.params.id;
   const project = useFirebaseProject(project_id);
   const all_firings = useFirebaseFirings();

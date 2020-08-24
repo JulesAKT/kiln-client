@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { Button } from "semantic-ui-react";
+import { Button, Grid, Table } from "semantic-ui-react";
 import uuid from "react-uuid";
 import _ from "lodash";
 
@@ -45,14 +45,28 @@ const FiringFavouriteCopyConfirmPage = (props) => {
     });
   };
 
-  const renderContent = () => (
-    <span>
+  const renderContent = () => (<Grid>
+    <Grid.Column width="6">
       <FiringGraph
-        sortedSegments={sorted_segments_array}
-        style={{ float: "left" }}
-      />
-      Some content!
-    </span>
+        sortedSegments={sorted_segments_array}/></Grid.Column>
+<Grid.Column width="10">            <Table>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Name</Table.HeaderCell>
+                  <Table.HeaderCell>Rate</Table.HeaderCell>
+                  <Table.HeaderCell>Temperature</Table.HeaderCell>
+                  <Table.HeaderCell>Hold</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+                      {sorted_segments_array.map((segment, index) => 
+                                <Table.Row>
+                                  <Table.Cell>{segment.name}</Table.Cell>
+                                  <Table.Cell>{segment.rate}</Table.Cell>
+                                  <Table.Cell>{segment.temperature}</Table.Cell>
+                                  <Table.Cell>{segment.hold}</Table.Cell>
+                                </Table.Row>)}
+            </Table>
+</Grid.Column></Grid>
   );
   const actions = () => (
     <>
@@ -77,7 +91,7 @@ const FiringFavouriteCopyConfirmPage = (props) => {
   return (
     <Modal
       onDismiss={() => history.goBack()}
-      title="Copy Firing"
+      title={"Copy Firing:" + firing.name}
       actions={actions()}
       content={renderContent()}
     />
