@@ -6,19 +6,13 @@ const FiringCard = (props) => {
   //console.log(props);
   return (
     <List.Item>
-      {!props.hideIndex ? (
-        <List.Content>
-          {props.index + 1}. {props.name}
-        </List.Content>
-      ) : (
-        <List.Content>{props.name}</List.Content>
-      )}
-
-      {props.favourite && (
-        <List.Content floated="right">
-          <Icon name="star" size="tiny" />
-        </List.Content>
-      )}
+      <List.Content>
+        {!props.hideIndex && <>{props.index + 1}.</>}
+        {props.name}
+        {props.favourite && (
+          <Icon name="star" size="small" style={{ marginLeft: "16px" }} />
+        )}
+      </List.Content>
     </List.Item>
   );
 };

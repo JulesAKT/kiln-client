@@ -28,14 +28,10 @@ const FiringFavouriteCreatePage = (props) => {
             (firing, index) =>
               firing && (
                 <Link
+                  key={firing.id}
                   to={`/new_favourite_firing_confirm/${project_id}/${firing.id}`}
                 >
-                  <FiringCard
-                    {...firing}
-                    index={index}
-                    key={firing.id}
-                    hideIndex
-                  />
+                  <FiringCard {...firing} index={index} hideIndex />
                 </Link>
               )
           )}
