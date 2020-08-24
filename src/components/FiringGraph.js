@@ -11,7 +11,6 @@ import {
 } from "victory";
 
 const FiringGraph = ({ sortedSegments }) => {
-  console.log(sortedSegments);
   let elapsedMins = 0;
   let currentTemperature = 20;
   let data = [{ time: elapsedMins, temperature: currentTemperature }];
@@ -37,7 +36,6 @@ const FiringGraph = ({ sortedSegments }) => {
     currentTemperature = segment.temperature;
   });
 
-  console.log(data);
   return (
     <VictoryChart theme={VictoryTheme.material}>
       <VictoryAxis

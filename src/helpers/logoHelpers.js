@@ -18,3 +18,13 @@ export const kilnLogo = (manufacturer) => {
       return require("../assets/nabertherm.png");
   }
 };
+
+export const glassImage = (glass) => {
+  switch (glass) {
+    case "Spectrum":
+      return require("../assets/spectrum.jpg");
+    case "Bullseye":
+    default:
+      return require("../assets/bullseye.jpg");
+  }
+};

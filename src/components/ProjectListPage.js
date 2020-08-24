@@ -42,7 +42,7 @@ const ProjectListPage = ({ navigation }) => {
       name: "Photo",
       selector: "photo",
       sortable: false,
-      cell: (row) => <Image avatar src={row.photo} />,
+      cell: (row) => <Image size="small" src={row.photo} />,
     },
     {
       name: "Name",
@@ -104,9 +104,16 @@ const ProjectListPage = ({ navigation }) => {
         />
       ) : (
         <Card.Group>
-          {project_array.map((item) => (
-            item && <ProjectCard {...item} key={item.id} />
-          ))}
+          {project_array.map(
+            (item) =>
+              item && (
+                <ProjectCard
+                  {...item}
+                  key={item.id}
+                  kilnName={kilns && kilns[item.kiln].name}
+                />
+              )
+          )}
 
           <Card as={Link} to={`/new_project`}>
             <Card.Header>Add New Project</Card.Header>

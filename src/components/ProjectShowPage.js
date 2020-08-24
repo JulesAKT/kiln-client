@@ -2,12 +2,13 @@ import React from "react";
 import { List, Rating, Button, Divider, Image, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { useFirebaseConnect } from "react-redux-firebase";
-import useFirebaseKiln from "../hooks/useFirebaseKiln";
-import useFirebaseProject from '../hooks/useFirebaseProject'
 import { useSelector } from "react-redux";
+import _ from "lodash";
+import useFirebaseKiln from "../hooks/useFirebaseKiln";
+import useFirebaseProject from "../hooks/useFirebaseProject";
+import { glassImage } from "../helpers/logoHelpers";
 
 import FiringCard from "./FiringCard";
-import _ from "lodash";
 
 const ProjectShowPage = (props) => {
   const id = props.match.params.id;
@@ -15,7 +16,7 @@ const ProjectShowPage = (props) => {
 
   useFirebaseConnect([{ path: `/userdata/${uid}/firings` }]);
 
-  const project = useFirebaseProject(id)
+  const project = useFirebaseProject(id);
   const kiln = useFirebaseKiln(project && project.kiln);
   const firings = useSelector(
     ({ firebase: { data } }) =>
@@ -36,16 +37,6 @@ const ProjectShowPage = (props) => {
   if (!kiln || !project) {
     return <div>Loading...</div>;
   }
-
-  const glassImage = (glass) => {
-    switch (glass) {
-      case "Spectrum":
-        return require("../assets/spectrum.jpg");
-      case "Bullseye":
-      default:
-        return require("../assets/bullseye.jpg");
-    }
-  };
 
   return (
     <div>
@@ -92,7 +83,7 @@ const ProjectShowPage = (props) => {
           <Link to={`/new_firing/${id}`}>
             <Button>Add Firing</Button>
           </Link>
-          <Link to="'/new_favourite_firing">
+          <Link to={`/new_favourite_firing/${id}`}>
             <Button>Add Favourite</Button>
           </Link>
         </div>

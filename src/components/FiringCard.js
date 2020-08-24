@@ -16,7 +16,7 @@ const FiringCard = (props) => {
 
       {props.favourite && (
         <List.Content floated="right">
-          <Icon name="star" />
+          <Icon name="star" size="tiny" />
         </List.Content>
       )}
     </List.Item>
