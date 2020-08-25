@@ -16,7 +16,7 @@ const FiringDeletePage = (props) => {
 
   const my_segments = _.filter(
     segments,
-    (segment) => segment.firing_id === props.match.params.id
+    (segment) => segment && segment.firing_id === props.match.params.id
   );
 
   const actions = () => (
