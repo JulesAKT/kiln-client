@@ -35,7 +35,7 @@ export const renderError = ({ error, warning, touched }) => {
 export const FileInput = ({ input, label, meta }) => {
   const className = `field ${meta.error && meta.touched ? "error" : ""}`;
   delete input.value; // Can't render a file input box with a non-null default value
-  const handleChange = (event, input) => {
+  const handleChange = (event) => {
     event.preventDefault();
     let imageFile = event.target.files[0];
     console.log(imageFile);

@@ -28,14 +28,14 @@ const FiringFavouriteCopyConfirmPage = (props) => {
 
   const dispatch = useDispatch();
 
-  const copyFavourite = (project_id) => {
+  const copyFavourite = (destination_project_id) => {
     const my_firing = { ...firing };
     console.log("New Firing");
     console.log(my_firing);
     my_firing.favourite = false;
     const new_id = uuid();
     my_firing.id = new_id;
-    my_firing.project_id = project_id;
+    my_firing.project_id = destination_project_id;
     my_segments.forEach((segment) => {
       const new_segment = { ...segment };
       new_segment.id = uuid();
