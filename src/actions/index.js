@@ -393,7 +393,7 @@ export const deleteFiring = (id) => async (dispatch, getState) => {
     payload: id,
   });
   console.log("Navigating back");
-  history.go(-2);
+  history.push("/");
   //history.goBack();
 };
 

@@ -39,13 +39,13 @@ const FiringTemplateCopyConfirmPage = (props) => {
     my_firing.project_id = project_id;
     console.log("Modified Firing");
     console.log(my_firing);
-    dispatch(createFiring(my_firing, false));
     my_segments.forEach((segment) => {
       const new_segment = { ...segment };
       new_segment.id = uuid();
       new_segment.firing_id = new_id;
       dispatch(createSegment(new_segment, false));
     });
+    dispatch(createFiring(my_firing, false));
   };
 
   const renderContent = () => (
