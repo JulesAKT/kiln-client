@@ -1,0 +1,48 @@
+{
+  "firings": {
+    "Bullseye": {
+      "c55c8-fa41-1e74-2211-2348e5857a0": {
+        "id": "c55c8-fa41-1e74-2211-2348e5857a0",
+        "name": "Bullseye Basic Full Fuse (2020)"
+      }
+    },
+    "segments": {
+      "317cc38-ed5-0e06-c34-2ac21cf12aa4": {
+        "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
+        "hold": "60",
+        "id": "317cc38-ed5-0e06-c34-2ac21cf12aa4",
+        "name": "Segment 3",
+        "order": "3",
+        "rate": "9999",
+        "temperature": "482"
+      },
+      "50c04b1-ba0c-6ac3-804f-fa4317ebf": {
+        "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
+        "hold": "30",
+        "id": "50c04b1-ba0c-6ac3-804f-fa4317ebf",
+        "name": "Segment 1",
+        "order": "1",
+        "rate": "222",
+        "temperature": "677"
+      },
+      "aa8a81f-5c4-a62f-7a18-c443d52cb76": {
+        "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
+        "hold": "10",
+        "id": "aa8a81f-5c4-a62f-7a18-c443d52cb76",
+        "name": "Segment 2",
+        "order": "2",
+        "rate": "333",
+        "temperature": "804"
+      },
+      "ac507-4025-31bc-15ec-560131eab53e": {
+        "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
+        "hold": "0",
+        "id": "ac507-4025-31bc-15ec-560131eab53e",
+        "name": "Segment 4",
+        "order": "4",
+        "rate": "83",
+        "temperature": "371"
+      }
+    }
+  }
+}

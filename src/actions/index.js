@@ -290,6 +290,8 @@ export const createFiring = (formProps, allowNavigate = true) => async (
   dispatch,
   getState
 ) => {
+  console.log("createFiring");
+  console.log(formProps);
   dispatch({ type: CREATE_FIRING_REQUEST });
   if (!formProps.id) {
     formProps.id = uuid();

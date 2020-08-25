@@ -20,6 +20,7 @@ import FiringDeletePage from "./components/FiringDeletePage";
 import FiringCreatePage from "./components/FiringCreatePage";
 import FiringFavouriteCreatePage from "./components/FiringFavouriteCreatePage";
 import FiringFavouriteCopyConfirmPage from "./components/FiringFavouriteCopyConfirmPage";
+import FiringTemplateCopyConfirmPage from "./components/FiringTemplateCopyConfirmPage";
 import KilnsListPage from "./components/KilnsListPage";
 import KilnCreatePage from "./components/KilnCreatePage.js";
 import KilnShowPage from "./components/KilnShowPage";
@@ -93,9 +94,14 @@ class App extends React.Component {
                   />
 
                   <PrivateRoute
-                    path="/new_favourite_firing_confirm/:project_id/:firing_id"
+                    path="/copy_favourite_firing_confirm/:project_id/:firing_id"
                     exact
                     component={FiringFavouriteCopyConfirmPage}
+                  />
+                  <PrivateRoute
+                    path="/copy_template_firing_confirm/:project_id/:firing_id/:glass_type"
+                    exact
+                    component={FiringTemplateCopyConfirmPage}
                   />
 
                   <PrivateRoute

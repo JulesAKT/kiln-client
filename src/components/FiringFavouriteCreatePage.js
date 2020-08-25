@@ -29,7 +29,7 @@ const FiringFavouriteCreatePage = (props) => {
               firing && (
                 <Link
                   key={firing.id}
-                  to={`/new_favourite_firing_confirm/${project_id}/${firing.id}`}
+                  to={`/copy_favourite_firing_confirm/${project_id}/${firing.id}`}
                 >
                   <FiringCard {...firing} index={index} hideIndex />
                 </Link>
@@ -42,12 +42,12 @@ const FiringFavouriteCreatePage = (props) => {
           template_firings_array.map(
             (firing, index) =>
               firing && (
-                <FiringCard
-                  {...firing}
+                <Link
                   key={firing.id}
-                  index={index}
-                  hideIndex
-                />
+                  to={`/copy_template_firing_confirm/${project_id}/${firing.id}/${project.glass}`}
+                >
+                  <FiringCard {...firing} index={index} hideIndex />
+                </Link>
               )
           )}
       </List>

@@ -8,16 +8,17 @@ import { createFiring, createSegment } from "../actions";
 import Modal from "../Modal";
 import FiringGraph from "./FiringGraph";
 import history from "../history";
-import useFirebaseFiring from "../hooks/useFirebaseFiring";
-import useFirebaseSegments from "../hooks/useFirebaseSegments";
+import useFirebaseTemplateFiring from "../hooks/useFirebaseFiring";
+import useFirebaseTemplateSegments from "../hooks/useFirebaseSegments";
 import useFirebaseProject from "../hooks/useFirebaseProject";
 
-const FiringFavouriteCopyConfirmPage = (props) => {
+const FiringTemplateCopyConfirmPage = (props) => {
   const project_id = props.match.params.project_id;
   const firing_id = props.match.params.firing_id;
+  const glass_type = props.match.params.glass_type;
   const project = useFirebaseProject(project_id);
-  const firing = useFirebaseFiring(firing_id);
-  const segments = useFirebaseSegments();
+  const firing = useFirebaseTemplateFiring(firing_id, glass_type);
+  const segments = useFirebaseTemplateSegments();
   const my_segments = _.filter(
     segments,
     (segment) => segment.firing_id === firing_id
@@ -36,6 +37,8 @@ const FiringFavouriteCopyConfirmPage = (props) => {
     const new_id = uuid();
     my_firing.id = new_id;
     my_firing.project_id = project_id;
+    console.log("Modified Firing");
+    console.log(my_firing);
     dispatch(createFiring(my_firing, false));
     my_segments.forEach((segment) => {
       const new_segment = { ...segment };
@@ -61,14 +64,16 @@ const FiringFavouriteCopyConfirmPage = (props) => {
               <Table.HeaderCell>Hold</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
-          {sorted_segments_array.map((segment, index) => (
-            <Table.Row>
-              <Table.Cell>{segment.name}</Table.Cell>
-              <Table.Cell>{segment.rate}</Table.Cell>
-              <Table.Cell>{segment.temperature}</Table.Cell>
-              <Table.Cell>{segment.hold}</Table.Cell>
-            </Table.Row>
-          ))}
+          <Table.Body>
+            {sorted_segments_array.map((segment, index) => (
+              <Table.Row key={segment.id}>
+                <Table.Cell>{segment.name}</Table.Cell>
+                <Table.Cell>{segment.rate}</Table.Cell>
+                <Table.Cell>{segment.temperature}</Table.Cell>
+                <Table.Cell>{segment.hold}</Table.Cell>
+              </Table.Row>
+            ))}
+          </Table.Body>
         </Table>
       </Grid.Column>
     </Grid>
@@ -96,11 +101,11 @@ const FiringFavouriteCopyConfirmPage = (props) => {
   return (
     <Modal
       onDismiss={() => history.goBack()}
-      title={"Copy Firing:" + firing.name}
+      title={"Use Template Firing:" + firing.name}
       actions={actions()}
       content={renderContent()}
     />
   );
 };
 
-export default FiringFavouriteCopyConfirmPage;
+export default FiringTemplateCopyConfirmPage;

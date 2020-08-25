@@ -1,18 +1,19 @@
 import { useSelector } from "react-redux";
 import { useFirebaseConnect } from "react-redux-firebase";
 
-const useFirebaseTemplateFirings = (glassType) => {
-  console.log("glasstype: " + glassType);
+const useFirebaseTemplateFirings = (glass_type) => {
+  console.log("glasstype: " + glass_type);
   useFirebaseConnect(
-    [{ path: `/templates/firings/${glassType}` }],
-    [glassType]
+    [{ path: `/templates/firings/${glass_type}` }],
+    [glass_type]
   );
 
   const firings = useSelector((state) => {
     return (
-      glassType &&
+      glass_type &&
       state.firebase.data.templates &&
-      state.firebase.data.templates.firings[glassType]
+      state.firebase.data.templates.firings &&
+      state.firebase.data.templates.firings[glass_type]
     );
   });
   return firings;

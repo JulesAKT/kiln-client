@@ -86,7 +86,7 @@ class FiringShowPage extends Component {
           <Header.Content>
             {this.state.isEditing ? (
               <TinyRoomForm
-                initialValues={{ name: firing.name }}
+                initialValues={{ ...firing }}
                 formName={`tinyroomform-${firing.id}`}
                 onSubmit={onSubmit}
               />
