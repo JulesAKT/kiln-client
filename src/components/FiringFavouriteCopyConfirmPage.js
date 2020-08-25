@@ -36,13 +36,14 @@ const FiringFavouriteCopyConfirmPage = (props) => {
     const new_id = uuid();
     my_firing.id = new_id;
     my_firing.project_id = project_id;
-    dispatch(createFiring(my_firing, false));
     my_segments.forEach((segment) => {
       const new_segment = { ...segment };
       new_segment.id = uuid();
       new_segment.firing_id = new_id;
       dispatch(createSegment(new_segment, false));
     });
+
+    dispatch(createFiring(my_firing, true));
   };
 
   const renderContent = () => (
