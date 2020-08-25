@@ -1,47 +1,590 @@
 {
+  "segments": {
+    "01b7deb-50bc-8437-1702-6bec65ac3b": {
+      "firing_id": "0ba808-4a5d-7728-1664-6a15a8a7637",
+      "hold": "30",
+      "id": "01b7deb-50bc-8437-1702-6bec65ac3b",
+      "name": "Segment 5",
+      "order": "5",
+      "rate": "111",
+      "temperature": "427"
+    },
+    "6732d56-f0ab-287b-e320-d1b37da076b": {
+      "firing_id": "0ba808-4a5d-7728-1664-6a15a8a7637",
+      "hold": "10",
+      "id": "6732d56-f0ab-287b-e320-d1b37da076b",
+      "name": "Segment 3",
+      "order": "3",
+      "rate": "167",
+      "temperature": "738"
+    },
+    "7fd3bea-7d5f-ebe3-168b-84821e02e3a": {
+      "firing_id": "0ba808-4a5d-7728-1664-6a15a8a7637",
+      "hold": "20",
+      "id": "7fd3bea-7d5f-ebe3-168b-84821e02e3a",
+      "name": "Segment 2",
+      "order": "2",
+      "rate": "139",
+      "temperature": "677"
+    },
+    "aec1bbb-ac0a-057-4e1f-bd60acba4ed": {
+      "firing_id": "0ba808-4a5d-7728-1664-6a15a8a7637",
+      "hold": "60",
+      "id": "aec1bbb-ac0a-057-4e1f-bd60acba4ed",
+      "name": "Segment 4",
+      "order": "4",
+      "rate": "9999",
+      "temperature": "510"
+    },
+    "ccbb0cd-ff23-456a-d75f-ed364de05d65": {
+      "firing_id": "0ba808-4a5d-7728-1664-6a15a8a7637",
+      "hold": "0",
+      "id": "ccbb0cd-ff23-456a-d75f-ed364de05d65",
+      "name": "Segment 6",
+      "order": "6",
+      "rate": "167",
+      "temperature": "38"
+    },
+    "e3bb31d-abb1-b75-dc27-f514db683137": {
+      "firing_id": "0ba808-4a5d-7728-1664-6a15a8a7637",
+      "hold": "30",
+      "id": "e3bb31d-abb1-b75-dc27-f514db683137",
+      "name": "Segment 1",
+      "order": "1",
+      "rate": "139",
+      "temperature": "566"
+    },
+    "1a2d055-52a-431-8eb-0004d34e4010": {
+      "firing_id": "0f47a60-3f7-a2fb-b7b-a5f0310f7e",
+      "hold": "60",
+      "id": "1a2d055-52a-431-8eb-0004d34e4010",
+      "name": "Segment 2",
+      "order": "2",
+      "rate": "111",
+      "temperature": "677"
+    },
+    "77c0336-2088-01a7-7ad-ce2de46f4f5": {
+      "firing_id": "0f47a60-3f7-a2fb-b7b-a5f0310f7e",
+      "hold": "10",
+      "id": "77c0336-2088-01a7-7ad-ce2de46f4f5",
+      "name": "Segment 3",
+      "order": "3",
+      "rate": "333",
+      "temperature": "804"
+    },
+    "b0530ee-bd24-8bac-f5ba-3e0b716ab5d2": {
+      "firing_id": "0f47a60-3f7-a2fb-b7b-a5f0310f7e",
+      "hold": "30",
+      "id": "b0530ee-bd24-8bac-f5ba-3e0b716ab5d2",
+      "name": "Segment 1",
+      "order": "1",
+      "rate": "222",
+      "temperature": "600"
+    },
+    "e670f-5f02-73ed-a867-a8dfb67016": {
+      "firing_id": "0f47a60-3f7-a2fb-b7b-a5f0310f7e",
+      "hold": "60",
+      "id": "e670f-5f02-73ed-a867-a8dfb67016",
+      "name": "Segment 4",
+      "order": "4",
+      "rate": "9999",
+      "temperature": "482"
+    },
+    "fdca8e-7efc-3e5a-f3c6-0ddfea8000db": {
+      "firing_id": "0f47a60-3f7-a2fb-b7b-a5f0310f7e",
+      "hold": "0",
+      "id": "fdca8e-7efc-3e5a-f3c6-0ddfea8000db",
+      "name": "Segment 5",
+      "order": "5",
+      "rate": "83",
+      "temperature": "371"
+    },
+    "0fc651-ba47-3483-3b02-da66ce8d4838": {
+      "firing_id": "26ed5c2-1cc-307e-340b-e288f1142b",
+      "hold": "10",
+      "id": "0fc651-ba47-3483-3b02-da66ce8d4838",
+      "name": "Anneal II",
+      "order": "5",
+      "rate": "83",
+      "temperature": "425"
+    },
+    "8ad8a-183c-00d-88f2-e0bcb41010f": {
+      "firing_id": "26ed5c2-1cc-307e-340b-e288f1142b",
+      "hold": "30",
+      "id": "8ad8a-183c-00d-88f2-e0bcb41010f",
+      "name": "Heating I",
+      "order": "1",
+      "rate": "167",
+      "temperature": "621"
+    },
+    "8dbb4-16be-4665-6e17-6c106647b50a": {
+      "firing_id": "26ed5c2-1cc-307e-340b-e288f1142b",
+      "hold": "20",
+      "id": "8dbb4-16be-4665-6e17-6c106647b50a",
+      "name": "Heating II",
+      "order": "2",
+      "rate": "111",
+      "temperature": "743"
+    },
+    "bd6f7e-3e76-e4c5-6df-2002a864d561": {
+      "firing_id": "26ed5c2-1cc-307e-340b-e288f1142b",
+      "hold": "60",
+      "id": "bd6f7e-3e76-e4c5-6df-2002a864d561",
+      "name": "Anneal I",
+      "order": "4",
+      "rate": "9999",
+      "temperature": "510"
+    },
+    "c7ee4d-1d8d-3d4-08f1-b617385b620": {
+      "firing_id": "26ed5c2-1cc-307e-340b-e288f1142b",
+      "hold": "10",
+      "id": "c7ee4d-1d8d-3d4-08f1-b617385b620",
+      "name": "Heat to Forming",
+      "order": "3",
+      "rate": "222",
+      "temperature": "800"
+    },
+    "d5f0b28-01d-4a38-27c2-c882e4a022": {
+      "firing_id": "26ed5c2-1cc-307e-340b-e288f1142b",
+      "hold": "0",
+      "id": "d5f0b28-01d-4a38-27c2-c882e4a022",
+      "name": "Cool Down",
+      "order": "6",
+      "rate": "167",
+      "temperature": "38"
+    },
+    "23aa78-3b64-dbee-ca81-32ee21145460": {
+      "firing_id": "2ea706f-44b4-2b3c-3acb-02dc7c2e0",
+      "hold": "0",
+      "id": "23aa78-3b64-dbee-ca81-32ee21145460",
+      "name": "Segment 3",
+      "order": "3",
+      "rate": "56",
+      "temperature": "371"
+    },
+    "5ee2cef-ce57-de72-a70e-0633417847d": {
+      "firing_id": "2ea706f-44b4-2b3c-3acb-02dc7c2e0",
+      "hold": "60",
+      "id": "5ee2cef-ce57-de72-a70e-0633417847d",
+      "name": "Segment 2",
+      "order": "2",
+      "rate": "9999",
+      "temperature": "482"
+    },
+    "5f5a23d-bf2-6f18-4f52-70742ddb032": {
+      "firing_id": "2ea706f-44b4-2b3c-3acb-02dc7c2e0",
+      "hold": "10",
+      "id": "5f5a23d-bf2-6f18-4f52-70742ddb032",
+      "name": "Segment 1",
+      "order": "1",
+      "rate": "167",
+      "temperature": "640"
+    },
+    "36f1d1-d2c6-dacc-f767-3a407d1458d": {
+      "firing_id": "305cc27-a752-bf4b-457e-c250edf067b",
+      "hold": "0",
+      "id": "36f1d1-d2c6-dacc-f767-3a407d1458d",
+      "name": "Cool Down",
+      "order": "6",
+      "rate": "167",
+      "temperature": "38"
+    },
+    "4b8b2f-5f4c-eda0-1c0d-d5cdd22bf5b": {
+      "firing_id": "305cc27-a752-bf4b-457e-c250edf067b",
+      "hold": "30",
+      "id": "4b8b2f-5f4c-eda0-1c0d-d5cdd22bf5b",
+      "name": "Heating I",
+      "order": "1",
+      "rate": "167",
+      "temperature": "621"
+    },
+    "510152-0a27-682b-df35-52cb0e454e": {
+      "firing_id": "305cc27-a752-bf4b-457e-c250edf067b",
+      "hold": "10",
+      "id": "510152-0a27-682b-df35-52cb0e454e",
+      "name": "Heat to Forming",
+      "order": "3",
+      "rate": "222",
+      "temperature": "773"
+    },
+    "751376c-f4ba-d4c4-ca43-104df642c2c5": {
+      "firing_id": "305cc27-a752-bf4b-457e-c250edf067b",
+      "hold": "20",
+      "id": "751376c-f4ba-d4c4-ca43-104df642c2c5",
+      "name": "Heating II",
+      "order": "2",
+      "rate": "111",
+      "temperature": "743"
+    },
+    "d235c2-ecfc-7f73-10-6ae1fad1252": {
+      "firing_id": "305cc27-a752-bf4b-457e-c250edf067b",
+      "hold": "10",
+      "id": "d235c2-ecfc-7f73-10-6ae1fad1252",
+      "name": "Anneal II",
+      "order": "5",
+      "rate": "83",
+      "temperature": "425"
+    },
+    "f861435-facc-ec13-4e17-c121557e58a0": {
+      "firing_id": "305cc27-a752-bf4b-457e-c250edf067b",
+      "hold": "60",
+      "id": "f861435-facc-ec13-4e17-c121557e58a0",
+      "name": "Anneal I",
+      "order": "4",
+      "rate": "9999",
+      "temperature": "510"
+    },
+    "0bd4d-776c-cee5-4c6d-07438216eed5": {
+      "firing_id": "6f05462-528d-f2cd-8b28-d7de012f8753",
+      "hold": "0",
+      "id": "0bd4d-776c-cee5-4c6d-07438216eed5",
+      "name": "Cool Down",
+      "order": "6",
+      "rate": "167",
+      "temperature": "38"
+    },
+    "143b216-4c25-3d7c-7484-ca86ddebb33c": {
+      "firing_id": "6f05462-528d-f2cd-8b28-d7de012f8753",
+      "hold": "15",
+      "id": "143b216-4c25-3d7c-7484-ca86ddebb33c",
+      "name": "Heating I",
+      "order": "1",
+      "rate": "83",
+      "temperature": "148"
+    },
+    "317665d-741e-253-bccf-338f26808a5": {
+      "firing_id": "6f05462-528d-f2cd-8b28-d7de012f8753",
+      "hold": "60",
+      "id": "317665d-741e-253-bccf-338f26808a5",
+      "name": "Anneal I",
+      "order": "4",
+      "rate": "222",
+      "temperature": "510"
+    },
+    "4f15d2-6d01-4d58-4ec1-e164c7e10b37": {
+      "firing_id": "6f05462-528d-f2cd-8b28-d7de012f8753",
+      "hold": "10",
+      "id": "4f15d2-6d01-4d58-4ec1-e164c7e10b37",
+      "name": "Anneal II",
+      "order": "5",
+      "rate": "83",
+      "temperature": "425"
+    },
+    "e58c65b-e73d-1eb8-d41f-cda30b63e502": {
+      "firing_id": "6f05462-528d-f2cd-8b28-d7de012f8753",
+      "hold": "10",
+      "id": "e58c65b-e73d-1eb8-d41f-cda30b63e502",
+      "name": "Heat to Slumping Stage",
+      "order": "3",
+      "rate": "83",
+      "temperature": "667"
+    },
+    "e81c375-1f47-461e-4248-0ee2e2aabe": {
+      "firing_id": "6f05462-528d-f2cd-8b28-d7de012f8753",
+      "hold": "20",
+      "id": "e81c375-1f47-461e-4248-0ee2e2aabe",
+      "name": "Heating 2",
+      "order": "2",
+      "rate": "167",
+      "temperature": "593"
+    },
+    "261885a-0c7b-1d2-a8ce-d60cb7733d": {
+      "firing_id": "871f22a-4a63-fafa-d11-4bdd1a0f157",
+      "hold": "0",
+      "id": "261885a-0c7b-1d2-a8ce-d60cb7733d",
+      "name": "Segment 6",
+      "order": "6",
+      "rate": "167",
+      "temperature": "38"
+    },
+    "3dde5-46e0-5b4-0b52-d03f223ad8ec": {
+      "firing_id": "871f22a-4a63-fafa-d11-4bdd1a0f157",
+      "hold": "30",
+      "id": "3dde5-46e0-5b4-0b52-d03f223ad8ec",
+      "name": "Segment 2",
+      "order": "2",
+      "rate": "139",
+      "temperature": "566"
+    },
+    "55acfd8-4356-d0df-5aa1-0a27bd8b6d8": {
+      "firing_id": "871f22a-4a63-fafa-d11-4bdd1a0f157",
+      "hold": "15",
+      "id": "55acfd8-4356-d0df-5aa1-0a27bd8b6d8",
+      "name": "Segment 1",
+      "order": "1",
+      "rate": "139",
+      "temperature": "121"
+    },
+    "becf8-64f-05d-cd5-fe8105705d1d": {
+      "firing_id": "871f22a-4a63-fafa-d11-4bdd1a0f157",
+      "hold": "60",
+      "id": "becf8-64f-05d-cd5-fe8105705d1d",
+      "name": "Segment 4",
+      "order": "4",
+      "rate": "222",
+      "temperature": "510"
+    },
+    "c360cd-6da6-88eb-d0b5-3147a73624b8": {
+      "firing_id": "871f22a-4a63-fafa-d11-4bdd1a0f157",
+      "hold": "10",
+      "id": "c360cd-6da6-88eb-d0b5-3147a73624b8",
+      "name": "Segment 3",
+      "order": "3",
+      "rate": "83",
+      "temperature": "663"
+    },
+    "dee418e-ba28-bb13-addf-67de08e25c6": {
+      "firing_id": "871f22a-4a63-fafa-d11-4bdd1a0f157",
+      "hold": "10",
+      "id": "dee418e-ba28-bb13-addf-67de08e25c6",
+      "name": "Segment 5",
+      "order": "5",
+      "rate": "111",
+      "temperature": "427"
+    },
+    "0068d0-c3b8-0e15-34b-e322afa05257": {
+      "firing_id": "c1643e-6511-5655-3a0-20456cbdff2f",
+      "hold": "10",
+      "id": "0068d0-c3b8-0e15-34b-e322afa05257",
+      "name": "Segment 2",
+      "order": "2",
+      "rate": "333",
+      "temperature": "760"
+    },
+    "014ae2-6cc3-204-1e87-555d14f3b775": {
+      "firing_id": "c1643e-6511-5655-3a0-20456cbdff2f",
+      "hold": "30",
+      "id": "014ae2-6cc3-204-1e87-555d14f3b775",
+      "name": "Segment 1",
+      "order": "1",
+      "rate": "222",
+      "temperature": "677"
+    },
+    "587a85a-d23e-540b-8fa7-aa347201373d": {
+      "firing_id": "c1643e-6511-5655-3a0-20456cbdff2f",
+      "hold": "120",
+      "id": "587a85a-d23e-540b-8fa7-aa347201373d",
+      "name": "Segment 3",
+      "order": "3",
+      "rate": "9999",
+      "temperature": "482"
+    },
+    "dc5a61c-e42b-68a7-60f3-ccad6d475f": {
+      "firing_id": "c1643e-6511-5655-3a0-20456cbdff2f",
+      "hold": "0",
+      "id": "dc5a61c-e42b-68a7-60f3-ccad6d475f",
+      "name": "Segment 4",
+      "order": "4",
+      "rate": "83",
+      "temperature": "371"
+    },
+    "18eefb-4fd-8a1d-05ca-b1153dc4b058": {
+      "firing_id": "c2decb-f4c6-06c0-e1aa-d74a874a0b8",
+      "hold": "0",
+      "id": "18eefb-4fd-8a1d-05ca-b1153dc4b058",
+      "name": "Cool Down",
+      "order": "6",
+      "rate": "167",
+      "temperature": "38"
+    },
+    "7a3d362-c07f-6cf3-d2e4-f4dbd5a1bc": {
+      "firing_id": "c2decb-f4c6-06c0-e1aa-d74a874a0b8",
+      "hold": "10",
+      "id": "7a3d362-c07f-6cf3-d2e4-f4dbd5a1bc",
+      "name": "Heat to Forming",
+      "order": "3",
+      "rate": "222",
+      "temperature": "743"
+    },
+    "8b0701-416c-e36c-e2ff-ebfe76d275": {
+      "firing_id": "c2decb-f4c6-06c0-e1aa-d74a874a0b8",
+      "hold": "60",
+      "id": "8b0701-416c-e36c-e2ff-ebfe76d275",
+      "name": "Anneal I",
+      "order": "4",
+      "rate": "9999",
+      "temperature": "510"
+    },
+    "a5380ca-d568-bab-f147-256baabcd76b": {
+      "firing_id": "c2decb-f4c6-06c0-e1aa-d74a874a0b8",
+      "hold": "30",
+      "id": "a5380ca-d568-bab-f147-256baabcd76b",
+      "name": "Heating I",
+      "order": "1",
+      "rate": "167",
+      "temperature": "621"
+    },
+    "d4f6f-f82f-fcce-568a-5ddd6ae1757b": {
+      "firing_id": "c2decb-f4c6-06c0-e1aa-d74a874a0b8",
+      "hold": "10",
+      "id": "d4f6f-f82f-fcce-568a-5ddd6ae1757b",
+      "name": "Anneal II",
+      "order": "5",
+      "rate": "83",
+      "temperature": "425"
+    },
+    "ea0231-ba14-c340-f716-c56beecbead3": {
+      "firing_id": "c2decb-f4c6-06c0-e1aa-d74a874a0b8",
+      "hold": "20",
+      "id": "ea0231-ba14-c340-f716-c56beecbead3",
+      "name": "Heating II",
+      "order": "2",
+      "rate": "111",
+      "temperature": "743"
+    },
+    "317cc38-ed5-0e06-c34-2ac21cf12aa4": {
+      "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
+      "hold": "60",
+      "id": "317cc38-ed5-0e06-c34-2ac21cf12aa4",
+      "name": "Segment 3",
+      "order": "3",
+      "rate": "9999",
+      "temperature": "482"
+    },
+    "50c04b1-ba0c-6ac3-804f-fa4317ebf": {
+      "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
+      "hold": "30",
+      "id": "50c04b1-ba0c-6ac3-804f-fa4317ebf",
+      "name": "Segment 1",
+      "order": "1",
+      "rate": "222",
+      "temperature": "677"
+    },
+    "aa8a81f-5c4-a62f-7a18-c443d52cb76": {
+      "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
+      "hold": "10",
+      "id": "aa8a81f-5c4-a62f-7a18-c443d52cb76",
+      "name": "Segment 2",
+      "order": "2",
+      "rate": "333",
+      "temperature": "804"
+    },
+    "ac507-4025-31bc-15ec-560131eab53e": {
+      "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
+      "hold": "0",
+      "id": "ac507-4025-31bc-15ec-560131eab53e",
+      "name": "Segment 4",
+      "order": "4",
+      "rate": "83",
+      "temperature": "371"
+    },
+    "0cec00-830b-18a0-3474-1660e8ae05e": {
+      "firing_id": "f8e1e4-1c42-bb2-0f8-250a735cda86",
+      "hold": "60",
+      "id": "0cec00-830b-18a0-3474-1660e8ae05e",
+      "name": "Segment 4",
+      "order": "4",
+      "rate": "9999",
+      "temperature": "510"
+    },
+    "47047dc-11f7-004-38a-6a218c2571a0": {
+      "firing_id": "f8e1e4-1c42-bb2-0f8-250a735cda86",
+      "hold": "30",
+      "id": "47047dc-11f7-004-38a-6a218c2571a0",
+      "name": "Segment 1",
+      "order": "1",
+      "rate": "139",
+      "temperature": "566"
+    },
+    "4f5702f-1bb-0510-17b5-5343e40e24f": {
+      "firing_id": "f8e1e4-1c42-bb2-0f8-250a735cda86",
+      "hold": "10",
+      "id": "4f5702f-1bb-0510-17b5-5343e40e24f",
+      "name": "Segment 5",
+      "order": "5",
+      "rate": "111",
+      "temperature": "427"
+    },
+    "85b2a0c-27a4-cdee-771e-663076a3b74f": {
+      "firing_id": "f8e1e4-1c42-bb2-0f8-250a735cda86",
+      "hold": "0",
+      "id": "85b2a0c-27a4-cdee-771e-663076a3b74f",
+      "name": "Segment 6",
+      "order": "6",
+      "rate": "167",
+      "temperature": "38"
+    },
+    "c674e3c-66-8eea-2e44-6866235fa27a": {
+      "firing_id": "f8e1e4-1c42-bb2-0f8-250a735cda86",
+      "hold": "10",
+      "id": "c674e3c-66-8eea-2e44-6866235fa27a",
+      "name": "Segment 3",
+      "order": "3",
+      "rate": "167",
+      "temperature": "796"
+    },
+    "cabcd5f-14cd-cc13-7dc6-2cab60185bf5": {
+      "firing_id": "f8e1e4-1c42-bb2-0f8-250a735cda86",
+      "hold": "20",
+      "id": "cabcd5f-14cd-cc13-7dc6-2cab60185bf5",
+      "name": "Segment 2",
+      "order": "2",
+      "rate": "139",
+      "temperature": "677"
+    }
+  },
   "firings": {
     "Bullseye": {
+      "0f47a60-3f7-a2fb-b7b-a5f0310f7e": {
+        "id": "0f47a60-3f7-a2fb-b7b-a5f0310f7e",
+        "name": "Bullseye Full Fuse Super Bubble Squeeze (2020)",
+        "project_id": "12600f-6072-707f-5e8-6314711a353f"
+      },
+      "2ea706f-44b4-2b3c-3acb-02dc7c2e0": {
+        "favourite": false,
+        "id": "2ea706f-44b4-2b3c-3acb-02dc7c2e0",
+        "name": "Bullseye Basic Slump (2020)",
+        "project_id": "12600f-6072-707f-5e8-6314711a353f"
+      },
+      "c1643e-6511-5655-3a0-20456cbdff2f": {
+        "id": "c1643e-6511-5655-3a0-20456cbdff2f",
+        "name": "Bullseye Basic Tack/Contour (2020)",
+        "project_id": "12600f-6072-707f-5e8-6314711a353f"
+      },
       "c55c8-fa41-1e74-2211-2348e5857a0": {
         "id": "c55c8-fa41-1e74-2211-2348e5857a0",
-        "name": "Bullseye Basic Full Fuse (2020)"
+        "name": "Bullseye Basic Full Fuse (2020)",
+        "project_id": "12600f-6072-707f-5e8-6314711a353f"
       }
     },
-    "segments": {
-      "317cc38-ed5-0e06-c34-2ac21cf12aa4": {
-        "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
-        "hold": "60",
-        "id": "317cc38-ed5-0e06-c34-2ac21cf12aa4",
-        "name": "Segment 3",
-        "order": "3",
-        "rate": "9999",
-        "temperature": "482"
+    "Spectrum": {
+      "0ba808-4a5d-7728-1664-6a15a8a7637": {
+        "id": "0ba808-4a5d-7728-1664-6a15a8a7637",
+        "name": "Oceanside Basic Tack Fuse (2020)",
+        "project_id": "8f14f6f-08b7-347-c84d-f081d11ee2bb"
       },
-      "50c04b1-ba0c-6ac3-804f-fa4317ebf": {
-        "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
-        "hold": "30",
-        "id": "50c04b1-ba0c-6ac3-804f-fa4317ebf",
-        "name": "Segment 1",
-        "order": "1",
-        "rate": "222",
-        "temperature": "677"
+      "26ed5c2-1cc-307e-340b-e288f1142b": {
+        "favourite": false,
+        "id": "26ed5c2-1cc-307e-340b-e288f1142b",
+        "name": "System 96 Basic Fuse (Pre Oceanside)",
+        "project_id": "8f14f6f-08b7-347-c84d-f081d11ee2bb"
       },
-      "aa8a81f-5c4-a62f-7a18-c443d52cb76": {
-        "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
-        "hold": "10",
-        "id": "aa8a81f-5c4-a62f-7a18-c443d52cb76",
-        "name": "Segment 2",
-        "order": "2",
-        "rate": "333",
-        "temperature": "804"
+      "305cc27-a752-bf4b-457e-c250edf067b": {
+        "favourite": false,
+        "id": "305cc27-a752-bf4b-457e-c250edf067b",
+        "name": "System 96 Contour Fuse (Pre Oceanside)",
+        "project_id": "8f14f6f-08b7-347-c84d-f081d11ee2bb"
       },
-      "ac507-4025-31bc-15ec-560131eab53e": {
-        "firing_id": "c55c8-fa41-1e74-2211-2348e5857a0",
-        "hold": "0",
-        "id": "ac507-4025-31bc-15ec-560131eab53e",
-        "name": "Segment 4",
-        "order": "4",
-        "rate": "83",
-        "temperature": "371"
+      "6f05462-528d-f2cd-8b28-d7de012f8753": {
+        "id": "6f05462-528d-f2cd-8b28-d7de012f8753",
+        "name": "System 96 Basic Slump (Pre Oceanside)",
+        "project_id": "8f14f6f-08b7-347-c84d-f081d11ee2bb"
+      },
+      "871f22a-4a63-fafa-d11-4bdd1a0f157": {
+        "id": "871f22a-4a63-fafa-d11-4bdd1a0f157",
+        "name": "Oceanside Basic Slump (2020)",
+        "project_id": "8f14f6f-08b7-347-c84d-f081d11ee2bb"
+      },
+      "c2decb-f4c6-06c0-e1aa-d74a874a0b8": {
+        "favourite": false,
+        "id": "c2decb-f4c6-06c0-e1aa-d74a874a0b8",
+        "name": "System 96 Basic Tack Fuse (Pre Oceanside)",
+        "project_id": "8f14f6f-08b7-347-c84d-f081d11ee2bb"
+      },
+      "f8e1e4-1c42-bb2-0f8-250a735cda86": {
+        "id": "f8e1e4-1c42-bb2-0f8-250a735cda86",
+        "name": "Oceanside Basic Full Fuse (2020)",
+        "project_id": "8f14f6f-08b7-347-c84d-f081d11ee2bb"
       }
     }
   }
