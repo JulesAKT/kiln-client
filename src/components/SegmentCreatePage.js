@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { createSegment } from "../actions";
-import { Container, Header } from "semantic-ui-react";
+import { Container, Segment, Header } from "semantic-ui-react";
 import SegmentForm from "./SegmentForm";
 
 const SegmentCreatePage = (props) => {
@@ -16,7 +16,7 @@ const SegmentCreatePage = (props) => {
       <Header as="h2" attached="top">
         Create Segment
       </Header>
-      <Container attached>
+      <Segment attached>
         <SegmentForm
           onSubmit={handleSubmit}
           initialValues={{
@@ -24,7 +24,7 @@ const SegmentCreatePage = (props) => {
             order: props.match.params.order,
           }}
         />
-      </Container>
+      </Segment>
     </>
   );
 };

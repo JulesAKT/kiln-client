@@ -15,9 +15,6 @@ const ProjectListPage = ({ navigation }) => {
   const projects = useFirebaseProjects();
 
   const kilns = useFirebaseKilns();
-  if (!projects) {
-    return <div>Loading...</div>;
-  }
 
   const renderDetailButton = () => {
     return detail ? (
@@ -35,7 +32,7 @@ const ProjectListPage = ({ navigation }) => {
     );
   };
 
-  const project_array = Object.values(projects);
+  const project_array = projects && Object.values(projects);
 
   const columns = [
     {
@@ -93,27 +90,30 @@ const ProjectListPage = ({ navigation }) => {
     <div>
       {renderDetailButton()}
       {detail ? (
-        <DataTable
-          title="Projects"
-          columns={columns}
-          data={project_array}
-          defaultSortField="name"
-          onRowClicked={(row) => {
-            history.push(`/projects/${row.id}`);
-          }}
-        />
+        project_array && (
+          <DataTable
+            title="Projects"
+            columns={columns}
+            data={project_array}
+            defaultSortField="name"
+            onRowClicked={(row) => {
+              history.push(`/projects/${row.id}`);
+            }}
+          />
+        )
       ) : (
         <Card.Group>
-          {project_array.map(
-            (item) =>
-              item && (
-                <ProjectCard
-                  {...item}
-                  key={item.id}
-                  kilnName={kilns && kilns[item.kiln].name}
-                />
-              )
-          )}
+          {project_array &&
+            project_array.map(
+              (item) =>
+                item && (
+                  <ProjectCard
+                    {...item}
+                    key={item.id}
+                    kilnName={kilns && kilns[item.kiln].name}
+                  />
+                )
+            )}
 
           <Card as={Link} to={`/new_project`}>
             <Card.Header>Add New Project</Card.Header>

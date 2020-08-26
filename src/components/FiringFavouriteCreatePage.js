@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import FiringCard from "./FiringCard";
 import useFirebaseFirings from "../hooks/useFirebaseFirings";
 import useFirebaseProject from "../hooks/useFirebaseProject";
-import _ from "lodash";
 import useFirebaseTemplateFirings from "../hooks/useFirebaseTemplateFirings";
+import _ from "lodash";
 
 const FiringFavouriteCreatePage = (props) => {
   const project_id = props.match.params.id;
