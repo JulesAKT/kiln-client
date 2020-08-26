@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { createSegment } from "../actions";
-import { Container, Segment, Header } from "semantic-ui-react";
+import { Segment, Header } from "semantic-ui-react";
 import SegmentForm from "./SegmentForm";
 
 const SegmentCreatePage = (props) => {
