@@ -5,7 +5,7 @@ import { DateTimePicker } from "react-widgets";
 import {
   Form,
   //Input as SemanticInput,
-  TextArea,
+  TextArea as SemanticTextArea,
   Rating,
 } from "semantic-ui-react";
 import Moment from "moment";
@@ -97,12 +97,12 @@ export const tinyRenderInput = ({ input, type, label, meta }) => {
   );
 };
 
-export const renderTextarea = ({ input, type, label, meta }) => {
+export const TextArea = ({ input, type, label, meta }) => {
   const className = `field ${meta.error && meta.touched ? "error" : ""}`;
   return (
     <div className={className}>
       <label>{label}</label>
-      <TextArea {...input} type={type} />
+      <SemanticTextArea {...input} type={type} />
       {renderError(meta)}
     </div>
   );

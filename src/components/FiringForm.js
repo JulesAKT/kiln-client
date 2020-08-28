@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Card, Button } from "semantic-ui-react";
+import { Card, Button, Form } from "semantic-ui-react";
 
 import { Field, reduxForm } from "redux-form";
-import { Input } from "../helpers/formHelpers";
+import { Input, TextArea } from "../helpers/formHelpers";
 
 class FiringForm extends Component {
   onSubmit = (formValues) => {
@@ -11,17 +11,17 @@ class FiringForm extends Component {
 
   render() {
     return (
-      //  <Form error onSubmit={this.props.handleSubmit(this.onSubmit)}>
-      //        <Card fluid color="red">
-      //          <Card.Header>
-      <div>
+      <Form error onSubmit={this.props.handleSubmit(this.onSubmit)}>
         <Card>
           <Field name="name" component={Input} label="Firing Name" />
         </Card>
         <Card>
-          <Button onClick={this.props.handleSubmit}>Update</Button>
+          <Field name="notes" component={TextArea} label="Notes" />
         </Card>
-      </div>
+        <Card>
+          <Button type="submit">Update</Button>
+        </Card>
+      </Form>
     );
   }
 }

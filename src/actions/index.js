@@ -368,14 +368,18 @@ export const editFiring = (id, formProps, allowNavigate = true) => async (
   getState
 ) => {
   dispatch({ type: EDIT_FIRING_REQUEST });
+  let newProps = { ...formProps };
   formProps.id = id;
+  if (formProps.notes === "") {
+    delete newProps.notes;
+  }
   db.ref(userPath() + `/firings/${id}`).set({
-    ...formProps,
+    ...newProps,
   });
 
   dispatch({
     type: EDIT_FIRING_SUCCESS,
-    payload: { ...formProps },
+    payload: { ...newProps },
   });
   if (allowNavigate) {
     history.goBack();

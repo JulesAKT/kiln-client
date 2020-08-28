@@ -91,7 +91,10 @@ class FiringShowPage extends Component {
                 onSubmit={onSubmit}
               />
             ) : (
-              <>{firing.name}</>
+              <>
+                {firing.name}
+                {firing.notes && <div>Notes: {firing.notes}</div>}
+              </>
             )}
           </Header.Content>
 

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
 import { Field, reduxForm } from "redux-form";
-import { tinyRenderInput } from "../helpers/formHelpers";
+import { Form, Button } from "semantic-ui-react";
+import { tinyRenderInput, TextArea } from "../helpers/formHelpers";
 
 class FiringForm extends Component {
   onSubmit = (formValues) => {
@@ -10,9 +11,11 @@ class FiringForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.props.handleSubmit(this.onSubmit)}>
+      <Form error onSubmit={this.props.handleSubmit(this.onSubmit)}>
         <Field name="name" component={tinyRenderInput} label="Firing Name" />
-      </form>
+        <Field name="notes" component={TextArea} label="Notes" />
+        <Button type="submit">Update</Button>
+      </Form>
     );
   }
 }
