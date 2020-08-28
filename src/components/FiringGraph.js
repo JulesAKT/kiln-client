@@ -19,28 +19,34 @@ const FiringGraph = ({ sortedSegments }) => {
     const timeToTemp =
       Math.abs(parseFloat(segment.temperature) - currentTemperature) /
       (parseFloat(segment.rate) / 60);
-    /*console.log(
+    /* console.log(
       `${segment.name}:${timeToTemp} mins - Start Temp: ${currentTemperature}`
     ); */
     elapsedMins = elapsedMins + timeToTemp;
     data = data.concat([
-      { time: elapsedMins, temperature: parseFloat(segment.temperature) },
+      { time: elapsedMins / 60, temperature: parseFloat(segment.temperature) },
     ]);
     // Then attach the hold
     if (segment.Hold !== 0) {
       elapsedMins = elapsedMins + parseFloat(segment.hold);
       data = data.concat([
-        { time: elapsedMins, temperature: parseFloat(segment.temperature) },
+        {
+          time: elapsedMins / 60,
+          temperature: parseFloat(segment.temperature),
+        },
       ]);
     }
+    // console.log("Elapsed Time: " + elapsedMins);
     currentTemperature = segment.temperature;
   });
 
+  //console.log(data);
   return (
     <VictoryChart theme={VictoryTheme.material}>
       <VictoryAxis
         dependantAxis
-        tickFormat={(x) => Math.floor(x / 60)}
+        //        tickFormat={(x) => Math.floor(x / 60)}
+        //        tickValues={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((x) => x * 60)}
         label="Hours"
         style={{ axisLabel: { padding: 32 } }}
         theme={VictoryTheme.material}

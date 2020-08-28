@@ -369,8 +369,8 @@ export const editFiring = (id, formProps, allowNavigate = true) => async (
 ) => {
   dispatch({ type: EDIT_FIRING_REQUEST });
   let newProps = { ...formProps };
-  formProps.id = id;
-  if (formProps.notes === "") {
+  newProps.id = id;
+  if (newProps.notes === "") {
     delete newProps.notes;
   }
   db.ref(userPath() + `/firings/${id}`).set({

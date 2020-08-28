@@ -3,7 +3,13 @@ import { Card, Button, Form } from "semantic-ui-react";
 
 import { Field, reduxForm } from "redux-form";
 import useFirebaseKilns from "../hooks/useFirebaseKilns";
-import { Input, FileInput, Select, renderStars } from "../helpers/formHelpers";
+import {
+  Input,
+  FileInput,
+  Select,
+  renderStars,
+  TextArea,
+} from "../helpers/formHelpers";
 
 const ProjectForm = (props) => {
   const kilns = useFirebaseKilns();
@@ -68,6 +74,7 @@ const ProjectForm = (props) => {
             items={glasstypes}
           />
           <Field name="photo" component={FileInput} type="file" label="Photo" />
+          <Field name="notes" component={TextArea} label="Notes" />
         </Card>
         <Card>
           <Button type="submit">Update</Button>

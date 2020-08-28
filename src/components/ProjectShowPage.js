@@ -48,6 +48,7 @@ const ProjectShowPage = (props) => {
         Rating:
         <Rating maxRating={5} rating={project.stars} disabled={true} />
       </div>
+      {project.notes && <div>Notes: {project.notes}</div>}
       <div>
         <Link to={`/projects/edit/${id}`}>
           <Button>Edit</Button>
