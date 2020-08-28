@@ -5,9 +5,9 @@ import { Card, Icon, Button, Image, Rating } from "semantic-ui-react";
 import DataTable from "react-data-table-component";
 
 import useFirebaseKilns from "../hooks/useFirebaseKilns";
+import useFirebaseProjects from "../hooks/useFirebaseProjects";
 import history from "../history";
 import ProjectCard from "./ProjectCard";
-import useFirebaseProjects from "../hooks/useFirebaseProjects";
 
 const ProjectListPage = ({ navigation }) => {
   const [detail, setDetail] = useState(false);

@@ -1,32 +1,21 @@
 import React from "react";
 import { List, Rating, Button, Divider, Image, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import { useFirebaseConnect } from "react-redux-firebase";
-import { useSelector } from "react-redux";
 import _ from "lodash";
 import useFirebaseKiln from "../hooks/useFirebaseKiln";
 import useFirebaseProject from "../hooks/useFirebaseProject";
+import useFirebaseFirings from "../hooks/useFirebaseFirings";
 import { glassImage } from "../helpers/logoHelpers";
 
 import FiringCard from "./FiringCard";
 
 const ProjectShowPage = (props) => {
   const id = props.match.params.id;
-  const uid = useSelector((state) => state.firebase.auth.uid);
-
-  useFirebaseConnect([{ path: `/userdata/${uid}/firings` }]);
 
   const project = useFirebaseProject(id);
   const kiln = useFirebaseKiln(project && project.kiln);
-  const firings = useSelector(
-    ({ firebase: { data } }) =>
-      data.userdata &&
-      data.userdata[uid] &&
-      data.userdata[uid].firings &&
-      _.filter(data.userdata[uid].firings, (firing) => {
-        return firing && firing.project_id === id;
-      })
-  );
+  const all_firings = useFirebaseFirings();
+  const firings = _.filter(all_firings, (firing) => firing.project_id === id);
 
   let firings_array;
   if (firings) {
@@ -40,6 +29,7 @@ const ProjectShowPage = (props) => {
 
   return (
     <div>
+      <Image avatar src={project.photo} size="medium" />
       <div>
         Kiln:<span>{kiln.name}</span>
         <span>

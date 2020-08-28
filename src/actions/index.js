@@ -164,7 +164,7 @@ export const editProject = (id, formProps, ignoreNavigate = false) => async (
   console.log(formProps);
   dispatch({ type: EDIT_PROJECT_REQUEST, payload: { ...formProps } });
   formProps.id = id;
-  if (formProps.photo) {
+  if (formProps.photo && typeof formProps.photo !== "string") {
     const uploadName = userPath() + `/${formProps.id}.jpg`;
     const uploadTask = cloudstore.ref(uploadName).put(formProps.photo[0]);
     uploadTask.on(
