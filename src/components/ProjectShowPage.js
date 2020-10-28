@@ -26,10 +26,9 @@ const ProjectShowPage = (props) => {
   if (!kiln || !project) {
     return <div>Loading...</div>;
   }
-
   return (
     <div>
-      <Image avatar src={project.photo} size="medium" />
+      {project.photo && <Image avatar src={project.photo} size="medium" />}
       <div>
         Kiln:<span>{kiln.name}</span>
         <span>
@@ -58,6 +57,12 @@ const ProjectShowPage = (props) => {
         </Link>
       </div>
       <Divider />
+      {Array.isArray(project.photos) &&
+        project.photos.map((photo) => (
+          <div>
+            <Image src={photo.photo} />
+          </div>
+        ))}
       <List>
         <List.Header>Firings</List.Header>
         {firings_array &&

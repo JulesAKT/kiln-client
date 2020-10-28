@@ -45,7 +45,7 @@ const FiringGraph = ({ sortedSegments }) => {
     <VictoryChart theme={VictoryTheme.material}>
       <VictoryAxis
         dependantAxis
-        //        tickFormat={(x) => Math.floor(x / 60)}
+        tickFormat={(x) => Math.floor(x)}
         //        tickValues={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((x) => x * 60)}
         label="Hours"
         style={{ axisLabel: { padding: 32 } }}

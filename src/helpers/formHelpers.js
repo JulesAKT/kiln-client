@@ -1,6 +1,8 @@
 import React from "react";
 import DatePicker, { registerLocale, setDefaultLocale } from "react-datepicker";
+
 import { DateTimePicker } from "react-widgets";
+import { Image, List } from "semantic-ui-react";
 
 import {
   Form,
@@ -32,16 +34,139 @@ export const renderError = ({ error, warning, touched }) => {
   );
 };
 
-export const FileInput = ({ input, label, meta }) => {
+export const renderFieldArray = ({ fields, innerComponent }) => (
+  <List>
+    {fields.map(innerComponent)}
+    <button type="button" onClick={() => fields.push({})}>
+      Add Image
+    </button>
+  </List>
+);
+/*
+export const ImageInput = ({ input, label, meta }) => {
+  const [imageURL, setImageURL] = useState(
+    input.value ? input.value : require("../assets/icon.png")
+  );
   const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+  const photo_url = input.value;
+  //console.log(photo_url);
   delete input.value; // Can't render a file input box with a non-null default value
   const handleChange = (event) => {
     event.preventDefault();
     let imageFile = event.target.files[0];
+    console.log("handlingChange");
     console.log(imageFile);
     if (imageFile) {
       const localImageUrl = URL.createObjectURL(imageFile);
+      console.log(`setting to: ${localImageUrl}`);
+      setImageURL(localImageUrl);
+
       console.log(localImageUrl);
+      const imageObject = new window.Image();
+
+      imageObject.onload = () => {
+        imageFile.width = imageObject.naturalWidth;
+        imageFile.height = imageObject.naturalHeight;
+        input.onChange(imageFile);
+        //URL.revokeObjectURL(imageFile);
+      };
+      imageObject.src = localImageUrl;
+    }
+  };
+  console.log(imageURL);
+  return (
+    <div className={className}>
+      <label>{label}</label>
+      <Image src={imageURL} size="small" />
+      <input
+        type="file"
+        onChange={(event) => {
+          console.log("OnChange!");
+          handleChange(event, input);
+        }}
+        {...input}
+      />
+      {renderError(meta)}
+    </div>
+  );
+};
+*/
+
+export const ImageInput = ({ input, label, meta }) => {
+  //const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+  let photo_url = input.value;
+  //console.log(typeof input.value);
+  //console.log(input.value);
+  if (typeof input.value === "object") {
+    if (input.value.length) {
+      //console.log(input.value);
+      photo_url = URL.createObjectURL(input.value[0]);
+      URL.revokeObjectURL(input.value[0]);
+    } else {
+      photo_url = require("../assets/icon.png");
+    }
+  }
+  //const photo_url = input.value;
+
+  //console.log(photo_url);
+  delete input.value; // Can't render a file input box with a non-null default value
+  const handleChange = (event) => {
+    //console.log("Handling change");
+    event.preventDefault();
+    let imageFile = event.target.files[0];
+    //console.log(imageFile);
+    if (imageFile) {
+      const localImageUrl = URL.createObjectURL(imageFile);
+      //console.log(localImageUrl);
+      const imageObject = new window.Image();
+
+      imageObject.onload = () => {
+        imageFile.width = imageObject.naturalWidth;
+        imageFile.height = imageObject.naturalHeight;
+        input.onChange(imageFile);
+        URL.revokeObjectURL(imageFile);
+      };
+      imageObject.src = localImageUrl;
+    }
+  };
+  return (
+    <>
+      <List.Icon>
+        <div>
+          <label id={input.name}>
+            <Image
+              src={photo_url}
+              size="small"
+              label={{ floating: true, icon: "edit", circular: true }}
+            ></Image>
+            <input
+              type="file"
+              onChange={(event) => handleChange(event, input)}
+              {...input}
+              accept=".jpg,.jpeg,.gif,.png,.heic"
+              id={input.name}
+              style={{ opacity: 0 }}
+            />
+          </label>
+        </div>
+        {renderError(meta)}
+      </List.Icon>
+    </>
+  );
+};
+
+export const FileInput = ({ input, label, meta }) => {
+  const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+  const photo_url = input.value;
+  //console.log(photo_url);
+  delete input.value; // Can't render a file input box with a non-null default value
+  const handleChange = (event) => {
+    event.preventDefault();
+    let imageFile = event.target.files[0];
+    //console.log(imageFile);
+    if (imageFile) {
+      const localImageUrl = URL.createObjectURL(imageFile);
+      //console.log(localImageUrl);
       const imageObject = new window.Image();
 
       imageObject.onload = () => {
@@ -56,6 +181,7 @@ export const FileInput = ({ input, label, meta }) => {
   return (
     <div className={className}>
       <label>{label}</label>
+      <Image src={photo_url} size="small" />
       <input
         type="file"
         onChange={(event) => handleChange(event, input)}
@@ -137,7 +263,7 @@ export const renderDateTimePicker = ({
   meta,
 }) => {
   const className = `field ${meta.error && meta.touched ? "error" : ""}`;
-  console.log(value);
+  //console.log(value);
   return (
     <div className={className}>
       <label>{label}</label>
@@ -191,6 +317,7 @@ export const renderAssetTypeSelect = ({ input, type, label, meta }) => {
 
 export const Select = ({ input, label, meta, rooms, items }) => {
   const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+  //console.log(items);
   return (
     <div className={className}>
       <label>{label}</label>

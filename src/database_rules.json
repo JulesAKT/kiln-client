@@ -1,29 +1,29 @@
 {
-    "rules": {
-      ".read": false,
-      ".write": false,
-        "userdata": {
-          "$user_id": {
-            ".read": "$user_id === auth.uid",
-            ".write": "$user_id === auth.uid",
-            "projects" : {
-              ".indexOn": "kiln"
-            },
-            "firings" : {
-              ".indexOn" : ["project_id","favourite"]
-            },
-              "segments" : {
-              ".indexOn" : "firing_id"
-            }
+  "rules": {
+    ".read": false,
+    ".write": false,
+      "userdata": {
+        "$user_id": {
+          ".read": "$user_id === auth.uid",
+          ".write": "$user_id === auth.uid",
+          "projects" : {
+            ".indexOn": "kiln"
+          },
+          "firings" : {
+            ".indexOn" : ["project_id","favourite"]
+          },
+            "segments" : {
+            ".indexOn" : "firing_id"
           }
-        },
-          "users": {        "$user_id": {
-            ".read": "$user_id === auth.uid",
-            ".write": "$user_id === auth.uid"
-          }
-        },
-          "templates": { ".read": true,
-            ".write": "false"}
-      
-    }
+        }
+      },
+        "users": {        "$user_id": {
+          ".read": "$user_id === auth.uid",
+          ".write": "$user_id === auth.uid"
+        }
+      },
+        "templates": { ".read": true,
+          ".write": "false"}
+    
   }
+}

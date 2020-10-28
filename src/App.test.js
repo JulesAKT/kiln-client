@@ -4,16 +4,16 @@ import App from "./App";
 import Root from "./root";
 
 import ReactDOM from "react-dom";
+import { act } from "react-dom/test-utils";
+import { waitForElement, render } from "@testing-library/react";
 
-it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(
+it("renders without crashing", async () => {
+  const { getByText } = render(
     <Root>
       <App />
-    </Root>,
-    div
+    </Root>
   );
-  expect(div.innerHTML).toContain("ui container");
 
-  ReactDOM.unmountComponentAtNode(div);
+  await waitForElement((content) => getByText(/Projects/));
+  expect(getByText(/Projects/));
 });

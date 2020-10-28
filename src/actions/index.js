@@ -73,46 +73,57 @@ const UNKNOWN_ERROR = "Unknown Error";
 
 export const createProject = (formProps) => async (dispatch, getState) => {
   //console.log(token);
+  console.log(formProps);
   dispatch({ type: CREATE_PROJECT_REQUEST });
   formProps.id = uuid();
-  if (formProps.photo) {
-    const uploadName = userPath() + `/${formProps.id}.jpg`;
-    const uploadTask = cloudstore.ref(uploadName).put(formProps.photo[0]);
-    uploadTask.on(
-      "state_changed",
-      (snapshot) => {},
-      (error) => {
-        console.log(error);
-      },
-      () => {
-        cloudstore
-          .ref(uploadName)
-          .getDownloadURL()
-          .then((url) => {
-            console.log("Uploaded to: " + url);
-            formProps.photo = url;
-            db.ref(userPath() + `/projects/${formProps.id}`).set({
-              ...formProps,
-            });
 
-            dispatch({
-              type: CREATE_PROJECT_SUCCESS,
-              payload: { ...formProps },
-            });
-            history.goBack();
-          });
-      }
-    );
-  } else {
+  const handleUpload = (photo, index) => {
+    console.log("handleUpload - " + index);
+    if (typeof photo.photo === "string") {
+      console.log("Already uploaded - aborting");
+      return null;
+    }
+    return new Promise((resolve, reject) => {
+      console.log("Index: " + index);
+      console.log(photo);
+
+      const uploadName = userPath() + `/${formProps.id}-${index}.jpg`;
+      cloudstore
+        .ref(uploadName)
+        .put(photo.photo[0])
+        .then(
+          () =>
+            cloudstore
+              .ref(uploadName)
+              .getDownloadURL()
+              .then((url) => {
+                console.log(index + " " + url);
+                formProps.photos[index].photo = url;
+                resolve("Uploaded");
+              })
+          //            .catch(reject("Upload Failed"))
+        );
+    });
+  };
+
+  Promise.all(formProps.photos.map(handleUpload)).then((url, index) => {
+    console.log("setting stuff");
+    db.ref(userPath() + `/projects/${formProps.id}`).set({
+      ...formProps,
+    });
+    dispatch({
+      type: CREATE_PROJECT_SUCCESS,
+      payload: { ...formProps },
+    });
+    history.goBack();
+  });
+
+  /*   else {
     db.ref(userPath() + `/projects/${formProps.id}`).set({
       ...formProps,
     });
   }
-  dispatch({
-    type: CREATE_PROJECT_SUCCESS,
-    payload: { ...formProps },
-  });
-  history.goBack();
+*/
 };
 
 export const fetchProjects = () => async (dispatch, getState) => {
@@ -157,43 +168,45 @@ export const fetchProject = (id) => async (dispatch, getState) => {
   });
 };
 
-export const editProject = (id, formProps, ignoreNavigate = false) => async (
+export const editProject = (id, formProps, ignoreNavigate = false) => (
   dispatch,
   getState
 ) => {
   console.log(formProps);
   dispatch({ type: EDIT_PROJECT_REQUEST, payload: { ...formProps } });
   formProps.id = id;
-  if (formProps.photo && typeof formProps.photo !== "string") {
-    const uploadName = userPath() + `/${formProps.id}.jpg`;
-    const uploadTask = cloudstore.ref(uploadName).put(formProps.photo[0]);
-    uploadTask.on(
-      "state_changed",
-      (snapshot) => {},
-      (error) => {
-        console.log(error);
-      },
-      () => {
-        cloudstore
-          .ref(uploadName)
-          .getDownloadURL()
-          .then((url) => {
-            console.log("Uploaded to: " + url);
-            formProps.photo = url;
-            db.ref(userPath() + `/projects/${formProps.id}`).set({
-              ...formProps,
-            });
+  const handleUpload = (photo, index) => {
+    console.log("handleUpload - " + index);
+    if (typeof photo.photo === "string") {
+      console.log("Already uploaded - aborting");
+      return null;
+    }
+    return new Promise((resolve, reject) => {
+      console.log("Index: " + index);
+      console.log(photo);
 
-            dispatch({
-              type: CREATE_PROJECT_SUCCESS,
-              payload: { ...formProps },
-            });
-            history.goBack();
-          });
-      }
-    );
-  } else {
-    db.ref(userPath() + `/projects/${id}`).set({
+      const uploadName = userPath() + `/${formProps.id}-${index}.jpg`;
+      cloudstore
+        .ref(uploadName)
+        .put(photo.photo[0])
+        .then(
+          () =>
+            cloudstore
+              .ref(uploadName)
+              .getDownloadURL()
+              .then((url) => {
+                console.log(index + " " + url);
+                formProps.photos[index].photo = url;
+                resolve("Uploaded");
+              })
+          //            .catch(reject("Upload Failed"))
+        );
+    });
+  };
+
+  Promise.all(formProps.photos.map(handleUpload)).then((url, index) => {
+    console.log("setting stuff");
+    db.ref(userPath() + `/projects/${formProps.id}`).set({
       ...formProps,
     });
 
@@ -201,10 +214,11 @@ export const editProject = (id, formProps, ignoreNavigate = false) => async (
       type: EDIT_PROJECT_SUCCESS,
       payload: { ...formProps },
     });
-  }
-  if (!ignoreNavigate) {
-    history.goBack();
-  }
+
+    if (!ignoreNavigate) {
+      history.goBack();
+    }
+  });
 };
 
 export const deleteProject = (id) => async (dispatch, getState) => {

@@ -6,6 +6,15 @@ import { Link } from "react-router-dom";
 import { glassImage } from "../helpers/logoHelpers";
 
 const ProjectCard = (props) => {
+  const findSuitablePhoto = (props) => {
+    if (Array.isArray(props.photos)) {
+      console.log("Handling New-style Photos");
+      return props.photos[0].photo && <Image src={props.photos[0].photo} />;
+    } else {
+      return props.photo && <Image src={props.photo} />;
+    }
+  };
+
   return (
     <Card as={Link} to={`/projects/${props.id}`}>
       <Card.Header as="h3">{props.name}</Card.Header>
@@ -24,7 +33,7 @@ const ProjectCard = (props) => {
             style={{ float: "right", marginTop: "8px" }}
           />
         </div>
-        <div>{props.photo && <Image src={props.photo} />}</div>
+        <div>{findSuitablePhoto(props)}</div>
       </Card.Meta>
 
       <div className="bottom aligned">
