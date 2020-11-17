@@ -105,9 +105,19 @@ export const createProject = (formProps) => async (dispatch, getState) => {
         );
     });
   };
-
-  Promise.all(formProps.photos.map(handleUpload)).then((url, index) => {
-    console.log("setting stuff");
+  if (formProps.photos) {
+    Promise.all(formProps.photos.map(handleUpload)).then((url, index) => {
+      console.log("setting stuff");
+      db.ref(userPath() + `/projects/${formProps.id}`).set({
+        ...formProps,
+      });
+      dispatch({
+        type: CREATE_PROJECT_SUCCESS,
+        payload: { ...formProps },
+      });
+      history.goBack();
+    });
+  } else {
     db.ref(userPath() + `/projects/${formProps.id}`).set({
       ...formProps,
     });
@@ -116,14 +126,7 @@ export const createProject = (formProps) => async (dispatch, getState) => {
       payload: { ...formProps },
     });
     history.goBack();
-  });
-
-  /*   else {
-    db.ref(userPath() + `/projects/${formProps.id}`).set({
-      ...formProps,
-    });
   }
-*/
 };
 
 export const fetchProjects = () => async (dispatch, getState) => {
@@ -203,9 +206,23 @@ export const editProject = (id, formProps, ignoreNavigate = false) => (
         );
     });
   };
+  if (formProps.photos) {
+    Promise.all(formProps.photos.map(handleUpload)).then((url, index) => {
+      console.log("setting stuff");
+      db.ref(userPath() + `/projects/${formProps.id}`).set({
+        ...formProps,
+      });
 
-  Promise.all(formProps.photos.map(handleUpload)).then((url, index) => {
-    console.log("setting stuff");
+      dispatch({
+        type: EDIT_PROJECT_SUCCESS,
+        payload: { ...formProps },
+      });
+
+      if (!ignoreNavigate) {
+        history.goBack();
+      }
+    });
+  } else {
     db.ref(userPath() + `/projects/${formProps.id}`).set({
       ...formProps,
     });
@@ -218,7 +235,7 @@ export const editProject = (id, formProps, ignoreNavigate = false) => (
     if (!ignoreNavigate) {
       history.goBack();
     }
-  });
+  }
 };
 
 export const deleteProject = (id) => async (dispatch, getState) => {
