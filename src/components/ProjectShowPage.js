@@ -15,7 +15,10 @@ const ProjectShowPage = (props) => {
   const project = useFirebaseProject(id);
   const kiln = useFirebaseKiln(project && project.kiln);
   const all_firings = useFirebaseFirings();
-  const firings = _.filter(all_firings, (firing) => firing.project_id === id);
+  const firings = _.filter(
+    all_firings,
+    (firing) => (firing && firing.project_id) === id
+  );
 
   let firings_array;
   if (firings) {

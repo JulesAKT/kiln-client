@@ -28,6 +28,8 @@ import KilnEditPage from "./components/KilnEditPage";
 import KilnDeletePage from "./components/KilnDeletePage";
 import SegmentCreatePage from "./components/SegmentCreatePage";
 import SegmentEditPage from "./components/SegmentEditPage";
+import PrivacyPage from "./components/PrivacyPage";
+import SupportPage from "./components/SupportPage";
 import SegmentDeletePage from "./components/SegmentDeletePage";
 import alertActions from "./actions/alertActions";
 import { AuthProvider } from "./helpers/Auth";
@@ -56,6 +58,8 @@ class App extends React.Component {
                   <Route path="/login" exact component={LoginPage} />
                   <Route path="/signup" exact component={SignupPage} />
                   <Route path="/signedup" exact component={SignedupPage} />
+                  <Route path="/privacy" exact component={PrivacyPage} />
+                  <Route path="/support" exact component={SupportPage} />
                   <PrivateRoute path="/" exact component={ProjectListPage} />
                   <PrivateRoute
                     path="/projects/:id"

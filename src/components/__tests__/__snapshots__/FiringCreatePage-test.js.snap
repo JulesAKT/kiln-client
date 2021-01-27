@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FiringCreatePage should render against a snapshot 1`] = `
+<div>
+  <div>
+    <form
+      class="ui error form"
+    >
+      <div
+        class="ui card"
+      >
+        <div
+          class="field "
+        >
+          <label>
+            Firing Name
+          </label>
+          <input
+            name="name"
+            value=""
+          />
+          <div
+            class="ui error message"
+          />
+        </div>
+      </div>
+      <div
+        class="ui card"
+      >
+        <div
+          class="field "
+        >
+          <label>
+            Notes
+          </label>
+          <textarea
+            name="notes"
+            rows="3"
+          />
+          <div
+            class="ui error message"
+          />
+        </div>
+      </div>
+      <div
+        class="ui card"
+      >
+        <button
+          class="ui button"
+          type="submit"
+        >
+          Update
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

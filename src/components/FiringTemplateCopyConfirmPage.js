@@ -8,8 +8,8 @@ import { createFiring, createSegment } from "../actions";
 import Modal from "../Modal";
 import FiringGraph from "./FiringGraph";
 import history from "../history";
-import useFirebaseTemplateFiring from "../hooks/useFirebaseFiring";
-import useFirebaseTemplateSegments from "../hooks/useFirebaseSegments";
+import useFirebaseTemplateFiring from "../hooks/useFirebaseTemplateFiring";
+import useFirebaseTemplateSegments from "../hooks/useFirebaseTemplateSegments";
 import useFirebaseProject from "../hooks/useFirebaseProject";
 
 const FiringTemplateCopyConfirmPage = (props) => {
@@ -45,7 +45,7 @@ const FiringTemplateCopyConfirmPage = (props) => {
       new_segment.firing_id = new_id;
       dispatch(createSegment(new_segment, false));
     });
-    dispatch(createFiring(my_firing, false));
+    dispatch(createFiring(my_firing, true));
   };
 
   const renderContent = () => (
@@ -80,7 +80,6 @@ const FiringTemplateCopyConfirmPage = (props) => {
   );
   const actions = () => (
     <>
-      {" "}
       <Button
         disabled={my_segments.length === 0}
         onClick={() => {
@@ -95,6 +94,9 @@ const FiringTemplateCopyConfirmPage = (props) => {
     </>
   );
 
+  console.log(project);
+  console.log(firing);
+  console.log(my_segments);
   if (!project || !firing || !my_segments) {
     return <div>Loading...</div>;
   }
