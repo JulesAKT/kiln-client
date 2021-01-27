@@ -3,13 +3,18 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { Button, Icon, Segment, Header, Table, Ref } from "semantic-ui-react";
 import FiringGraph from "./FiringGraph";
-import TinyRoomForm from "./tinyFiringForm";
+import TinyFiringForm from "./tinyFiringForm";
 import {
   fetchFiring,
+  fetchPreferences,
   fetchSegmentsByFiring,
   editFiring,
   editSegment,
 } from "../actions";
+import {
+  convertDegreesInSegment,
+  degreeText,
+} from "../helpers/temperatureHelpers";
 
 //import SegmentRow from "./SegmentRow";
 //import { DropTarget } from "react-dnd";
@@ -26,13 +31,19 @@ class FiringShowPage extends Component {
   componentDidMount() {
     this.props.dispatch(fetchSegmentsByFiring(this.props.match.params.id));
     this.props.dispatch(fetchFiring(this.props.match.params.id));
+    this.props.dispatch(fetchPreferences());
   }
 
   render() {
     const firing = this.props.firing;
     const segments = this.props.segments;
     const id = this.props.match.params.id;
-
+    const preferences = this.props.preferences;
+    const degrees =
+      preferences && preferences.degrees
+        ? preferences && preferences.degrees
+        : "celsius";
+    //console.log(this.props.preferences);
     if (!firing) {
       return <div>Loading...</div>;
     }
@@ -47,7 +58,10 @@ class FiringShowPage extends Component {
       });
     };
 
-    const segments_array = Object.values(segments);
+    const correct_degrees_segments = segments.map((segment) =>
+      convertDegreesInSegment(segment, degrees)
+    );
+    const segments_array = Object.values(correct_degrees_segments);
 
     const sorted_segments_array = segments_array.sort((a, b) => {
       return a.order > b.order ? 1 : -1;
@@ -85,7 +99,7 @@ class FiringShowPage extends Component {
           />
           <Header.Content>
             {this.state.isEditing ? (
-              <TinyRoomForm
+              <TinyFiringForm
                 initialValues={{ ...firing }}
                 formName={`tinyroomform-${firing.id}`}
                 onSubmit={onSubmit}
@@ -182,9 +196,13 @@ class FiringShowPage extends Component {
               <Table.Header>
                 <Table.Row>
                   <Table.HeaderCell>Name</Table.HeaderCell>
-                  <Table.HeaderCell>Rate</Table.HeaderCell>
-                  <Table.HeaderCell>Temperature</Table.HeaderCell>
-                  <Table.HeaderCell>Hold</Table.HeaderCell>
+                  <Table.HeaderCell>{`Rate (${degreeText(
+                    degrees
+                  )}/hr)`}</Table.HeaderCell>
+                  <Table.HeaderCell>{`Temperature (${degreeText(
+                    degrees
+                  )})`}</Table.HeaderCell>
+                  <Table.HeaderCell>Hold (mins)</Table.HeaderCell>
                   <Table.HeaderCell>Actions</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
@@ -250,7 +268,7 @@ class FiringShowPage extends Component {
 
           {renderFavouriteButton()}
         </div>
-        <FiringGraph sortedSegments={sorted_segments_array} />
+        <FiringGraph sortedSegments={sorted_segments_array} degrees={degrees} />
       </DragDropContext>
     );
   }
@@ -262,6 +280,7 @@ const mapStateToProps = (state, ownProps) => {
       return segment.firing_id === ownProps.match.params.id;
     }),
     firing: state.firings[ownProps.match.params.id],
+    preferences: state.preferences,
   };
 };
 

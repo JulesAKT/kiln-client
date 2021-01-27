@@ -317,7 +317,7 @@ export const renderAssetTypeSelect = ({ input, type, label, meta }) => {
 
 export const Select = ({ input, label, meta, rooms, items }) => {
   const className = `field ${meta.error && meta.touched ? "error" : ""}`;
-  //console.log(items);
+  console.log(input);
   return (
     <div className={className}>
       <label>{label}</label>

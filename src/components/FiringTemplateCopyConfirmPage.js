@@ -11,6 +11,8 @@ import history from "../history";
 import useFirebaseTemplateFiring from "../hooks/useFirebaseTemplateFiring";
 import useFirebaseTemplateSegments from "../hooks/useFirebaseTemplateSegments";
 import useFirebaseProject from "../hooks/useFirebaseProject";
+import useFirebasePreferences from "../hooks/useFirebasePreferences";
+import { degreeText } from "../helpers/temperatureHelpers";
 
 const FiringTemplateCopyConfirmPage = (props) => {
   const project_id = props.match.params.project_id;
@@ -19,10 +21,16 @@ const FiringTemplateCopyConfirmPage = (props) => {
   const project = useFirebaseProject(project_id);
   const firing = useFirebaseTemplateFiring(firing_id, glass_type);
   const segments = useFirebaseTemplateSegments();
+
+  //console.log(preferences);
+  // All templates are in celsius
+  const degrees = "celsius";
+
   const my_segments = _.filter(
     segments,
     (segment) => segment.firing_id === firing_id
   );
+
   const sorted_segments_array = Object.values(my_segments).sort((a, b) => {
     return a.order > b.order ? 1 : -1;
   });
@@ -51,16 +59,20 @@ const FiringTemplateCopyConfirmPage = (props) => {
   const renderContent = () => (
     <Grid>
       <Grid.Column width="6">
-        <FiringGraph sortedSegments={sorted_segments_array} />
+        <FiringGraph sortedSegments={sorted_segments_array} degrees={degrees} />
       </Grid.Column>
       <Grid.Column width="10">
         {" "}
         <Table>
           <Table.Header>
             <Table.Row>
-              <Table.HeaderCell>Name</Table.HeaderCell>
-              <Table.HeaderCell>Rate</Table.HeaderCell>
-              <Table.HeaderCell>Temperature</Table.HeaderCell>
+              <Table.HeaderCell>{`Rate (${degreeText(
+                degrees
+              )}/hr)`}</Table.HeaderCell>
+              <Table.HeaderCell>{`Temperature (${degreeText(
+                degrees
+              )})`}</Table.HeaderCell>
+              <Table.HeaderCell>Hold (mins)</Table.HeaderCell>
               <Table.HeaderCell>Hold</Table.HeaderCell>
             </Table.Row>
           </Table.Header>

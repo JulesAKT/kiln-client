@@ -7,6 +7,7 @@ import { alert } from "./alertReducer";
 import firingReducer from "./firingReducer";
 import segmentReducer from "./segmentReducer";
 import pendingReducer from "./pendingReducer";
+import preferencesReducer from "./preferencesReducer";
 import { authentication } from "./authReducer";
 
 export default combineReducers({
@@ -19,4 +20,5 @@ export default combineReducers({
   auth: authentication,
   firebase: firebaseReducer,
   pending: pendingReducer,
+  preferences: preferencesReducer,
 });

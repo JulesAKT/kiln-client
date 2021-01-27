@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, Button, Form } from "semantic-ui-react";
 import { Field, reduxForm } from "redux-form";
-import { Input } from "../helpers/formHelpers";
+import { Input, Select } from "../helpers/formHelpers";
 
 class SegmentForm extends Component {
   onSubmit = (formValues) => {
@@ -9,6 +9,7 @@ class SegmentForm extends Component {
   };
 
   render() {
+    console.log(this.props.initialValues);
     //let segment = this.props;
     return (
       <div>
@@ -38,6 +39,15 @@ class SegmentForm extends Component {
               label="Hold Time (mins)"
               keyboardType="number-pad"
             />
+            <Field
+              name="degrees"
+              component={Select}
+              label="Degrees"
+              items={[
+                { label: "Celsius", value: "celsius" },
+                { label: "Fahrenheit", value: "fahrenheit" },
+              ]}
+            />
           </Card>
           <Card>
             <Button type="submit">Update</Button>
@@ -66,4 +76,10 @@ const validate = (formValues) => {
   return errors;
 };
 
-export default reduxForm({ form: "segmentForm", validate })(SegmentForm);
+export default reduxForm({
+  form: "segmentForm",
+  validate,
+  enableReinitialize: true,
+})(SegmentForm);
+
+// Need to allow Reinitialize in case preferences is slow coming in.

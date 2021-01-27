@@ -9,8 +9,9 @@ import {
   VictoryChart,
   VictoryAxis,
 } from "victory";
+import { degreeText } from "../helpers/temperatureHelpers";
 
-const FiringGraph = ({ sortedSegments }) => {
+const FiringGraph = ({ sortedSegments, degrees }) => {
   let elapsedMins = 0;
   let currentTemperature = 20;
   let data = [{ time: elapsedMins, temperature: currentTemperature }];
@@ -53,7 +54,7 @@ const FiringGraph = ({ sortedSegments }) => {
       />
       <VictoryAxis
         dependentAxis
-        label="Temperature"
+        label={`Temperature ${degreeText(degrees)}`}
         style={{ axisLabel: { padding: 40 } }}
         theme={VictoryTheme.material}
       />

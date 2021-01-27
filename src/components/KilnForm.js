@@ -24,7 +24,7 @@ class KilnForm extends Component {
     const kilnTypes = [
       { label: "Evenheat", value: "Evenheat" },
       { label: "Kilncare", value: "Kilncare" },
-      { label: "Nabatherm", value: "Nabatherm" },
+      { label: "Nabertherm", value: "Nabertherm" },
       { label: "Northern", value: "Northern" },
       { label: "Olympic", value: "Olympic" },
       { label: "Paragon", value: "Paragon" },

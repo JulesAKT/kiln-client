@@ -65,6 +65,13 @@ import {
   DELETE_SEGMENT_REQUEST,
   FETCH_PROJECTS_BY_KILN_REQUEST,
   FETCH_PROJECTS_BY_KILN_SUCCESS,
+  CHANGE_PASSWORD_REQUEST,
+  CHANGE_PASSWORD_SUCCESS,
+  CHANGE_PASSWORD_FAILURE,
+  EDIT_PREFERENCES_REQUEST,
+  EDIT_PREFERENCES_SUCCESS,
+  FETCH_PREFERENCES_REQUEST,
+  FETCH_PREFERENCES_SUCCESS,
 } from "./types";
 
 const UNKNOWN_ERROR = "Unknown Error";
@@ -609,6 +616,30 @@ export const attemptSignup = (formProps) => async (dispatch) => {
         dispatch(alertActions.error(UNKNOWN_ERROR));
       }
     });
+};
+
+export const editPreferences = (formProps) => async (dispatch, getState) => {
+  dispatch({ type: EDIT_PREFERENCES_REQUEST });
+  console.log(formProps);
+  db.ref(userPath() + `/preferences`).set({
+    ...formProps,
+  });
+
+  dispatch({
+    type: EDIT_PREFERENCES_SUCCESS,
+    payload: { ...formProps },
+  });
+};
+export const fetchPreferences = () => async (dispatch, getState) => {
+  dispatch({ type: FETCH_PREFERENCES_REQUEST });
+  db.ref(userPath() + "/preferences").once("value", (snapshot) => {
+    //console.log("FetchProjects");
+    //console.log(snapshot.val());
+    dispatch({
+      type: FETCH_PREFERENCES_SUCCESS,
+      payload: snapshot.val(),
+    });
+  });
 };
 
 const userPath = () => {

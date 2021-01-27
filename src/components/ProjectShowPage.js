@@ -29,6 +29,7 @@ const ProjectShowPage = (props) => {
   if (!kiln || !project) {
     return <div>Loading...</div>;
   }
+  console.log(firings_array);
   return (
     <div>
       {project.photo && <Image avatar src={project.photo} size="medium" />}
@@ -62,7 +63,7 @@ const ProjectShowPage = (props) => {
       <Divider />
       {Array.isArray(project.photos) &&
         project.photos.map((photo) => (
-          <div>
+          <div key={photo.photo}>
             <Image src={photo.photo} />
           </div>
         ))}
@@ -77,16 +78,15 @@ const ProjectShowPage = (props) => {
                 </Link>
               )
           )}
-
-        <div>
-          <Link to={`/new_firing/${id}`}>
-            <Button>Add Firing</Button>
-          </Link>
-          <Link to={`/new_favourite_firing/${id}`}>
-            <Button>Add Favourite</Button>
-          </Link>
-        </div>
       </List>
+      <div>
+        <Link to={`/new_firing/${id}`}>
+          <Button>Add Firing</Button>
+        </Link>
+        <Link to={`/new_favourite_firing/${id}`}>
+          <Button>Add Favourite</Button>
+        </Link>
+      </div>
     </div>
   );
 };

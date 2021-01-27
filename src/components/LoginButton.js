@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { signOut } from "../actions";
+import { Icon } from "semantic-ui-react";
+//import { signOut } from "../actions";
 import { isLoaded } from "react-redux-firebase";
 import { isEmpty } from "lodash";
-
+import UserMenu from "./UserMenu";
 class LoginButton extends Component {
   attemptSignOut = () => {
     this.props.signOut();
@@ -16,11 +17,7 @@ class LoginButton extends Component {
       !isEmpty(this.props.auth) &&
       this.props.auth.uid
     ) {
-      return (
-        <button className="ui button negative" onClick={this.attemptSignOut}>
-          Logout
-        </button>
-      );
+      return <UserMenu trigger={<Icon name="user" />} />;
     } else {
       return (
         <Link to="/login">
@@ -35,4 +32,4 @@ const mapStateToProps = (state) => {
   return { auth: state.firebase.auth };
 };
 
-export default connect(mapStateToProps, { signOut })(LoginButton);
+export default connect(mapStateToProps)(LoginButton);

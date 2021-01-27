@@ -31,6 +31,8 @@ import SegmentEditPage from "./components/SegmentEditPage";
 import PrivacyPage from "./components/PrivacyPage";
 import SupportPage from "./components/SupportPage";
 import SegmentDeletePage from "./components/SegmentDeletePage";
+import PreferencePage from "./components/PreferencePage";
+import FavouriteFiringsListPage from "./components/FavouriteFiringsListPage";
 import alertActions from "./actions/alertActions";
 import { AuthProvider } from "./helpers/Auth";
 
@@ -153,6 +155,16 @@ class App extends React.Component {
                     path="/segments/delete/:id"
                     exact
                     component={SegmentDeletePage}
+                  />
+                  <PrivateRoute
+                    path="/preferences"
+                    exact
+                    component={PreferencePage}
+                  />
+                  <PrivateRoute
+                    path="/favourite_firings"
+                    exact
+                    component={FavouriteFiringsListPage}
                   />
                 </Switch>
               </DndProvider>
