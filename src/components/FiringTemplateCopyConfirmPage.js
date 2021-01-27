@@ -11,7 +11,7 @@ import history from "../history";
 import useFirebaseTemplateFiring from "../hooks/useFirebaseTemplateFiring";
 import useFirebaseTemplateSegments from "../hooks/useFirebaseTemplateSegments";
 import useFirebaseProject from "../hooks/useFirebaseProject";
-import useFirebasePreferences from "../hooks/useFirebasePreferences";
+
 import { degreeText } from "../helpers/temperatureHelpers";
 
 const FiringTemplateCopyConfirmPage = (props) => {

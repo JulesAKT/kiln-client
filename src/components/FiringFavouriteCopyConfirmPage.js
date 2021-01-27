@@ -11,7 +11,6 @@ import history from "../history";
 import useFirebaseFiring from "../hooks/useFirebaseFiring";
 import useFirebaseSegments from "../hooks/useFirebaseSegments";
 import useFirebaseProject from "../hooks/useFirebaseProject";
-import useFirebasePreferences from "../hooks/useFirebasePreferences";
 
 const FiringFavouriteCopyConfirmPage = (props) => {
   const project_id = props.match.params.project_id;
