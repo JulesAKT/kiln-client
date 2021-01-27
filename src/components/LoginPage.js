@@ -18,8 +18,8 @@ class LoginPage extends Component {
           <Header as="h1">KilnHelper</Header>
           <LoginForm onSubmit={this.onSubmit} />
           <Header as="h3">
-            New to HomeHub? Download the KilnHelper app on the Apple App Store
-            or Google Play Store to create an account.
+            New to KilnHelper? Download the KilnHelper app on the Apple App
+            Store or Google Play Store (coming soon) to create an account.
           </Header>
           <Image
             src={require("../assets/app_store_download.svg")}
