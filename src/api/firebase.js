@@ -4,6 +4,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 import "firebase/storage";
+import history from "../history";
 //const testfirebase = require("@firebase/testing");
 
 export const fbConfig = {
@@ -65,7 +66,13 @@ export const cloudstore = typeof jest === "undefined" && Firebase.storage();
 
 const googleProvider = new firebase.auth.GoogleAuthProvider();
 export const signInWithGoogle = () => {
-  firebase.auth().signInWithPopup(googleProvider);
+  firebase
+    .auth()
+    .signInWithPopup(googleProvider)
+    .then(() => {
+      console.log("Logged in!");
+      history.push("/");
+    });
 };
 
 export default Firebase;

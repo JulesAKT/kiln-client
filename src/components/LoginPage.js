@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { attemptLogin } from "../actions";
-import { Container, Header, Button, Image, Divider } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+import { Container, Header, Button, Divider } from "semantic-ui-react";
+
 import LoginForm from "./LoginForm";
 import { signInWithGoogle } from "../api/firebase";
 

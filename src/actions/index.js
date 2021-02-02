@@ -551,6 +551,7 @@ export const attemptLogin = (formProps) => async (dispatch) => {
     //console.log("Response");
     //console.log(response);
     dispatch({ type: SIGN_IN_SUCCESS, payload: response });
+    history.push("/");
   } catch (err) {
     dispatch({ type: SIGN_IN_FAILURE });
     //console.log("Err");
