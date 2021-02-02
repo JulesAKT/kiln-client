@@ -9,6 +9,7 @@ import segmentReducer from "./segmentReducer";
 import pendingReducer from "./pendingReducer";
 import preferencesReducer from "./preferencesReducer";
 import { authentication } from "./authReducer";
+import fakeUIDReducer from "./fakeUIDReducer";
 
 export default combineReducers({
   alert: alert,
@@ -21,4 +22,5 @@ export default combineReducers({
   firebase: firebaseReducer,
   pending: pendingReducer,
   preferences: preferencesReducer,
+  fakeUID: fakeUIDReducer,
 });

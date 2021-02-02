@@ -72,6 +72,9 @@ import {
   EDIT_PREFERENCES_SUCCESS,
   FETCH_PREFERENCES_REQUEST,
   FETCH_PREFERENCES_SUCCESS,
+  EDIT_USERDATA_REQUEST,
+  EDIT_USERDATA_SUCCESS,
+  EDIT_FAKEUID_SUCCESS,
 } from "./types";
 
 const UNKNOWN_ERROR = "Unknown Error";
@@ -643,6 +646,26 @@ export const fetchPreferences = () => async (dispatch, getState) => {
   });
 };
 
+export const editUserRecord = (uid, formProps) => async (dispatch) => {
+  dispatch({ type: EDIT_USERDATA_REQUEST });
+  let newProps = { ...formProps };
+  newProps.uid = uid;
+  db.ref(`/users/${uid}`).set({
+    ...newProps,
+  });
+
+  dispatch({
+    type: EDIT_USERDATA_SUCCESS,
+    payload: { ...formProps },
+  });
+};
+
+export const editFakeUID = (uid) => async (dispatch) => {
+  dispatch({ type: EDIT_FAKEUID_SUCCESS, payload: { uid } });
+};
+
 const userPath = () => {
-  return "/userdata/" + store.getState().firebase.auth.uid;
+  const fakeUID = store.getState().fakeUID;
+  const uid = fakeUID ? fakeUID : store.getState().firebase.auth.uid;
+  return "/userdata/" + uid;
 };

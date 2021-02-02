@@ -32,6 +32,7 @@ import PrivacyPage from "./components/PrivacyPage";
 import SupportPage from "./components/SupportPage";
 import SegmentDeletePage from "./components/SegmentDeletePage";
 import PreferencePage from "./components/PreferencePage";
+import SuperUserPage from "./components/SuperUserPage";
 import FavouriteFiringsListPage from "./components/FavouriteFiringsListPage";
 import alertActions from "./actions/alertActions";
 import { AuthProvider } from "./helpers/Auth";
@@ -161,6 +162,12 @@ class App extends React.Component {
                     exact
                     component={PreferencePage}
                   />
+                  <PrivateRoute
+                    path="/superuser"
+                    exact
+                    component={SuperUserPage}
+                  />
+
                   <PrivateRoute
                     path="/favourite_firings"
                     exact

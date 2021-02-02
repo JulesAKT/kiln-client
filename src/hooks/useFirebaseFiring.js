@@ -1,8 +1,10 @@
 import { useSelector } from "react-redux";
 import { useFirebaseConnect } from "react-redux-firebase";
+import { useFakedUID } from "./useFakeUID";
 
 const useFirebaseFiring = (firing_id) => {
-  const uid = useSelector((state) => state.firebase.auth.uid);
+  const uid = useFakedUID();
+
   useFirebaseConnect(
     [{ path: `/userdata/${uid}/firings/${firing_id}` }],
     [firing_id]
