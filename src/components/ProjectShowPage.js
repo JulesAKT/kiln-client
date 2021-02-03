@@ -2,10 +2,14 @@ import React from "react";
 import { List, Rating, Button, Divider, Image, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import _ from "lodash";
+import ImageGallery from "react-image-gallery";
 import useFirebaseKiln from "../hooks/useFirebaseKiln";
+import { findSuitablePhoto } from "../helpers/photoHelpers";
 import useFirebaseProject from "../hooks/useFirebaseProject";
 import useFirebaseFirings from "../hooks/useFirebaseFirings";
 import { glassImage } from "../helpers/logoHelpers";
+
+import "react-image-gallery/styles/css/image-gallery.css";
 
 import FiringCard from "./FiringCard";
 
@@ -30,6 +34,14 @@ const ProjectShowPage = (props) => {
     return <div>Loading...</div>;
   }
   console.log(firings_array);
+
+  const gallery_photos =
+    project.photos &&
+    project.photos.map((photo) => ({
+      thumbnail: findSuitablePhoto(photo, "small").uri,
+      original: findSuitablePhoto(photo, "medium").uri,
+      fullscreen: findSuitablePhoto(photo, "large").uri,
+    }));
   return (
     <div>
       {project.photo && <Image avatar src={project.photo} size="medium" />}
@@ -61,12 +73,6 @@ const ProjectShowPage = (props) => {
         </Link>
       </div>
       <Divider />
-      {Array.isArray(project.photos) &&
-        project.photos.map((photo) => (
-          <div key={photo.photo}>
-            <Image src={photo.photo} />
-          </div>
-        ))}
       <List>
         <List.Header>Firings</List.Header>
         {firings_array &&
@@ -87,8 +93,17 @@ const ProjectShowPage = (props) => {
           <Button>Add Favourite</Button>
         </Link>
       </div>
+      <Divider />
+      {gallery_photos && <ImageGallery items={gallery_photos} />}
     </div>
   );
 };
 
 export default ProjectShowPage;
+
+/*      {Array.isArray(project.photos) &&
+        project.photos.map((photo) => (
+          <div key={photo.photo}>
+            <Image src={findSuitablePhoto(photo, "small").uri} />
+          </div>
+        ))} */

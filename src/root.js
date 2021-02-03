@@ -7,7 +7,7 @@ import { rrfProps } from "./api/firebase";
 //console.log("rrfProps");
 //console.log(rrfProps);
 //console.log(rrfProps.firebase.apps());
-export default ({ children }) => {
+const root = ({ children }) => {
   return (
     <Provider store={store}>
       <ReactReduxFirebaseProvider {...rrfProps}>
@@ -16,3 +16,5 @@ export default ({ children }) => {
     </Provider>
   );
 };
+
+export default root;

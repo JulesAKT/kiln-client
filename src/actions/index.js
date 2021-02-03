@@ -665,7 +665,7 @@ export const editFakeUID = (uid) => async (dispatch) => {
 };
 
 const userPath = () => {
-  const fakeUID = store.getState().fakeUID;
+  const fakeUID = store.getState().fakeUID.uid;
   const uid = fakeUID ? fakeUID : store.getState().firebase.auth.uid;
   return "/userdata/" + uid;
 };

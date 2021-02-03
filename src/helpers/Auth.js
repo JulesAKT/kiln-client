@@ -10,24 +10,24 @@ export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
   const [pending, setPending] = useState(true);
 
-  const updateUserRecord = (user) => {
-    if (user) {
-      dispatch(
-        editUserRecord(user.uid, {
-          name: user.displayName,
-          email: user.email,
-          photoURL: user.photoURL,
-        })
-      );
-      //      console.log("Updating User Record");
-      //      console.log(`User: ${user.displayName}`);
-      //      console.log(`Email: ${user.email}`);
-      //      console.log(`PhotoURL: ${user.photoURL}`);
-    }
-  };
-
   useEffect(() => {
     //console.log(Firebase);
+    const updateUserRecord = (user) => {
+      if (user) {
+        dispatch(
+          editUserRecord(user.uid, {
+            name: user.displayName,
+            email: user.email,
+            photoURL: user.photoURL,
+          })
+        );
+        //      console.log("Updating User Record");
+        //      console.log(`User: ${user.displayName}`);
+        //      console.log(`Email: ${user.email}`);
+        //      console.log(`PhotoURL: ${user.photoURL}`);
+      }
+    };
+
     if (typeof jest === "undefined") {
       Firebase.auth().onAuthStateChanged((user) => {
         updateUserRecord(user);

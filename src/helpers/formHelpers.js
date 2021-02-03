@@ -103,7 +103,7 @@ export const ImageInput = ({ input, label, meta }) => {
       photo_url = URL.createObjectURL(input.value[0]);
       URL.revokeObjectURL(input.value[0]);
     } else {
-      photo_url = require("../assets/icon.png");
+      photo_url = require("../assets/icon.png").default;
     }
   }
   //const photo_url = input.value;

@@ -39,11 +39,11 @@ let Firebase;
 
 if (!firebase.apps.length) {
   if (typeof jest === "undefined") {
-    console.log("Initialised Production Firebase");
+    //console.log("Initialised Production Firebase");
     Firebase = firebase.initializeApp(fbConfig);
     //console.log(firebase.app().name);
   } else {
-    console.log("Initialised Test firebase");
+    //console.log("Initialised Test firebase");
     Firebase = firebase.initializeApp(testfbConfig);
     //console.log(my_firebase.app().name);
     //console.log(testfirebase.app().name);

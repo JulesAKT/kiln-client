@@ -16,14 +16,13 @@ const SuperUserPage = () => {
   const users = useFirebaseUsers();
   const fakeUID = useFakeUID();
   console.log(userData && Object.keys(userData));
-  const userData_array =
-    userData &&
-    Object.keys(userData).map((key) => ({
-      ...userData[key],
+
+  let user_array =
+    users &&
+    Object.keys(users).map((key) => ({
+      ...users[key],
       id: key,
-      name: users && users[key] ? getDisplayName(users[key]) : `(${key})`,
-      email: users && users[key] && users[key].email,
-      photoURL: users && users[key] && users[key].photoURL,
+
       num_kilns:
         userData[key] &&
         userData[key].kilns &&
@@ -34,13 +33,20 @@ const SuperUserPage = () => {
         Object.keys(userData[key].projects).length,
     }));
 
-  const userData_columns = [
+  const user_columns = [
     {
       name: "Photo",
       selector: "photoURL",
       sortable: false,
       cell: (row) => <Image src={row.photoURL} avatar />,
     },
+    {
+      name: "UID",
+      selector: "UID",
+      sortable: true,
+      cell: (row) => <div>{row.uid}</div>,
+    },
+
     {
       name: "Name",
       selector: "name",
@@ -92,13 +98,13 @@ const SuperUserPage = () => {
           onClick={handleAccordion}
         >
           <Icon name="dropdown" />
-          Show User Data
+          Show Users
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 1}>
           <DataTable
-            title="User Data"
-            columns={userData_columns}
-            data={userData_array}
+            title="Users"
+            columns={user_columns}
+            data={user_array}
             defaultSortField="name"
             onRowClicked={(row) => {
               console.log(`Impersonating: ${row.id}`);

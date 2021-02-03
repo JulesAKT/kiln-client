@@ -22,20 +22,21 @@ class LoginPage extends Component {
             New to KilnHelper? Download the KilnHelper app on the Apple App
             Store or Google Play Store to create an account.
           </Header>
-
-          <img
-            src={require("../assets/app_store_download.svg")}
-            href="https://apps.apple.com/gb/app/kiln-helper/id1506041444"
-            alt="Download on the App Store"
-            height={50}
-          />
-          <img
-            src={require("../assets/google-play-badge-cropped.png")}
-            href="https://play.google.com/store/apps/details?id=com.mrtickle.kiln&utm_source=kiln-web&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-            alt="Get it on Google Play"
-            height={50}
-            style={{ marginLeft: "10px" }}
-          />
+          <a href="https://apps.apple.com/gb/app/kiln-helper/id1506041444">
+            <img
+              src={require("../assets/app_store_download.svg").default}
+              alt="Download on the App Store"
+              height={50}
+            />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.mrtickle.kiln&utm_source=kiln-web&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+            <img
+              src={require("../assets/google-play-badge-cropped.png").default}
+              alt="Get it on Google Play"
+              height={50}
+              style={{ marginLeft: "10px" }}
+            />
+          </a>
 
           {/*<Header as="h3">
             Forgotten your password?{" "}
