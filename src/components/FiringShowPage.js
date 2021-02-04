@@ -204,6 +204,7 @@ class FiringShowPage extends Component {
                   )})`}</Table.HeaderCell>
                   <Table.HeaderCell>Hold (mins)</Table.HeaderCell>
                   <Table.HeaderCell>Actions</Table.HeaderCell>
+                  <Table.HeaderCell>Move</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
               <Droppable droppableId="segments_table">
@@ -242,6 +243,9 @@ class FiringShowPage extends Component {
                                     <Link to={`/segments/delete/${segment.id}`}>
                                       <Icon name="trash" type="feather" />
                                     </Link>
+                                  </Table.Cell>
+                                  <Table.Cell>
+                                    <Icon name="bars" />
                                   </Table.Cell>
                                 </Table.Row>
                               </Ref>
