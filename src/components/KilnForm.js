@@ -29,6 +29,9 @@ class KilnForm extends Component {
       { label: "Olympic", value: "Olympic" },
       { label: "Paragon", value: "Paragon" },
       { label: "Skutt", value: "Skutt" },
+      { label: "Rohde", value: "Rohde" },
+      { label: "Jen-Ken", value: "Jen-Ken" },
+      { label: "Cress", value: "Cress" },
     ];
 
     //console.log("kilnTypes = ");

@@ -5,6 +5,7 @@ import { Container, Header, Button, Divider } from "semantic-ui-react";
 
 import LoginForm from "./LoginForm";
 import { signInWithGoogle } from "../api/firebase";
+import { signInWithApple } from "../api/firebase";
 
 class LoginPage extends Component {
   onSubmit = (formValues) => {
@@ -18,6 +19,7 @@ class LoginPage extends Component {
           <Header as="h1">KilnHelper</Header>
           <LoginForm onSubmit={this.onSubmit} />
           <Button onClick={signInWithGoogle}>Sign In With Google</Button>
+          <Button onClick={signInWithApple}>Sign In With Apple</Button>
           <Header as="h3">
             New to KilnHelper? Download the KilnHelper app on the Apple App
             Store or Google Play Store to create an account.

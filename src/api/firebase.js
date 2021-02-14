@@ -75,4 +75,17 @@ export const signInWithGoogle = () => {
     });
 };
 
+const appleProvider = new firebase.auth.OAuthProvider("apple.com");
+appleProvider.addScope("email");
+appleProvider.addScope("name");
+export const signInWithApple = () => {
+  firebase
+    .auth()
+    .signInWithPopup(appleProvider)
+    .then(() => {
+      console.log("Logged in!");
+      history.push("/");
+    });
+};
+
 export default Firebase;

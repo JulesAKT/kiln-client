@@ -14,6 +14,13 @@ export const kilnLogo = (manufacturer) => {
       return require("../assets/skutt.png").default;
     case "Northern":
       return require("../assets/northern.png").default;
+    case "Rohde":
+      return require("../assets/rohde_logo.png").default;
+    case "Jen-Ken":
+      return require("../assets/jen-ken_logo.jpg").default;
+    case "Cress":
+      return require("../assets/cress-logo.jpg").default;
+
     default:
       return require("../assets/nabertherm.png").default;
   }
