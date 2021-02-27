@@ -11,10 +11,7 @@ import {
   editFiring,
   editSegment,
 } from "../actions";
-import {
-  convertDegreesInSegment,
-  degreeText,
-} from "../helpers/temperatureHelpers";
+import { convertDegreesInSegment, degreeText } from "../helpers/unitHelpers";
 
 //import SegmentRow from "./SegmentRow";
 //import { DropTarget } from "react-dnd";

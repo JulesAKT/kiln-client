@@ -34,6 +34,7 @@ import SegmentDeletePage from "./components/SegmentDeletePage";
 import PreferencePage from "./components/PreferencePage";
 import SuperUserPage from "./components/SuperUserPage";
 import FavouriteFiringsListPage from "./components/FavouriteFiringsListPage";
+import PhotoDeletePage from "./components/PhotoDeletePage";
 import alertActions from "./actions/alertActions";
 import { AuthProvider } from "./helpers/Auth";
 
@@ -83,6 +84,11 @@ class App extends React.Component {
                     path="/projects/delete/:id"
                     exact
                     component={ProjectDeletePage}
+                  />
+                  <PrivateRoute
+                    path="/projects/delete_photo/:id/:index"
+                    exact
+                    component={PhotoDeletePage}
                   />
                   <PrivateRoute
                     path="/firings/:id"

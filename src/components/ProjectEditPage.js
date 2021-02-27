@@ -17,14 +17,34 @@ const ProjectEditPage = (props) => {
   if (!kilns) {
     return <div>Please create a kiln first</div>;
   }
-
+  if (!project) {
+    return <div>Loading...</div>;
+  }
   const handleSubmit = (formValues) => {
-    dispatch(editProject(id, formValues));
+    dispatch(
+      editProject(id, {
+        photos: project.photos || [],
+        ...formValues,
+      })
+    );
   };
+  const initialValues = {
+    name: "",
+    width: "",
+    depth: "",
+    thickness: "",
+    notes: "",
+    glass: "Bullseye",
+    thickness: "6",
+    stars: 2.5,
+    notes: "",
+    length_unit: "mm",
 
+    ...project,
+  };
   return (
     <div>
-      <ProjectForm onSubmit={handleSubmit} initialValues={project} />
+      <ProjectForm onSubmit={handleSubmit} initialValues={initialValues} />
     </div>
   );
 };

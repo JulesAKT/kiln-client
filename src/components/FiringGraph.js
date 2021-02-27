@@ -17,7 +17,7 @@ import {
   getTemperatureRanges,
   temperatureRangeColours,
   temperatureRangeNames,
-} from "../helpers/temperatureHelpers";
+} from "../helpers/unitHelpers";
 
 const FiringGraph = ({ sortedSegments, degrees }) => {
   const [enabledAnnotations, setEnabledAnnotations] = useState({

@@ -12,7 +12,7 @@ import useFirebaseTemplateFiring from "../hooks/useFirebaseTemplateFiring";
 import useFirebaseTemplateSegments from "../hooks/useFirebaseTemplateSegments";
 import useFirebaseProject from "../hooks/useFirebaseProject";
 
-import { degreeText } from "../helpers/temperatureHelpers";
+import { degreeText } from "../helpers/unitHelpers";
 
 const FiringTemplateCopyConfirmPage = (props) => {
   const project_id = props.match.params.project_id;

@@ -201,7 +201,7 @@ export const editProject = (id, formProps, ignoreNavigate = false) => (
       const uploadName = userPath() + `/${formProps.id}-${index}.jpg`;
       cloudstore
         .ref(uploadName)
-        .put(photo.photo[0])
+        .put(photo.photo)
         .then(
           () =>
             cloudstore

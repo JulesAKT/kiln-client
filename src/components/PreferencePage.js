@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 
 import useFirebasePreferences from "../hooks/useFirebasePreferences";
 import { editPreferences } from "../actions";
-import { degreeName } from "../helpers/temperatureHelpers";
+import { degreeName, lengthName } from "../helpers/unitHelpers";
 const PreferencePage = () => {
   const dispatch = useDispatch();
   const preferences = useFirebasePreferences();
@@ -19,6 +19,16 @@ const PreferencePage = () => {
     dispatch(editPreferences({ ...preferences, degrees: newDegrees }));
   };
 
+  const toggleLength = () => {
+    //console.log("Toggling");
+    //console.log(preferences);
+    //console.log(`Old setting: ${preferences.length_unit}`);
+    const newLength =
+      preferences && preferences.length_unit === "in" ? "mm" : "in";
+    //console.log(`New setting: ${newLength}`);
+    dispatch(editPreferences({ ...preferences, length_unit: newLength }));
+  };
+
   return (
     <div>
       <Header as="h1">User Profile</Header>
@@ -31,6 +41,16 @@ const PreferencePage = () => {
             }}
           >
             {preferences && degreeName(preferences.degrees)}
+          </Button>
+        </List.Item>
+        <List.Item>
+          Lengths are in:{" "}
+          <Button
+            onClick={() => {
+              toggleLength();
+            }}
+          >
+            {preferences && lengthName(preferences.length_unit)}
           </Button>
         </List.Item>
       </List>

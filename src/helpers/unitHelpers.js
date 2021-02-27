@@ -126,3 +126,26 @@ export const fullFuseRange = (glass = "bullseye", degrees = "celsius") => {
       return convertTemperatures("celsius", degrees, [804, 843]);
   }
 };
+
+export const convertLengthUnit = (sourceUnit = "mm", destUnit, length) => {
+  if (sourceUnit === destUnit) {
+    return length;
+  }
+  if (sourceUnit === "mm" && destUnit === "in") {
+    return (length / 25.4).toFixed(2);
+  }
+  if (sourceUnit === "in" && destUnit === "mm") {
+    return Math.round(length * 25.4, 0);
+  }
+};
+
+export const lengthName = (length_unit) => {
+  switch (length_unit) {
+    case "in":
+      return "Inches";
+    case "mm":
+      return "Millimetres";
+    default:
+      return "Millimetres";
+  }
+};

@@ -6,11 +6,16 @@ import DataTable from "react-data-table-component";
 
 import useFirebaseKilns from "../hooks/useFirebaseKilns";
 import useFirebaseProjects from "../hooks/useFirebaseProjects";
+import useFirebasePreferences from "../hooks/useFirebasePreferences";
 import history from "../history";
 import ProjectCard from "./ProjectCard";
+import { convertLengthUnit } from "../helpers/unitHelpers";
 
 const ProjectListPage = ({ navigation }) => {
   const [detail, setDetail] = useState(false);
+  const preferences = useFirebasePreferences();
+
+  const desired_unit = (preferences && preferences.length_unit) || "mm";
 
   const projects = useFirebaseProjects();
 
@@ -58,7 +63,10 @@ const ProjectListPage = ({ navigation }) => {
       },
       cell: (row) => (
         <div>
-          {row.width}x{row.depth}x{row.thickness}(mm)
+          {convertLengthUnit(row.length_unit, desired_unit, row.width)}x
+          {convertLengthUnit(row.length_unit, desired_unit, row.depth)}x
+          {convertLengthUnit(row.length_unit, desired_unit, row.thickness)}(
+          {desired_unit})
         </div>
       ),
     },

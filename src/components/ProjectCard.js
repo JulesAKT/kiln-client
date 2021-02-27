@@ -4,8 +4,20 @@ import { Image, Card, Rating, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { findSuitablePhoto } from "../helpers/photoHelpers";
 import { glassImage } from "../helpers/logoHelpers";
+import { convertLengthUnit } from "../helpers/unitHelpers";
+import useFirebasePreferences from "../hooks/useFirebasePreferences";
 
 const ProjectCard = (props) => {
+  const preferences = useFirebasePreferences();
+  const length_unit = props.length_unit || "mm";
+  const desired_unit = (preferences && preferences.length_unit) || "mm";
+  const width = convertLengthUnit(length_unit, desired_unit, props.width);
+  const depth = convertLengthUnit(length_unit, desired_unit, props.depth);
+  const thickness = convertLengthUnit(
+    length_unit,
+    desired_unit,
+    props.thickness
+  );
   return (
     <Card as={Link} to={`/projects/${props.id}`} style={{ width: "256px" }}>
       <Card.Header as="h3">{props.name}</Card.Header>
@@ -14,7 +26,7 @@ const ProjectCard = (props) => {
         <span>
           <Icon name="move" />
         </span>
-        <span>{`${props.width}x${props.depth}x${props.thickness}(mm)`}</span>
+        <span>{`${width}x${depth}x${thickness}(${desired_unit})`}</span>
       </Card.Content>
 
       <Card.Description>

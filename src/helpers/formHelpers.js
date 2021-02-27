@@ -3,6 +3,9 @@ import DatePicker, { registerLocale, setDefaultLocale } from "react-datepicker";
 
 import { DateTimePicker } from "react-widgets";
 import { Image, List } from "semantic-ui-react";
+import { useController } from "react-hook-form";
+import { ErrorMessage } from "@hookform/error-message";
+import _, { omit } from "lodash";
 
 import {
   Form,
@@ -30,6 +33,14 @@ export const renderError = ({ error, warning, touched }) => {
       {touched &&
         ((error && <span>{error}</span>) ||
           (warning && <span>{warning}</span>))}
+    </div>
+  );
+};
+
+export const renderHookError = (errors, name) => {
+  return (
+    <div className="ui error message">
+      {errors[name] && <span>{errors[name]}</span>}
     </div>
   );
 };
@@ -91,6 +102,89 @@ export const ImageInput = ({ input, label, meta }) => {
   );
 };
 */
+
+export const HookImageInput = ({ control, name, ...props }) => {
+  //console.log("HookInput");
+  //console.log(props);
+  const {
+    field: { ref, ...inputProps },
+    meta: { invalid, isTouched, isDirty },
+  } = useController({
+    name,
+    control,
+    rules: { required: true },
+    defaultValue: props.defaultValue,
+  });
+  const img = inputProps.value;
+  let photo_url = img;
+  console.log(img);
+
+  if (typeof img === "object") {
+    console.log(`Is An Object! ${img.length}`);
+    console.log(inputProps.value);
+    //    if (img.length) {
+    console.log("Has Length");
+    console.log(img);
+    photo_url = URL.createObjectURL(img);
+    console.log("PhotoURL");
+    console.log(photo_url);
+    URL.revokeObjectURL(img[0]);
+  }
+  /* } else {
+    photo_url = require("../assets/icon.png").default;
+  } */
+
+  delete inputProps.value; // Can't render a file input box with a non-null default value
+  const handleChange = (event) => {
+    event.preventDefault();
+    console.log(event);
+    let imageFile = event.target.files[0];
+    console.log(imageFile);
+    if (imageFile) {
+      const localImageUrl = URL.createObjectURL(imageFile);
+      console.log(localImageUrl);
+      const imageObject = new window.Image();
+      imageObject.onload = () => {
+        console.log(imageObject);
+        imageFile.width = imageObject.naturalWidth;
+        imageFile.height = imageObject.naturalHeight;
+        inputProps.onChange(imageFile);
+        URL.revokeObjectURL(imageFile);
+      };
+      imageObject.src = localImageUrl;
+    }
+  };
+  //console.log(inputProps);
+  return (
+    <>
+      <div>
+        <label id={name}></label>
+        <Image
+          src={photo_url}
+          size="small"
+          label={{ floating: true, icon: "edit", circular: true }}
+        ></Image>
+        <input
+          type="file"
+          {...omit(inputProps, ["onChange"])}
+          onChange={(event) => handleChange(event, inputProps)}
+          accept=".jpg,.jpeg,.gif,.png,.heic"
+          id={name}
+          style={{ opacity: 0 }}
+        />
+      </div>
+      <ErrorMessage
+        errors={props.errors}
+        name={name}
+        render={({ message }) => (
+          <div className="ui error message">
+            <span>{message}</span>
+          </div>
+        )}
+      />
+    </>
+  );
+};
 
 export const ImageInput = ({ input, label, meta }) => {
   //const className = `field ${meta.error && meta.touched ? "error" : ""}`;
@@ -192,6 +286,55 @@ export const FileInput = ({ input, label, meta }) => {
   );
 };
 
+export const HookInput = ({ control, name, ...props }) => {
+  //console.log("HookInput");
+  //console.log(props);
+  const {
+    field: { ref, ...inputProps },
+    meta: { invalid, isTouched, isDirty },
+  } = useController({
+    name,
+    control,
+    rules: { required: true },
+    defaultValue: props.defaultValue,
+  });
+
+  const className = `field ${props.inline && "inline"} ${
+    props.errors[name] && isTouched ? "error" : ""
+  }`;
+  return (
+    <div className={className}>
+      <label>{props.label}</label>
+      <input {...inputProps} inputRef={ref} />
+      <ErrorMessage
+        errors={props.errors}
+        name={name}
+        render={({ message }) => (
+          <div className="ui error message">
+            <span>{message}</span>
+          </div>
+        )}
+      />
+    </div>
+  );
+};
+/* 
+export const OldHookInput = ({control, name, errors, ..inputProps}) => {
+  const className = `field ${
+    errors[name] && touched[name]
+      ? "error"
+      : ""
+  }`;
+  const { field: {ref, ...inputProps}, meta: {invalud, isTouched, isDirty}}
+  return (
+    <div className={className}>
+      <label>{inputProps.label}</label>
+      <Controller {...inputProps} as={input} />
+      {renderHookError(errors,name)}
+    </div>
+  );
+};
+*/
 export const Input = ({ input, type, label, meta }) => {
   const className = `field ${meta.error && meta.touched ? "error" : ""}`;
   return (
@@ -315,6 +458,53 @@ export const renderAssetTypeSelect = ({ input, type, label, meta }) => {
   );
 };
 
+export const HookSelect = ({
+  control,
+  name,
+  label,
+  items,
+  errors,
+  ...props
+}) => {
+  //console.log("HookSelect");
+  //console.log(props);
+  const {
+    field: { ref, ...inputProps },
+    meta: { invalid, isTouched, isDirty },
+  } = useController({
+    name,
+    control,
+    rules: { required: true },
+    defaultValue: props.defaultValue,
+  });
+
+  const className = `field ${errors[name] && isTouched ? "error" : ""}`;
+  return (
+    <div className={className}>
+      <label>{label}</label>
+      <select {...inputProps} inputRef={ref}>
+        {items.map(({ label, value }) => {
+          return (
+            <option value={value} key={value}>
+              {label}
+            </option>
+          );
+        })}
+      </select>
+
+      <ErrorMessage
+        errors={errors}
+        name={name}
+        render={({ message }) => (
+          <div className="ui error message">
+            <span>{message}</span>
+          </div>
+        )}
+      />
+    </div>
+  );
+};
+
 export const Select = ({ input, label, meta, rooms, items }) => {
   const className = `field ${meta.error && meta.touched ? "error" : ""}`;
   console.log(input);
@@ -331,6 +521,53 @@ export const Select = ({ input, label, meta, rooms, items }) => {
         })}
       </select>
       {renderError(meta)}
+    </div>
+  );
+};
+
+export const HookStars = ({
+  control,
+  name,
+  label,
+  items,
+  errors,
+  ...props
+}) => {
+  console.log("HookSelect");
+  console.log(props);
+  const {
+    field: { ref, onChange, ...inputProps },
+    meta: { invalid, isTouched, isDirty },
+  } = useController({
+    name,
+    control,
+    rules: { required: true },
+    defaultValue: props.defaultValue,
+  });
+
+  const className = `field ${errors[name] && isTouched ? "error" : ""}`;
+  return (
+    <div className={className}>
+      <label>{label}</label>
+      <Rating
+        onRate={(e, { rating }) => {
+          //console.log(input);
+          //console.log(data);
+          onChange(rating);
+        }}
+        rating={inputProps.value}
+        maxRating={5}
+      />
+
+      <ErrorMessage
+        errors={errors}
+        name={name}
+        render={({ message }) => (
+          <div className="ui error message">
+            <span>{message}</span>
+          </div>
+        )}
+      />
     </div>
   );
 };

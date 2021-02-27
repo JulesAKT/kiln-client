@@ -25,10 +25,18 @@ const ProjectCreatePage = (props) => {
       <ProjectForm
         onSubmit={handleSubmit}
         initialValues={{
+          name: "",
+          width: "",
+          depth: "",
+          thickness: "",
+          notes: "",
+          photos: [],
           kiln: first_kiln.id,
           glass: "Bullseye",
           thickness: "6",
           stars: 2.5,
+          notes: "",
+          length_unit: "mm",
         }}
       />
     </div>

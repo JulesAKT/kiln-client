@@ -19,7 +19,7 @@ export const kilnLogo = (manufacturer) => {
     case "Jen-Ken":
       return require("../assets/jen-ken_logo.jpg").default;
     case "Cress":
-      return require("../assets/cress-logo.jpg").default;
+      return require("../assets/cress-logo.png").default;
 
     default:
       return require("../assets/nabertherm.png").default;
