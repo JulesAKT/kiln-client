@@ -2,8 +2,8 @@ import React from "react";
 import DatePicker, { registerLocale, setDefaultLocale } from "react-datepicker";
 
 import { DateTimePicker } from "react-widgets";
-import { Image, List } from "semantic-ui-react";
-import { useController } from "react-hook-form";
+import { Image, List, Checkbox as BaseCheckBox } from "semantic-ui-react";
+import { useController, Controller } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import _, { omit } from "lodash";
 
@@ -312,7 +312,6 @@ export const HookInput = ({ control, name, ...props }) => {
             {...inputProps}
             label={props.label}
             rows={props.numberOfLines}
-            inputRef={ref}
           />
         </>
       ) : (
@@ -497,7 +496,7 @@ export const HookSelect = ({
   return (
     <div className={className}>
       <label style={props.labelStyle}>{label}</label>
-      <select {...inputProps} inputRef={ref} style={props.selectStyle}>
+      <select {...inputProps} style={props.selectStyle}>
         {items.map(({ label, value }) => {
           return (
             <option value={value} key={value}>
@@ -642,3 +641,33 @@ export function semanticFormField({
     </Form.Field>
   );
 }
+
+export const CheckBox = ({ control, name, ...props }) => {
+  //console.log(inputProps.errors[inputProps.name]);
+
+  console.log(props);
+  const {
+    field: { ref, ...inputProps },
+    meta: { invalid, isTouched, isDirty },
+  } = useController({
+    name,
+    control,
+    rules: { required: true },
+    defaultValue: props.defaultValue,
+  });
+  console.log(`Value: ${props.value}`);
+  return (
+    <div>
+      <Form.Field>
+        <Form.Checkbox
+          {...props}
+          label={props.label}
+          checked={props.value}
+          //              onPress={props.onChange(!inputProps.value)}
+          onChange={inputProps.onChange}
+          inputRef={ref}
+        />
+      </Form.Field>
+    </div>
+  );
+};

@@ -17,9 +17,15 @@ const KilnEditPage = (props) => {
   if (!kiln) {
     return <div>Loading...</div>;
   }
+  const new_kiln = {
+    timed_controller: false,
+    ambient_temperature: "16",
+    ...kiln,
+  };
+
   return (
     <div>
-      <KilnForm onSubmit={handleSubmit} initialValues={kiln} />
+      <KilnForm onSubmit={handleSubmit} initialValues={new_kiln} />
     </div>
   );
 };
