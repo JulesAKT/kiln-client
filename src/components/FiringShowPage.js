@@ -1,22 +1,28 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+
 import { Button, Icon, Segment, Header, Table, Ref } from "semantic-ui-react";
 import FiringGraph from "./FiringGraph";
 import TinyFiringForm from "./tinyFiringForm";
 import {
   fetchFiring,
   fetchPreferences,
+  fetchProjects,
+  fetchKilns,
   fetchSegmentsByFiring,
   editFiring,
   editSegment,
 } from "../actions";
+
 import { convertDegreesInSegment, degreeText } from "../helpers/unitHelpers";
+import { convertSegmentsToTimedController } from "../helpers/timedController";
 
 //import SegmentRow from "./SegmentRow";
 //import { DropTarget } from "react-dnd";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import _ from "lodash";
+import projectReducer from "../reducers/projectReducer";
 
 //import { defined } from "react-native-reanimated";
 
@@ -29,6 +35,8 @@ class FiringShowPage extends Component {
     this.props.dispatch(fetchSegmentsByFiring(this.props.match.params.id));
     this.props.dispatch(fetchFiring(this.props.match.params.id));
     this.props.dispatch(fetchPreferences());
+    this.props.dispatch(fetchProjects());
+    this.props.dispatch(fetchKilns());
   }
 
   render() {
@@ -36,11 +44,13 @@ class FiringShowPage extends Component {
     const segments = this.props.segments;
     const id = this.props.match.params.id;
     const preferences = this.props.preferences;
+    const projects = this.props.projects;
+    const project = projects[firing?.project_id];
+    const kiln = this.props.kilns[project?.kiln];
     const degrees =
       preferences && preferences.degrees
         ? preferences && preferences.degrees
         : "celsius";
-    //console.log(this.props.preferences);
     if (!firing) {
       return <div>Loading...</div>;
     }
@@ -63,6 +73,12 @@ class FiringShowPage extends Component {
     const sorted_segments_array = segments_array.sort((a, b) => {
       return a.order > b.order ? 1 : -1;
     });
+
+    const graph_segments_array = sorted_segments_array;
+    const controller_sensitive_segments = convertSegmentsToTimedController(
+      sorted_segments_array,
+      kiln
+    );
 
     const renderDeleteIcon = () => {
       if (segments_array.length === 0) {
@@ -196,9 +212,11 @@ class FiringShowPage extends Component {
                   <Table.HeaderCell>{`Rate (${degreeText(
                     degrees
                   )}/hr)`}</Table.HeaderCell>
-                  <Table.HeaderCell>{`Temperature (${degreeText(
-                    degrees
-                  )})`}</Table.HeaderCell>
+                  <Table.HeaderCell>
+                    {kiln?.timed_controller
+                      ? `Time (hh:mm)`
+                      : `Temperature (${degreeText(degrees)})`}
+                  </Table.HeaderCell>
                   <Table.HeaderCell>Hold (mins)</Table.HeaderCell>
                   <Table.HeaderCell>Actions</Table.HeaderCell>
                   <Table.HeaderCell>Move</Table.HeaderCell>
@@ -211,7 +229,7 @@ class FiringShowPage extends Component {
                       {...provided.droppableProps}
                       style={getListStyle(snapshot.isDraggingOver)}
                     >
-                      {sorted_segments_array.map((segment, index) => {
+                      {controller_sensitive_segments.map((segment, index) => {
                         //console.log(segment);
                         return (
                           <Draggable
@@ -282,6 +300,8 @@ const mapStateToProps = (state, ownProps) => {
     }),
     firing: state.firings[ownProps.match.params.id],
     preferences: state.preferences,
+    projects: state.projects,
+    kilns: state.kilns,
   };
 };
 
