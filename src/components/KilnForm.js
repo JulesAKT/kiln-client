@@ -22,6 +22,7 @@ const KilnForm = ({ initialValues, onSubmit }) => {
 
   const { control, handleSubmit, errors, formState, watch } = useForm({
     resolver: yupResolver(schema),
+    defaultValues: initialValues,
   });
 
   const nameRef = useRef();
@@ -43,7 +44,6 @@ const KilnForm = ({ initialValues, onSubmit }) => {
   const timed_enabled = watch("timed_controller");
 
   console.log(timed_enabled);
-  console.log(initialValues);
   return (
     <Segment>
       <Form onSubmit={handleSubmit(onSubmit)}>

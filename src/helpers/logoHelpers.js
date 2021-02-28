@@ -1,3 +1,4 @@
+import React from "react";
 import { Image, Icon } from "semantic-ui-react";
 
 export const kilnLogo = (manufacturer) => {

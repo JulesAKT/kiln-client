@@ -642,7 +642,7 @@ export function semanticFormField({
   );
 }
 
-export const CheckBox = ({ control, name, ...props }) => {
+/* export const CheckBox = ({ control, name, ...props }) => {
   //console.log(inputProps.errors[inputProps.name]);
 
   console.log(props);
@@ -669,5 +669,30 @@ export const CheckBox = ({ control, name, ...props }) => {
         />
       </Form.Field>
     </div>
+  );
+};
+
+*/
+
+export const CheckBox = ({ control, name, label, ...props }) => {
+  const {
+    field: { ref, ...inputProps },
+    meta: { invalid, isTouched, isDirty },
+  } = useController({
+    name,
+    control,
+    rules: { required: true },
+    //    defaultValue: props.defaultValue,
+  });
+  console.log(inputProps);
+  return (
+    <Form.Checkbox
+      label={label}
+      //defaultChecked={props.defaultValue}
+      onChange={(e, d) => {
+        inputProps.onChange(d.checked);
+      }}
+      checked={inputProps.value}
+    />
   );
 };
