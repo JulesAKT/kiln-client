@@ -37,6 +37,7 @@ import FavouriteFiringsListPage from "./components/FavouriteFiringsListPage";
 import PhotoDeletePage from "./components/PhotoDeletePage";
 import alertActions from "./actions/alertActions";
 import { AuthProvider } from "./helpers/Auth";
+import "semantic-ui-css/semantic.min.css";
 
 class App extends React.Component {
   constructor(props) {

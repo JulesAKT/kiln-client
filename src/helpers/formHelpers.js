@@ -11,7 +11,9 @@ import {
   Form,
   //Input as SemanticInput,
   TextArea as SemanticTextArea,
+  Input as SemanticInput,
   Rating,
+  Label,
 } from "semantic-ui-react";
 import Moment from "moment";
 import momentLocalizer from "react-widgets-moment";
@@ -304,8 +306,21 @@ export const HookInput = ({ control, name, ...props }) => {
   }`;
   return (
     <div className={className}>
-      <label>{props.label}</label>
-      <input {...inputProps} inputRef={ref} />
+      {props.multiline ? (
+        <>
+          <Form.TextArea
+            {...inputProps}
+            label={props.label}
+            rows={props.numberOfLines}
+            inputRef={ref}
+          />
+        </>
+      ) : (
+        <Form.Input label={props.label} {...inputProps}>
+          <input />
+          {props.rightLabel && <Label basic>{props.rightLabel}</Label>}
+        </Form.Input>
+      )}
       <ErrorMessage
         errors={props.errors}
         name={name}
@@ -481,8 +496,8 @@ export const HookSelect = ({
   const className = `field ${errors[name] && isTouched ? "error" : ""}`;
   return (
     <div className={className}>
-      <label>{label}</label>
-      <select {...inputProps} inputRef={ref}>
+      <label style={props.labelStyle}>{label}</label>
+      <select {...inputProps} inputRef={ref} style={props.selectStyle}>
         {items.map(({ label, value }) => {
           return (
             <option value={value} key={value}>

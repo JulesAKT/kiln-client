@@ -1,3 +1,5 @@
+import { Image, Icon } from "semantic-ui-react";
+
 export const kilnLogo = (manufacturer) => {
   switch (manufacturer) {
     case "Olympic":
@@ -32,7 +34,23 @@ export const glassImage = (glass) => {
     case "Spectrum":
       return require("../assets/spectrum.jpg").default;
     case "Bullseye":
-    default:
       return require("../assets/bullseye.jpg").default;
+    default:
+      return require("../assets/icon.png").default;
+  }
+};
+
+export const glassIcon = (glass) => {
+  switch (glass) {
+    case "Spectrum":
+      return <Image avatar src={require("../assets/spectrum.jpg").default} />;
+    case "Bottle":
+      return <Icon name="beer" />;
+    case "Float":
+      return <Icon name="windows" />;
+
+    case "Bullseye":
+    default:
+      return <Image avatar src={require("../assets/bullseye.jpg").default} />;
   }
 };

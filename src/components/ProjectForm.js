@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Segment, Button, Form, List, Card, Image } from "semantic-ui-react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { glassImage, kilnLogo } from "../helpers/logoHelpers";
+import { glassIcon, glassImage, kilnLogo } from "../helpers/logoHelpers";
 import { correctlySizedPhoto } from "../helpers/photoHelpers";
 import * as yup from "yup";
 
@@ -90,7 +90,8 @@ const ProjectForm = (props) => {
                 errors={errors}
                 defaultValue={initialValues.width}
                 name="width"
-                label={`Width (${currentUnit})`}
+                label={`Width`}
+                rightLabel={currentUnit}
                 keyboardType="number-pad"
                 fieldRef={widthRef}
                 nextFieldRef={depthRef}
@@ -100,7 +101,8 @@ const ProjectForm = (props) => {
                 errors={errors}
                 defaultValue={initialValues.depth}
                 name="depth"
-                label={`Height (${currentUnit})`}
+                label={`Height`}
+                rightLabel={currentUnit}
                 keyboardType="number-pad"
                 fieldRef={depthRef}
                 nextFieldRef={thicknessRef}
@@ -110,7 +112,8 @@ const ProjectForm = (props) => {
                 errors={errors}
                 defaultValue={initialValues.thickness}
                 name="thickness"
-                label={`Thickness (${currentUnit})`}
+                label={`Thickness`}
+                rightLabel={currentUnit}
                 keyboardType="number-pad"
                 fieldRef={thicknessRef}
 
@@ -146,6 +149,8 @@ const ProjectForm = (props) => {
                 label="Kiln"
                 items={kiln_selections}
                 fieldRef={kilnRef}
+                labelStyle={{ width: "75px" }}
+                selectStyle={{ width: "200px" }}
               />
               <span>
                 <Image avatar src={kilnLogo(kilns[kiln]?.manufacturer)} />
@@ -161,11 +166,11 @@ const ProjectForm = (props) => {
                 label="Glass Type"
                 items={glasstypes}
                 fieldRef={glassRef}
+                labelStyle={{ width: "75px" }}
+                selectStyle={{ width: "200px" }}
               />
 
-              <span>
-                <Image avatar src={glassImage(glassType)} />
-              </span>
+              <span>{glassIcon(glassType)}</span>
             </Form.Group>
 
             <Input

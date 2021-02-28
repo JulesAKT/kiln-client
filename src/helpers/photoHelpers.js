@@ -8,6 +8,13 @@ export const findSuitablePhoto = (project, size = "small") => {
     if (!project.photos) {
       return {};
     }
+    // Check for a 'favourite' shot
+    const favourite = project.photos.find((photo) => photo.isFavourite);
+    if (favourite) {
+      return correctlySizedPhoto(favourite, size);
+    }
+    // Check for an 'after' shot
+
     // Check for an 'after' shot
     const after = project.photos.find((photo) => photo.type === "after");
     if (after) {
