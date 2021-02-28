@@ -5,7 +5,7 @@ import DataTable from "react-data-table-component";
 import useFirebaseUserData from "../hooks/useFirebaseUserData";
 import useFirebaseUsers from "../hooks/useFirebaseUsers";
 import useFakeUID from "../hooks/useFakeUID";
-import { AuthContext, superUserUID, getDisplayName } from "../helpers/Auth";
+import { AuthContext, superUserUID } from "../helpers/Auth";
 import { editFakeUID } from "../actions";
 
 const SuperUserPage = () => {

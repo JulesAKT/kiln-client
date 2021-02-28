@@ -1,23 +1,17 @@
 import React, { useRef } from "react";
-import { Segment, Button, Form, List, Card, Image } from "semantic-ui-react";
+import { Segment, Button, Form, Image } from "semantic-ui-react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { glassIcon, glassImage, kilnLogo } from "../helpers/logoHelpers";
-import { correctlySizedPhoto } from "../helpers/photoHelpers";
+import { glassIcon, kilnLogo } from "../helpers/logoHelpers";
 import * as yup from "yup";
 
 //import { Field, FieldArray, reduxForm } from "redux-form";
 import useFirebaseKilns from "../hooks/useFirebaseKilns";
 import {
   HookInput as Input,
-  renderFieldArray,
   HookSelect as Select,
   HookStars as Stars,
-  renderStars,
-  TextArea,
-  HookImageInput as ImageInput,
 } from "../helpers/formHelpers";
-import { findSuitablePhoto } from "../helpers/photoHelpers";
 
 const ProjectForm = (props) => {
   const kilns = useFirebaseKilns();
@@ -31,11 +25,9 @@ const ProjectForm = (props) => {
 
   const initialValues = props.initialValues;
   console.log(props);
-  const { register, control, handleSubmit, errors, formState, watch } = useForm(
-    {
-      resolver: yupResolver(schema),
-    }
-  );
+  const { control, handleSubmit, errors, watch } = useForm({
+    resolver: yupResolver(schema),
+  });
   const currentUnit = watch("length_unit") || initialValues.length_unit || "mm";
   console.log(currentUnit);
   const glassType = watch("glass") || initialValues.glass;

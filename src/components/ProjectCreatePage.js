@@ -28,8 +28,6 @@ const ProjectCreatePage = (props) => {
           name: "",
           width: "",
           depth: "",
-          thickness: "",
-          notes: "",
           photos: [],
           kiln: first_kiln.id,
           glass: "Bullseye",

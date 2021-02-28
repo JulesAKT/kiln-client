@@ -2,16 +2,14 @@ import React from "react";
 import DatePicker, { registerLocale, setDefaultLocale } from "react-datepicker";
 
 import { DateTimePicker } from "react-widgets";
-import { Image, List, Checkbox as BaseCheckBox } from "semantic-ui-react";
-import { useController, Controller } from "react-hook-form";
+import { Image, List } from "semantic-ui-react";
+import { useController } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
-import _, { omit } from "lodash";
+import { omit } from "lodash";
 
 import {
   Form,
-  //Input as SemanticInput,
   TextArea as SemanticTextArea,
-  Input as SemanticInput,
   Rating,
   Label,
 } from "semantic-ui-react";
@@ -110,7 +108,6 @@ export const HookImageInput = ({ control, name, ...props }) => {
   //console.log(props);
   const {
     field: { ref, ...inputProps },
-    meta: { invalid, isTouched, isDirty },
   } = useController({
     name,
     control,
@@ -293,7 +290,7 @@ export const HookInput = ({ control, name, ...props }) => {
   //console.log(props);
   const {
     field: { ref, ...inputProps },
-    meta: { invalid, isTouched, isDirty },
+    meta: { isTouched },
   } = useController({
     name,
     control,
@@ -484,7 +481,7 @@ export const HookSelect = ({
   //console.log(props);
   const {
     field: { ref, ...inputProps },
-    meta: { invalid, isTouched, isDirty },
+    meta: { isTouched },
   } = useController({
     name,
     control,
@@ -551,7 +548,7 @@ export const HookStars = ({
   console.log(props);
   const {
     field: { ref, onChange, ...inputProps },
-    meta: { invalid, isTouched, isDirty },
+    meta: { isTouched },
   } = useController({
     name,
     control,
@@ -677,7 +674,6 @@ export function semanticFormField({
 export const CheckBox = ({ control, name, label, ...props }) => {
   const {
     field: { ref, ...inputProps },
-    meta: { invalid, isTouched, isDirty },
   } = useController({
     name,
     control,

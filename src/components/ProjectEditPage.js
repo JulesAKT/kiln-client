@@ -32,8 +32,6 @@ const ProjectEditPage = (props) => {
     name: "",
     width: "",
     depth: "",
-    thickness: "",
-    notes: "",
     glass: "Bullseye",
     thickness: "6",
     stars: 2.5,
