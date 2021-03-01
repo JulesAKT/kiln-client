@@ -337,8 +337,13 @@ export const createFiring = (formProps, allowNavigate = true) => async (
   if (!formProps.id) {
     formProps.id = uuid();
   }
+  let newProps = { ...formProps };
+  if (newProps.date.getMonth) {
+    newProps.date = newProps.date.getTime();
+  }
+
   db.ref(userPath() + `/firings/${formProps.id}`).set({
-    ...formProps,
+    ...newProps,
   });
 
   dispatch({
@@ -414,6 +419,11 @@ export const editFiring = (id, formProps, allowNavigate = true) => async (
   if (newProps.notes === "") {
     delete newProps.notes;
   }
+  //console.log(newProps.date);
+  if (newProps.date.getMonth) {
+    newProps.date = newProps.date.getTime();
+  }
+
   db.ref(userPath() + `/firings/${id}`).set({
     ...newProps,
   });

@@ -1,38 +1,61 @@
-import React, { Component } from "react";
-import { Card, Button, Form } from "semantic-ui-react";
+import React from "react";
+
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+import * as yup from "yup";
+
+import { Card, Button, Form, Segment } from "semantic-ui-react";
 
 import { Field, reduxForm } from "redux-form";
-import { Input, TextArea } from "../helpers/formHelpers";
+import { HookInput as Input, DatePicker } from "../helpers/formHelpers";
 
-class FiringForm extends Component {
-  onSubmit = (formValues) => {
-    this.props.onSubmit(formValues);
-  };
+const FiringForm = ({ initialValues, onSubmit }) => {
+  const schema = yup.object().shape({
+    name: yup.string().required(),
+  });
 
-  render() {
-    return (
-      <Form error onSubmit={this.props.handleSubmit(this.onSubmit)}>
-        <Card>
-          <Field name="name" component={Input} label="Firing Name" />
-        </Card>
-        <Card>
-          <Field name="notes" component={TextArea} label="Notes" />
-        </Card>
-        <Card>
-          <Button type="submit">Update</Button>
-        </Card>
+  const { control, handleSubmit, errors, formState } = useForm({
+    resolver: yupResolver(schema),
+    defaultValues: initialValues,
+  });
+
+  return (
+    <Segment>
+      <Form onSubmit={handleSubmit(onSubmit)}>
+        <Input
+          control={control}
+          errors={errors}
+          name="name"
+          label="Firing Name"
+          errorMessage={errors.name && "This field is required"}
+        />
+        <DatePicker
+          control={control}
+          error={errors}
+          name="date"
+          label="Firing Date"
+          errorMessage={errors.date}
+        />
+        <Input
+          control={control}
+          errors={errors}
+          name="notes"
+          label="Notes"
+          errorMessage={errors.name && "This field is required"}
+          multiline={true}
+          numberOfLines={8}
+        />
+        <Button
+          onClick={handleSubmit(onSubmit)}
+          disabled={!formState.isDirty || formState.isSubmitting}
+          loading={formState.isSubmitting}
+        >
+          Update
+        </Button>
       </Form>
-    );
-  }
-}
-
-const validate = (formValues) => {
-  const errors = {};
-  if (!formValues.name) {
-    errors.name = "Required";
-  }
-  // Todo: Add additional validation.
-  return errors;
+    </Segment>
+  );
 };
 
-export default reduxForm({ form: "firingForm", validate })(FiringForm);
+export default FiringForm;

@@ -1,5 +1,8 @@
 import React from "react";
-import DatePicker, { registerLocale, setDefaultLocale } from "react-datepicker";
+import BaseDatePicker, {
+  registerLocale,
+  setDefaultLocale,
+} from "react-datepicker";
 
 import { DateTimePicker } from "react-widgets";
 import { Image, List } from "semantic-ui-react";
@@ -388,6 +391,33 @@ export const TextArea = ({ input, type, label, meta }) => {
   );
 };
 
+export const DatePicker = ({ control, name, label, ...props }) => {
+  const {
+    field: { ref, ...inputProps },
+  } = useController({
+    name,
+    control,
+    rules: { required: true },
+    //    defaultValue: props.defaultValue,
+  });
+
+  return (
+    <Form.Field
+
+    //defaultChecked={props.defaultValue}
+    >
+      <label>{label}</label>
+      <BaseDatePicker
+        local="en-GB"
+        dateFormat="dd MMM yyyy"
+        selected={!inputProps.value ? null : new Date(inputProps.value)}
+        onChange={inputProps.onChange}
+      />
+    </Form.Field>
+  );
+};
+
+/* 
 export const renderDatePicker = ({
   input: { onChange, value },
   label,
@@ -426,48 +456,7 @@ export const renderDateTimePicker = ({
     </div>
   );
 };
-
-export const assetTypes = {
-  washing_machine: "Washing Machine",
-  dryer: "Dryer",
-  washer_dryer: "Washer/Dryer",
-  electric_oven: "Electric Oven",
-  electric_hob: "Electric Hob",
-  standalone_electric_cooker: "Electric Cooker (Standalone)",
-  refrigerator: "Refrigerator",
-  freezer: "Freezer",
-  fridge_freezer: "Fridge/Freezer",
-  dishwasher: "Dishwasher",
-  tv: "Television",
-  dab_radio: "Dab Radio",
-  computer: "Computer",
-  printer: "Printer",
-  other: "Other",
-  speaker: "Speaker",
-  amplifier: "Amplifier",
-  furniture: "Furniture",
-  toaster: "Toaster",
-  blender: "Blender",
-};
-
-export const renderAssetTypeSelect = ({ input, type, label, meta }) => {
-  const className = `field ${meta.error && meta.touched ? "error" : ""}`;
-  return (
-    <div className={className}>
-      <label>{label}</label>
-      <select {...input}>
-        {Object.keys(assetTypes).map((key) => {
-          return (
-            <option value={key} key={key}>
-              {assetTypes[key]}
-            </option>
-          );
-        })}
-      </select>
-      {renderError(meta)}
-    </div>
-  );
-};
+*/
 
 export const HookSelect = ({
   control,

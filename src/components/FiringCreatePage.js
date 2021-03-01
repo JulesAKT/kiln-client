@@ -7,14 +7,25 @@ const FiringCreatePage = (props) => {
   const dispatch = useDispatch();
 
   const handleSubmit = (formValues) => {
-    dispatch(createFiring(formValues));
+    const values = {
+      project_id: props.match.params.id,
+      order: props.match.params.order,
+      ...formValues,
+    };
+    console.log("submitting");
+    console.log(values);
+    dispatch(createFiring(values));
   };
 
   return (
     <div>
       <FiringForm
         onSubmit={handleSubmit}
-        initialValues={{ project_id: props.match.params.id }}
+        initialValues={{
+          notes: "",
+          name: "",
+          date: Date.now(),
+        }}
       />
     </div>
   );

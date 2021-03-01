@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { Button, Icon, Segment, Header, Table, Ref } from "semantic-ui-react";
 import FiringGraph from "./FiringGraph";
-import TinyFiringForm from "./tinyFiringForm";
+
 import {
   fetchFiring,
   fetchPreferences,
@@ -29,7 +29,6 @@ import projectReducer from "../reducers/projectReducer";
 class FiringShowPage extends Component {
   constructor(props) {
     super(props);
-    this.state = { isEditing: false };
   }
   componentDidMount() {
     this.props.dispatch(fetchSegmentsByFiring(this.props.match.params.id));
@@ -93,36 +92,21 @@ class FiringShowPage extends Component {
         return <Icon name="trash" type="feather" disabled floated="right" />;
       }
     };
-    const editClicked = () => {
-      this.setState({ isEditing: !this.state.isEditing });
-    };
-    const onSubmit = (formValues) => {
-      this.props.dispatch(editFiring(firing.id, formValues, false));
-      this.setState({ isEditing: false });
-    };
 
     const renderHeader = () => {
       return (
         <Header as="h3" attached="top">
-          <Icon
-            name="edit"
-            type="feather"
-            onClick={editClicked}
-            floated="left"
-          />
+          <Link to={`/firings/edit/${id}`}>
+            <Icon name="edit" type="feather" floated="left" />
+          </Link>
           <Header.Content>
-            {this.state.isEditing ? (
-              <TinyFiringForm
-                initialValues={{ ...firing }}
-                formName={`tinyroomform-${firing.id}`}
-                onSubmit={onSubmit}
-              />
-            ) : (
-              <>
-                {firing.name}
-                {firing.notes && <div>Notes: {firing.notes}</div>}
-              </>
-            )}
+            <>
+              {firing.name}
+              {firing.notes && <div>Notes: {firing.notes}</div>}
+              {firing.date && (
+                <div>Firing Date: {new Date(firing.date).toDateString()}</div>
+              )}
+            </>
           </Header.Content>
 
           {renderDeleteIcon()}

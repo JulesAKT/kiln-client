@@ -5,7 +5,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { glassIcon, kilnLogo } from "../helpers/logoHelpers";
 import * as yup from "yup";
 
-//import { Field, FieldArray, reduxForm } from "redux-form";
 import useFirebaseKilns from "../hooks/useFirebaseKilns";
 import {
   HookInput as Input,
@@ -183,97 +182,5 @@ const ProjectForm = (props) => {
     </>
   );
 };
-/*
-const renderImageField = (member, index, fields) => (
-  <List.Item key={index}>
-    <Field name={`${member}.photo`} component={ImageInput} />
 
-    <List.Content>
-      <Field
-        name={`${member}.type`}
-        component={Select}
-        items={[
-          { label: "Before", value: "Before" },
-          { label: "During", value: "During" },
-          { label: "After", value: "After" },
-        ]}
-      />
-      <button type="button" onClick={() => fields.remove(index)}>
-        Delete
-      </button>
-    </List.Content>
-  </List.Item>
-);
-*/
 export default ProjectForm;
-
-/* 
-const validate = (formValues) => {
-  const errors = {};
-  if (!formValues.name) {
-    errors.name = "Required";
-  }
-  // Todo: Add additional validation.
-  return errors;
-};
-*/
-
-/* 
-
-            
-            <Field
-              name="name"
-              component={Input}
-              label="Project Name"
-              keyboardType="default"
-            />
-            <Field
-              name="width"
-              component={Input}
-              label="Width (mm)"
-              keyboardType="number-pad"
-            />
-            <Field
-              name="depth"
-              component={Input}
-              label="Height (mm)"
-              keyboardType="number-pad"
-            />
-            <Field
-              name="thickness"
-              component={Input}
-              label="Thickness (mm)"
-              keyboardType="number-pad"
-            />
-            <Field name="stars" component={renderStars} label="Stars" />
-
-            <Field
-              name="kiln"
-              component={Select}
-              label="Kiln"
-              items={kiln_selections}
-            />
-
-            <Field
-              name="glass"
-              component={Select}
-              label="Glass Type"
-              items={glasstypes}
-            />
-            {/*}          <Field
-            name="photo"
-            component={ImageInput}
-            type="file"
-            label="Photo"
-          />
-  
-  <FieldArray
-  name="photos"
-  component={renderFieldArray}
-  innerComponent={renderImageField}
-/>
-
-<Field name="notes" component={TextArea} label="Notes" />
-
-<Button type="submit">Update</Button>
-*/

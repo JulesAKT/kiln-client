@@ -99,6 +99,7 @@ const ProjectShowPage = (props) => {
 
     dispatch(editProject(project.id, newProject, true));
   };
+  const newOrder = Math.max(...firings_array.map((s) => s.order || 0), 0) + 1;
 
   return (
     <div>
@@ -148,7 +149,7 @@ const ProjectShowPage = (props) => {
           )}
       </List>
       <div>
-        <Link to={`/new_firing/${id}`}>
+        <Link to={`/new_firing/${id}/${newOrder}`}>
           <Button primary>
             <Icon name="add" />
             Add Firing

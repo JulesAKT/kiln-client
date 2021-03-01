@@ -97,7 +97,7 @@ class App extends React.Component {
                     component={FiringShowPage}
                   />
                   <PrivateRoute
-                    path="/new_firing/:id"
+                    path="/new_firing/:id/:order"
                     exact
                     component={FiringCreatePage}
                   />
