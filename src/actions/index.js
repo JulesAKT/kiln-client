@@ -338,7 +338,7 @@ export const createFiring = (formProps, allowNavigate = true) => async (
     formProps.id = uuid();
   }
   let newProps = { ...formProps };
-  if (newProps.date.getMonth) {
+  if (newProps?.date?.getMonth) {
     newProps.date = newProps.date.getTime();
   }
 
@@ -420,7 +420,7 @@ export const editFiring = (id, formProps, allowNavigate = true) => async (
     delete newProps.notes;
   }
   //console.log(newProps.date);
-  if (newProps.date.getMonth) {
+  if (newProps?.date?.getMonth) {
     newProps.date = newProps.date.getTime();
   }
 

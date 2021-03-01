@@ -27,9 +27,9 @@ const ProjectForm = (props) => {
   const { control, handleSubmit, errors, watch } = useForm({
     resolver: yupResolver(schema),
   });
-  const currentUnit = watch("length_unit") || initialValues.length_unit || "mm";
+  const currentUnit = watch("length_unit", initialValues.length_unit) || "mm";
   console.log(currentUnit);
-  const glassType = watch("glass") || initialValues.glass;
+  const glassType = watch("glass", initialValues.glass);
   const kiln = watch("kiln");
 
   const nameRef = useRef();

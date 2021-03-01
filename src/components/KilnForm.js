@@ -41,7 +41,10 @@ const KilnForm = ({ initialValues, onSubmit }) => {
     { label: "Jen-Ken", value: "Jen-Ken" },
     { label: "Cress", value: "Cress" },
   ];
-  const timed_enabled = watch("timed_controller");
+  const timed_enabled = watch(
+    "timed_controller",
+    initialValues.timed_controller
+  );
 
   console.log(timed_enabled);
   return (
