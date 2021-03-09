@@ -57,6 +57,9 @@ const ProjectForm = (props) => {
   const glasstypes = [
     { label: "Bullseye", value: "Bullseye" },
     { label: "Spectrum", value: "Spectrum" },
+    { label: "Wissmach", value: "Wissmach" },
+    { label: "Baoili COE 85", value: "Baoli COE 85" },
+    { label: "Baoili COE 90", value: "Baoli COE 90" },
     { label: "Bottle", value: "Bottle" },
     { label: "Float", value: "Float" },
   ];

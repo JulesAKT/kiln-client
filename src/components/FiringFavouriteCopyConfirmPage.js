@@ -49,7 +49,10 @@ const FiringFavouriteCopyConfirmPage = (props) => {
   const renderContent = () => (
     <Grid>
       <Grid.Column width="6">
-        <FiringGraph sortedSegments={sorted_segments_array} />
+        <FiringGraph
+          sortedSegments={sorted_segments_array}
+          showAnnotations={false}
+        />
       </Grid.Column>
       <Grid.Column width="10">
         {" "}

@@ -17,13 +17,18 @@ import {
   getTemperatureRanges,
   temperatureRangeColours,
   temperatureRangeNames,
+  getEnabledAnnotationsFromSegments,
 } from "../helpers/unitHelpers";
 
-const FiringGraph = ({ sortedSegments, degrees }) => {
-  const [enabledAnnotations, setEnabledAnnotations] = useState({
-    fullFuse: true,
-    slumping: true,
-  });
+const FiringGraph = ({
+  sortedSegments,
+  degrees,
+  project,
+  showAnnotations = true,
+}) => {
+  const [enabledAnnotations, setEnabledAnnotations] = useState(
+    getEnabledAnnotationsFromSegments(sortedSegments, project?.glass)
+  );
   const handleChangedCheckbox = (key) => {
     console.log("handling Change");
 
@@ -33,7 +38,6 @@ const FiringGraph = ({ sortedSegments, degrees }) => {
     });
   };
 
-  const showAnnotations = true;
   let elapsedMins = 0;
   let currentTemperature = 20;
   let data = [{ time: elapsedMins, temperature: currentTemperature }];
@@ -62,8 +66,8 @@ const FiringGraph = ({ sortedSegments, degrees }) => {
     // console.log("Elapsed Time: " + elapsedMins);
     currentTemperature = segment.temperature;
   });
-  const temperatureRanges = getTemperatureRanges("bullseye", degrees);
-  console.log(enabledAnnotations);
+  const temperatureRanges = getTemperatureRanges(project?.glass, degrees);
+  //console.log(enabledAnnotations);
   //console.log(temperatureRanges);
   //console.log(Object.keys(temperatureRanges));
   //console.log(temperatureRangeNames);
@@ -148,7 +152,7 @@ const FiringGraph = ({ sortedSegments, degrees }) => {
 
       {showAnnotations && (
         <Grid.Column width={2}>
-          <Header>Process Temps</Header>
+          <Header>Process Temps for {project?.glass}</Header>
           {Object.keys(temperatureRanges).map((key) => (
             <Button
               key={key}
