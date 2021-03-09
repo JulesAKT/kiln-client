@@ -1,0 +1,150 @@
+Date : 2021-03-08 19:59:24
+Directory : /Users/jules/Documents/node/kiln-client
+Total : 108 files,  26442 codes, 554 comments, 713 blanks, all 27709 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          6 |     20,927 |         10 |          4 |     20,941 |
+| JavaScript |         92 |      5,302 |        519 |        652 |      6,473 |
+| XML        |          2 |         53 |          0 |          2 |         55 |
+| CSS        |          2 |         45 |          0 |          8 |         53 |
+| Markdown   |          1 |         37 |          0 |         32 |         69 |
+| Python     |          1 |         31 |          2 |          6 |         39 |
+| YAML       |          1 |         22 |          0 |          5 |         27 |
+| HTML       |          1 |         22 |         23 |          2 |         47 |
+| Log        |          2 |          3 |          0 |          2 |          5 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                      | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                         |        108 |     26,442 |        554 |        713 |     27,709 |
+| public                                                                                    |          2 |         47 |         23 |          3 |         73 |
+| src                                                                                       |         99 |      6,050 |        521 |        669 |      7,240 |
+| src/actions                                                                               |          3 |        686 |         83 |         87 |        856 |
+| src/api                                                                                   |          1 |         66 |         13 |         13 |         92 |
+| src/assets                                                                                |          1 |         46 |          0 |          1 |         47 |
+| src/components                                                                            |         45 |      2,858 |        128 |        322 |      3,308 |
+| src/components/__tests__                                                                  |          2 |         51 |          1 |          9 |         61 |
+| src/helpers                                                                               |          8 |        823 |        204 |         76 |      1,103 |
+| src/hooks                                                                                 |         16 |        234 |          0 |         74 |        308 |
+| src/reducers                                                                              |         10 |        274 |         29 |         39 |        342 |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                  | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/jules/Documents/node/kiln-client/.gitlab-ci.yml                                    | YAML       |         22 |          0 |          5 |         27 |
+| /Users/jules/Documents/node/kiln-client/README.md                                         | Markdown   |         37 |          0 |         32 |         69 |
+| /Users/jules/Documents/node/kiln-client/database-debug.log                                | Log        |          2 |          0 |          1 |          3 |
+| /Users/jules/Documents/node/kiln-client/firebase.json                                     | JSON       |         16 |         10 |          0 |         26 |
+| /Users/jules/Documents/node/kiln-client/package-lock.json                                 | JSON       |     20,198 |          0 |          1 |     20,199 |
+| /Users/jules/Documents/node/kiln-client/package.json                                      | JSON       |         69 |          0 |          1 |         70 |
+| /Users/jules/Documents/node/kiln-client/public/index.html                                 | HTML       |         22 |         23 |          2 |         47 |
+| /Users/jules/Documents/node/kiln-client/public/manifest.json                              | JSON       |         25 |          0 |          1 |         26 |
+| /Users/jules/Documents/node/kiln-client/src/App.css                                       | CSS        |         33 |          0 |          6 |         39 |
+| /Users/jules/Documents/node/kiln-client/src/App.js                                        | JavaScript |        192 |         19 |          8 |        219 |
+| /Users/jules/Documents/node/kiln-client/src/App.test.js                                   | JavaScript |         15 |          0 |          5 |         20 |
+| /Users/jules/Documents/node/kiln-client/src/Modal.js                                      | JavaScript |         18 |          1 |          3 |         22 |
+| /Users/jules/Documents/node/kiln-client/src/actions/alertActions.js                       | JavaScript |         17 |          0 |          6 |         23 |
+| /Users/jules/Documents/node/kiln-client/src/actions/index.js                              | JavaScript |        540 |         83 |         59 |        682 |
+| /Users/jules/Documents/node/kiln-client/src/actions/types.js                              | JavaScript |        129 |          0 |         22 |        151 |
+| /Users/jules/Documents/node/kiln-client/src/api/firebase.js                               | JavaScript |         66 |         13 |         13 |         92 |
+| /Users/jules/Documents/node/kiln-client/src/assets/app_store_download.svg                 | XML        |         46 |          0 |          1 |         47 |
+| /Users/jules/Documents/node/kiln-client/src/components/FavouriteFiringsListPage.js        | JavaScript |         32 |          0 |          6 |         38 |
+| /Users/jules/Documents/node/kiln-client/src/components/FiringCard.js                      | JavaScript |         16 |          2 |          3 |         21 |
+| /Users/jules/Documents/node/kiln-client/src/components/FiringCreatePage.js                | JavaScript |         30 |          0 |          5 |         35 |
+| /Users/jules/Documents/node/kiln-client/src/components/FiringDeletePage.js                | JavaScript |         62 |          0 |          9 |         71 |
+| /Users/jules/Documents/node/kiln-client/src/components/FiringEditPage.js                  | JavaScript |         35 |          1 |          6 |         42 |
+| /Users/jules/Documents/node/kiln-client/src/components/FiringFavouriteCopyConfirmPage.js  | JavaScript |         99 |          0 |          9 |        108 |
+| /Users/jules/Documents/node/kiln-client/src/components/FiringFavouriteCreatePage.js       | JavaScript |         55 |          0 |          4 |         59 |
+| /Users/jules/Documents/node/kiln-client/src/components/FiringForm.js                      | JavaScript |         53 |          0 |          9 |         62 |
+| /Users/jules/Documents/node/kiln-client/src/components/FiringGraph.js                     | JavaScript |        155 |         37 |          9 |        201 |
+| /Users/jules/Documents/node/kiln-client/src/components/FiringShowPage.js                  | JavaScript |        257 |         12 |         24 |        293 |
+| /Users/jules/Documents/node/kiln-client/src/components/FiringTemplateCopyConfirmPage.js   | JavaScript |        112 |          2 |         12 |        126 |
+| /Users/jules/Documents/node/kiln-client/src/components/Header.js                          | JavaScript |         19 |          0 |          4 |         23 |
+| /Users/jules/Documents/node/kiln-client/src/components/KilnCard.js                        | JavaScript |         15 |          0 |          5 |         20 |
+| /Users/jules/Documents/node/kiln-client/src/components/KilnCreatePage.js                  | JavaScript |         19 |          1 |          5 |         25 |
+| /Users/jules/Documents/node/kiln-client/src/components/KilnDeletePage.js                  | JavaScript |         72 |          0 |          8 |         80 |
+| /Users/jules/Documents/node/kiln-client/src/components/KilnEditPage.js                    | JavaScript |         27 |          0 |          7 |         34 |
+| /Users/jules/Documents/node/kiln-client/src/components/KilnForm.js                        | JavaScript |         90 |          1 |         11 |        102 |
+| /Users/jules/Documents/node/kiln-client/src/components/KilnShowPage.js                    | JavaScript |         33 |          0 |          5 |         38 |
+| /Users/jules/Documents/node/kiln-client/src/components/KilnsListPage.js                   | JavaScript |         23 |          0 |          7 |         30 |
+| /Users/jules/Documents/node/kiln-client/src/components/LoginButton.js                     | JavaScript |         29 |          3 |          5 |         37 |
+| /Users/jules/Documents/node/kiln-client/src/components/LoginForm.js                       | JavaScript |         42 |          1 |          6 |         49 |
+| /Users/jules/Documents/node/kiln-client/src/components/LoginPage.js                       | JavaScript |         48 |          2 |          7 |         57 |
+| /Users/jules/Documents/node/kiln-client/src/components/PhotoDeletePage.js                 | JavaScript |         53 |          2 |          8 |         63 |
+| /Users/jules/Documents/node/kiln-client/src/components/PreferencePage.js                  | JavaScript |         50 |          6 |          6 |         62 |
+| /Users/jules/Documents/node/kiln-client/src/components/PrivacyPage.js                     | JavaScript |        189 |          0 |          3 |        192 |
+| /Users/jules/Documents/node/kiln-client/src/components/ProjectCard.js                     | JavaScript |         50 |          0 |          5 |         55 |
+| /Users/jules/Documents/node/kiln-client/src/components/ProjectCreatePage.js               | JavaScript |         36 |          1 |          8 |         45 |
+| /Users/jules/Documents/node/kiln-client/src/components/ProjectDeletePage.js               | JavaScript |         62 |          0 |          9 |         71 |
+| /Users/jules/Documents/node/kiln-client/src/components/ProjectEditPage.js                 | JavaScript |         43 |          1 |          7 |         51 |
+| /Users/jules/Documents/node/kiln-client/src/components/ProjectForm.js                     | JavaScript |        165 |          6 |         16 |        187 |
+| /Users/jules/Documents/node/kiln-client/src/components/ProjectListPage.js                 | JavaScript |        126 |          1 |         12 |        139 |
+| /Users/jules/Documents/node/kiln-client/src/components/ProjectShowPage.js                 | JavaScript |        229 |          7 |         15 |        251 |
+| /Users/jules/Documents/node/kiln-client/src/components/SegmentCreatePage.js               | JavaScript |         35 |          2 |          6 |         43 |
+| /Users/jules/Documents/node/kiln-client/src/components/SegmentDeletePage.js               | JavaScript |         43 |          0 |          9 |         52 |
+| /Users/jules/Documents/node/kiln-client/src/components/SegmentEditPage.js                 | JavaScript |         28 |         16 |          6 |         50 |
+| /Users/jules/Documents/node/kiln-client/src/components/SegmentForm.js                     | JavaScript |         77 |          3 |          6 |         86 |
+| /Users/jules/Documents/node/kiln-client/src/components/SegmentRow.disabled.js             | JavaScript |         21 |         19 |          3 |         43 |
+| /Users/jules/Documents/node/kiln-client/src/components/SignedupPage.js                    | JavaScript |         20 |          0 |          3 |         23 |
+| /Users/jules/Documents/node/kiln-client/src/components/SignupForm.js                      | JavaScript |         59 |          0 |          5 |         64 |
+| /Users/jules/Documents/node/kiln-client/src/components/SignupPage.js                      | JavaScript |         26 |          0 |          5 |         31 |
+| /Users/jules/Documents/node/kiln-client/src/components/SuperUserPage.js                   | JavaScript |        112 |          0 |          9 |        121 |
+| /Users/jules/Documents/node/kiln-client/src/components/SupportPage.js                     | JavaScript |         13 |          0 |          3 |         16 |
+| /Users/jules/Documents/node/kiln-client/src/components/UserMenu.js                        | JavaScript |         47 |          1 |          3 |         51 |
+| /Users/jules/Documents/node/kiln-client/src/components/__tests__/FiringCreatePage-test.js | JavaScript |         12 |          0 |          3 |         15 |
+| /Users/jules/Documents/node/kiln-client/src/components/__tests__/ProjectListPage.test.js  | JavaScript |         39 |          1 |          6 |         46 |
+| /Users/jules/Documents/node/kiln-client/src/database_rules.json                           | JSON       |         28 |          0 |          1 |         29 |
+| /Users/jules/Documents/node/kiln-client/src/helpers/Auth.js                               | JavaScript |         50 |          5 |          9 |         64 |
+| /Users/jules/Documents/node/kiln-client/src/helpers/PrivateRoute.js                       | JavaScript |         24 |          3 |          3 |         30 |
+| /Users/jules/Documents/node/kiln-client/src/helpers/dates.js                              | JavaScript |         12 |          1 |          4 |         17 |
+| /Users/jules/Documents/node/kiln-client/src/helpers/formHelpers.js                        | JavaScript |        478 |        169 |         37 |        684 |
+| /Users/jules/Documents/node/kiln-client/src/helpers/logoHelpers.js                        | JavaScript |         52 |          0 |          6 |         58 |
+| /Users/jules/Documents/node/kiln-client/src/helpers/photoHelpers.js                       | JavaScript |         43 |         18 |          3 |         64 |
+| /Users/jules/Documents/node/kiln-client/src/helpers/timedController.js                    | JavaScript |         26 |          5 |          3 |         34 |
+| /Users/jules/Documents/node/kiln-client/src/helpers/unitHelpers.js                        | JavaScript |        138 |          3 |         11 |        152 |
+| /Users/jules/Documents/node/kiln-client/src/history.js                                    | JavaScript |          2 |          0 |          2 |          4 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFakeUID.js                           | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseFiring.js                    | JavaScript |         20 |          0 |          6 |         26 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseFirings.js                   | JavaScript |         15 |          0 |          5 |         20 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseKiln.js                      | JavaScript |         20 |          0 |          5 |         25 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseKilns.js                     | JavaScript |         15 |          0 |          4 |         19 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebasePreferences.js               | JavaScript |         14 |          0 |          5 |         19 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseProject.js                   | JavaScript |         20 |          0 |          5 |         25 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseProjects.js                  | JavaScript |         15 |          0 |          4 |         19 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseSegment.js                   | JavaScript |         15 |          0 |          5 |         20 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseSegments.js                  | JavaScript |         15 |          0 |          4 |         19 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseTemplateFiring.js            | JavaScript |         20 |          0 |          5 |         25 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseTemplateFirings.js           | JavaScript |         19 |          0 |          4 |         23 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseTemplateSegments.js          | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseUserData.js                  | JavaScript |          8 |          0 |          5 |         13 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/useFirebaseUsers.js                     | JavaScript |          8 |          0 |          5 |         13 |
+| /Users/jules/Documents/node/kiln-client/src/hooks/usePending.js                           | JavaScript |          6 |          0 |          4 |         10 |
+| /Users/jules/Documents/node/kiln-client/src/index.css                                     | CSS        |         12 |          0 |          2 |         14 |
+| /Users/jules/Documents/node/kiln-client/src/index.js                                      | JavaScript |         12 |          3 |          3 |         18 |
+| /Users/jules/Documents/node/kiln-client/src/logo.svg                                      | XML        |          7 |          0 |          1 |          8 |
+| /Users/jules/Documents/node/kiln-client/src/parseTemplateData.py                          | Python     |         31 |          2 |          6 |         39 |
+| /Users/jules/Documents/node/kiln-client/src/reducers/alertReducer.js                      | JavaScript |         19 |          0 |          2 |         21 |
+| /Users/jules/Documents/node/kiln-client/src/reducers/authReducer.js                       | JavaScript |         49 |         23 |          5 |         77 |
+| /Users/jules/Documents/node/kiln-client/src/reducers/fakeUIDReducer.js                    | JavaScript |         10 |          0 |          3 |         13 |
+| /Users/jules/Documents/node/kiln-client/src/reducers/firingReducer.js                     | JavaScript |         38 |          6 |          4 |         48 |
+| /Users/jules/Documents/node/kiln-client/src/reducers/index.js                             | JavaScript |         25 |          0 |          2 |         27 |
+| /Users/jules/Documents/node/kiln-client/src/reducers/kilnReducer.js                       | JavaScript |         23 |          0 |          4 |         27 |
+| /Users/jules/Documents/node/kiln-client/src/reducers/pendingReducer.js                    | JavaScript |         35 |          0 |          8 |         43 |
+| /Users/jules/Documents/node/kiln-client/src/reducers/preferencesReducer.js                | JavaScript |         14 |          0 |          3 |         17 |
+| /Users/jules/Documents/node/kiln-client/src/reducers/projectReducer.js                    | JavaScript |         29 |          0 |          4 |         33 |
+| /Users/jules/Documents/node/kiln-client/src/reducers/segmentReducer.js                    | JavaScript |         32 |          0 |          4 |         36 |
+| /Users/jules/Documents/node/kiln-client/src/root.js                                       | JavaScript |         15 |          3 |          3 |         21 |
+| /Users/jules/Documents/node/kiln-client/src/serviceWorker.js                              | JavaScript |         98 |         31 |         13 |        142 |
+| /Users/jules/Documents/node/kiln-client/src/setupTests.js                                 | JavaScript |          1 |          4 |          1 |          6 |
+| /Users/jules/Documents/node/kiln-client/src/store.js                                      | JavaScript |          8 |          1 |          3 |         12 |
+| /Users/jules/Documents/node/kiln-client/src/template_data.json                            | JSON       |        591 |          0 |          0 |        591 |
+| /Users/jules/Documents/node/kiln-client/ui-debug.log                                      | Log        |          1 |          0 |          1 |          2 |
+| Total                                                                                     |            |     26,442 |        554 |        713 |     27,709 |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
