@@ -118,7 +118,7 @@ const ProjectListPage = ({ navigation }) => {
                   <ProjectCard
                     {...item}
                     key={item.id}
-                    kilnName={kilns && kilns[item.kiln].name}
+                    kilnName={kilns && kilns[item.kiln]?.name}
                   />
                 )
             )}

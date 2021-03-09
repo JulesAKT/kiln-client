@@ -79,6 +79,14 @@ const temperatureRanges = {
     painting: [538, 677],
     devit: [677, 927],
   },
+  Spectrum: {
+    combing: [904, 927, 1],
+    fullFuse: [793, 802, 1],
+    tackFuse: [732, 743],
+    slumping: [660, 675],
+    anneal: [513 - 6, 513 + 6],
+    strain: [476 - 6, 476 + 6],
+  },
   "Baoli COE 85": {
     fullFuse: [830, 850],
     tackFuse: [700, 760],
