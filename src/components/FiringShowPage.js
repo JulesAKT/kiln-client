@@ -22,14 +22,10 @@ import { convertSegmentsToTimedController } from "../helpers/timedController";
 //import { DropTarget } from "react-dnd";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import _ from "lodash";
-import projectReducer from "../reducers/projectReducer";
 
 //import { defined } from "react-native-reanimated";
 
 class FiringShowPage extends Component {
-  constructor(props) {
-    super(props);
-  }
   componentDidMount() {
     this.props.dispatch(fetchSegmentsByFiring(this.props.match.params.id));
     this.props.dispatch(fetchFiring(this.props.match.params.id));
