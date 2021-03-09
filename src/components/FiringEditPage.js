@@ -11,6 +11,8 @@ const FiringEditPage = (props) => {
   const firing = useFirebaseFiring(id);
 
   const handleSubmit = (formValues) => {
+    console.log("handleSubmit - firing:");
+    console.log(firing);
     const values = {
       project_id: firing.project_id,
       order: firing.order || 0,
@@ -18,7 +20,7 @@ const FiringEditPage = (props) => {
       favourite: firing.favourite || false,
       ...formValues,
     };
-    dispatch(editFiring(id, formValues));
+    dispatch(editFiring(id, values));
   };
   if (!firing) {
     return <div>Loading...</div>;

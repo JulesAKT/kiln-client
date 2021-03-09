@@ -271,7 +271,11 @@ class FiringShowPage extends Component {
 
           {renderFavouriteButton()}
         </div>
-        <FiringGraph sortedSegments={sorted_segments_array} degrees={degrees} />
+        <FiringGraph
+          sortedSegments={sorted_segments_array}
+          degrees={degrees}
+          project={project}
+        />
       </DragDropContext>
     );
   }

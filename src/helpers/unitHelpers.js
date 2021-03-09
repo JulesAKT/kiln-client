@@ -1,4 +1,5 @@
 import _ from "lodash";
+import { convertSegmentsToTimedController } from "./timedController";
 
 export const convertTemperature = (sourceDegrees, destDegrees, temperature) => {
   if (sourceDegrees === destDegrees) {
@@ -65,7 +66,7 @@ export const degreeName = (degrees) => {
 };
 
 const temperatureRanges = {
-  bullseye: {
+  Bullseye: {
     combing: [871, 927, 1],
     fullFuse: [804, 843, 1],
     kilnCasting: [816, 871, 1],
@@ -78,6 +79,36 @@ const temperatureRanges = {
     painting: [538, 677],
     devit: [677, 927],
   },
+  Spectrum: {
+    combing: [904, 927, 1],
+    fullFuse: [793, 802, 1],
+    tackFuse: [732, 743],
+    slumping: [660, 675],
+    anneal: [513 - 6, 513 + 6],
+    strain: [476 - 6, 476 + 6],
+  },
+  "Baoli COE 85": {
+    fullFuse: [830, 850],
+    tackFuse: [700, 760],
+    anneal: [528, 532],
+    strain: [455, 465],
+  },
+  "Baoli COE 90": {
+    fullFuse: [800, 840],
+    tackFuse: [688, 692],
+    anneal: [515, 525],
+    strain: [455, 455],
+  },
+  Wissmach: {
+    fullFuse: [760, 770],
+    tackFuse: [699, 709],
+    draping: [632, 642],
+    slumping: [688, 698],
+    kilnCasting: [782 - 5, 782 + 5],
+    combing: [871 - 5, 871 + 5],
+    anneal: [482 - 5, 482 + 5],
+    strain: [371 - 5, 371 + 5],
+  },
 };
 
 export const temperatureRangeNames = {
@@ -89,9 +120,28 @@ export const temperatureRangeNames = {
   tackFuse: "Tack Fuse",
   sagging: "Sagging",
   fuseToStick: "Fuse To Stick",
-  slumping: "Slumping",
+  slumping: "Slump",
   painting: "Painting",
   devit: "Devit",
+  anneal: "Anneal",
+  strain: "Strain",
+  draping: "Drape",
+};
+
+export const getEnabledAnnotationsFromSegments = (sorted_segments, glass) => {
+  const segmentsAreWithin = sorted_segments
+    .map((segment) =>
+      //console.log(`Looking for an annotation for: ${segment.temperature}`);
+      //console.log(temperatureRanges[glass]);
+      _.map(temperatureRanges[glass], ([a, b], key) =>
+        a < segment.temperature && b > segment.temperature ? key : undefined
+      )
+    )
+    .flat()
+    .filter((a) => a !== undefined)
+    .reduce((ac, a) => ((ac[a] = true), ac), {});
+  //console.log(segmentsAreWithin);
+  return segmentsAreWithin;
 };
 
 export const temperatureRangeColours = {
@@ -106,26 +156,33 @@ export const temperatureRangeColours = {
   slumping: "#00b040",
   painting: "#10b030",
   devit: "#c00000",
+  anneal: "lightGrey",
+  strain: "lightGreen",
+  draping: "lightBlue",
 };
 export const getTemperatureRanges = (
-  glass = "bullseye",
+  glass = "Bullseye",
   degrees = "celsius"
 ) => {
+  if (!glass) {
+    return {};
+  }
   return _.mapValues(temperatureRanges[glass], (value) =>
     convertTemperatures("celsius", degrees, value)
   );
 };
-
-export const fullFuseRange = (glass = "bullseye", degrees = "celsius") => {
+/* 
+export const fullFuseRange = (glass = "Bullseye", degrees = "celsius") => {
   switch (glass) {
-    case "bullseye":
+    case "Bullseye":
       return convertTemperatures("celsius", degrees, [804, 843]);
-    case "spectrum":
+    case "Spectrum":
       return convertTemperatures("celsius", degrees, [804, 843]); // Not confirmed!
     default:
       return convertTemperatures("celsius", degrees, [804, 843]);
   }
 };
+*/
 
 export const convertLengthUnit = (sourceUnit = "mm", destUnit, length) => {
   if (sourceUnit === destUnit) {
