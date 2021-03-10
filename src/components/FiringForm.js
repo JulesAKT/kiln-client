@@ -5,9 +5,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import * as yup from "yup";
 
-import { Card, Button, Form, Segment } from "semantic-ui-react";
+import { Button, Form, Segment } from "semantic-ui-react";
 
-import { Field, reduxForm } from "redux-form";
 import { HookInput as Input, DatePicker } from "../helpers/formHelpers";
 
 const FiringForm = ({ initialValues, onSubmit }) => {

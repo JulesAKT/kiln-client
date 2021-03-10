@@ -1,5 +1,4 @@
 import _ from "lodash";
-import { convertSegmentsToTimedController } from "./timedController";
 
 export const convertTemperature = (sourceDegrees, destDegrees, temperature) => {
   if (sourceDegrees === destDegrees) {
@@ -140,7 +139,6 @@ export const getEnabledAnnotationsFromSegments = (sorted_segments, glass) => {
     .flat()
     .filter((a) => a !== undefined)
     .reduce((ac, a) => ((ac[a] = true), ac), {});
-  //console.log(segmentsAreWithin);
   return segmentsAreWithin;
 };
 

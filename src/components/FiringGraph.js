@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 
 //import ReactDOM from "react-dom";
 
@@ -26,9 +26,16 @@ const FiringGraph = ({
   project,
   showAnnotations = true,
 }) => {
-  const [enabledAnnotations, setEnabledAnnotations] = useState(
-    getEnabledAnnotationsFromSegments(sortedSegments, project?.glass)
-  );
+  const [enabledAnnotations, setEnabledAnnotations] = useState({});
+
+  useEffect(() => {
+    const enabled = getEnabledAnnotationsFromSegments(
+      sortedSegments,
+      project?.glass
+    );
+    setEnabledAnnotations(enabled);
+    console.log(enabled);
+  }, [project, sortedSegments]);
   const handleChangedCheckbox = (key) => {
     console.log("handling Change");
 
@@ -72,6 +79,7 @@ const FiringGraph = ({
   //console.log(Object.keys(temperatureRanges));
   //console.log(temperatureRangeNames);
   //console.log(data);
+  console.log(enabledAnnotations);
   return (
     <Grid>
       <Grid.Column width={14}>
