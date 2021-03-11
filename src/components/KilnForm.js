@@ -30,17 +30,19 @@ const KilnForm = ({ initialValues, onSubmit }) => {
   const timedControllerRef = useRef();
 
   const kilnTypes = [
-    { label: "Paragon", value: "Paragon" },
-    { label: "Olympic", value: "Olympic" },
+    { label: "Cress", value: "Cress" },
+    { label: "Cromartie", value: "Cromartie" },
+    { label: "Evenheat", value: "Evenheat" },
+    { label: "Jen-Ken", value: "Jen-Ken" },
     { label: "Kilncare", value: "Kilncare" },
     { label: "Nabertherm", value: "Nabertherm" },
-    { label: "Skutt", value: "Skutt" },
     { label: "Northern", value: "Northern" },
-    { label: "Evenheat", value: "Evenheat" },
+    { label: "Olympic", value: "Olympic" },
+    { label: "Paragon", value: "Paragon" },
+    { label: "Skutt", value: "Skutt" },
     { label: "Rohde", value: "Rohde" },
-    { label: "Jen-Ken", value: "Jen-Ken" },
-    { label: "Cress", value: "Cress" },
   ];
+
   const timed_enabled = watch(
     "timed_controller",
     initialValues.timed_controller

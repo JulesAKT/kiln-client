@@ -15,7 +15,12 @@ const KilnCreatePage = (props) => {
     <div>
       <KilnForm
         onSubmit={handleSubmit}
-        initialValues={{ manufacturer: "Paragon" }}
+        initialValues={{
+          manufacturer: "Paragon",
+          name: "",
+          timed_controller: false,
+          ambient_temperature: "16",
+        }}
       />
     </div>
   );

@@ -5,6 +5,8 @@ import DataTable from "react-data-table-component";
 import useFirebaseUserData from "../hooks/useFirebaseUserData";
 import useFirebaseUsers from "../hooks/useFirebaseUsers";
 import useFakeUID from "../hooks/useFakeUID";
+import DatabaseIntegrity from "./DatabaseIntegrity";
+
 import { AuthContext, superUserUID } from "../helpers/Auth";
 import { editFakeUID } from "../actions";
 
@@ -15,7 +17,7 @@ const SuperUserPage = () => {
   const userData = useFirebaseUserData();
   const users = useFirebaseUsers();
   const fakeUID = useFakeUID();
-  console.log(userData && Object.keys(userData));
+  //console.log(userData && Object.keys(userData));
 
   let user_array =
     users &&
@@ -111,6 +113,17 @@ const SuperUserPage = () => {
               dispatch(editFakeUID(row.id));
             }}
           />
+        </Accordion.Content>
+        <Accordion.Title
+          active={activeIndex === 2}
+          index={2}
+          onClick={handleAccordion}
+        >
+          <Icon name="dropdown" />
+          Show Database Integrity
+        </Accordion.Title>
+        <Accordion.Content active={activeIndex === 2}>
+          <DatabaseIntegrity />
         </Accordion.Content>
       </Accordion>
     </div>

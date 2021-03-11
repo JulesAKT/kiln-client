@@ -99,6 +99,46 @@
       "rate": "83",
       "temperature": "371"
     },
+    "67ba66-a48d-a2ea-37cc-daf6650a1e5": {
+      "degrees": "celsius",
+      "firing_id": "11c3dcb-7ef2-4ce4-1a4-cf8c7f3a8bb",
+      "hold": "10",
+      "id": "67ba66-a48d-a2ea-37cc-daf6650a1e5",
+      "name": "Ramp to Full Fuse",
+      "order": "2",
+      "rate": "600",
+      "temperature": "820"
+    },
+    "78c3fd5-7d84-1655-0ad5-6b144dae6c3": {
+      "degrees": "celsius",
+      "firing_id": "11c3dcb-7ef2-4ce4-1a4-cf8c7f3a8bb",
+      "hold": "0",
+      "id": "78c3fd5-7d84-1655-0ad5-6b144dae6c3",
+      "name": "Ramp to 550",
+      "order": "1",
+      "rate": "550",
+      "temperature": "550"
+    },
+    "7a2ca11-f5da-f1a1-6074-1ca1a78e74e": {
+      "degrees": "celsius",
+      "firing_id": "11c3dcb-7ef2-4ce4-1a4-cf8c7f3a8bb",
+      "hold": "90",
+      "id": "7a2ca11-f5da-f1a1-6074-1ca1a78e74e",
+      "name": "Crash to Anneal",
+      "order": "3",
+      "rate": "9999",
+      "temperature": "520"
+    },
+    "f0d01e-8413-fe82-3770-e882543a3fc": {
+      "degrees": "celsius",
+      "firing_id": "11c3dcb-7ef2-4ce4-1a4-cf8c7f3a8bb",
+      "hold": "0",
+      "id": "f0d01e-8413-fe82-3770-e882543a3fc",
+      "name": "Anneal Drop to Strain Point",
+      "order": "4",
+      "rate": "46",
+      "temperature": "460"
+    },
     "0fc651-ba47-3483-3b02-da66ce8d4838": {
       "firing_id": "26ed5c2-1cc-307e-340b-e288f1142b",
       "hold": "10",
@@ -152,6 +192,46 @@
       "order": "6",
       "rate": "167",
       "temperature": "38"
+    },
+    "114fe0e-108f-fa38-da17-6fe64bbf824": {
+      "degrees": "celsius",
+      "firing_id": "2bfcfdf-5d57-2785-a662-1842604f052",
+      "hold": "90",
+      "id": "114fe0e-108f-fa38-da17-6fe64bbf824",
+      "name": "Crash to Anneal",
+      "order": "3",
+      "rate": "9999",
+      "temperature": "520"
+    },
+    "35beb6b-cf2d-d050-08f-3ad443f2ce": {
+      "degrees": "celsius",
+      "firing_id": "2bfcfdf-5d57-2785-a662-1842604f052",
+      "hold": "0",
+      "id": "35beb6b-cf2d-d050-08f-3ad443f2ce",
+      "name": "Ramp to 550",
+      "order": "1",
+      "rate": "550",
+      "temperature": "550"
+    },
+    "c7daae-42ae-d888-1857-feb6047f75ba": {
+      "degrees": "celsius",
+      "firing_id": "2bfcfdf-5d57-2785-a662-1842604f052",
+      "hold": "10",
+      "id": "c7daae-42ae-d888-1857-feb6047f75ba",
+      "name": "Ramp to Full Fuse",
+      "order": "2",
+      "rate": "600",
+      "temperature": "820"
+    },
+    "f88acc-86a-5278-7264-b3fa5ac2bf1f": {
+      "degrees": "celsius",
+      "firing_id": "2bfcfdf-5d57-2785-a662-1842604f052",
+      "hold": "0",
+      "id": "f88acc-86a-5278-7264-b3fa5ac2bf1f",
+      "name": "Anneal Drop to Strain Point",
+      "order": "4",
+      "rate": "46",
+      "temperature": "460"
     },
     "23aa78-3b64-dbee-ca81-32ee21145460": {
       "firing_id": "2ea706f-44b4-2b3c-3acb-02dc7c2e0",
@@ -234,6 +314,106 @@
       "rate": "9999",
       "temperature": "510"
     },
+    "0e87da-d88c-a3b6-3821-1c148d4e111": {
+      "degrees": "celsius",
+      "firing_id": "484bba4-66d6-87b5-fb87-f2d1af6bd3",
+      "hold": "0",
+      "id": "0e87da-d88c-a3b6-3821-1c148d4e111",
+      "name": "Anneal Cool",
+      "order": "5",
+      "rate": "38",
+      "temperature": "371"
+    },
+    "14edf4-2ba-08a-cfe0-7bd00475e277": {
+      "degrees": "celsius",
+      "firing_id": "484bba4-66d6-87b5-fb87-f2d1af6bd3",
+      "hold": "45",
+      "id": "14edf4-2ba-08a-cfe0-7bd00475e277",
+      "name": "Rapid cool to Anneal Soak",
+      "order": "4",
+      "rate": "9999",
+      "temperature": "482"
+    },
+    "2c52678-8e2c-fc10-eb2-7376e034f60": {
+      "degrees": "celsius",
+      "firing_id": "484bba4-66d6-87b5-fb87-f2d1af6bd3",
+      "hold": "10",
+      "id": "2c52678-8e2c-fc10-eb2-7376e034f60",
+      "name": "Initial Heat Cycle",
+      "order": "1",
+      "rate": "222",
+      "temperature": "538"
+    },
+    "a76128b-08d-77d4-517c-32b26f1c76ac": {
+      "degrees": "celsius",
+      "firing_id": "484bba4-66d6-87b5-fb87-f2d1af6bd3",
+      "hold": "15",
+      "id": "a76128b-08d-77d4-517c-32b26f1c76ac",
+      "name": "Pre Rapid Heat",
+      "order": "2",
+      "rate": "9999",
+      "temperature": "651"
+    },
+    "c1c3bd-8fd-2f6-a4ee-820bffe3a710": {
+      "degrees": "celsius",
+      "firing_id": "484bba4-66d6-87b5-fb87-f2d1af6bd3",
+      "hold": "12",
+      "id": "c1c3bd-8fd-2f6-a4ee-820bffe3a710",
+      "name": "Rapid Heat to Tack Fuse",
+      "order": "3",
+      "rate": "9999",
+      "temperature": "704"
+    },
+    "273bff4-1ef3-d34b-102-24ace23f8605": {
+      "degrees": "celsius",
+      "firing_id": "4c6b3b-e14f-3030-c77-b31724eb781a",
+      "hold": "45",
+      "id": "273bff4-1ef3-d34b-102-24ace23f8605",
+      "name": "Rapid cool to Anneal Soak",
+      "order": "4",
+      "rate": "9999",
+      "temperature": "482"
+    },
+    "54ac7-6136-07f3-3da1-0723abc5c202": {
+      "degrees": "celsius",
+      "firing_id": "4c6b3b-e14f-3030-c77-b31724eb781a",
+      "hold": "10",
+      "id": "54ac7-6136-07f3-3da1-0723abc5c202",
+      "name": "Initial Heat Cycle",
+      "order": "1",
+      "rate": "222",
+      "temperature": "538"
+    },
+    "70fe21b-bcc-e706-8251-185eae88d4e": {
+      "degrees": "celsius",
+      "firing_id": "4c6b3b-e14f-3030-c77-b31724eb781a",
+      "hold": "0",
+      "id": "70fe21b-bcc-e706-8251-185eae88d4e",
+      "name": "Anneal Cool",
+      "order": "5",
+      "rate": "38",
+      "temperature": "371"
+    },
+    "b1636e-816d-6d65-7de3-333a0eed5136": {
+      "degrees": "celsius",
+      "firing_id": "4c6b3b-e14f-3030-c77-b31724eb781a",
+      "hold": "15",
+      "id": "b1636e-816d-6d65-7de3-333a0eed5136",
+      "name": "Pre Rapid Heat",
+      "order": "2",
+      "rate": "9999",
+      "temperature": "651"
+    },
+    "f35a35-aa47-d5ef-8e4d-764a3e62cd": {
+      "degrees": "celsius",
+      "firing_id": "4c6b3b-e14f-3030-c77-b31724eb781a",
+      "hold": "12",
+      "id": "f35a35-aa47-d5ef-8e4d-764a3e62cd",
+      "name": "Rapid Heat to Slump",
+      "order": "3",
+      "rate": "9999",
+      "temperature": "693"
+    },
     "0bd4d-776c-cee5-4c6d-07438216eed5": {
       "firing_id": "6f05462-528d-f2cd-8b28-d7de012f8753",
       "hold": "0",
@@ -287,6 +467,46 @@
       "order": "2",
       "rate": "167",
       "temperature": "593"
+    },
+    "2af7f1d-34d-4216-2475-4b5c1202f22d": {
+      "degrees": "celsius",
+      "firing_id": "71f3b48-eda5-27fa-542e-600761dda6ce",
+      "hold": "0",
+      "id": "2af7f1d-34d-4216-2475-4b5c1202f22d",
+      "name": "Ramp to 550",
+      "order": "1",
+      "rate": "550",
+      "temperature": "550"
+    },
+    "a1d48be-68d3-5d17-2ce6-8af6bed43e6": {
+      "degrees": "celsius",
+      "firing_id": "71f3b48-eda5-27fa-542e-600761dda6ce",
+      "hold": "10",
+      "id": "a1d48be-68d3-5d17-2ce6-8af6bed43e6",
+      "name": "Ramp to Full Fuse",
+      "order": "2",
+      "rate": "600",
+      "temperature": "840"
+    },
+    "cd7aadc-df-856b-22b3-70c0ebbe8bfc": {
+      "degrees": "celsius",
+      "firing_id": "71f3b48-eda5-27fa-542e-600761dda6ce",
+      "hold": "0",
+      "id": "cd7aadc-df-856b-22b3-70c0ebbe8bfc",
+      "name": "Anneal Drop to Strain Point",
+      "order": "4",
+      "rate": "46",
+      "temperature": "460"
+    },
+    "dcb3022-f6d-fd8c-e1ec-2f673635f641": {
+      "degrees": "celsius",
+      "firing_id": "71f3b48-eda5-27fa-542e-600761dda6ce",
+      "hold": "90",
+      "id": "dcb3022-f6d-fd8c-e1ec-2f673635f641",
+      "name": "Crash to Anneal",
+      "order": "3",
+      "rate": "9999",
+      "temperature": "530"
     },
     "261885a-0c7b-1d2-a8ce-d60cb7733d": {
       "firing_id": "871f22a-4a63-fafa-d11-4bdd1a0f157",
@@ -468,6 +688,96 @@
       "rate": "83",
       "temperature": "371"
     },
+    "121e1f4-7824-1318-d8a-3a6dcb3056": {
+      "degrees": "celsius",
+      "firing_id": "dc1ed8c-bb83-7ae-8a8e-ca40571f54",
+      "hold": "0",
+      "id": "121e1f4-7824-1318-d8a-3a6dcb3056",
+      "name": "Anneal Cool",
+      "order": "5",
+      "rate": "38",
+      "temperature": "371"
+    },
+    "705423a-b3-0e82-a5a1-8eeeecf52d6e": {
+      "degrees": "celsius",
+      "firing_id": "dc1ed8c-bb83-7ae-8a8e-ca40571f54",
+      "hold": "12",
+      "id": "705423a-b3-0e82-a5a1-8eeeecf52d6e",
+      "name": "Rapid Heat to Full Fuse",
+      "order": "3",
+      "rate": "9999",
+      "temperature": "765"
+    },
+    "8f1a1d-218a-2b7-b35-8bcec778e75": {
+      "degrees": "celsius",
+      "firing_id": "dc1ed8c-bb83-7ae-8a8e-ca40571f54",
+      "hold": "45",
+      "id": "8f1a1d-218a-2b7-b35-8bcec778e75",
+      "name": "Rapid cool to Anneal Soak",
+      "order": "4",
+      "rate": "9999",
+      "temperature": "482"
+    },
+    "ddde166-06b5-f64d-8ad7-77ea0de3c484": {
+      "degrees": "celsius",
+      "firing_id": "dc1ed8c-bb83-7ae-8a8e-ca40571f54",
+      "hold": "10",
+      "id": "ddde166-06b5-f64d-8ad7-77ea0de3c484",
+      "name": "Initial Heat Cycle",
+      "order": "1",
+      "rate": "222",
+      "temperature": "538"
+    },
+    "ed67e2f-ef7d-22e-53a6-eb6c3236f30": {
+      "degrees": "celsius",
+      "firing_id": "dc1ed8c-bb83-7ae-8a8e-ca40571f54",
+      "hold": "15",
+      "id": "ed67e2f-ef7d-22e-53a6-eb6c3236f30",
+      "name": "Pre Rapid Heat",
+      "order": "2",
+      "rate": "9999",
+      "temperature": "651"
+    },
+    "a5f4a-2502-7fa7-0453-aa4c7c0b76a3": {
+      "degrees": "celsius",
+      "firing_id": "dfd0325-ce32-18ff-fea2-84e8deba65aa",
+      "hold": "10",
+      "id": "a5f4a-2502-7fa7-0453-aa4c7c0b76a3",
+      "name": "Ramp to Full Fuse",
+      "order": "2",
+      "rate": "600",
+      "temperature": "730"
+    },
+    "c86177d-d483-b04c-3321-c278cd3b371": {
+      "degrees": "celsius",
+      "firing_id": "dfd0325-ce32-18ff-fea2-84e8deba65aa",
+      "hold": "0",
+      "id": "c86177d-d483-b04c-3321-c278cd3b371",
+      "name": "Ramp to 550",
+      "order": "1",
+      "rate": "550",
+      "temperature": "550"
+    },
+    "d078c2d-d573-1fbf-dd7c-e023f68bd8ec": {
+      "degrees": "celsius",
+      "firing_id": "dfd0325-ce32-18ff-fea2-84e8deba65aa",
+      "hold": "90",
+      "id": "d078c2d-d573-1fbf-dd7c-e023f68bd8ec",
+      "name": "Crash to Anneal",
+      "order": "3",
+      "rate": "9999",
+      "temperature": "530"
+    },
+    "fe0c662-d2ee-2854-d53e-77b8de7c62": {
+      "degrees": "celsius",
+      "firing_id": "dfd0325-ce32-18ff-fea2-84e8deba65aa",
+      "hold": "0",
+      "id": "fe0c662-d2ee-2854-d53e-77b8de7c62",
+      "name": "Anneal Drop to Strain Point",
+      "order": "4",
+      "rate": "46",
+      "temperature": "460"
+    },
     "0cec00-830b-18a0-3474-1660e8ae05e": {
       "firing_id": "f8e1e4-1c42-bb2-0f8-250a735cda86",
       "hold": "60",
@@ -585,6 +895,68 @@
         "id": "f8e1e4-1c42-bb2-0f8-250a735cda86",
         "name": "Oceanside Basic Full Fuse (2020)",
         "project_id": "8f14f6f-08b7-347-c84d-f081d11ee2bb"
+      }
+    },
+    "Wissmach": {
+      "484bba4-66d6-87b5-fb87-f2d1af6bd3": {
+        "date": 1615304552025,
+        "favourite": false,
+        "id": "484bba4-66d6-87b5-fb87-f2d1af6bd3",
+        "name": "Wissmach Tack Fuse",
+        "order": "1",
+        "project_id": "006c541-0386-61-607e-ac65701e7521"
+      },
+      "4c6b3b-e14f-3030-c77-b31724eb781a": {
+        "date": 1615304552025,
+        "favourite": false,
+        "id": "4c6b3b-e14f-3030-c77-b31724eb781a",
+        "name": "Wissmach Slump",
+        "order": "1",
+        "project_id": "006c541-0386-61-607e-ac65701e7521"
+      },
+      "dc1ed8c-bb83-7ae-8a8e-ca40571f54": {
+        "date": 1615304552025,
+        "favourite": true,
+        "id": "dc1ed8c-bb83-7ae-8a8e-ca40571f54",
+        "name": "Wissmach Full Fuse",
+        "order": "1",
+        "project_id": "006c541-0386-61-607e-ac65701e7521"
+      }
+    },
+    "Baoli COE 85": {
+      "71f3b48-eda5-27fa-542e-600761dda6ce": {
+        "date": 1615302326738,
+        "favourite": true,
+        "id": "71f3b48-eda5-27fa-542e-600761dda6ce",
+        "name": "Baoli COE 85 Full Fuse",
+        "order": "1",
+        "project_id": "ae4db3-cb48-d0bd-2c6c-e537daae510"
+      },
+      "dfd0325-ce32-18ff-fea2-84e8deba65aa": {
+        "date": 1615302326738,
+        "favourite": false,
+        "id": "dfd0325-ce32-18ff-fea2-84e8deba65aa",
+        "name": "Baoli COE 85 Tack Fuse",
+        "order": "1",
+        "project_id": "ae4db3-cb48-d0bd-2c6c-e537daae510"
+      }
+    },
+    "Baoli COE 90": {
+      "11c3dcb-7ef2-4ce4-1a4-cf8c7f3a8bb": {
+        "date": 1615302326738,
+        "favourite": true,
+        "id": "11c3dcb-7ef2-4ce4-1a4-cf8c7f3a8bb",
+        "name": "Baoli COE 90 Full Fuse",
+        "order": "1",
+        "project_id": "acfd65c-6ca-06da-aee0-b2ae70bf3303"
+      },
+      "2bfcfdf-5d57-2785-a662-1842604f052": {
+        "date": 1615302326738,
+        "favourite": false,
+        "id": "2bfcfdf-5d57-2785-a662-1842604f052",
+        "name": "Baoli COE 90 Tack Fuse",
+        "order": "1",
+        "project_id": "acfd65c-6ca-06da-aee0-b2ae70bf3303"
       }
     }
   }

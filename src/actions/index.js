@@ -437,8 +437,11 @@ export const editFiring = (id, formProps, allowNavigate = true) => async (
   }
 };
 
-export const deleteFiring = (id) => async (dispatch, getState) => {
-  //console.log("DeleteFiring");
+export const deleteFiring = (id, allowNavigate = true) => async (
+  dispatch,
+  getState
+) => {
+  //  console.log("DeleteFiring");
   dispatch({ type: DELETE_FIRING_REQUEST });
   db.ref(userPath() + `/firings/${id}`).remove();
 
@@ -447,8 +450,10 @@ export const deleteFiring = (id) => async (dispatch, getState) => {
     type: DELETE_FIRING_SUCCESS,
     payload: id,
   });
-  console.log("Navigating back");
-  history.push("/");
+  if (allowNavigate) {
+    console.log("Navigating back");
+    history.push("/");
+  }
   //history.goBack();
 };
 
@@ -540,14 +545,20 @@ export const editSegment = (id, formProps, allowNavigate = true) => async (
   }
 };
 
-export const deleteSegment = (id) => async (dispatch, getState) => {
+export const deleteSegment = (id, allowNavigate = true) => async (
+  dispatch,
+  getState
+) => {
   dispatch({ type: DELETE_SEGMENT_REQUEST });
   db.ref(userPath() + `/segments/${id}`).remove();
   dispatch({
     type: DELETE_SEGMENT_SUCCESS,
     payload: id,
   });
-  history.goBack();
+  if (allowNavigate) {
+    history.goBack();
+  }
+
   //history.goBack();
 };
 
@@ -678,4 +689,38 @@ const userPath = () => {
   const fakeUID = store.getState().fakeUID.uid;
   const uid = fakeUID ? fakeUID : store.getState().firebase.auth.uid;
   return "/userdata/" + uid;
+};
+
+export const getFileListing = async () => {
+  const directory_listing = {};
+  const files = await cloudstore
+    .ref("userdata")
+    .listAll()
+    .then((res) => {
+      res.prefixes.forEach((folderRef) =>
+        folderRef.listAll().then((res) => {
+          //console.log(res);
+          const user = folderRef.location.path_.substring(9);
+          directory_listing[user] = [];
+          res.items.forEach((itemRef) => {
+            directory_listing[user].push(itemRef?.location.path_);
+          });
+        })
+      );
+    });
+  //console.log(files);
+  return directory_listing;
+};
+
+export const deleteFile = async (file) => {
+  const fileRef = cloudstore.ref(file);
+  console.log(fileRef);
+  fileRef
+    .delete()
+    .then(() => {
+      console.log("File Deleted successfully");
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 };
