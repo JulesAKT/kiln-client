@@ -42,7 +42,7 @@ const PhotoDeletePage = (props) => {
     return (
       <React.Fragment>
         <Card>
-          <img src={correctlySizedPhoto(project.photos[index]).uri} />
+          <img src={correctlySizedPhoto(project.photos[index]).uri} alt="" />
           <Card.Header>Type:{project.photos[index].type}</Card.Header>
         </Card>
       </React.Fragment>

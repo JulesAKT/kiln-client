@@ -8,7 +8,7 @@ import {
   getFileListing,
   deleteFile,
 } from "../actions";
-import _, { isFunction } from "lodash";
+//import _, { isFunction } from "lodash";
 
 const DatabaseIntegrity = () => {
   const findDuffItemsInUser = (user, data) => {
@@ -207,6 +207,10 @@ const DatabaseIntegrity = () => {
       case "ORPHANED_FILE":
         console.log(`Deleting photo: ${object_reference}`);
         deleteFile(object_reference);
+        break;
+      default:
+        console.log("Unknown Resolution!");
+        break;
     }
   };
   const culledUsersWithDuffItems = usersWithDuffItems.filter(

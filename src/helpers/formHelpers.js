@@ -4,7 +4,7 @@ import BaseDatePicker, {
   setDefaultLocale,
 } from "react-datepicker";
 
-import { DateTimePicker } from "react-widgets";
+//import { DateTimePicker } from "react-widgets";
 import { Image, List } from "semantic-ui-react";
 import { useController } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";

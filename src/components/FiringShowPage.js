@@ -69,7 +69,7 @@ class FiringShowPage extends Component {
       return a.order > b.order ? 1 : -1;
     });
 
-    const graph_segments_array = sorted_segments_array;
+    //const graph_segments_array = sorted_segments_array;
     const controller_sensitive_segments = convertSegmentsToTimedController(
       sorted_segments_array,
       kiln

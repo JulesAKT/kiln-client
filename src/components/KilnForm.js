@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
 
 //import { Card, Button, Tooltip, Icon } from "react-native-elements";
-import { Segment, Button, Form, Icon, Popup } from "semantic-ui-react";
+import { Segment, Button, Form } from "semantic-ui-react";
 
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -25,9 +25,9 @@ const KilnForm = ({ initialValues, onSubmit }) => {
     defaultValues: initialValues,
   });
 
-  const nameRef = useRef();
-  const manufacturerRef = useRef();
-  const timedControllerRef = useRef();
+  //const nameRef = useRef();
+  //const manufacturerRef = useRef();
+  //const timedControllerRef = useRef();
 
   const kilnTypes = [
     { label: "Cress", value: "Cress" },

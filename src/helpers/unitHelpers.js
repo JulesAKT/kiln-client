@@ -63,50 +63,50 @@ export const degreeText = (degrees) => {
 export const degreeName = (degrees) => {
   return degrees === "fahrenheit" ? "Fahrenheit" : "Celsius";
 };
-
+// Array values are: [mintemp, maxtemp, priority]
 const temperatureRanges = {
   Bullseye: {
-    combing: [871, 927, 1],
+    combing: [871, 927, 5],
     fullFuse: [804, 843, 1],
-    kilnCasting: [816, 871, 1],
-    kilnCarving: [816, 843, 1],
-    strip: [799, 843],
-    tackFuse: [699, 779],
-    sagging: [679, 732],
-    fuseToStick: [679, 721],
-    slumping: [593, 704],
-    painting: [538, 677],
-    devit: [677, 927],
+    kilnCasting: [816, 871, 5],
+    kilnCarving: [816, 843, 5],
+    strip: [799, 843, 2],
+    tackFuse: [699, 779, 1],
+    sagging: [679, 732, 2],
+    fuseToStick: [679, 721, 5],
+    slumping: [593, 704, 2],
+    painting: [538, 677, 5],
+    devit: [677, 927, 9],
   },
   Spectrum: {
-    combing: [904, 927, 1],
+    combing: [904, 927, 5],
     fullFuse: [793, 802, 1],
-    tackFuse: [732, 743],
-    slumping: [660, 675],
-    anneal: [513 - 6, 513 + 6],
-    strain: [476 - 6, 476 + 6],
+    tackFuse: [732, 743, 1],
+    slumping: [660, 675, 1],
+    anneal: [513 - 6, 513 + 6, 1],
+    strain: [476 - 6, 476 + 6, 1],
   },
   "Baoli COE 85": {
-    fullFuse: [830, 850],
-    tackFuse: [700, 760],
-    anneal: [528, 532],
-    strain: [455, 465],
+    fullFuse: [830, 850, 1],
+    tackFuse: [700, 760, 1],
+    anneal: [528, 532, 1],
+    strain: [455, 465, 1],
   },
   "Baoli COE 90": {
-    fullFuse: [800, 840],
-    tackFuse: [688, 692],
-    anneal: [515, 525],
-    strain: [455, 455],
+    fullFuse: [800, 840, 1],
+    tackFuse: [688, 692, 1],
+    anneal: [515, 525, 1],
+    strain: [455, 455, 1],
   },
   Wissmach: {
-    fullFuse: [760, 770],
-    tackFuse: [699, 709],
-    draping: [632, 642],
-    slumping: [688, 698],
-    kilnCasting: [782 - 5, 782 + 5],
-    combing: [871 - 5, 871 + 5],
-    anneal: [482 - 5, 482 + 5],
-    strain: [371 - 5, 371 + 5],
+    fullFuse: [760, 770, 1],
+    tackFuse: [699, 709, 1],
+    draping: [632, 642, 1],
+    slumping: [688, 698, 1],
+    kilnCasting: [782 - 5, 782 + 5, 5],
+    combing: [871 - 5, 871 + 5, 5],
+    anneal: [482 - 5, 482 + 5, 1],
+    strain: [371 - 5, 371 + 5, 1],
   },
 };
 
@@ -127,18 +127,75 @@ export const temperatureRangeNames = {
   draping: "Drape",
 };
 
-export const getEnabledAnnotationsFromSegments = (sorted_segments, glass) => {
+export const getPriorityEnabledAnnotationsFromSegments = (
+  sorted_segments,
+  glass,
+  degrees
+) => {
+  console.log(`Priority - working in: ${degrees}`);
+  const relevant_temperature_ranges = getEnabledAnnotationsFromSegments(
+    sorted_segments,
+    glass,
+    degrees
+  );
+  // Find the lowest numbered priority. Enable all with the same priority.
+  const glassRanges = getTemperatureRanges(glass, degrees);
+  const min_priority = Object.keys(relevant_temperature_ranges).reduce(
+    (min_priority, range_name) =>
+      glassRanges[range_name][2] < min_priority
+        ? glassRanges[range_name][2]
+        : min_priority,
+    99
+  );
+  console.log("Relevant Ranges:");
+  console.log(relevant_temperature_ranges);
+  console.log(`Minimum Priority is: ${min_priority}`);
+  const enabled_range_names = Object.keys(relevant_temperature_ranges).filter(
+    (range_name) => glassRanges[range_name][2] === min_priority
+  );
+  console.log(enabled_range_names);
+
+  return enabled_range_names.reduce(
+    (enabled, name) => ({ ...enabled, [name]: true }),
+    {}
+  );
+};
+
+export const getPrincipalEnabledAnnotationFromSegments = (
+  sorted_segments,
+  glass,
+  degrees
+) => {
+  const max_segment = sorted_segments.reduce(
+    (max, segment) => (segment.temperature > max.temperature ? segment : max),
+    { temperature: 0 }
+  );
+  console.log(max_segment);
+  return getEnabledAnnotationsFromSegments([max_segment], glass, degrees);
+};
+
+export const getEnabledAnnotationsFromSegments = (
+  sorted_segments,
+  glass,
+  degrees
+) => {
+  console.log("getEnabledAnnotationsFromSegments - sorted_segments");
+  console.log(sorted_segments);
+  console.log(`Working in: ${degrees}`);
   const segmentsAreWithin = sorted_segments
     .map((segment) =>
       //console.log(`Looking for an annotation for: ${segment.temperature}`);
       //console.log(temperatureRanges[glass]);
-      _.map(temperatureRanges[glass], ([a, b], key) =>
-        a < segment.temperature && b > segment.temperature ? key : undefined
+      _.map(getTemperatureRanges(glass, degrees), ([a, b], key) =>
+        a <= segment.temperature && b >= segment.temperature ? key : undefined
       )
     )
     .flat()
     .filter((a) => a !== undefined)
-    .reduce((ac, a) => ((ac[a] = true), ac), {});
+    .reduce((ac, a) => ({ ...ac, [a]: true }), {});
+  console.log("getEnabledAnnotationsFromSegments - segmentAreWithin");
+
+  console.log(segmentsAreWithin);
   return segmentsAreWithin;
 };
 

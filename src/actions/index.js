@@ -65,9 +65,6 @@ import {
   DELETE_SEGMENT_REQUEST,
   FETCH_PROJECTS_BY_KILN_REQUEST,
   FETCH_PROJECTS_BY_KILN_SUCCESS,
-  CHANGE_PASSWORD_REQUEST,
-  CHANGE_PASSWORD_SUCCESS,
-  CHANGE_PASSWORD_FAILURE,
   EDIT_PREFERENCES_REQUEST,
   EDIT_PREFERENCES_SUCCESS,
   FETCH_PREFERENCES_REQUEST,
@@ -693,7 +690,7 @@ const userPath = () => {
 
 export const getFileListing = async () => {
   const directory_listing = {};
-  const files = await cloudstore
+  await cloudstore
     .ref("userdata")
     .listAll()
     .then((res) => {

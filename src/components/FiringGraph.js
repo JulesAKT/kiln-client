@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 //import ReactDOM from "react-dom";
 
@@ -17,7 +17,9 @@ import {
   getTemperatureRanges,
   temperatureRangeColours,
   temperatureRangeNames,
-  getEnabledAnnotationsFromSegments,
+  //getEnabledAnnotationsFromSegments,
+  //getPrincipalEnabledAnnotationFromSegments,
+  getPriorityEnabledAnnotationsFromSegments,
 } from "../helpers/unitHelpers";
 
 const FiringGraph = ({
@@ -29,13 +31,14 @@ const FiringGraph = ({
   const [enabledAnnotations, setEnabledAnnotations] = useState({});
 
   useEffect(() => {
-    const enabled = getEnabledAnnotationsFromSegments(
+    const enabled = getPriorityEnabledAnnotationsFromSegments(
       sortedSegments,
-      project?.glass
+      project?.glass,
+      degrees
     );
-    setEnabledAnnotations(enabled);
     console.log(enabled);
-  }, [project, sortedSegments]);
+    setEnabledAnnotations(enabled);
+  }, [project, sortedSegments, degrees]);
   const handleChangedCheckbox = (key) => {
     console.log("handling Change");
 
@@ -74,6 +77,7 @@ const FiringGraph = ({
     currentTemperature = segment.temperature;
   });
   const temperatureRanges = getTemperatureRanges(project?.glass, degrees);
+
   //console.log(enabledAnnotations);
   //console.log(temperatureRanges);
   //console.log(Object.keys(temperatureRanges));
