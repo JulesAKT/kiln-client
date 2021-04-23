@@ -72,7 +72,7 @@ const temperatureRanges = {
     kilnCarving: [816, 843, 5],
     strip: [799, 843, 2],
     tackFuse: [699, 779, 1],
-    sagging: [679, 732, 2],
+    sagging: [679, 732, 1],
     fuseToStick: [679, 721, 5],
     slumping: [593, 704, 2],
     painting: [538, 677, 5],

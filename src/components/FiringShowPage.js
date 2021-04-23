@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 import { Button, Icon, Segment, Header, Table, Ref } from "semantic-ui-react";
+import { kilnIsExportable } from "../helpers/exportHelpers";
 import FiringGraph from "./FiringGraph";
 
 import {
@@ -266,12 +267,19 @@ class FiringShowPage extends Component {
           </Segment>
 
           {renderFavouriteButton()}
+          {kilnIsExportable(kiln) && (
+            <Link to={`/firing/export/${kiln.id}/${id}/`}>
+              <Button>Export Firing</Button>
+            </Link>
+          )}
         </div>
-        <FiringGraph
-          sortedSegments={sorted_segments_array}
-          degrees={degrees}
-          project={project}
-        />
+        {sorted_segments_array.length !== 0 && (
+          <FiringGraph
+            sortedSegments={sorted_segments_array}
+            degrees={degrees}
+            project={project}
+          />
+        )}
       </DragDropContext>
     );
   }

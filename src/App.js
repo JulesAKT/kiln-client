@@ -21,6 +21,7 @@ import FiringCreatePage from "./components/FiringCreatePage";
 import FiringFavouriteCreatePage from "./components/FiringFavouriteCreatePage";
 import FiringFavouriteCopyConfirmPage from "./components/FiringFavouriteCopyConfirmPage";
 import FiringTemplateCopyConfirmPage from "./components/FiringTemplateCopyConfirmPage";
+import FiringExportPage from "./components/FiringExportPage";
 import KilnsListPage from "./components/KilnsListPage";
 import KilnCreatePage from "./components/KilnCreatePage.js";
 import KilnShowPage from "./components/KilnShowPage";
@@ -122,6 +123,11 @@ class App extends React.Component {
                     path="/firing/delete/:id"
                     exact
                     component={FiringDeletePage}
+                  />
+                  <PrivateRoute
+                    path="/firing/export/:kiln/:id"
+                    exact
+                    component={FiringExportPage}
                   />
                   <PrivateRoute
                     path="/firings/edit/:id"

@@ -8,6 +8,7 @@ import history from "../history";
 import useFirebaseSegment from "../hooks/useFirebaseSegment";
 
 const SegmentDeletePage = (props) => {
+  console.log(`Looking for: ${props.match.params.id}`);
   const segment = useFirebaseSegment(props.match.params.id);
 
   const dispatch = useDispatch();

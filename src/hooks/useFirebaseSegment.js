@@ -10,6 +10,7 @@ const useFirebaseSegment = (segment_id) => {
     (state) =>
       state.firebase.data.userdata &&
       state.firebase.data.userdata[uid] &&
+      state.firebase.data.userdata[uid].segments &&
       state.firebase.data.userdata[uid].segments[segment_id]
   );
 
