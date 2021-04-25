@@ -81,6 +81,20 @@ const FiringExportPage = (props) => {
     }
     return (
       <React.Fragment>
+        <div>
+          <p>
+            <b>
+              Warning!!! This hasn't been tested on real kilns yet. Don't be
+              upset if the Kiln doesn't accept it, or freaks out and melts
+              itself, or the controller just crashes.
+            </b>
+          </p>
+          <p>
+            You'll need to take this generated file, and place it in a directory
+            called 'IMPORT' on the root directory of your USB stick.
+          </p>
+        </div>
+        <p />
         <div>Name: {firing.name}</div>
         {kiln.manufacturer === "Nabertherm" && (
           <div>

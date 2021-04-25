@@ -43,7 +43,10 @@ export const generateExportFile = (
 const naberthermSanitiseName = (name) => {
   // Strip all non alphanumeric characters
 
-  return name.replace(/[^A-Za-z0-9 ]+/g, "").substring(0, 17);
+  return name
+    .replace(/[^A-Za-z0-9 ]+/g, "")
+    .substring(0, 17)
+    .toUpperCase();
 };
 
 const generateNaberthermExportFile = (
@@ -60,6 +63,7 @@ const generateNaberthermExportFile = (
 
   console.log(segments);
   // Nabertherms have two segments per segment. One for the heating, one for the hold.
+  // Other odd thing - the last segment (the 'hold' for the final temperature should have a temperature of Zero, which the kiln interprets as 'end')
   const segments_in_xml = segments.map(
     (segment, index) => `<Segment>
  <SegNum>${index * 2 + 1}</SegNum>
@@ -75,7 +79,9 @@ const generateNaberthermExportFile = (
  </Segment>
  <Segment>
  <SegNum>${index * 2 + 2}</SegNum>
- <Temperature>${_.escape(segment.temperature)}</Temperature>
+ <Temperature>${
+   index === segments.length - 1 ? 0 : _.escape(segment.temperature)
+ }</Temperature>
  <Time>${_.escape(segment.hold)}</Time>
  <Extra1>0</Extra1>
  <Extra2>0</Extra2>
