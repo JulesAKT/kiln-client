@@ -14,6 +14,9 @@ import ProjectShowPage from "./components/ProjectShowPage.js";
 import ProjectCreatePage from "./components/ProjectCreatePage";
 import ProjectEditPage from "./components/ProjectEditPage";
 import ProjectDeletePage from "./components/ProjectDeletePage";
+import MaterialAddPage from "./components/MaterialAddPage";
+import MaterialEditPage from "./components/MaterialEditPage";
+import MaterialDeletePage from "./components/MaterialDeletePage";
 import FiringShowPage from "./components/FiringShowPage";
 import FiringEditPage from "./components/FiringEditPage";
 import FiringDeletePage from "./components/FiringDeletePage";
@@ -133,6 +136,21 @@ class App extends React.Component {
                     path="/firings/edit/:id"
                     exact
                     component={FiringEditPage}
+                  />
+                  <PrivateRoute
+                    path="/new_material/:id/:order"
+                    exact
+                    component={MaterialAddPage}
+                  />
+                  <PrivateRoute
+                    path="/edit_material/:project_id/:material_id"
+                    exact
+                    component={MaterialEditPage}
+                  />
+                  <PrivateRoute
+                    path="/delete_material/:project_id/:material_id"
+                    exact
+                    component={MaterialDeletePage}
                   />
                   <PrivateRoute path="/kilns" exact component={KilnsListPage} />
                   <PrivateRoute

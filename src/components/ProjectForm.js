@@ -49,7 +49,8 @@ const ProjectForm = (props) => {
   const kiln_array = Object.values(kilns);
 
   const kiln_selections = kiln_array.map((kiln) => {
-    return { label: kiln.name, value: kiln.id };
+    console.log(kiln);
+    return { label: kiln?.name, value: kiln?.id };
   });
   //console.log("Kiln Selections:");
   //console.log(kiln_selections);

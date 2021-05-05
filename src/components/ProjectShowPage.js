@@ -19,6 +19,7 @@ import { convertLengthUnit } from "../helpers/unitHelpers";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 import FiringCard from "./FiringCard";
+import MaterialCard from "./MaterialCard";
 
 const ProjectShowPage = (props) => {
   const id = props.match.params.id;
@@ -38,7 +39,13 @@ const ProjectShowPage = (props) => {
   let firings_array;
   if (firings) {
     firings_array = Object.values(firings).sort((a, b) => {
-      return a.name.localeCompare(b.name) ? -1 : 1;
+      return a.order > b.order ? 1 : -1;
+    });
+  }
+  let materials_key_array;
+  if (project?.materials) {
+    materials_key_array = Object.keys(project.materials).sort((a, b) => {
+      return project.materials[a].order > project.materials[b].order ? 1 : -1;
     });
   }
 
@@ -100,6 +107,12 @@ const ProjectShowPage = (props) => {
     dispatch(editProject(project.id, newProject, true));
   };
   const newOrder = Math.max(...firings_array.map((s) => s.order || 0), 0) + 1;
+  const material_new_order = materials_key_array
+    ? Math.max(
+        ...materials_key_array.map((s) => project.materials[s].order || 0),
+        0
+      ) + 1
+    : 0;
 
   return (
     <div>
@@ -136,6 +149,32 @@ const ProjectShowPage = (props) => {
         </Link>
       </div>
       <Divider />
+      {materials_key_array && (
+        <List>
+          <List.Header>Materials</List.Header>
+          {materials_key_array.map(
+            (key) =>
+              project.materials[key] && (
+                <MaterialCard
+                  project={project}
+                  {...project.materials[key]}
+                  id={key}
+                />
+              )
+          )}
+        </List>
+      )}
+      <div>
+        <Link to={`/new_material/${id}/${material_new_order}`}>
+          <Button primary>
+            <Icon name="add" />
+            Add Material
+          </Button>
+        </Link>
+      </div>
+
+      <Divider />
+
       <List>
         <List.Header>Firings</List.Header>
         {firings_array &&

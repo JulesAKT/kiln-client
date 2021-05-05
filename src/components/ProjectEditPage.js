@@ -23,6 +23,7 @@ const ProjectEditPage = (props) => {
   const handleSubmit = (formValues) => {
     dispatch(
       editProject(id, {
+        ...project,
         photos: project.photos || [],
         ...formValues,
       })

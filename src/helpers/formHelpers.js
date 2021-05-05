@@ -9,12 +9,14 @@ import { Image, List } from "semantic-ui-react";
 import { useController } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { omit } from "lodash";
+import styled from "styled-components";
 
 import {
   Form,
   TextArea as SemanticTextArea,
   Rating,
   Label,
+  Dropdown,
 } from "semantic-ui-react";
 import Moment from "moment";
 import momentLocalizer from "react-widgets-moment";
@@ -457,6 +459,73 @@ export const renderDateTimePicker = ({
   );
 };
 */
+
+// Override Dropdown styling to sort the searchable icon out. See: https://github.com/Semantic-Org/Semantic-UI-React/issues/3869
+
+const StyledDropDown = styled(Dropdown)`
+  &&&& {
+    .icon {
+      z-index: 2;
+    }
+  }
+`;
+
+export const HookDropdown = ({
+  control,
+  name,
+  label,
+  errors,
+  options,
+  text,
+  icon,
+  renderLabel,
+  placeholder,
+  search = false,
+  ...props
+}) => {
+  //console.log("HookDropdown");
+  //console.log(props);
+  const {
+    field: { ref, ...inputProps },
+    meta: { isTouched },
+  } = useController({
+    name,
+    control,
+    rules: { required: true },
+    defaultValue: props.defaultValue,
+  });
+  const className = `field ${errors[name] && isTouched ? "error" : ""}`;
+  console.log(inputProps);
+  return (
+    <div className={className}>
+      <label style={props.labelStyle}>{label}</label>
+      <StyledDropDown
+        {...inputProps}
+        onChange={(e, { value }) => {
+          inputProps.onChange(value);
+        }}
+        options={options}
+        text={text}
+        icon={icon}
+        search={search}
+        style={props.selectStyle}
+        renderLabel={renderLabel}
+        placeholder={placeholder}
+        clearable
+      ></StyledDropDown>
+
+      <ErrorMessage
+        errors={errors}
+        name={name}
+        render={({ message }) => (
+          <div className="ui error message">
+            <span>{message}</span>
+          </div>
+        )}
+      />
+    </div>
+  );
+};
 
 export const HookSelect = ({
   control,
