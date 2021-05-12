@@ -1,0 +1,86 @@
+!SULFUR/SELENIUM-BEARING
+000024 Tomato Red Opal
+000025 Tangerine Orange Opal
+000120 Canary Yellow Opal
+000124 Red Opal
+000125 Orange Opal
+000126 Spring Green Opal
+000137 French Vanilla Opal
+000203 Woodland Brown Opal
+000220 Sunflower Yellow Opal
+000221 CITRONELLE OPAL
+000222 AVOCADO GREEN OPAL
+000224 Deep Red Opal
+000225 Pimento Red Opal
+000227 Golden Green Opal
+000309 Cinnabar Opal
+000310 Umber Opal
+000320 Marigold Yellow Opal
+000321 Pumpkin Orange Opal
+000329 burnt orange opal
+000337 Butterscotch Opal
+001025 Light Orange
+001119 Sienna
+001120 Yellow
+001122 Red
+001125 Orange
+001126 Chartreuse
+001137 Medium Amber
+001138 DARK AMBER
+001207 Fern Green
+001241 Pine Green
+001320 Marigold Yellow
+001321 Carnelian
+001322 Garnet Red
+001422 LEMON LIME GREEN
+001437 Light Amber
+001857 red amber tint
+!COPPER-BEARING
+000104 GlACIER BLUE OPAL
+000116 Turquoise Blue Opal
+000144 Teal Green Opal
+000145 Jade Green Opal
+000146 Steel Blue Opal
+000161 ROBIN'S EGG BLUE OPAL
+000164 Egyptian Blue Opal
+000216 Light Cyan Opal
+000345 STEEL JADE OPAL
+001116 Turquoise Blue
+001145 Kelly Green
+001164 caribbean blue
+001176 Peacock Blue
+001217 LEAF GREEN
+001226 LILY PAD GREEN
+001246 Copper Blue
+001408 Light Aquamarine
+001416 Light Turquoise Blue
+001417 Emerald Green
+001464 True Blue
+001808 Aqua Blue Tint
+001816 Turquoise Blue Tint
+001845 MING GREEN Tint
+001917 Cilantro Green Tint
+!LEAD-BEARING
+000301 Pink Opal
+000303 Dusty Lilac Opal
+000304 LAVENDER
+000305 Salmon Pink Opal
+000313 Dense White Opal
+000334 Gold Purple Opal
+001205 Light Coral
+001215 Light Pink
+001234 Violet
+001305 Sunset Coral
+001311 Cranberry Pink
+001332 FuCHSia
+001334 Gold Purple
+001823 Burnt Scarlet Tint
+001824 Ruby Red Tint
+001831 Ruby Pink Tint
+!REACTIVE
+000009 Reactive Cloud Opal
+001009 Reactive Ice Clear
+001019 red reactive clear
+!ALCHEMY SERIES
+001015 clear, silver to gold
+001016 clear, silver to bronze

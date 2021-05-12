@@ -1,6 +1,15 @@
 import React, { useRef, useCallback } from "react";
 import { useDispatch } from "react-redux";
-import { List, Rating, Button, Divider, Image, Icon } from "semantic-ui-react";
+import {
+  List,
+  Rating,
+  Button,
+  Divider,
+  Image,
+  Icon,
+  Card,
+  Header,
+} from "semantic-ui-react";
 import { useDropzone } from "react-dropzone";
 import { Link } from "react-router-dom";
 import _ from "lodash";
@@ -12,8 +21,10 @@ import { findSuitablePhoto } from "../helpers/photoHelpers";
 import useFirebaseProject from "../hooks/useFirebaseProject";
 import useFirebaseFirings from "../hooks/useFirebaseFirings";
 import useFirebasePreferences from "../hooks/useFirebasePreferences";
+import useFirebaseGlassData from "../hooks/useFirebaseGlassData";
 import usePending from "../hooks/usePending";
 import { glassImage } from "../helpers/logoHelpers";
+import { getReactingMaterials } from "../helpers/glassHelpers";
 import { convertLengthUnit } from "../helpers/unitHelpers";
 
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -27,6 +38,7 @@ const ProjectShowPage = (props) => {
   const project = useFirebaseProject(id);
   const kiln = useFirebaseKiln(project && project.kiln);
   const preferences = useFirebasePreferences();
+  const glass_data = useFirebaseGlassData(project?.glass);
   const pending = usePending();
   const upload_pending = pending?.EDIT_PROJECT?.pending;
   const all_firings = useFirebaseFirings();
@@ -114,6 +126,13 @@ const ProjectShowPage = (props) => {
       ) + 1
     : 0;
 
+  const reacting_materials = getReactingMaterials(
+    project.materials,
+    glass_data
+  );
+  console.log("REACTING MATERIALS");
+  console.log(reacting_materials);
+
   return (
     <div>
       {project.photo && <Image avatar src={project.photo} size="medium" />}
@@ -150,19 +169,22 @@ const ProjectShowPage = (props) => {
       </div>
       <Divider />
       {materials_key_array && (
-        <List>
-          <List.Header>Materials</List.Header>
-          {materials_key_array.map(
-            (key) =>
-              project.materials[key] && (
-                <MaterialCard
-                  project={project}
-                  {...project.materials[key]}
-                  id={key}
-                />
-              )
-          )}
-        </List>
+        <>
+          <Header as="h3">Materials</Header>
+          <Card.Group>
+            {materials_key_array.map(
+              (key) =>
+                project.materials[key] && (
+                  <MaterialCard
+                    project={project}
+                    {...project.materials[key]}
+                    id={key}
+                    reacting={typeof reacting_materials[key] !== "undefined"}
+                  />
+                )
+            )}
+          </Card.Group>
+        </>
       )}
       <div>
         <Link to={`/new_material/${id}/${material_new_order}`}>
@@ -174,9 +196,8 @@ const ProjectShowPage = (props) => {
       </div>
 
       <Divider />
-
+      <Header as="h3">Firings</Header>
       <List>
-        <List.Header>Firings</List.Header>
         {firings_array &&
           firings_array.map(
             (firing, index) =>

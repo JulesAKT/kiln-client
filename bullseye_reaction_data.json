@@ -1,0 +1,326 @@
+{
+  "000024": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Tomato Red Opal"
+  },
+  "000025": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Tangerine Orange Opal"
+  },
+  "000120": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Canary Yellow Opal"
+  },
+  "000124": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Red Opal"
+  },
+  "000125": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Orange Opal"
+  },
+  "000126": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Spring Green Opal"
+  },
+  "000137": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "French Vanilla Opal"
+  },
+  "000203": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Woodland Brown Opal"
+  },
+  "000220": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Sunflower Yellow Opal"
+  },
+  "000221": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "CITRONELLE OPAL"
+  },
+  "000222": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "AVOCADO GREEN OPAL"
+  },
+  "000224": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Deep Red Opal"
+  },
+  "000225": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Pimento Red Opal"
+  },
+  "000227": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Golden Green Opal"
+  },
+  "000309": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Cinnabar Opal"
+  },
+  "000310": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Umber Opal"
+  },
+  "000320": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Marigold Yellow Opal"
+  },
+  "000321": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Pumpkin Orange Opal"
+  },
+  "000329": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "burnt orange opal"
+  },
+  "000337": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Butterscotch Opal"
+  },
+  "001025": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Light Orange"
+  },
+  "001119": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Sienna"
+  },
+  "001120": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Yellow"
+  },
+  "001122": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Red"
+  },
+  "001125": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Orange"
+  },
+  "001126": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Chartreuse"
+  },
+  "001137": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Medium Amber"
+  },
+  "001138": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "DARK AMBER"
+  },
+  "001207": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Fern Green"
+  },
+  "001241": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Pine Green"
+  },
+  "001320": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Marigold Yellow"
+  },
+  "001321": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Carnelian"
+  },
+  "001322": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Garnet Red"
+  },
+  "001422": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "LEMON LIME GREEN"
+  },
+  "001437": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Light Amber"
+  },
+  "001857": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "red amber tint"
+  },
+  "000104": {
+    "reaction_type": "COPPER",
+    "name": "GlACIER BLUE OPAL"
+  },
+  "000116": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue Opal"
+  },
+  "000144": {
+    "reaction_type": "COPPER",
+    "name": "Teal Green Opal"
+  },
+  "000145": {
+    "reaction_type": "COPPER",
+    "name": "Jade Green Opal"
+  },
+  "000146": {
+    "reaction_type": "COPPER",
+    "name": "Steel Blue Opal"
+  },
+  "000161": {
+    "reaction_type": "COPPER",
+    "name": "ROBIN'S EGG BLUE OPAL"
+  },
+  "000164": {
+    "reaction_type": "COPPER",
+    "name": "Egyptian Blue Opal"
+  },
+  "000216": {
+    "reaction_type": "COPPER",
+    "name": "Light Cyan Opal"
+  },
+  "000345": {
+    "reaction_type": "COPPER",
+    "name": "STEEL JADE OPAL"
+  },
+  "001116": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue"
+  },
+  "001145": {
+    "reaction_type": "COPPER",
+    "name": "Kelly Green"
+  },
+  "001164": {
+    "reaction_type": "COPPER",
+    "name": "caribbean blue"
+  },
+  "001176": {
+    "reaction_type": "COPPER",
+    "name": "Peacock Blue"
+  },
+  "001217": {
+    "reaction_type": "COPPER",
+    "name": "LEAF GREEN"
+  },
+  "001226": {
+    "reaction_type": "COPPER",
+    "name": "LILY PAD GREEN"
+  },
+  "001246": {
+    "reaction_type": "COPPER",
+    "name": "Copper Blue"
+  },
+  "001408": {
+    "reaction_type": "COPPER",
+    "name": "Light Aquamarine"
+  },
+  "001416": {
+    "reaction_type": "COPPER",
+    "name": "Light Turquoise Blue"
+  },
+  "001417": {
+    "reaction_type": "COPPER",
+    "name": "Emerald Green"
+  },
+  "001464": {
+    "reaction_type": "COPPER",
+    "name": "True Blue"
+  },
+  "001808": {
+    "reaction_type": "COPPER",
+    "name": "Aqua Blue Tint"
+  },
+  "001816": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue Tint"
+  },
+  "001845": {
+    "reaction_type": "COPPER",
+    "name": "MING GREEN Tint"
+  },
+  "001917": {
+    "reaction_type": "COPPER",
+    "name": "Cilantro Green Tint"
+  },
+  "000301": {
+    "reaction_type": "LEAD",
+    "name": "Pink Opal"
+  },
+  "000303": {
+    "reaction_type": "LEAD",
+    "name": "Dusty Lilac Opal"
+  },
+  "000304": {
+    "reaction_type": "LEAD",
+    "name": "LAVENDER"
+  },
+  "000305": {
+    "reaction_type": "LEAD",
+    "name": "Salmon Pink Opal"
+  },
+  "000313": {
+    "reaction_type": "LEAD",
+    "name": "Dense White Opal"
+  },
+  "000334": {
+    "reaction_type": "LEAD",
+    "name": "Gold Purple Opal"
+  },
+  "001205": {
+    "reaction_type": "LEAD",
+    "name": "Light Coral"
+  },
+  "001215": {
+    "reaction_type": "LEAD",
+    "name": "Light Pink"
+  },
+  "001234": {
+    "reaction_type": "LEAD",
+    "name": "Violet"
+  },
+  "001305": {
+    "reaction_type": "LEAD",
+    "name": "Sunset Coral"
+  },
+  "001311": {
+    "reaction_type": "LEAD",
+    "name": "Cranberry Pink"
+  },
+  "001332": {
+    "reaction_type": "LEAD",
+    "name": "FuCHSia"
+  },
+  "001334": {
+    "reaction_type": "LEAD",
+    "name": "Gold Purple"
+  },
+  "001823": {
+    "reaction_type": "LEAD",
+    "name": "Burnt Scarlet Tint"
+  },
+  "001824": {
+    "reaction_type": "LEAD",
+    "name": "Ruby Red Tint"
+  },
+  "001831": {
+    "reaction_type": "LEAD",
+    "name": "Ruby Pink Tint"
+  },
+  "000009": {
+    "reaction_type": "REACTIVE",
+    "name": "Reactive Cloud Opal"
+  },
+  "001009": {
+    "reaction_type": "REACTIVE",
+    "name": "Reactive Ice Clear"
+  },
+  "001019": {
+    "reaction_type": "REACTIVE",
+    "name": "red reactive clear"
+  },
+  "001015": {
+    "reaction_type": "ALCHEMY SERIES",
+    "name": "clear, silver to gold"
+  },
+  "001016": {
+    "reaction_type": "ALCHEMY SERIES",
+    "name": "clear, silver to bronze"
+  }
+}

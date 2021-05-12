@@ -4,12 +4,18 @@ bullseye_colors = {}
 
 
 def GetBullsEyeColor(code):
+    print("GetBullsEyeColor: " + code)
+    # Other than codes that mean multicolored, Lustre Rods are also multicolored. Find them by part number.
     if (
         code[:3] == "002"
         or code[:3] == "003"
         or code[:3] == "006"
         or code[:3] == "004"
         or code[:3] == "008"
+        or code == "001701"
+        or code == "001707"
+        or code == "001714"
+        or code == "001717"
     ):
         return {
             "rgb": {"r": 255, "g": 255, "b": 255},
@@ -107,6 +113,7 @@ def GlassType(code):
         "0971": "SizzleStix rainbow 3 & 6 mm",
     }
 
+    print("Looking up: " + code)
     style = style_lookup[code[:3]]
     type = type_lookup[code[7:11].upper()]
     return style + " " + type
@@ -154,14 +161,17 @@ with open("./bullseye_inventory_sheet_for_parsing.txt") as inventory_file:
     for line in inventory_lines:
         code = line.split(" ")[0]
         print("Parsing: " + code)
-        if line[0] == "!":
+        print("Line 0-2: " + line[0:2])
+        if line[0:3] == "!!!":
+            variant_list.append(line[3:].lstrip("-").rstrip("\n").split(" ")[0])
+            print("Appending to Variant List: ")
+            print(variant_list)
+        elif line[0:2] == "!!":
+            collage_name = line[2:]
+        elif line[0] == "!":
             print("Section Header: " + line)
             variant_list = []
-        elif line[0:1] == "!!":
-            collage_name = line[2:]
-        elif line[0:2] == "!!!":
-            variant_list.append(line[3:])
-            print("Appending to Variant List: " + variant_list)
+
         else:
             # Check if we're a variant line, in which case we have the same style as the last line
             if line[0] == "-":
@@ -189,10 +199,27 @@ with open("./bullseye_inventory_sheet_for_parsing.txt") as inventory_file:
                 for s in variant_list:
                     bullseye_inventory[code + "-" + s] = {
                         "description": DescribeGlass(code, color_name),
-                        "type": GlassType(code),
+                        "type": GlassType(code + "-" + s),
                         "color": GetBullsEyeColor(code.split("-")[0]),
                     }
 
-    f = open("bullseye_inventory_data.json", "w")
-    f.write(json.dumps(bullseye_inventory, indent=2))
-    f.close()
+with open("./bullseye_reactions_chart_for_parsing.txt") as reactions_file:
+    reactions_lines = reactions_file.readlines()
+    reaction_types = {}
+    reaction_type = ""
+    for line in reactions_lines:
+        if line[0] == "!":
+            reaction_type = line[1:].strip().replace("-BEARING", "")
+
+        else:
+            (code, name) = line.strip().split(" ", 1)
+
+            reaction_types[code] = {"reaction_type": reaction_type, "name": name}
+
+
+f = open("bullseye_inventory_data.json", "w")
+f.write(json.dumps(bullseye_inventory, indent=2))
+f.close()
+f = open("bullseye_reaction_data.json", "w")
+f.write(json.dumps(reaction_types, indent=2))
+f.close()
