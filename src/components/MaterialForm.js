@@ -32,10 +32,10 @@ const getGlassDataDropdownOptionsFromInventory = (inventory) => {
       key: key,
       text: `${key} - ${description}:${type}`,
       value: `${key}`,
-      color: getHexColor(color.rgb),
+      color: color?.rgb && getHexColor(color.rgb),
       content: (
         <>
-          <span style={{ color: getHexColor(color.rgb) }}>
+          <span style={color?.rgb && { color: getHexColor(color.rgb) }}>
             <Icon name="square full" />
           </span>
           {`${key} - ${description}: ${type}`}

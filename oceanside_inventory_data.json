@@ -1,0 +1,3242 @@
+{
+  "A-100A-F": {
+    "description": "Clear Artique Fusible (Large Sheet 26in.x72in.)",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "A-100C-F": {
+    "description": "Clear Cord Fusible (Large Sheet 30in.x72in.)",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "A-100H-F": {
+    "description": "Clear Hammered Fusible (Large Sheet 26in.x72in.)",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "A-100RW-F": {
+    "description": "Clear RainWater Fusible (Large Sheet 30in.x72in.)",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "A-100SEEDY-F": {
+    "description": "Clear Seedy Fusible (Large Sheet 30in.x72in.)",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100SEEDY-SL-48-X30-F": {
+    "description": "Clear Seedy Fusible (Wide Sheet 30in.x48in.)",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "A-100V-F": {
+    "description": "Clear Vecchio Fusible (Large Sheet 30in.x72in.)",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "A-100W-F": {
+    "description": "Clear Waterglass Fusible (Large Sheet 24in.x72in.)",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100A-F": {
+    "description": "Clear Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "100C-F": {
+    "description": "Clear Cord Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100CC-F": {
+    "description": "Clear Corsica Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100CRACKLE-F": {
+    "description": "Clear Crackle Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100CZ-F": {
+    "description": "Clear Corteza Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100G-F": {
+    "description": "Clear Granite Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100G-F-IR": {
+    "description": "Clear Granite Fusible Iridescent",
+    "type": "IRIDESCENT"
+  },
+  "100GG-F": {
+    "description": "Clear Crystal Ice Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100H-F": {
+    "description": "Clear Hammered Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100H-F-IR": {
+    "description": "Clear Hammered Fusible Iridescent",
+    "type": "IRIDESCENT"
+  },
+  "100HS-F": {
+    "description": "Clear (Small) Hammered Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100K-F": {
+    "description": "Clear Krinkle Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100QR-F": {
+    "description": "Clear Quarter-Reed Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100RR-F": {
+    "description": "Clear Rough Rolled Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100RW-F": {
+    "description": "Clear RainWater Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100S-F": {
+    "description": "Clear Smooth Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100S-ICE-F": {
+    "description": "Icicle Clear Smooth Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100S-ICE-2MM-F": {
+    "description": "Icicle Clear Smooth Thin 2MM Fusible",
+    "type": "2MM - THIN"
+  },
+  "100S-ICE-5MM-F": {
+    "description": "Icicle Clear Smooth Double Thick 5MM Fusible",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "100S-ICE-F-IR": {
+    "description": "Icicle Clear Fusible Iridescent",
+    "type": "IRIDESCENT"
+  },
+  "100S-2MM-F": {
+    "description": "Clear Smooth Thin 2MM Fusible",
+    "type": "2MM - THIN"
+  },
+  "100S-5MM-F": {
+    "description": "Clear Smooth Double Thick 5MM Fusible",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "100SN-F": {
+    "description": "Clear Satin Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100SNSeedy-F": {
+    "description": "Clear Satin Seedy Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100Seedy-F": {
+    "description": "Clear Seedy Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100SXTL-F": {
+    "description": "Crystal Clear Smooth Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100SXTL-5MM-F": {
+    "description": "Crystal Clear Smooth Double Thick 5MM Fusible",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "100V-F": {
+    "description": "Clear Vecchio Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "100W-F": {
+    "description": "Clear Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "100W-F-IR": {
+    "description": "Clear Waterglass Fusible Iridescent",
+    "type": "IRIDESCENT"
+  },
+  "200S-F": {
+    "description": "White Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "200S-F-IR": {
+    "description": "White Opal Fusible Iridescent",
+    "type": "IRIDESCENT"
+  },
+  "200S-2MM-F": {
+    "description": "White Opal Thin 2MM Fusible",
+    "type": "2MM - THIN"
+  },
+  "200S-5MM-F": {
+    "description": "White Opal Double Thick 5MM Fusible",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "209FL-F": {
+    "description": "FireLight White Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "209S-F": {
+    "description": "Crystal Opal Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "200-91W-F": {
+    "description": "White Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "210-71S-F": {
+    "description": "Ivory Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "210-72S-F": {
+    "description": "Almond Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "210-73S-F": {
+    "description": "Vanilla Cream Opal Fusible (Lightens Upon Fusing)",
+    "type": "SOLID OPALESCENT"
+  },
+  "305S-F": {
+    "description": "White/Clear Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "307S-F": {
+    "description": "Clear/White Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "308S-F": {
+    "description": "Clear/White Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "309S-F": {
+    "description": "Clear/White, Wispy Fusible",
+    "type": "CLEAR/WHITE/OFF-WHITE"
+  },
+  "110-1A-F": {
+    "description": "Palest Amber Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "110-1RR-F": {
+    "description": "Palest Amber Rough Rolled Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "110-1S-F": {
+    "description": "Palest Amber Smooth Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "110-2A-F": {
+    "description": "Pale Amber Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "110-2RR-F": {
+    "description": "Pale Amber Rough Rolled Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "110-2S-F": {
+    "description": "Pale Amber Smooth Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "110-2W-F": {
+    "description": "Pale Amber Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "110-4S-F": {
+    "description": "Light Amber Smooth Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "110-8A-F": {
+    "description": "Medium Amber Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "110-8RR-F": {
+    "description": "Medium Amber Rough Rolled Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "110-8S-F": {
+    "description": "Medium Amber Smooth Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "110-8W-F": {
+    "description": "Medium Amber Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "111RR-F": {
+    "description": "Dark Amber Rough Rolled Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "111W-F": {
+    "description": "Dark Amber Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "201-61S-F": {
+    "description": "Clear/Ivory Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "211-74S-F": {
+    "description": "Chestnut Brown Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "211-76S-F": {
+    "description": "Chocolate Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "215-72S-F": {
+    "description": "Terra Cotta Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "315-02S-F": {
+    "description": "White/Pale Amber Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "315-02S-5MM-F": {
+    "description": "White/Pale Amber Fusible Double Thick 5MM",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "315-1S-F": {
+    "description": "White/Light Amber Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "315-2S-F": {
+    "description": "White/Medium Amber Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "315-6S-F": {
+    "description": "White/Dark Amber Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "317-02S-F": {
+    "description": "Pale Amber/White Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "317-1S-F": {
+    "description": "Light Amber/White Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "317-2S-F": {
+    "description": "Medium Amber/White Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "317-6S-F": {
+    "description": "Dark Amber/White Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "318-05S-F": {
+    "description": "Light Amber Lamp Mix Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "319-02S-F": {
+    "description": "Pale Amber/White, Wispy Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "319-1S-F": {
+    "description": "Light Amber/White, Wispy Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "319-6S-F": {
+    "description": "Dark Amber/White, Wispy Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "411-15G-F": {
+    "description": "Brown/Gold Streaky, Granite Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "411-15S-F": {
+    "description": "Brown/Gold Streaky, Smooth Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "518-1RR-F": {
+    "description": "Bronze Rough Rolled Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "518-1S-F": {
+    "description": "Bronze Smooth Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "518-1W-F": {
+    "description": "Bronze Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "518-2S-F": {
+    "description": "Antique Bronze Smooth Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "818-54S-F": {
+    "description": "White/Gray Taupe, Wispy Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "818-54S-5MM-F": {
+    "description": "White/Gray Taupe, Wispy Fusible Double Thick 5MM",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "818-56S-F": {
+    "description": "Gray Blue Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "818-56S-5MM-F": {
+    "description": "Gray Blue Fusible Double Thick 5MM",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "818-91S-F": {
+    "description": "Bronze/White, Wispy Fusible",
+    "type": "AMBER & BROWN"
+  },
+  "121A-F": {
+    "description": "Light Green Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "121RR-F": {
+    "description": "Light Green Rough Rolled Fusible",
+    "type": "GREEN"
+  },
+  "121S-F": {
+    "description": "Light Green Smooth Fusible",
+    "type": "GREEN"
+  },
+  "121W-F": {
+    "description": "Light Green Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "123H-F": {
+    "description": "Medium Green, Hammered Fusible",
+    "type": "GREEN"
+  },
+  "123RR-F": {
+    "description": "Medium Green Rough Rolled Fusible",
+    "type": "GREEN"
+  },
+  "123S-F": {
+    "description": "Medium Green Smooth Fusible",
+    "type": "GREEN"
+  },
+  "123W-F": {
+    "description": "Medium Green Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "125RR-F": {
+    "description": "Dark Green Rough Rolled Fusible",
+    "type": "GREEN"
+  },
+  "125S-F": {
+    "description": "Dark Green Smooth Fusible",
+    "type": "GREEN"
+  },
+  "125S-F-IR": {
+    "description": "Dark Green Smooth Fusible Iridescent",
+    "type": "IRIDESCENT"
+  },
+  "125W-F": {
+    "description": "Dark Green Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "220-76S-F": {
+    "description": "Dark Green Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "222-72S-F": {
+    "description": "Pastel Green Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "223-72S-F": {
+    "description": "Turquoise Green Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "223-74S-F": {
+    "description": "Peacock Green Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "226-72S-F": {
+    "description": "Lemongrass Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "226-74S-F": {
+    "description": "Amazon Green Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "228-72S-F": {
+    "description": "Celadon Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "327-2S-F": {
+    "description": "Light Green/White Fusible",
+    "type": "GREEN"
+  },
+  "327-6S-F": {
+    "description": "Dark Green/White Fusible",
+    "type": "GREEN"
+  },
+  "329-1S-F": {
+    "description": "Pale Green/White, Wispy Fusible",
+    "type": "GREEN"
+  },
+  "329-2S-F": {
+    "description": "Light Green/White, Wispy Fusible",
+    "type": "GREEN"
+  },
+  "329-6S-F": {
+    "description": "Dark Green/White, Wispy Fusible",
+    "type": "GREEN"
+  },
+  "422-1W-F": {
+    "description": "Deep Olive/Sea Green Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "423-1W-F": {
+    "description": "Pale Green/Aqua Blue Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "523-2RR-F": {
+    "description": "Teal Green Rough Rolled Fusible",
+    "type": "GREEN"
+  },
+  "523-2S-F": {
+    "description": "Teal Green Smooth Fusible",
+    "type": "GREEN"
+  },
+  "523-2W-F": {
+    "description": "Teal Green Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "526-2RR-F": {
+    "description": "Moss Green Rough Rolled Fusible",
+    "type": "GREEN"
+  },
+  "526-2S-F": {
+    "description": "Moss Green Smooth Fusible",
+    "type": "GREEN"
+  },
+  "526-2W-F": {
+    "description": "Moss Green Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "528-1A-F": {
+    "description": "Sea Green Artique  Fusible",
+    "type": "ARTIQUE"
+  },
+  "528-1RR-F": {
+    "description": "Sea Green Rough Rolled Fusible",
+    "type": "GREEN"
+  },
+  "528-1S-F": {
+    "description": "Sea Green Smooth Fusible",
+    "type": "GREEN"
+  },
+  "528-1W-F": {
+    "description": "Sea Green Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "528-2S-F": {
+    "description": "Light Olive Smooth Fusible",
+    "type": "GREEN"
+  },
+  "60-726-F": {
+    "description": "Apple Jade Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "60-7312-F": {
+    "description": "Lime Green Fusible",
+    "type": "GREEN"
+  },
+  "60-755-F": {
+    "description": "Fern Green Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "60-782-F": {
+    "description": "Olive Green Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "621-7S-F": {
+    "description": "Amber, Green/White Fusible",
+    "type": "GREEN"
+  },
+  "622-7S-F": {
+    "description": "Forest Green Opal Fusible",
+    "type": "GREEN"
+  },
+  "623-7S-F": {
+    "description": "White/Dark Green/Blue Fusible",
+    "type": "GREEN"
+  },
+  "823-72S-F": {
+    "description": "Teal Green/White Fusible",
+    "type": "GREEN"
+  },
+  "823-92S-F": {
+    "description": "Teal Green/White, Wispy Fusible",
+    "type": "GREEN"
+  },
+  "826-71S-F": {
+    "description": "Lime Green/White Fusible",
+    "type": "GREEN"
+  },
+  "826-92S-F": {
+    "description": "Moss Green/White, Wispy Fusible",
+    "type": "GREEN"
+  },
+  "828-72S-F": {
+    "description": "Seafoam Green/White Fusible",
+    "type": "GREEN"
+  },
+  "828-91S-F": {
+    "description": "Sea Green/White, Wispy Fusible",
+    "type": "GREEN"
+  },
+  "828-94S-F": {
+    "description": "Olive/White Streaky Fusible",
+    "type": "GREEN"
+  },
+  "130-8A-F": {
+    "description": "Pale Blue Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "130-8RR-F": {
+    "description": "Pale Blue Rough Rolled Fusible",
+    "type": "BLUE"
+  },
+  "130-8S-F": {
+    "description": "Pale Blue Smooth Fusible",
+    "type": "BLUE"
+  },
+  "130-8W-F": {
+    "description": "Pale Blue Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "132A-F": {
+    "description": "Light Blue Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "132RR-F": {
+    "description": "Light Blue Rough Rolled Fusible",
+    "type": "BLUE"
+  },
+  "132S-F": {
+    "description": "Light Blue Smooth Fusible",
+    "type": "BLUE"
+  },
+  "132W-F": {
+    "description": "Light Blue Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "134H-F": {
+    "description": "Medium Blue, Hammered Fusible",
+    "type": "BLUE"
+  },
+  "134RR-F": {
+    "description": "Medium Blue Rough Rolled Fusible",
+    "type": "BLUE"
+  },
+  "134W-F": {
+    "description": "Medium Blue Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "136A-F": {
+    "description": "Dark Blue Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "136RR-F": {
+    "description": "Dark Blue Rough Rolled Fusible",
+    "type": "BLUE"
+  },
+  "136S-F": {
+    "description": "Dark Blue Smooth Fusible",
+    "type": "BLUE"
+  },
+  "136S-F-IR": {
+    "description": "Dark Blue Smooth Fusible Iridescent",
+    "type": "IRIDESCENT"
+  },
+  "136W-F": {
+    "description": "Dark Blue Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "230-71S-F": {
+    "description": "Hydrangea Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "230-72S-F": {
+    "description": "Medium Blue Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "230-76S-F": {
+    "description": "Dark Blue Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "233-74S-F": {
+    "description": "Turquoise Blue Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "233-75S-F": {
+    "description": "Mariner Blue Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "335-2S-F": {
+    "description": "White/Light Blue Fusible",
+    "type": "BLUE"
+  },
+  "337-1S-F": {
+    "description": "Pale Blue/White Fusible",
+    "type": "BLUE"
+  },
+  "337-2S-F": {
+    "description": "Light Blue/White Fusible",
+    "type": "BLUE"
+  },
+  "337-6S-F": {
+    "description": "Dark Blue/White Fusible",
+    "type": "BLUE"
+  },
+  "339-1S-F": {
+    "description": "Pale Blue/White, Wispy Fusible",
+    "type": "BLUE"
+  },
+  "339-2S-F": {
+    "description": "Light Blue/White, Wispy Fusible",
+    "type": "BLUE"
+  },
+  "339-6S-F": {
+    "description": "Dark Blue/White, Wispy Fusible",
+    "type": "BLUE"
+  },
+  "433-1W-F": {
+    "description": "Deep Steel/Sky Blue Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "532-1S-F": {
+    "description": "Caribbean Blue Fusible",
+    "type": "BLUE"
+  },
+  "533-1A-F": {
+    "description": "Sky Blue Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "533-1RR-F": {
+    "description": "Sky Blue Rough Rolled Fusible",
+    "type": "BLUE"
+  },
+  "533-1S-F": {
+    "description": "Sky Blue Smooth Fusible",
+    "type": "BLUE"
+  },
+  "533-1W-F": {
+    "description": "Sky Blue Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "533-2S-F": {
+    "description": "Blue Topaz Fusible",
+    "type": "BLUE"
+  },
+  "533-3RR-F": {
+    "description": "Deep Aqua Rough Rolled Fusible",
+    "type": "BLUE"
+  },
+  "533-3S-F": {
+    "description": "Deep Aqua Smooth Fusible",
+    "type": "BLUE"
+  },
+  "533-3W-F": {
+    "description": "Deep Aqua Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "538-2S-F": {
+    "description": "Light Steel Blue Smooth Fusible",
+    "type": "BLUE"
+  },
+  "538-4S-F": {
+    "description": "Steel Blue Smooth Fusible",
+    "type": "BLUE"
+  },
+  "538-4W-F": {
+    "description": "Steel Blue Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "538-6W-F": {
+    "description": "Navy Blue Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "60-078-F": {
+    "description": "Payne's Gray Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "60-079-F": {
+    "description": "Chambray Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "633-7S-F": {
+    "description": "Sky Blue, Dark Blue/White Fusible",
+    "type": "BLUE"
+  },
+  "833-51S-F": {
+    "description": "White/Sky Blue Fusible",
+    "type": "BLUE"
+  },
+  "833-91S-F": {
+    "description": "Sky Blue/White, Wispy Fusible",
+    "type": "BLUE"
+  },
+  "833-93S-F": {
+    "description": "Deep Aqua/White, Wispy Fusible",
+    "type": "BLUE"
+  },
+  "838-52S-F": {
+    "description": "White/Colonial Blue Fusible",
+    "type": "BLUE"
+  },
+  "838-52S-5MM-F": {
+    "description": "White/Colonial Blue Fusible Double Thick 5MM",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "838-72S-F": {
+    "description": "Colonial Blue/White Fusible",
+    "type": "BLUE"
+  },
+  "838-74S-F": {
+    "description": "Steel Blue/White Fusible",
+    "type": "BLUE"
+  },
+  "838-74S-5MM-F": {
+    "description": "Steel Blue/White Fusible Double Thick 5MM",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "838-94S-F": {
+    "description": "Steel Blue/White, Wispy Fusible",
+    "type": "BLUE"
+  },
+  "838-96S-F": {
+    "description": "Navy Blue/White, Wispy Fusible",
+    "type": "BLUE"
+  },
+  "140-8A-F": {
+    "description": "Pale Purple Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "140-8RR-F": {
+    "description": "Pale Purple Rough Rolled Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "140-8S-F": {
+    "description": "Pale Purple Smooth Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "140-8W-F": {
+    "description": "Pale Purple Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "142RR-F": {
+    "description": "Light Purple Rough Rolled Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "142S-F": {
+    "description": "Light Purple Smooth Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "142W-F": {
+    "description": "Light Purple Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "146W-F": {
+    "description": "Dark Purple Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "240-74S-F": {
+    "description": "Lilac Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "347-1S-F": {
+    "description": "Pale Purple/White Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "349-1S-F": {
+    "description": "Pale Purple/White, Wispy Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "349-2S-F": {
+    "description": "Light Purple/White, Wispy Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "349-6S-F": {
+    "description": "Dark Purple/White, Wispy Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "444-1W-F": {
+    "description": "Deep Violet/Pale Purple Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "543-1S-F": {
+    "description": "Light Grape Smooth Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "543-2A-F": {
+    "description": "Grape Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "543-2RR-F": {
+    "description": "Grape Rough Rolled Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "543-2S-F": {
+    "description": "Grape Smooth Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "543-2W-F": {
+    "description": "Grape Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "641-7S-F": {
+    "description": "Purple, Amber/White Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "843-71S-F": {
+    "description": "Pale Lavender/White Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "843-92S-F": {
+    "description": "Light Grape/White, Wispy Fusible",
+    "type": "PURPLE & PINK"
+  },
+  "151RR-F": {
+    "description": "Cherry Red Rough Rolled Fusible",
+    "type": "RED"
+  },
+  "151S-F": {
+    "description": "Cherry Red Smooth Fusible",
+    "type": "RED"
+  },
+  "151S-F-IR": {
+    "description": "Cherry Red Smooth Fusible Iridescent",
+    "type": "IRIDESCENT"
+  },
+  "151W-F": {
+    "description": "Cherry Red Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "152A-F": {
+    "description": "Ruby Red Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "152G-F": {
+    "description": "Ruby Red Granite Fusible",
+    "type": "RED"
+  },
+  "152RR-F": {
+    "description": "Ruby Red Rough Rolled Fusible",
+    "type": "RED"
+  },
+  "152S-F": {
+    "description": "Ruby Red Smooth Fusible",
+    "type": "RED"
+  },
+  "152W-F": {
+    "description": "Ruby Red Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "250-72S-F": {
+    "description": "Red Opal Fusible..",
+    "type": "SOLID OPALESCENT"
+  },
+  "357-1S-F": {
+    "description": "Red/White Fusible",
+    "type": "RED"
+  },
+  "359-1S-F": {
+    "description": "Red/White, Wispy Fusible",
+    "type": "RED"
+  },
+  "451-20W-F": {
+    "description": "Ruby Red/Amber Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "60-602-F": {
+    "description": "Flame Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "60-611-F": {
+    "description": "Light Cherry Red Fusible",
+    "type": "RED"
+  },
+  "675-5S-F": {
+    "description": "White/Orange-Red Fusible",
+    "type": "RED"
+  },
+  "161A-F": {
+    "description": "Yellow Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "161RR-F": {
+    "description": "Yellow Rough Rolled Fusible",
+    "type": "YELLOW"
+  },
+  "161S-F": {
+    "description": "Yellow Smooth Fusible",
+    "type": "YELLOW"
+  },
+  "161W-F": {
+    "description": "Yellow Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "260-72S-F": {
+    "description": "Yellow Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "267-72S-F": {
+    "description": "Sunflower Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "365-1S-F": {
+    "description": "White/Yellow Fusible",
+    "type": "YELLOW"
+  },
+  "367-1S-F": {
+    "description": "Yellow/White Fusible",
+    "type": "YELLOW"
+  },
+  "369-1S-F": {
+    "description": "Yellow/White, Wispy Fusible",
+    "type": "YELLOW"
+  },
+  "171A-F": {
+    "description": "Orange Artique Fusible",
+    "type": "ARTIQUE"
+  },
+  "171RR-F": {
+    "description": "Orange Rough Rolled Fusible",
+    "type": "ORANGE"
+  },
+  "171S-F": {
+    "description": "Orange Smooth Fusible",
+    "type": "ORANGE"
+  },
+  "171W-F": {
+    "description": "Orange Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "270-72S-F": {
+    "description": "Orange Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "271-71S-F": {
+    "description": "Persimmon Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "375-1S-F": {
+    "description": "White/Orange Fusible",
+    "type": "ORANGE"
+  },
+  "377-1S-F": {
+    "description": "Orange/White Fusible",
+    "type": "ORANGE"
+  },
+  "379-1S-F": {
+    "description": "Orange/White, Wispy Fusible",
+    "type": "ORANGE"
+  },
+  "571-1S-F": {
+    "description": "Rust Fusible",
+    "type": "ORANGE"
+  },
+  "60-355-F": {
+    "description": "Marigold Opal Fusible (Strikes)",
+    "type": "SOLID OPALESCENT"
+  },
+  "1009S-F": {
+    "description": "Black Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "1009S-F-IR": {
+    "description": "Black Opal Smooth Fusible Iridescent",
+    "type": "IRIDESCENT"
+  },
+  "1009S-2MM-F": {
+    "description": "Black Opal Smooth Thin 2 MM Fusible",
+    "type": "2MM - THIN"
+  },
+  "1009W-F": {
+    "description": "Black Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "180-8A-F": {
+    "description": "Pale Artique Gray Fusible",
+    "type": "ARTIQUE"
+  },
+  "180-8RR-F": {
+    "description": "Pale Gray Rough Rolled Fusible",
+    "type": "BLACK & GRAY"
+  },
+  "180-8S-F": {
+    "description": "Pale Gray Smooth Fusible",
+    "type": "BLACK & GRAY"
+  },
+  "180-8W-F": {
+    "description": "Pale Gray Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "280-72S-F": {
+    "description": "Pewter Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "280-76S-F": {
+    "description": "Charcoal Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "385-1S-F": {
+    "description": "White/Raincloud Fusible",
+    "type": "BLACK & GRAY"
+  },
+  "385-1S-5MM-F": {
+    "description": "White/Raincloud Fusible Double Thick 5MM",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "385-2S-F": {
+    "description": "White/Gray Fusible",
+    "type": "BLACK & GRAY"
+  },
+  "385-2S-5MM-F": {
+    "description": "White/Gray Fusible Double Thick 5MM",
+    "type": "5MM - DOUBLE THICK"
+  },
+  "387-2S-F": {
+    "description": "Gray/White Fusible",
+    "type": "BLACK & GRAY"
+  },
+  "389-1S-F": {
+    "description": "Pale Gray/White, Wispy Fusible",
+    "type": "BLACK & GRAY"
+  },
+  "291-61S-F": {
+    "description": "Champagne Opal Fusible",
+    "type": "SOLID OPALESCENT"
+  },
+  "591-1RR-F": {
+    "description": "Pink Champagne Rough Rolled Fusible",
+    "type": "CHAMPAGNE"
+  },
+  "591-1W-F": {
+    "description": "Pink Champagne Waterglass Fusible",
+    "type": "WATERGLASS"
+  },
+  "891-61S-F": {
+    "description": "Pink Champagne/White Fusible",
+    "type": "CHAMPAGNE"
+  },
+  "891-81S-F": {
+    "description": "Pink Champagne, Wispy Fusible",
+    "type": "CHAMPAGNE"
+  },
+  "60-003-F": {
+    "description": "Red Reactive Transparent Fusible",
+    "type": "RED REACTIVE"
+  },
+  "60-045-F": {
+    "description": "Red Reactive Opal Fusible",
+    "type": "RED REACTIVE"
+  },
+  "1009AV-F": {
+    "description": "Aventurine Black Fusible",
+    "type": "AVENTURINE"
+  },
+  "128AV-F": {
+    "description": "Aventurine Green Fusible",
+    "type": "AVENTURINE"
+  },
+  "138AV-F": {
+    "description": "Aventurine Blue Fusible",
+    "type": "AVENTURINE"
+  },
+  "Spirit-4001S-F": {
+    "description": "Murano Fusible",
+    "type": "SPIRIT"
+  },
+  "Spirit-410-7S-F": {
+    "description": "Monterrey Fusible",
+    "type": "SPIRIT"
+  },
+  "Spirit-431-76S-F": {
+    "description": "Vienna Fusible",
+    "type": "SPIRIT"
+  },
+  "Spirit-4361-76S-F": {
+    "description": "Atlantis Fusible",
+    "type": "SPIRIT"
+  },
+  "Spirit-480-2S-F": {
+    "description": "London Fog Fusible",
+    "type": "SPIRIT"
+  },
+  "Spirit-480-6S-F": {
+    "description": "Harbor Gray Fusible",
+    "type": "SPIRIT"
+  },
+  "OA-3005-9S-F": {
+    "description": "Licorice Swirl Fusible",
+    "type": "OPALART"
+  },
+  "OA-355-1S-F": {
+    "description": "Strawberries & Cream Fusible",
+    "type": "OPALART"
+  },
+  "OA-623-52S-F": {
+    "description": "Lagoon Fusible",
+    "type": "OPALART"
+  },
+  "OA-634-52S-F": {
+    "description": "Blackberry Cream Fusible",
+    "type": "OPALART"
+  },
+  "FUSERSRESERVE-SW-F": {
+    "description": "Southwest Fusers' Reserve Fusible",
+    "type": "FUSERS RESERVE"
+  },
+  "6000-81CC-F": {
+    "description": "Pearl Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6011-85CC-F": {
+    "description": "Hawkwings Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6021-86CC-F": {
+    "description": "RainForest Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6022-81CC-F": {
+    "description": "Key Lime Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6022-82CC-F": {
+    "description": "Congo Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6023-83CC-F": {
+    "description": "Aqua-Lime Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "603-81CC-F": {
+    "description": "Blue Skies Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6033-83CC-F": {
+    "description": "Blue Yonder Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6034-83CC-F": {
+    "description": "Aqua-Rose Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "605-85CC-F": {
+    "description": "Sierra Red Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6051-83CC-F": {
+    "description": "Autumn Flame Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6061-81CC-F": {
+    "description": "Meadowlark Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6067-83CC-F": {
+    "description": "Mimosa Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "6076-83CC-F": {
+    "description": "Inferno Fusible",
+    "type": "PEARL OPAL MIXES"
+  },
+  "BR-308": {
+    "description": "Baroque White/Clear (Non Fusible)",
+    "type": "BAROQUE NON FUSIBLE"
+  },
+  "BR-Burgundy": {
+    "description": "Baroque Burgundy/Clear (Non Fusible)",
+    "type": "BAROQUE NON FUSIBLE"
+  },
+  "BR-Clear": {
+    "description": "Baroque Clear/Clear (Non Fusible)",
+    "type": "BAROQUE NON FUSIBLE"
+  },
+  "R-00-F-6": {
+    "description": "Rods Clear 6MM",
+    "type": "6MM RODS"
+  },
+  "R-003-F-6": {
+    "description": "Rods Red Reactive Transparent 6MM",
+    "type": "6MM RODS"
+  },
+  "R-045-F-6": {
+    "description": "Rods Red Reactive Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-1102-F-6": {
+    "description": "Rods Pale Amber 6MM",
+    "type": "6MM RODS"
+  },
+  "R-1104-F-6": {
+    "description": "Rods Light Amber 6MM",
+    "type": "6MM RODS"
+  },
+  "R-1108-F-6": {
+    "description": "Rods Medium Amber 6MM",
+    "type": "6MM RODS"
+  },
+  "R-111-F-6": {
+    "description": "Rods Dark Amber 6MM",
+    "type": "6MM RODS"
+  },
+  "R-121-F-6": {
+    "description": "Rods Light Green 6MM",
+    "type": "6MM RODS"
+  },
+  "R-125-F-6": {
+    "description": "Rods Dark Green 6MM",
+    "type": "6MM RODS"
+  },
+  "R-1308-F-6": {
+    "description": "Rods Pale Blue 6MM",
+    "type": "6MM RODS"
+  },
+  "R-132-F-6": {
+    "description": "Rods Light Blue 6MM",
+    "type": "6MM RODS"
+  },
+  "R-136-F-6": {
+    "description": "Rods Dark Blue 6MM",
+    "type": "6MM RODS"
+  },
+  "R-142-F-6": {
+    "description": "Rods Light Purple 6MM",
+    "type": "6MM RODS"
+  },
+  "R-151-F-6": {
+    "description": "Rods Cherry Red Semi-Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-161-F-6": {
+    "description": "Rods Yellow Semi-Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-171-F-6": {
+    "description": "Rods Orange Semi-Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-1808-F-6": {
+    "description": "Rods Pale Gray 6MM",
+    "type": "6MM RODS"
+  },
+  "R-200-F-6": {
+    "description": "Rods White Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2103-F-6": {
+    "description": "Rods Vanilla Cream Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2107-F-6": {
+    "description": "Rods Almond Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2206-F-6": {
+    "description": "Rods Dark Green Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2222-F-6": {
+    "description": "Rods Pastel Green Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2232-F-6": {
+    "description": "Rods Turquoise Green Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2234-F-6": {
+    "description": "Rods Peacock Green Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2264-F-6": {
+    "description": "Rods Amazon Green Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2301-F-6": {
+    "description": "Rods Hydrangea Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2302-F-6": {
+    "description": "Rods Medium Blue Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2306-F-6": {
+    "description": "Rods Dark Blue Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2334-F-6": {
+    "description": "Rods Turquoise Blue Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2404-F-6": {
+    "description": "Rods Lilac Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2502-F-6": {
+    "description": "Rods Red Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2672-F-6": {
+    "description": "Rods Sunflower Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2702-F-6": {
+    "description": "Rods Orange Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2711-F-6": {
+    "description": "Rods Persimmon Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2802-F-6": {
+    "description": "Rods Pewter Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-2911-F-6": {
+    "description": "Rods Champagne Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-355-F-6": {
+    "description": "Rods Marigold Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-5181-F-6": {
+    "description": "Rods Bronze 6MM",
+    "type": "6MM RODS"
+  },
+  "R-5232-F-6": {
+    "description": "Rods Teal Green 6MM",
+    "type": "6MM RODS"
+  },
+  "R-5262-F-6": {
+    "description": "Rods Moss Green 6MM",
+    "type": "6MM RODS"
+  },
+  "R-5281-F-6": {
+    "description": "Rods Sea Green 6MM",
+    "type": "6MM RODS"
+  },
+  "R-5282-F-6": {
+    "description": "Rods Light Olive Green 6MM",
+    "type": "6MM RODS"
+  },
+  "R-5331-F-6": {
+    "description": "Rods Sky Blue 6MM",
+    "type": "6MM RODS"
+  },
+  "R-5333-F-6": {
+    "description": "Rods Deep Aqua 6MM",
+    "type": "6MM RODS"
+  },
+  "R-5432-F-6": {
+    "description": "Rods Grape 6MM",
+    "type": "6MM RODS"
+  },
+  "R-56-F-6": {
+    "description": "Rods Black 6MM",
+    "type": "6MM RODS"
+  },
+  "R-5711-F-6": {
+    "description": "Rods Rust 6MM",
+    "type": "6MM RODS"
+  },
+  "R-5911-F-6": {
+    "description": "Rods Champagne 6MM",
+    "type": "6MM RODS"
+  },
+  "R-602-F-6": {
+    "description": "Rods Flame Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-6227-F-6": {
+    "description": "Rods Forest Green Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-755-F-6": {
+    "description": "Rods Fern Green Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-782-F-6": {
+    "description": "Rods Olive Green Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-8261-F-6": {
+    "description": "Rods Key Lime Opal 6MM",
+    "type": "6MM RODS"
+  },
+  "R-MG-F-6": {
+    "description": "Rods Mardi Gras 6MM",
+    "type": "6MM RODS"
+  },
+  "S-00-F": {
+    "description": "Stringers Clear",
+    "type": "STRINGERS"
+  },
+  "S-003-F": {
+    "description": "Stringers Red Reactive Transparent",
+    "type": "STRINGERS"
+  },
+  "S-045-F": {
+    "description": "Stringers Red Reactive Opal",
+    "type": "STRINGERS"
+  },
+  "S-078-F": {
+    "description": "Stringers Payne's Gray Opal",
+    "type": "STRINGERS"
+  },
+  "S-1102-F": {
+    "description": "Stringers Pale Amber Transparent",
+    "type": "STRINGERS"
+  },
+  "S-1108-F": {
+    "description": "Stringers Medium Amber Transparent",
+    "type": "STRINGERS"
+  },
+  "S-111-F": {
+    "description": "Stringers Dark Amber Transparent",
+    "type": "STRINGERS"
+  },
+  "S-125-F": {
+    "description": "Stringers Dark Green Transparent",
+    "type": "STRINGERS"
+  },
+  "S-132-F": {
+    "description": "Stringers Light Blue Transparent",
+    "type": "STRINGERS"
+  },
+  "S-136-F": {
+    "description": "Stringers Dark Blue Transparent",
+    "type": "STRINGERS"
+  },
+  "S-146-F": {
+    "description": "Stringers Dark Purple Transparent",
+    "type": "STRINGERS"
+  },
+  "S-151-F": {
+    "description": "Stringers Cherry Red Transparent (May Strike to Semi-Opal)",
+    "type": "STRINGERS"
+  },
+  "S-161-F": {
+    "description": "Stringers Yellow Transparent (May Strike to Semi-Opal)",
+    "type": "STRINGERS"
+  },
+  "S-171-F": {
+    "description": "Stringers Orange Transparent (May Strike to Semi-Opal)",
+    "type": "STRINGERS"
+  },
+  "S-1808-F": {
+    "description": "Stringers Pale Gray Transparent",
+    "type": "STRINGERS"
+  },
+  "S-200-F": {
+    "description": "Stringers White Opal",
+    "type": "STRINGERS"
+  },
+  "S-209-F": {
+    "description": "Stringers Crystal Opal",
+    "type": "STRINGERS"
+  },
+  "S-2103-F": {
+    "description": "Stringers Vanilla Cream Opal",
+    "type": "STRINGERS"
+  },
+  "S-2107-F": {
+    "description": "Stringers Almond Opal",
+    "type": "STRINGERS"
+  },
+  "S-2116-F": {
+    "description": "Stringers Chocolate Opal",
+    "type": "STRINGERS"
+  },
+  "S-2152-F": {
+    "description": "Stringers Terra Cotta Opal",
+    "type": "STRINGERS"
+  },
+  "S-2206-F": {
+    "description": "Stringers Dark Green Opal",
+    "type": "STRINGERS"
+  },
+  "S-2222-F": {
+    "description": "Stringers Pastel Green Opal",
+    "type": "STRINGERS"
+  },
+  "S-2234-F": {
+    "description": "Stringers Peacock Green Opal",
+    "type": "STRINGERS"
+  },
+  "S-2262-F": {
+    "description": "Stringers Lemongrass Opal",
+    "type": "STRINGERS"
+  },
+  "S-2264-F": {
+    "description": "Stringers Amazon Green Opal",
+    "type": "STRINGERS"
+  },
+  "S-2301-F": {
+    "description": "Stringers Hydrangea Opal",
+    "type": "STRINGERS"
+  },
+  "S-2302-F": {
+    "description": "Stringers Medium Blue Opal",
+    "type": "STRINGERS"
+  },
+  "S-2306-F": {
+    "description": "Stringers Dark Blue Opal",
+    "type": "STRINGERS"
+  },
+  "S-2334-F": {
+    "description": "Stringers Turquoise Blue Opal",
+    "type": "STRINGERS"
+  },
+  "S-2404-F": {
+    "description": "Stringers Lilac Opal",
+    "type": "STRINGERS"
+  },
+  "S-2502-F": {
+    "description": "Stringers Red Opal",
+    "type": "STRINGERS"
+  },
+  "S-2602-F": {
+    "description": "Stringers Yellow Opal",
+    "type": "STRINGERS"
+  },
+  "S-2702-F": {
+    "description": "Stringers Orange Opal",
+    "type": "STRINGERS"
+  },
+  "S-2711-F": {
+    "description": "Stringers Persimmon Opal",
+    "type": "STRINGERS"
+  },
+  "S-2806-F": {
+    "description": "Stringers Charcoal Gray Opal",
+    "type": "STRINGERS"
+  },
+  "S-3491-F": {
+    "description": "Stringers Pale Purple Semi-Opal",
+    "type": "STRINGERS"
+  },
+  "S-3492-F": {
+    "description": "Stringers Light Purple Transparent",
+    "type": "STRINGERS"
+  },
+  "S-355-F": {
+    "description": "Stringers Marigold Opal",
+    "type": "STRINGERS"
+  },
+  "S-5182-F": {
+    "description": "Stringers Antique Bronze Transparent",
+    "type": "STRINGERS"
+  },
+  "S-5232-F": {
+    "description": "Stringers Teal Green Transparent",
+    "type": "STRINGERS"
+  },
+  "S-5262-F": {
+    "description": "Stringers Moss Green Transparent",
+    "type": "STRINGERS"
+  },
+  "S-5281-F": {
+    "description": "Stringers Sea Green Transparent",
+    "type": "STRINGERS"
+  },
+  "S-5282-F": {
+    "description": "Stringers Light Olive Transparent",
+    "type": "STRINGERS"
+  },
+  "S-5331-F": {
+    "description": "Stringers Sky Blue Transparent",
+    "type": "STRINGERS"
+  },
+  "S-5333-F": {
+    "description": "Stringers Deep Aqua Transparent",
+    "type": "STRINGERS"
+  },
+  "S-5384-F": {
+    "description": "Stringers Steel Blue Transparent",
+    "type": "STRINGERS"
+  },
+  "S-5432-F": {
+    "description": "Stringers Grape Transparent",
+    "type": "STRINGERS"
+  },
+  "S-56-F": {
+    "description": "Stringers Black",
+    "type": "STRINGERS"
+  },
+  "S-5711-F": {
+    "description": "Stringers Rust Transparent (May Strike to Semi-Opal)",
+    "type": "STRINGERS"
+  },
+  "S-602-F": {
+    "description": "Stringers Flame Opal",
+    "type": "STRINGERS"
+  },
+  "S-6227-F": {
+    "description": "Stringers Forest Green Opal",
+    "type": "STRINGERS"
+  },
+  "S-726-F": {
+    "description": "Stringers Apple Jade Opal",
+    "type": "STRINGERS"
+  },
+  "S-7312-F": {
+    "description": "Stringers Lime Transparent",
+    "type": "STRINGERS"
+  },
+  "S-755-F": {
+    "description": "Stringers Fern Green Opal",
+    "type": "STRINGERS"
+  },
+  "S-782-F": {
+    "description": "Stringers Olive Green Opal",
+    "type": "STRINGERS"
+  },
+  "S-8261-F": {
+    "description": "Stringers Key Lime Opal",
+    "type": "STRINGERS"
+  },
+  "S-MG-F": {
+    "description": "Stringers Mardi Gras",
+    "type": "STRINGERS"
+  },
+  "N-00-F": {
+    "description": "Noodles Clear",
+    "type": "NOODLES"
+  },
+  "N-003-F": {
+    "description": "Noodles Red Reactive Transparent",
+    "type": "NOODLES"
+  },
+  "N-045-F": {
+    "description": "Noodles Red Reactive Opal",
+    "type": "NOODLES"
+  },
+  "N-078-F": {
+    "description": "Noodles Payne's Gray Opal",
+    "type": "NOODLES"
+  },
+  "N-1102-F": {
+    "description": "Noodles Pale Amber Transparent",
+    "type": "NOODLES"
+  },
+  "N-1108-F": {
+    "description": "Noodles Medium Amber Transparent",
+    "type": "NOODLES"
+  },
+  "N-111-F": {
+    "description": "Noodles Dark Amber Transparent",
+    "type": "NOODLES"
+  },
+  "N-125-F": {
+    "description": "Noodles Dark Green Transparent",
+    "type": "NOODLES"
+  },
+  "N-132-F": {
+    "description": "Noodles Light Blue Transparent",
+    "type": "NOODLES"
+  },
+  "N-136-F": {
+    "description": "Noodles Dark Blue Transparent",
+    "type": "NOODLES"
+  },
+  "N-146-F": {
+    "description": "Noodles Dark Purple Transparent",
+    "type": "NOODLES"
+  },
+  "N-151-F": {
+    "description": "Noodles Cherry Red Transparent (May Strike to Semi-Opal)",
+    "type": "NOODLES"
+  },
+  "N-161-F": {
+    "description": "Noodles Yellow Transparent (May Strike to Semi-Opal)",
+    "type": "NOODLES"
+  },
+  "N-171-F": {
+    "description": "Noodles Orange Transparent (May Strike to Semi-Opal)",
+    "type": "NOODLES"
+  },
+  "N-1808-F": {
+    "description": "Noodles Pale Gray Transparent",
+    "type": "NOODLES"
+  },
+  "N-200-F": {
+    "description": "Noodles White Opal",
+    "type": "NOODLES"
+  },
+  "N-209-F": {
+    "description": "Noodles Crystal Opal",
+    "type": "NOODLES"
+  },
+  "N-2103-F": {
+    "description": "Noodles Vanilla Cream Opal",
+    "type": "NOODLES"
+  },
+  "N-2107-F": {
+    "description": "Noodles Almond Opal",
+    "type": "NOODLES"
+  },
+  "N-2116-F": {
+    "description": "Noodles Chocolate Opal",
+    "type": "NOODLES"
+  },
+  "N-2152-F": {
+    "description": "Noodles Terra Cotta Opal",
+    "type": "NOODLES"
+  },
+  "N-2206-F": {
+    "description": "Noodles Dark Green Opal",
+    "type": "NOODLES"
+  },
+  "N-2222-F": {
+    "description": "Noodles Pastel Green Opal",
+    "type": "NOODLES"
+  },
+  "N-2234-F": {
+    "description": "Noodles Peacock Green Opal",
+    "type": "NOODLES"
+  },
+  "N-2262-F": {
+    "description": "Noodles Lemongrass Opal",
+    "type": "NOODLES"
+  },
+  "N-2264-F": {
+    "description": "Noodles Amazon Green Opal",
+    "type": "NOODLES"
+  },
+  "N-2301-F": {
+    "description": "Noodles Hydrangea Opal",
+    "type": "NOODLES"
+  },
+  "N-2302-F": {
+    "description": "Noodles Medium Blue Opal",
+    "type": "NOODLES"
+  },
+  "N-2306-F": {
+    "description": "Noodles Dark Blue Opal",
+    "type": "NOODLES"
+  },
+  "N-2334-F": {
+    "description": "Noodles Turquoise Blue Opal",
+    "type": "NOODLES"
+  },
+  "N-2404-F": {
+    "description": "Noodles Lilac Opal",
+    "type": "NOODLES"
+  },
+  "N-2502-F": {
+    "description": "Noodles Red Opal",
+    "type": "NOODLES"
+  },
+  "N-2602-F": {
+    "description": "Noodles Yellow Opal",
+    "type": "NOODLES"
+  },
+  "N-2702-F": {
+    "description": "Noodles Orange Opal",
+    "type": "NOODLES"
+  },
+  "N-2711-F": {
+    "description": "Noodles Persimmon Opal",
+    "type": "NOODLES"
+  },
+  "N-2806-F": {
+    "description": "Noodles Charcoal Gray Opal",
+    "type": "NOODLES"
+  },
+  "N-3491-F": {
+    "description": "Noodles Pale Purple Semi-Opal",
+    "type": "NOODLES"
+  },
+  "N-3492-F": {
+    "description": "Noodles Light Purple Transparent",
+    "type": "NOODLES"
+  },
+  "N-355-F": {
+    "description": "Noodles Marigold Opal",
+    "type": "NOODLES"
+  },
+  "N-5182-F": {
+    "description": "Noodles Antique Bronze Transparent",
+    "type": "NOODLES"
+  },
+  "N-5232-F": {
+    "description": "Noodles Teal Green Transparent",
+    "type": "NOODLES"
+  },
+  "N-5262-F": {
+    "description": "Noodles Moss Green Transparent",
+    "type": "NOODLES"
+  },
+  "N-5281-F": {
+    "description": "Noodles Sea Green Transparent",
+    "type": "NOODLES"
+  },
+  "N-5282-F": {
+    "description": "Noodles Light Olive Transparent",
+    "type": "NOODLES"
+  },
+  "N-5331-F": {
+    "description": "Noodles Sky Blue Transparent",
+    "type": "NOODLES"
+  },
+  "N-5333-F": {
+    "description": "Noodles Deep Aqua Transparent",
+    "type": "NOODLES"
+  },
+  "N-5384-F": {
+    "description": "Noodles Steel Blue Transparent",
+    "type": "NOODLES"
+  },
+  "N-5432-F": {
+    "description": "Noodles Grape Transparent",
+    "type": "NOODLES"
+  },
+  "N-56-F": {
+    "description": "Noodles Black",
+    "type": "NOODLES"
+  },
+  "N-5711-F": {
+    "description": "Noodles Rust Transparent (May Strike to Semi-Opal)",
+    "type": "NOODLES"
+  },
+  "N-602-F": {
+    "description": "Noodles Flame Opal",
+    "type": "NOODLES"
+  },
+  "N-6227-F": {
+    "description": "Noodles Forest Green Opal",
+    "type": "NOODLES"
+  },
+  "N-726-F": {
+    "description": "Noodles Apple Jade Opal",
+    "type": "NOODLES"
+  },
+  "N-7312-F": {
+    "description": "Noodles Lime Transparent",
+    "type": "NOODLES"
+  },
+  "N-755-F": {
+    "description": "Noodles Fern Green Opal",
+    "type": "NOODLES"
+  },
+  "N-782-F": {
+    "description": "Noodles Olive Green Opal",
+    "type": "NOODLES"
+  },
+  "N-8261-F": {
+    "description": "Noodles Key Lime Opal",
+    "type": "NOODLES"
+  },
+  "N-MG-F": {
+    "description": "Noodles Mardi Gras",
+    "type": "NOODLES"
+  },
+  "F1-00-F": {
+    "type": "FRIT",
+    "description": "Powder - Clear"
+  },
+  "F2-00-F": {
+    "type": "FRIT",
+    "description": "Fine - Clear"
+  },
+  "F3-00-F": {
+    "type": "FRIT",
+    "description": "Medium - Clear"
+  },
+  "F5-00-F": {
+    "type": "FRIT",
+    "description": "Coarse - Clear"
+  },
+  "F3-00-F-IR": {
+    "type": "FRIT",
+    "description": "Medium - Clear Rainbow Irid"
+  },
+  "F5-00-F-IR": {
+    "type": "FRIT",
+    "description": "Coarse - Clear Rainbow Irid"
+  },
+  "F1-01-F": {
+    "type": "FRIT",
+    "description": "Powder - Crystal Clear"
+  },
+  "F2-01-F": {
+    "type": "FRIT",
+    "description": "Fine - Crystal Clear"
+  },
+  "F3-01-F": {
+    "type": "FRIT",
+    "description": "Medium - Crystal Clear"
+  },
+  "F5-01-F": {
+    "type": "FRIT",
+    "description": "Coarse - Crystal Clear"
+  },
+  "F1-003-F": {
+    "type": "FRIT",
+    "description": "Powder - Red Reactive Transparent"
+  },
+  "F2-003-F": {
+    "type": "FRIT",
+    "description": "Fine - Red Reactive Transparent"
+  },
+  "F3-003-F": {
+    "type": "FRIT",
+    "description": "Medium - Red Reactive Transparent"
+  },
+  "F5-003-F": {
+    "type": "FRIT",
+    "description": "Coarse - Red Reactive Transparent"
+  },
+  "F1-045-F": {
+    "type": "FRIT",
+    "description": "Powder - Red Reactive Opal"
+  },
+  "F2-045-F": {
+    "type": "FRIT",
+    "description": "Fine - Red Reactive Opal"
+  },
+  "F3-045-F": {
+    "type": "FRIT",
+    "description": "Medium - Red Reactive Opal"
+  },
+  "F5-045-F": {
+    "type": "FRIT",
+    "description": "Coarse - Red Reactive Opal"
+  },
+  "F1-078-F": {
+    "type": "FRIT",
+    "description": "Powder - Payne's Gray Opal"
+  },
+  "F2-078-F": {
+    "type": "FRIT",
+    "description": "Fine - Payne's Gray Opal"
+  },
+  "F3-078-F": {
+    "type": "FRIT",
+    "description": "Medium - Payne's Gray Opal"
+  },
+  "F5-078-F": {
+    "type": "FRIT",
+    "description": "Coarse - Payne's Gray Opal"
+  },
+  "F1-079-F": {
+    "type": "FRIT",
+    "description": "Powder - Chambray Opal"
+  },
+  "F2-079-F": {
+    "type": "FRIT",
+    "description": "Fine - Chambray Opal"
+  },
+  "F3-079-F": {
+    "type": "FRIT",
+    "description": "Medium - Chambray Opal"
+  },
+  "F5-079-F": {
+    "type": "FRIT",
+    "description": "Coarse - Chambray Opal"
+  },
+  "F1-1101-F": {
+    "type": "FRIT",
+    "description": "Powder - Palest Amber Transparent"
+  },
+  "F2-1101-F": {
+    "type": "FRIT",
+    "description": "Fine - Palest Amber Transparent"
+  },
+  "F3-1101-F": {
+    "type": "FRIT",
+    "description": "Medium - Palest Amber Transparent"
+  },
+  "F5-1101-F": {
+    "type": "FRIT",
+    "description": "Coarse - Palest Amber Transparent"
+  },
+  "F1-1102-F": {
+    "type": "FRIT",
+    "description": "Powder - Pale Amber Transparent"
+  },
+  "F2-1102-F": {
+    "type": "FRIT",
+    "description": "Fine - Pale Amber Transparent"
+  },
+  "F3-1102-F": {
+    "type": "FRIT",
+    "description": "Medium - Pale Amber Transparent"
+  },
+  "F5-1102-F": {
+    "type": "FRIT",
+    "description": "Coarse - Pale Amber Transparent"
+  },
+  "F1-1108-F": {
+    "type": "FRIT",
+    "description": "Powder - Medium Amber Transparent"
+  },
+  "F2-1108-F": {
+    "type": "FRIT",
+    "description": "Fine - Medium Amber Transparent"
+  },
+  "F3-1108-F": {
+    "type": "FRIT",
+    "description": "Medium - Medium Amber Transparent"
+  },
+  "F5-1108-F": {
+    "type": "FRIT",
+    "description": "Coarse - Medium Amber Transparent"
+  },
+  "F1-111-F": {
+    "type": "FRIT",
+    "description": "Powder - Dark Amber Transparent"
+  },
+  "F2-111-F": {
+    "type": "FRIT",
+    "description": "Fine - Dark Amber Transparent"
+  },
+  "F3-111-F": {
+    "type": "FRIT",
+    "description": "Medium - Dark Amber Transparent"
+  },
+  "F5-111-F": {
+    "type": "FRIT",
+    "description": "Coarse - Dark Amber Transparent"
+  },
+  "F1-121-F": {
+    "type": "FRIT",
+    "description": "Powder - Light Green Transparent"
+  },
+  "F2-121-F": {
+    "type": "FRIT",
+    "description": "Fine - Light Green Transparent"
+  },
+  "F3-121-F": {
+    "type": "FRIT",
+    "description": "Medium - Light Green Transparent"
+  },
+  "F5-121-F": {
+    "type": "FRIT",
+    "description": "Coarse - Light Green Transparent"
+  },
+  "F1-125-F": {
+    "type": "FRIT",
+    "description": "Powder - Dark Green Transparent"
+  },
+  "F2-125-F": {
+    "type": "FRIT",
+    "description": "Fine - Dark Green Transparent"
+  },
+  "F3-125-F": {
+    "type": "FRIT",
+    "description": "Medium - Dark Green Transparent"
+  },
+  "F5-125-F": {
+    "type": "FRIT",
+    "description": "Coarse - Dark Green Transparent"
+  },
+  "F1-128-F": {
+    "type": "FRIT",
+    "description": "Powder - Aventurine Green Transparent"
+  },
+  "F2-128-F": {
+    "type": "FRIT",
+    "description": "Fine - Aventurine Green Transparent"
+  },
+  "F3-128-F": {
+    "type": "FRIT",
+    "description": "Medium - Aventurine Green Transparent"
+  },
+  "F5-128-F": {
+    "type": "FRIT",
+    "description": "Coarse - Aventurine Green Transparent"
+  },
+  "F1-1308-F": {
+    "type": "FRIT",
+    "description": "Powder - Pale Blue Transparent"
+  },
+  "F2-1308-F": {
+    "type": "FRIT",
+    "description": "Fine - Pale Blue Transparent"
+  },
+  "F3-1308-F": {
+    "type": "FRIT",
+    "description": "Medium - Pale Blue Transparent"
+  },
+  "F5-1308-F": {
+    "type": "FRIT",
+    "description": "Coarse - Pale Blue Transparent"
+  },
+  "F1-132-F": {
+    "type": "FRIT",
+    "description": "Powder - Light Blue Transparent"
+  },
+  "F2-132-F": {
+    "type": "FRIT",
+    "description": "Fine - Light Blue Transparent"
+  },
+  "F3-132-F": {
+    "type": "FRIT",
+    "description": "Medium - Light Blue Transparent"
+  },
+  "F5-132-F": {
+    "type": "FRIT",
+    "description": "Coarse - Light Blue Transparent"
+  },
+  "F1-136-F": {
+    "type": "FRIT",
+    "description": "Powder - Dark Blue Transparent"
+  },
+  "F2-136-F": {
+    "type": "FRIT",
+    "description": "Fine - Dark Blue Transparent"
+  },
+  "F3-136-F": {
+    "type": "FRIT",
+    "description": "Medium - Dark Blue Transparent"
+  },
+  "F5-136-F": {
+    "type": "FRIT",
+    "description": "Coarse - Dark Blue Transparent"
+  },
+  "F1-138-F": {
+    "type": "FRIT",
+    "description": "Powder - Aventurine Blue Transparent"
+  },
+  "F2-138-F": {
+    "type": "FRIT",
+    "description": "Fine - Aventurine Blue Transparent"
+  },
+  "F3-138-F": {
+    "type": "FRIT",
+    "description": "Medium - Aventurine Blue Transparent"
+  },
+  "F5-138-F": {
+    "type": "FRIT",
+    "description": "Coarse - Aventurine Blue Transparent"
+  },
+  "F1-1408-F": {
+    "type": "FRIT",
+    "description": "Powder - Pale Purple Transparent"
+  },
+  "F2-1408-F": {
+    "type": "FRIT",
+    "description": "Fine - Pale Purple Transparent"
+  },
+  "F3-1408-F": {
+    "type": "FRIT",
+    "description": "Medium - Pale Purple Transparent"
+  },
+  "F5-1408-F": {
+    "type": "FRIT",
+    "description": "Coarse - Pale Purple Transparent"
+  },
+  "F1-142-F": {
+    "type": "FRIT",
+    "description": "Powder - Light Purple Transparent"
+  },
+  "F2-142-F": {
+    "type": "FRIT",
+    "description": "Fine - Light Purple Transparent"
+  },
+  "F3-142-F": {
+    "type": "FRIT",
+    "description": "Medium - Light Purple Transparent"
+  },
+  "F5-142-F": {
+    "type": "FRIT",
+    "description": "Coarse - Light Purple Transparent"
+  },
+  "F1-151-F": {
+    "type": "FRIT",
+    "description": "Powder - Cherry Red Transparent"
+  },
+  "F2-151-F": {
+    "type": "FRIT",
+    "description": "Fine - Cherry Red Transparent"
+  },
+  "F3-151-F": {
+    "type": "FRIT",
+    "description": "Medium - Cherry Red Transparent"
+  },
+  "F5-151-F": {
+    "type": "FRIT",
+    "description": "Coarse - Cherry Red Transparent"
+  },
+  "F1-161-F": {
+    "type": "FRIT",
+    "description": "Powder - Yellow Transparent"
+  },
+  "F2-161-F": {
+    "type": "FRIT",
+    "description": "Fine - Yellow Transparent"
+  },
+  "F3-161-F": {
+    "type": "FRIT",
+    "description": "Medium - Yellow Transparent"
+  },
+  "F5-161-F": {
+    "type": "FRIT",
+    "description": "Coarse - Yellow Transparent"
+  },
+  "F1-171-F": {
+    "type": "FRIT",
+    "description": "Powder - Orange Transparent"
+  },
+  "F2-171-F": {
+    "type": "FRIT",
+    "description": "Fine - Orange Transparent"
+  },
+  "F3-171-F": {
+    "type": "FRIT",
+    "description": "Medium - Orange Transparent"
+  },
+  "F5-171-F": {
+    "type": "FRIT",
+    "description": "Coarse - Orange Transparent"
+  },
+  "F1-1808-F": {
+    "type": "FRIT",
+    "description": "Powder - Pale Gray Transparent"
+  },
+  "F2-1808-F": {
+    "type": "FRIT",
+    "description": "Fine - Pale Gray Transparent"
+  },
+  "F3-1808-F": {
+    "type": "FRIT",
+    "description": "Medium - Pale Gray Transparent"
+  },
+  "F5-1808-F": {
+    "type": "FRIT",
+    "description": "Coarse - Pale Gray Transparent"
+  },
+  "F1-200-F": {
+    "type": "FRIT",
+    "description": "Powder - White Opal"
+  },
+  "F2-200-F": {
+    "type": "FRIT",
+    "description": "Fine - White Opal"
+  },
+  "F3-200-F": {
+    "type": "FRIT",
+    "description": "Medium - White Opal"
+  },
+  "F5-200-F": {
+    "type": "FRIT",
+    "description": "Coarse - White Opal"
+  },
+  "F1-209-F": {
+    "type": "FRIT",
+    "description": "Powder - Crystal Opal"
+  },
+  "F2-209-F": {
+    "type": "FRIT",
+    "description": "Fine - Crystal Opal"
+  },
+  "F3-209-F": {
+    "type": "FRIT",
+    "description": "Medium - Crystal Opal"
+  },
+  "F5-209-F": {
+    "type": "FRIT",
+    "description": "Coarse - Crystal Opal"
+  },
+  "F1-2101-F": {
+    "type": "FRIT",
+    "description": "Powder - Ivory Opal"
+  },
+  "F2-2101-F": {
+    "type": "FRIT",
+    "description": "Fine - Ivory Opal"
+  },
+  "F3-2101-F": {
+    "type": "FRIT",
+    "description": "Medium - Ivory Opal"
+  },
+  "F5-2101-F": {
+    "type": "FRIT",
+    "description": "Coarse - Ivory Opal"
+  },
+  "F1-2103-F": {
+    "type": "FRIT",
+    "description": "Powder - Vanilla Cream Opal"
+  },
+  "F2-2103-F": {
+    "type": "FRIT",
+    "description": "Fine - Vanilla Cream Opal"
+  },
+  "F3-2103-F": {
+    "type": "FRIT",
+    "description": "Medium - Vanilla Cream Opal"
+  },
+  "F5-2103-F": {
+    "type": "FRIT",
+    "description": "Coarse - Vanilla Cream Opal"
+  },
+  "F1-2107-F": {
+    "type": "FRIT",
+    "description": "Powder - Almond Opal"
+  },
+  "F2-2107-F": {
+    "type": "FRIT",
+    "description": "Fine - Almond Opal"
+  },
+  "F3-2107-F": {
+    "type": "FRIT",
+    "description": "Medium - Almond Opal"
+  },
+  "F5-2107-F": {
+    "type": "FRIT",
+    "description": "Coarse - Almond Opal"
+  },
+  "F1-2114-F": {
+    "type": "FRIT",
+    "description": "Powder - Chestnut Opal"
+  },
+  "F2-2114-F": {
+    "type": "FRIT",
+    "description": "Fine - Chestnut Opal"
+  },
+  "F3-2114-F": {
+    "type": "FRIT",
+    "description": "Medium - Chestnut Opal"
+  },
+  "F5-2114-F": {
+    "type": "FRIT",
+    "description": "Coarse - Chestnut Opal"
+  },
+  "F1-2116-F": {
+    "type": "FRIT",
+    "description": "Powder - Chocolate Opal"
+  },
+  "F2-2116-F": {
+    "type": "FRIT",
+    "description": "Fine - Chocolate Opal"
+  },
+  "F3-2116-F": {
+    "type": "FRIT",
+    "description": "Medium - Chocolate Opal"
+  },
+  "F5-2116-F": {
+    "type": "FRIT",
+    "description": "Coarse - Chocolate Opal"
+  },
+  "F1-2152-F": {
+    "type": "FRIT",
+    "description": "Powder - Terra Cotta Opal"
+  },
+  "F2-2152-F": {
+    "type": "FRIT",
+    "description": "Fine - Terra Cotta Opal"
+  },
+  "F3-2152-F": {
+    "type": "FRIT",
+    "description": "Medium - Terra Cotta Opal"
+  },
+  "F5-2152-F": {
+    "type": "FRIT",
+    "description": "Coarse - Terra Cotta Opal"
+  },
+  "F1-2206-F": {
+    "type": "FRIT",
+    "description": "Powder - Dark Green Opal"
+  },
+  "F2-2206-F": {
+    "type": "FRIT",
+    "description": "Fine - Dark Green Opal"
+  },
+  "F3-2206-F": {
+    "type": "FRIT",
+    "description": "Medium - Dark Green Opal"
+  },
+  "F5-2206-F": {
+    "type": "FRIT",
+    "description": "Coarse - Dark Green Opal"
+  },
+  "F1-2222-F": {
+    "type": "FRIT",
+    "description": "Powder - Pastel Green Opal"
+  },
+  "F2-2222-F": {
+    "type": "FRIT",
+    "description": "Fine - Pastel Green Opal"
+  },
+  "F3-2222-F": {
+    "type": "FRIT",
+    "description": "Medium - Pastel Green Opal"
+  },
+  "F5-2222-F": {
+    "type": "FRIT",
+    "description": "Coarse - Pastel Green Opal"
+  },
+  "F1-2232-F": {
+    "type": "FRIT",
+    "description": "Powder - Turquoise Green Opal"
+  },
+  "F2-2232-F": {
+    "type": "FRIT",
+    "description": "Fine - Turquoise Green Opal"
+  },
+  "F3-2232-F": {
+    "type": "FRIT",
+    "description": "Medium - Turquoise Green Opal"
+  },
+  "F5-2232-F": {
+    "type": "FRIT",
+    "description": "Coarse - Turquoise Green Opal"
+  },
+  "F1-2234-F": {
+    "type": "FRIT",
+    "description": "Powder - Peacock Green Opal"
+  },
+  "F2-2234-F": {
+    "type": "FRIT",
+    "description": "Fine - Peacock Green Opal"
+  },
+  "F3-2234-F": {
+    "type": "FRIT",
+    "description": "Medium - Peacock Green Opal"
+  },
+  "F5-2234-F": {
+    "type": "FRIT",
+    "description": "Coarse - Peacock Green Opal"
+  },
+  "F1-2262-F": {
+    "type": "FRIT",
+    "description": "Powder - Lemongrass Opal"
+  },
+  "F2-2262-F": {
+    "type": "FRIT",
+    "description": "Fine - Lemongrass Opal"
+  },
+  "F3-2262-F": {
+    "type": "FRIT",
+    "description": "Medium - Lemongrass Opal"
+  },
+  "F5-2262-F": {
+    "type": "FRIT",
+    "description": "Coarse - Lemongrass Opal"
+  },
+  "F1-2264-F": {
+    "type": "FRIT",
+    "description": "Powder - Amazon Green Opal"
+  },
+  "F2-2264-F": {
+    "type": "FRIT",
+    "description": "Fine - Amazon Green Opal"
+  },
+  "F3-2264-F": {
+    "type": "FRIT",
+    "description": "Medium - Amazon Green Opal"
+  },
+  "F5-2264-F": {
+    "type": "FRIT",
+    "description": "Coarse - Amazon Green Opal"
+  },
+  "F1-2282-F": {
+    "type": "FRIT",
+    "description": "Powder - Celadon Opal"
+  },
+  "F2-2282-F": {
+    "type": "FRIT",
+    "description": "Fine - Celadon Opal"
+  },
+  "F3-2282-F": {
+    "type": "FRIT",
+    "description": "Medium - Celadon Opal"
+  },
+  "F5-2282-F": {
+    "type": "FRIT",
+    "description": "Coarse - Celadon Opal"
+  },
+  "F1-2301-F": {
+    "type": "FRIT",
+    "description": "Powder - Hydrangea Opal"
+  },
+  "F2-2301-F": {
+    "type": "FRIT",
+    "description": "Fine - Hydrangea Opal"
+  },
+  "F3-2301-F": {
+    "type": "FRIT",
+    "description": "Medium - Hydrangea Opal"
+  },
+  "F5-2301-F": {
+    "type": "FRIT",
+    "description": "Coarse - Hydrangea Opal"
+  },
+  "F1-2302-F": {
+    "type": "FRIT",
+    "description": "Powder - Medium Blue Opal"
+  },
+  "F2-2302-F": {
+    "type": "FRIT",
+    "description": "Fine - Medium Blue Opal"
+  },
+  "F3-2302-F": {
+    "type": "FRIT",
+    "description": "Medium - Medium Blue Opal"
+  },
+  "F5-2302-F": {
+    "type": "FRIT",
+    "description": "Coarse - Medium Blue Opal"
+  },
+  "F1-2306-F": {
+    "type": "FRIT",
+    "description": "Powder - Dark Blue Opal"
+  },
+  "F2-2306-F": {
+    "type": "FRIT",
+    "description": "Fine - Dark Blue Opal"
+  },
+  "F3-2306-F": {
+    "type": "FRIT",
+    "description": "Medium - Dark Blue Opal"
+  },
+  "F5-2306-F": {
+    "type": "FRIT",
+    "description": "Coarse - Dark Blue Opal"
+  },
+  "F1-2334-F": {
+    "type": "FRIT",
+    "description": "Powder - Turquoise Blue Opal"
+  },
+  "F2-2334-F": {
+    "type": "FRIT",
+    "description": "Fine - Turquoise Blue Opal"
+  },
+  "F3-2334-F": {
+    "type": "FRIT",
+    "description": "Medium - Turquoise Blue Opal"
+  },
+  "F5-2334-F": {
+    "type": "FRIT",
+    "description": "Coarse - Turquoise Blue Opal"
+  },
+  "F1-2335-F": {
+    "type": "FRIT",
+    "description": "Powder - Mariner Blue Opal"
+  },
+  "F2-2335-F": {
+    "type": "FRIT",
+    "description": "Fine - Mariner Blue Opal"
+  },
+  "F3-2335-F": {
+    "type": "FRIT",
+    "description": "Medium - Mariner Blue Opal"
+  },
+  "F5-2335-F": {
+    "type": "FRIT",
+    "description": "Coarse - Mariner Blue Opal"
+  },
+  "F1-2404-F": {
+    "type": "FRIT",
+    "description": "Powder - Lilac Opal"
+  },
+  "F2-2404-F": {
+    "type": "FRIT",
+    "description": "Fine - Lilac Opal"
+  },
+  "F3-2404-F": {
+    "type": "FRIT",
+    "description": "Medium - Lilac Opal"
+  },
+  "F5-2404-F": {
+    "type": "FRIT",
+    "description": "Coarse - Lilac Opal"
+  },
+  "F1-2502-F": {
+    "type": "FRIT",
+    "description": "Powder - Red Opal"
+  },
+  "F2-2502-F": {
+    "type": "FRIT",
+    "description": "Fine - Red Opal"
+  },
+  "F3-2502-F": {
+    "type": "FRIT",
+    "description": "Medium - Red Opal"
+  },
+  "F5-2502-F": {
+    "type": "FRIT",
+    "description": "Coarse - Red Opal"
+  },
+  "F1-2602-F": {
+    "type": "FRIT",
+    "description": "Powder - Yellow Opal"
+  },
+  "F2-2602-F": {
+    "type": "FRIT",
+    "description": "Fine - Yellow Opal"
+  },
+  "F3-2602-F": {
+    "type": "FRIT",
+    "description": "Medium - Yellow Opal"
+  },
+  "F5-2602-F": {
+    "type": "FRIT",
+    "description": "Coarse - Yellow Opal"
+  },
+  "F1-2672-F": {
+    "type": "FRIT",
+    "description": "Powder - Sunflower Opal"
+  },
+  "F2-2672-F": {
+    "type": "FRIT",
+    "description": "Fine - Sunflower Opal"
+  },
+  "F3-2672-F": {
+    "type": "FRIT",
+    "description": "Medium - Sunflower Opal"
+  },
+  "F5-2672-F": {
+    "type": "FRIT",
+    "description": "Coarse - Sunflower Opal"
+  },
+  "F1-2702-F": {
+    "type": "FRIT",
+    "description": "Powder - Orange Opal"
+  },
+  "F2-2702-F": {
+    "type": "FRIT",
+    "description": "Fine - Orange Opal"
+  },
+  "F3-2702-F": {
+    "type": "FRIT",
+    "description": "Medium - Orange Opal"
+  },
+  "F5-2702-F": {
+    "type": "FRIT",
+    "description": "Coarse - Orange Opal"
+  },
+  "F1-2711-F": {
+    "type": "FRIT",
+    "description": "Powder - Persimmon Opal"
+  },
+  "F2-2711-F": {
+    "type": "FRIT",
+    "description": "Fine - Persimmon Opal"
+  },
+  "F3-2711-F": {
+    "type": "FRIT",
+    "description": "Medium - Persimmon Opal"
+  },
+  "F5-2711-F": {
+    "type": "FRIT",
+    "description": "Coarse - Persimmon Opal"
+  },
+  "F1-2802-F": {
+    "type": "FRIT",
+    "description": "Powder - Pewter Opal"
+  },
+  "F2-2802-F": {
+    "type": "FRIT",
+    "description": "Fine - Pewter Opal"
+  },
+  "F3-2802-F": {
+    "type": "FRIT",
+    "description": "Medium - Pewter Opal"
+  },
+  "F5-2802-F": {
+    "type": "FRIT",
+    "description": "Coarse - Pewter Opal"
+  },
+  "F1-2806-F": {
+    "type": "FRIT",
+    "description": "Powder - Charcoal Opal"
+  },
+  "F2-2806-F": {
+    "type": "FRIT",
+    "description": "Fine - Charcoal Opal"
+  },
+  "F3-2806-F": {
+    "type": "FRIT",
+    "description": "Medium - Charcoal Opal"
+  },
+  "F5-2806-F": {
+    "type": "FRIT",
+    "description": "Coarse - Charcoal Opal"
+  },
+  "F1-2911-F": {
+    "type": "FRIT",
+    "description": "Powder - Champagne Opal"
+  },
+  "F2-2911-F": {
+    "type": "FRIT",
+    "description": "Fine - Champagne Opal"
+  },
+  "F3-2911-F": {
+    "type": "FRIT",
+    "description": "Medium - Champagne Opal"
+  },
+  "F5-2911-F": {
+    "type": "FRIT",
+    "description": "Coarse - Champagne Opal"
+  },
+  "F1-3272-F": {
+    "type": "FRIT",
+    "description": "Powder - DUAL TONE: Light Green/White Semi Opal"
+  },
+  "F2-3272-F": {
+    "type": "FRIT",
+    "description": "Fine - DUAL TONE: Light Green/White Semi Opal"
+  },
+  "F3-3272-F": {
+    "type": "FRIT",
+    "description": "Medium - DUAL TONE: Light Green/White Semi Opal"
+  },
+  "F5-3272-F": {
+    "type": "FRIT",
+    "description": "Coarse - DUAL TONE: Light Green/White Semi Opal"
+  },
+  "F1-3352-F": {
+    "type": "FRIT",
+    "description": "Powder - DUAL TONE: White/Light Blue Opal"
+  },
+  "F2-3352-F": {
+    "type": "FRIT",
+    "description": "Fine - DUAL TONE: White/Light Blue Opal"
+  },
+  "F3-3352-F": {
+    "type": "FRIT",
+    "description": "Medium - DUAL TONE: White/Light Blue Opal"
+  },
+  "F5-3352-F": {
+    "type": "FRIT",
+    "description": "Coarse - DUAL TONE: White/Light Blue Opal"
+  },
+  "F1-355-F": {
+    "type": "FRIT",
+    "description": "Powder - Marigold Opal"
+  },
+  "F2-355-F": {
+    "type": "FRIT",
+    "description": "Fine - Marigold Opal"
+  },
+  "F3-355-F": {
+    "type": "FRIT",
+    "description": "Medium - Marigold Opal"
+  },
+  "F5-355-F": {
+    "type": "FRIT",
+    "description": "Coarse - Marigold Opal"
+  },
+  "F1-3571-F": {
+    "type": "FRIT",
+    "description": "Powder - DUAL TONE: White/Red Opal"
+  },
+  "F2-3571-F": {
+    "type": "FRIT",
+    "description": "Fine - DUAL TONE: White/Red Opal"
+  },
+  "F3-3571-F": {
+    "type": "FRIT",
+    "description": "Medium - DUAL TONE: White/Red Opal"
+  },
+  "F5-3571-F": {
+    "type": "FRIT",
+    "description": "Coarse - DUAL TONE: White/Red Opal"
+  },
+  "F1-3771-F": {
+    "type": "FRIT",
+    "description": "Powder - DUAL TONE: White/Orange Opal"
+  },
+  "F2-3771-F": {
+    "type": "FRIT",
+    "description": "Fine - DUAL TONE: White/Orange Opal"
+  },
+  "F3-3771-F": {
+    "type": "FRIT",
+    "description": "Medium - DUAL TONE: White/Orange Opal"
+  },
+  "F5-3771-F": {
+    "type": "FRIT",
+    "description": "Coarse - DUAL TONE: White/Orange Opal"
+  },
+  "F1-5181-F": {
+    "type": "FRIT",
+    "description": "Powder - Bronze Transparent"
+  },
+  "F2-5181-F": {
+    "type": "FRIT",
+    "description": "Fine - Bronze Transparent"
+  },
+  "F3-5181-F": {
+    "type": "FRIT",
+    "description": "Medium - Bronze Transparent"
+  },
+  "F5-5181-F": {
+    "type": "FRIT",
+    "description": "Coarse - Bronze Transparent"
+  },
+  "F1-5182-F": {
+    "type": "FRIT",
+    "description": "Powder - Antique Bronze Transparent"
+  },
+  "F2-5182-F": {
+    "type": "FRIT",
+    "description": "Fine - Antique Bronze Transparent"
+  },
+  "F3-5182-F": {
+    "type": "FRIT",
+    "description": "Medium - Antique Bronze Transparent"
+  },
+  "F5-5182-F": {
+    "type": "FRIT",
+    "description": "Coarse - Antique Bronze Transparent"
+  },
+  "F1-5232-F": {
+    "type": "FRIT",
+    "description": "Powder - Green Transparent"
+  },
+  "F2-5232-F": {
+    "type": "FRIT",
+    "description": "Fine - Green Transparent"
+  },
+  "F3-5232-F": {
+    "type": "FRIT",
+    "description": "Medium - Green Transparent"
+  },
+  "F5-5232-F": {
+    "type": "FRIT",
+    "description": "Coarse - Green Transparent"
+  },
+  "F1-5262-F": {
+    "type": "FRIT",
+    "description": "Powder - Moss Green Transparent"
+  },
+  "F2-5262-F": {
+    "type": "FRIT",
+    "description": "Fine - Moss Green Transparent"
+  },
+  "F3-5262-F": {
+    "type": "FRIT",
+    "description": "Medium - Moss Green Transparent"
+  },
+  "F5-5262-F": {
+    "type": "FRIT",
+    "description": "Coarse - Moss Green Transparent"
+  },
+  "F1-5281-F": {
+    "type": "FRIT",
+    "description": "Powder - Sea Green Transparent"
+  },
+  "F2-5281-F": {
+    "type": "FRIT",
+    "description": "Fine - Sea Green Transparent"
+  },
+  "F3-5281-F": {
+    "type": "FRIT",
+    "description": "Medium - Sea Green Transparent"
+  },
+  "F5-5281-F": {
+    "type": "FRIT",
+    "description": "Coarse - Sea Green Transparent"
+  },
+  "F1-5282-F": {
+    "type": "FRIT",
+    "description": "Powder - Light Olive Transparent"
+  },
+  "F2-5282-F": {
+    "type": "FRIT",
+    "description": "Fine - Light Olive Transparent"
+  },
+  "F3-5282-F": {
+    "type": "FRIT",
+    "description": "Medium - Light Olive Transparent"
+  },
+  "F5-5282-F": {
+    "type": "FRIT",
+    "description": "Coarse - Light Olive Transparent"
+  },
+  "F1-5331-F": {
+    "type": "FRIT",
+    "description": "Powder - Sky Blue Transparent"
+  },
+  "F2-5331-F": {
+    "type": "FRIT",
+    "description": "Fine - Sky Blue Transparent"
+  },
+  "F3-5331-F": {
+    "type": "FRIT",
+    "description": "Medium - Sky Blue Transparent"
+  },
+  "F5-5331-F": {
+    "type": "FRIT",
+    "description": "Coarse - Sky Blue Transparent"
+  },
+  "F1-5332-F": {
+    "type": "FRIT",
+    "description": "Powder - Blue Topaz Transparent"
+  },
+  "F2-5332-F": {
+    "type": "FRIT",
+    "description": "Fine - Blue Topaz Transparent"
+  },
+  "F3-5332-F": {
+    "type": "FRIT",
+    "description": "Medium - Blue Topaz Transparent"
+  },
+  "F5-5332-F": {
+    "type": "FRIT",
+    "description": "Coarse - Blue Topaz Transparent"
+  },
+  "F1-5333-F": {
+    "type": "FRIT",
+    "description": "Powder - Deep Aqua Transparent"
+  },
+  "F2-5333-F": {
+    "type": "FRIT",
+    "description": "Fine - Deep Aqua Transparent"
+  },
+  "F3-5333-F": {
+    "type": "FRIT",
+    "description": "Medium - Deep Aqua Transparent"
+  },
+  "F5-5333-F": {
+    "type": "FRIT",
+    "description": "Coarse - Deep Aqua Transparent"
+  },
+  "F1-5382-F": {
+    "type": "FRIT",
+    "description": "Powder - Oceanside Blue Transparent"
+  },
+  "F2-5382-F": {
+    "type": "FRIT",
+    "description": "Fine - Oceanside Blue Transparent"
+  },
+  "F3-5382-F": {
+    "type": "FRIT",
+    "description": "Medium - Oceanside Blue Transparent"
+  },
+  "F5-5382-F": {
+    "type": "FRIT",
+    "description": "Coarse - Oceanside Blue Transparent"
+  },
+  "F1-5432-F": {
+    "type": "FRIT",
+    "description": "Powder - Grape Transparent"
+  },
+  "F2-5432-F": {
+    "type": "FRIT",
+    "description": "Fine - Grape Transparent"
+  },
+  "F3-5432-F": {
+    "type": "FRIT",
+    "description": "Medium - Grape Transparent"
+  },
+  "F5-5432-F": {
+    "type": "FRIT",
+    "description": "Coarse - Grape Transparent"
+  },
+  "F1-56-F": {
+    "type": "FRIT",
+    "description": "Powder - Black"
+  },
+  "F2-56-F": {
+    "type": "FRIT",
+    "description": "Fine - Black"
+  },
+  "F3-56-F": {
+    "type": "FRIT",
+    "description": "Medium - Black"
+  },
+  "F5-56-F": {
+    "type": "FRIT",
+    "description": "Coarse - Black"
+  },
+  "F3-56-F-IR": {
+    "type": "FRIT",
+    "description": "Medium - Black Irid"
+  },
+  "F5-56-F-IR": {
+    "type": "FRIT",
+    "description": "Coarse - Black Irid"
+  },
+  "F1-568-F": {
+    "type": "FRIT",
+    "description": "Powder - Aventurine Black"
+  },
+  "F2-568-F": {
+    "type": "FRIT",
+    "description": "Fine - Aventurine Black"
+  },
+  "F3-568-F": {
+    "type": "FRIT",
+    "description": "Medium - Aventurine Black"
+  },
+  "F5-568-F": {
+    "type": "FRIT",
+    "description": "Coarse - Aventurine Black"
+  },
+  "F1-5711-F": {
+    "type": "FRIT",
+    "description": "Powder - Rust Transparent"
+  },
+  "F2-5711-F": {
+    "type": "FRIT",
+    "description": "Fine - Rust Transparent"
+  },
+  "F3-5711-F": {
+    "type": "FRIT",
+    "description": "Medium - Rust Transparent"
+  },
+  "F5-5711-F": {
+    "type": "FRIT",
+    "description": "Coarse - Rust Transparent"
+  },
+  "F1-5911-F": {
+    "type": "FRIT",
+    "description": "Powder - Pink Champagne Transparent"
+  },
+  "F2-5911-F": {
+    "type": "FRIT",
+    "description": "Fine - Pink Champagne Transparent"
+  },
+  "F3-5911-F": {
+    "type": "FRIT",
+    "description": "Medium - Pink Champagne Transparent"
+  },
+  "F5-5911-F": {
+    "type": "FRIT",
+    "description": "Coarse - Pink Champagne Transparent"
+  },
+  "F1-602-F": {
+    "type": "FRIT",
+    "description": "Powder - Flame Opal"
+  },
+  "F2-602-F": {
+    "type": "FRIT",
+    "description": "Fine - Flame Opal"
+  },
+  "F3-602-F": {
+    "type": "FRIT",
+    "description": "Medium - Flame Opal"
+  },
+  "F5-602-F": {
+    "type": "FRIT",
+    "description": "Coarse - Flame Opal"
+  },
+  "F1-6227-F": {
+    "type": "FRIT",
+    "description": "Powder - Forest Green Opal"
+  },
+  "F2-6227-F": {
+    "type": "FRIT",
+    "description": "Fine - Forest Green Opal"
+  },
+  "F3-6227-F": {
+    "type": "FRIT",
+    "description": "Medium - Forest Green Opal"
+  },
+  "F5-6227-F": {
+    "type": "FRIT",
+    "description": "Coarse - Forest Green Opal"
+  },
+  "F1-6755-F": {
+    "type": "FRIT",
+    "description": "Powder - White/Orange-Red Opal"
+  },
+  "F2-6755-F": {
+    "type": "FRIT",
+    "description": "Fine - White/Orange-Red Opal"
+  },
+  "F3-6755-F": {
+    "type": "FRIT",
+    "description": "Medium - White/Orange-Red Opal"
+  },
+  "F5-6755-F": {
+    "type": "FRIT",
+    "description": "Coarse - White/Orange-Red Opal"
+  },
+  "F1-726-F": {
+    "type": "FRIT",
+    "description": "Powder - Apple Jade Opal"
+  },
+  "F2-726-F": {
+    "type": "FRIT",
+    "description": "Fine - Apple Jade Opal"
+  },
+  "F3-726-F": {
+    "type": "FRIT",
+    "description": "Medium - Apple Jade Opal"
+  },
+  "F5-726-F": {
+    "type": "FRIT",
+    "description": "Coarse - Apple Jade Opal"
+  },
+  "F1-7312-F": {
+    "type": "FRIT",
+    "description": "Powder - Lime Transparent"
+  },
+  "F2-7312-F": {
+    "type": "FRIT",
+    "description": "Fine - Lime Transparent"
+  },
+  "F3-7312-F": {
+    "type": "FRIT",
+    "description": "Medium - Lime Transparent"
+  },
+  "F5-7312-F": {
+    "type": "FRIT",
+    "description": "Coarse - Lime Transparent"
+  },
+  "F1-755-F": {
+    "type": "FRIT",
+    "description": "Powder - Fern Green Opal"
+  },
+  "F2-755-F": {
+    "type": "FRIT",
+    "description": "Fine - Fern Green Opal"
+  },
+  "F3-755-F": {
+    "type": "FRIT",
+    "description": "Medium - Fern Green Opal"
+  },
+  "F5-755-F": {
+    "type": "FRIT",
+    "description": "Coarse - Fern Green Opal"
+  },
+  "F1-782-F": {
+    "type": "FRIT",
+    "description": "Powder - Olive Green Opal"
+  },
+  "F2-782-F": {
+    "type": "FRIT",
+    "description": "Fine - Olive Green Opal"
+  },
+  "F3-782-F": {
+    "type": "FRIT",
+    "description": "Medium - Olive Green Opal"
+  },
+  "F5-782-F": {
+    "type": "FRIT",
+    "description": "Coarse - Olive Green Opal"
+  },
+  "F1-8261-F": {
+    "type": "FRIT",
+    "description": "Powder - DUAL TONE: Lime Green/White Semi-Opal"
+  },
+  "F2-8261-F": {
+    "type": "FRIT",
+    "description": "Fine - DUAL TONE: Lime Green/White Semi-Opal"
+  },
+  "F3-8261-F": {
+    "type": "FRIT",
+    "description": "Medium - DUAL TONE: Lime Green/White Semi-Opal"
+  },
+  "F5-8261-F": {
+    "type": "FRIT",
+    "description": "Coarse - DUAL TONE: Lime Green/White Semi-Opal"
+  },
+  "F1-8386-F": {
+    "type": "FRIT",
+    "description": "Powder - DUAL TONE: Navy Blue/White Semi-Opal"
+  },
+  "F2-8386-F": {
+    "type": "FRIT",
+    "description": "Fine - DUAL TONE: Navy Blue/White Semi-Opal"
+  },
+  "F3-8386-F": {
+    "type": "FRIT",
+    "description": "Medium - DUAL TONE: Navy Blue/White Semi-Opal"
+  },
+  "F5-8386-F": {
+    "type": "FRIT",
+    "description": "Coarse - DUAL TONE: Navy Blue/White Semi-Opal"
+  }
+}

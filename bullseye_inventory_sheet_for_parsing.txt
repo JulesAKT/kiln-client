@@ -638,7 +638,7 @@
 004237-0000 Vanilla and White Frit, Vanilla and White Streamers
 004242-0000 Neo-lavender and Purple Frit, Cobalt Blue and Purple Streamers
 004247-0000 Rainbow frit and Streamers
-! Opalescent Frit
+!Opalescent Frit
 !!!-0001
 !!!-0002
 !!!-0003
@@ -675,7 +675,6 @@
 000145 Jade Green
 000146 Steel Blue
 000147 Deep Cobalt Blue
-!Opalescent Frit
 000148 indigo Blue
 000164 Egyptian Blue
 000203 Woodland Brown

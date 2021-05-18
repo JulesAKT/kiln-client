@@ -8,7 +8,11 @@ const rgbToHex = (value) => {
   return hex;
 };
 
-export const getHexColor = ({ r, g, b }) => {
+export const getHexColor = (color) => {
+  if (typeof color === "undefined") {
+    return "black";
+  }
+  const { r, g, b } = color;
   var red = rgbToHex(r);
   var green = rgbToHex(g);
   var blue = rgbToHex(b);
@@ -24,6 +28,20 @@ export const getGlassReactionTypeCharacters = (code, glass_data) => {
     case "REACTIVE":
       return "RE";
     case "SULFUR/SELENIUM":
+    case "SULFUR":
+      return "S";
+    case "LEAD":
+      return "Pb";
+    case "COPPER":
+      return "Cu";
+    default:
+  }
+  // Or... it might not be done by code-root
+  switch (glass_data?.reactions[code]?.reaction_type) {
+    case "REACTIVE":
+      return "RE";
+    case "SULFUR/SELENIUM":
+    case "SULFUR":
       return "S";
     case "LEAD":
       return "Pb";
@@ -40,6 +58,20 @@ export const getGlassReactionTypeColour = (code, glass_data) => {
     case "REACTIVE":
       return "#c0c0c0";
     case "SULFUR/SELENIUM":
+    case "SULFUR":
+      return "#f0f000";
+    case "LEAD":
+      return "#a0a0a0";
+    case "COPPER":
+      return "#00c000";
+    default:
+  }
+  // Or... it might not be done by code-root
+  switch (glass_data?.reactions[code]?.reaction_type) {
+    case "REACTIVE":
+      return "#c0c0c0";
+    case "SULFUR/SELENIUM":
+    case "SULFUR":
       return "#f0f000";
     case "LEAD":
       return "#a0a0a0";
@@ -56,6 +88,20 @@ export const getGlassReactionTypeColourName = (code, glass_data) => {
     case "REACTIVE":
       return "brown";
     case "SULFUR/SELENIUM":
+    case "SULFUR":
+      return "yellow";
+    case "LEAD":
+      return "grey";
+    case "COPPER":
+      return "green";
+    default:
+  }
+  // Or... it might not be done by code-root
+  switch (glass_data?.reactions[code]?.reaction_type) {
+    case "REACTIVE":
+      return "brown";
+    case "SULFUR/SELENIUM":
+    case "SULFUR":
       return "yellow";
     case "LEAD":
       return "grey";
@@ -68,12 +114,13 @@ export const getGlassReactionTypeColourName = (code, glass_data) => {
 
 export const getReactingMaterials = (materials, glass_data) => {
   //console.log(glass_data);
-  //console.log("getReactingMaterials");
+  console.log("getReactingMaterials");
   const materials_with_reaction_types = _.mapValues(materials, (material) => ({
     ...material,
     reaction_type:
       glass_data?.reactions[material.glass_reference.split("-")[0]]
-        ?.reaction_type,
+        ?.reaction_type ||
+      glass_data?.reactions[material.glass_reference]?.reaction_type,
   }));
   console.log(materials_with_reaction_types);
   const all_reaction_types = [
@@ -102,16 +149,21 @@ const reactsWith = (reaction_type, all_reaction_types) => {
     case "REACTIVE":
       return all_reaction_types.includes("COPPER");
     case "SULFUR/SELENIUM":
+    case "SULFUR":
       return (
         all_reaction_types.includes("COPPER") |
         all_reaction_types.includes("LEAD")
       );
     case "LEAD":
-      return all_reaction_types.includes("SULFUR/SELENIUM");
+      return (
+        all_reaction_types.includes("SULFUR/SELENIUM") |
+        all_reaction_types.includes("SULFUR")
+      );
     case "COPPER":
       return (
         all_reaction_types.includes("REACTIVE") |
-        all_reaction_types.includes("SULFUR/SELENIUM")
+        all_reaction_types.includes("SULFUR/SELENIUM") |
+        all_reaction_types.includes("SULFUR")
       );
     default:
       return false;

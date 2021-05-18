@@ -1,0 +1,176 @@
+!SULFUR
+111RR-F Dark Amber Rough Rolled High
+111W-F Dark Amber Waterglass® High
+161A-F Yellow Artique® High
+161RR-F Yellow Rough Rolled High
+161S-F Yellow Smooth High
+161W-F Yellow Waterglass High
+201-61S-F Ivory Opalescent High
+210-73S-F Vanilla Cream High
+260-72S-F Yellow Opal High
+267-72S-F Sunflower Opal High
+315-6S-F White/Dark Amber High
+317-6S-F Dark Amber/White High
+319-6S-F Dark Amber/White, Wispy High
+365-1S-F White/Yellow High
+367-1S-F Yellow/White High
+369-1S-F Yellow/White, Wispy High
+411-15G-F Brown/Gold Granite High
+411-15S-F Brown/Gold Smooth High
+451-20W-F Red/Amber Waterglass High
+6061-81CC-F Meadowlark Pearl Opal High
+6067-83CC-F Mimosa Pearl Opal High
+6076-83CC-F Inferno Pearl Opal High
+110-4S-F Light Amber Smooth Medium
+110-8A-F Medium Amber Artique Medium
+110-8RR-F Medium Amber Rough Rolled Medium
+110-8S-F Medium Amber Smooth Medium
+110-8W-F Medium Amber Waterglass Medium
+171A-F Orange Artique Medium
+171RR-F Orange Rough Rolled Medium
+171S-F Orange Smooth Medium
+171W-F Orange Waterglass Medium
+226-72S-F Lemongrass Opal Medium
+250-72S-F Red Opal Medium
+270-72S-F Orange Opal Medium
+315-2S-F White/Medium Amber Medium
+317-1S-F Light Amber/White Medium
+317-2S-F Medium Amber/White Medium
+319-1S-F Light Amber/White, Wispy Medium
+375-1S-F White/Orange Smooth Medium
+377-1S-F Orange/White Smooth Medium
+379-1S-F Orange/White, Wispy Medium
+60-355-F Marigold Opal Medium
+60-602-F Flame Opal Medium
+60-611-F Light Cherry Red Medium
+6051-83CC-F Autumn Flame Pearl Opal Medium
+675-5S-F White/Orange-Red Medium
+SPIRIT-4361-76S-F Atlantis Spirit™ Medium
+110-1A-F Palest Amber Artique Low
+110-1RR-F Palest Amber Rough Rolled Low
+110-1S-F Palest Amber Smooth Low
+110-2A-F Pale Amber Artique Low
+110-2RR-F Pale Amber Rough Rolled Low
+110-2S-F Pale Amber Smooth Low
+110-2W-F Pale Amber Waterglass Low
+151RR-F Cherry Red Rough Rolled Low
+151S-F Cherry Red Smooth Low
+151W-F Cherry Red Waterglass Low
+152A-F Ruby Red Artique Low
+152G-F Ruby Red Granite Low
+152RR-F Ruby Red Rough Rolled Low
+152S-F Ruby Red Smooth Low
+152W-F Ruby Red Waterglass Low
+211-74S-F Chestnut Brown Opal Low
+215-72S-F Terra Cotta Opal Low
+271-71S-F Persimmon Opal Low
+315-02S-F White/Pale Amber Low
+315-1S-F White/Light Amber Low
+317-02S-F Pale Amber/White Low
+318-05S-F Light Amber Lamp Mix Low
+319-02S-F Pale Amber/White, Wispy Low
+357-1S-F Red/White Low
+359-1S-F Red/White, Wispy Low
+571-1S-F Rust Smooth Low
+621-7S-F Amber/Green/White Low
+641-7S-F Purple/Amber/White Low
+OA-355-1S-F Strawberries & Cream OpalArt™ Low
+!COPPER
+125RR-F Dark Green Rough Rolled High
+125S-F Dark Green Smooth High
+125W-F Dark Green Waterglass® High
+136A-F Dark Blue Artique® High
+136RR-F Dark Blue Rough Rolled High
+136S-F Dark Blue Smooth High
+136W-F Dark Blue Waterglass High
+220-76S-F Dark Green Opal High
+223-74S-F Peacock Green Opal High
+230-76S-F Dark Blue Opal High
+233-74S-F Turquoise Blue Opal High
+233-75S-F Mariner Opal High
+327-6S-F Dark Green/White High
+329-6S-F Pale Green/White, Wispy High
+337-6S-F Dark Green/White, Wispy High
+339-6S-F Dark Blue/White, Wispy High
+422-1W-F Olive/Sea Green Waterglass High
+433-1W-F Steel/Sky Blue Waterglass High
+523-2RR-F Teal Green Rough Rolled High
+523-2S-F Teal Green Smooth High
+523-2W-F Teal Green Waterglass High
+532-1S-F Caribbean Blue Smooth High
+533-1A-F Sky Blue Artique High
+533-1RR-F Sky Blue Rough Rolled High
+533-1S-F Sky Blue Smooth High
+533-1W-F Sky Blue Waterglass High
+533-2S-F Blue Topaz Smooth High
+533-3RR-F Deep Aqua Rough Rolled High
+533-3S-F Deep Aqua Smooth High
+533-3W-F Deep Aqua Waterglass High
+6033-83CC-F Blue Yonder Pearl Opal High
+6034-83CC-F Aqua-Rose Pearl Opal High
+605-85CC-F Sierra Red Pearl Opal High
+823-72S-F Teal Green/White High
+823-92S-F Teal Green/White, Wispy High
+833-91S-F Sky Blue/White, Wispy High
+833-93S-F Deep Aqua/White, Wispy High
+OA-623-52S-F Lagoon OpalArt™ High
+OA-634-52S-F Blackberry Cream OpalArt High
+123H-F Medium Green Hammered Medium
+123RR-F Medium Green Rough Rolled Medium
+123S-F Medium Green Smooth Medium
+123W-F Medium Green Waterglass Medium
+132A-F Light Blue Artique Medium
+132RR-F Light Blue Rough Rolled Medium
+132S-F Light Blue Smooth Medium
+132W-F Light Blue Waterglass Medium
+134H-F Medium Blue Hammered Medium
+134RR-F Medium Blue Rough Rolled Medium
+134W-F Medium Blue Waterglass Medium
+223-72S-F Turquoise Green Opal Medium
+339-2S-F Light Blue/White, Wispy Medium
+538-2S-F Light Steel Blue Medium
+538-4S-F Steel Blue Smooth Medium
+538-4W-F Steel Blue Waterglass Medium
+60-726-F Apple Jade Opal Medium
+60-755-F Fern Green Opal Medium
+6022-81CC-F Key Lime Pearl Opal Medium
+6022-82CC-F Congo Pearl Opal Medium
+6023-83CC-F Aqua-Lime Pearl Opal Medium
+622-7S-F Forest Green Opal Medium
+623-7S-F White/Dark Green/Blue Medium
+633-7S-F Sky Blue/Dark Blue/White Medium
+833-51S-F White/Sky Blue Medium
+838-52S-F White/Colonial Blue Medium
+838-72S-F Colonial Blue/White Medium
+838-74S-F Steel Blue/White Medium
+838-94S-F Steel Blue/White, Wispy Medium
+121A-F Light Green Artique Low
+121RR-F Light Green Rough Rolled Low
+121S-F Light Green Smooth Low
+121W-F Light Green Waterglass Low
+130-8A-F Pale Blue Artique Low
+130-8RR-F Pale Blue Rough Rolled Low
+130-8S-F Pale Blue Smooth Low
+130-8W-F Pale Blue Waterglass Low
+222-72S-F Pastel Green Opal Low
+226-74S-F Amazon Green Opal Low
+228-72S-F Celadon Opal Low
+327-2S-F Light Green/White Low
+329-1S-F Pale Green/White, Wispy Low
+329-2S-F Light Green/White, Wispy Low
+335-2S-F White/Light Blue Low
+337-1S-F Pale Blue/White Low
+337-2S-F Light Blue/White Low
+339-1S-F Pale Blue/White, Wispy Low
+423-1W-F Pale Green/Aqua Waterglass Low
+528-1A-F Sea Green Artique Low
+528-1RR-F Sea Green Rough Rolled Low
+528-1S-F Sea Green Smooth Low
+528-1W-F Sea Green Waterglass Low
+528-2S-F Light Olive Smooth Low
+60-078-F Payne’s Gray Opal Low
+60-079-F Chambray Opal Low
+6021-86CC-F RainForest Pearl Opal Low
+828-72S-F Seafoam Green/White Low
+828-91S-F Sea Green/White, Wispy Low
+828-94S-F Olive/White Low

@@ -33,24 +33,24 @@ const MaterialCard = (props) => {
     type = "Unknown";
   }
   const getGlassItem = () => {
-    const colour = getGlassReactionTypeColour(glass_ref, glass_data);
+    //const colour = getGlassReactionTypeColour(glass_ref, glass_data);
     const colour_name = getGlassReactionTypeColourName(glass_ref, glass_data);
     const characters = getGlassReactionTypeCharacters(glass_ref, glass_data);
     console.log(`Color:`);
     console.log(color);
-    //    console.log(`Characters: ${characters}`);
+    console.log(`Characters: ${characters}`);
     return (
       <>
         <span
           style={{
-            color: color.multicolored ? "black" : getHexColor(color.rgb),
-            fontSize: color.multicolored ? 18 : 32,
+            color: color?.multicolored ? "black" : getHexColor(color?.rgb),
+            fontSize: color?.multicolored ? 18 : 32,
           }}
         >
-          {color.multicolored ? (
+          {color?.multicolored ? (
             <span>Multicoloured</span>
           ) : (
-            <Icon name="square full" />
+            color && <Icon name="square full" />
           )}
 
           {characters && (

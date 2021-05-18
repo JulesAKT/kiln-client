@@ -13589,6 +13589,2382 @@
       "multicolored": false
     }
   },
+  "000148-0001": {
+    "description": "indigo Blue",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "7",
+        "g": "64",
+        "b": "119"
+      },
+      "cmyk": {
+        "c": "95",
+        "m": "70",
+        "y": "7",
+        "k": "33"
+      },
+      "multicolored": false
+    }
+  },
+  "000148-0002": {
+    "description": "indigo Blue",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "7",
+        "g": "64",
+        "b": "119"
+      },
+      "cmyk": {
+        "c": "95",
+        "m": "70",
+        "y": "7",
+        "k": "33"
+      },
+      "multicolored": false
+    }
+  },
+  "000148-0003": {
+    "description": "indigo Blue",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "7",
+        "g": "64",
+        "b": "119"
+      },
+      "cmyk": {
+        "c": "95",
+        "m": "70",
+        "y": "7",
+        "k": "33"
+      },
+      "multicolored": false
+    }
+  },
+  "000148-0008": {
+    "description": "indigo Blue",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "7",
+        "g": "64",
+        "b": "119"
+      },
+      "cmyk": {
+        "c": "95",
+        "m": "70",
+        "y": "7",
+        "k": "33"
+      },
+      "multicolored": false
+    }
+  },
+  "000164-0001": {
+    "description": "Egyptian Blue",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "0",
+        "g": "125",
+        "b": "186"
+      },
+      "cmyk": {
+        "c": "85",
+        "m": "35",
+        "y": "0",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000164-0002": {
+    "description": "Egyptian Blue",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "0",
+        "g": "125",
+        "b": "186"
+      },
+      "cmyk": {
+        "c": "85",
+        "m": "35",
+        "y": "0",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000164-0003": {
+    "description": "Egyptian Blue",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "0",
+        "g": "125",
+        "b": "186"
+      },
+      "cmyk": {
+        "c": "85",
+        "m": "35",
+        "y": "0",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000164-0008": {
+    "description": "Egyptian Blue",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "0",
+        "g": "125",
+        "b": "186"
+      },
+      "cmyk": {
+        "c": "85",
+        "m": "35",
+        "y": "0",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000203-0001": {
+    "description": "Woodland Brown",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "131",
+        "g": "82",
+        "b": "46"
+      },
+      "cmyk": {
+        "c": "50",
+        "m": "74",
+        "y": "100",
+        "k": "14"
+      },
+      "multicolored": false
+    }
+  },
+  "000203-0002": {
+    "description": "Woodland Brown",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "131",
+        "g": "82",
+        "b": "46"
+      },
+      "cmyk": {
+        "c": "50",
+        "m": "74",
+        "y": "100",
+        "k": "14"
+      },
+      "multicolored": false
+    }
+  },
+  "000203-0003": {
+    "description": "Woodland Brown",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "131",
+        "g": "82",
+        "b": "46"
+      },
+      "cmyk": {
+        "c": "50",
+        "m": "74",
+        "y": "100",
+        "k": "14"
+      },
+      "multicolored": false
+    }
+  },
+  "000203-0008": {
+    "description": "Woodland Brown",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "131",
+        "g": "82",
+        "b": "46"
+      },
+      "cmyk": {
+        "c": "50",
+        "m": "74",
+        "y": "100",
+        "k": "14"
+      },
+      "multicolored": false
+    }
+  },
+  "000206-0001": {
+    "description": "elephant gray",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "153",
+        "g": "148",
+        "b": "147"
+      },
+      "cmyk": {
+        "c": "32",
+        "m": "29",
+        "y": "29",
+        "k": "16"
+      },
+      "multicolored": false
+    }
+  },
+  "000206-0002": {
+    "description": "elephant gray",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "153",
+        "g": "148",
+        "b": "147"
+      },
+      "cmyk": {
+        "c": "32",
+        "m": "29",
+        "y": "29",
+        "k": "16"
+      },
+      "multicolored": false
+    }
+  },
+  "000206-0003": {
+    "description": "elephant gray",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "153",
+        "g": "148",
+        "b": "147"
+      },
+      "cmyk": {
+        "c": "32",
+        "m": "29",
+        "y": "29",
+        "k": "16"
+      },
+      "multicolored": false
+    }
+  },
+  "000206-0008": {
+    "description": "elephant gray",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "153",
+        "g": "148",
+        "b": "147"
+      },
+      "cmyk": {
+        "c": "32",
+        "m": "29",
+        "y": "29",
+        "k": "16"
+      },
+      "multicolored": false
+    }
+  },
+  "000207-0001": {
+    "description": "celadon green",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "138",
+        "g": "168",
+        "b": "143"
+      },
+      "cmyk": {
+        "c": "42",
+        "m": "13",
+        "y": "43",
+        "k": "12"
+      },
+      "multicolored": false
+    }
+  },
+  "000207-0002": {
+    "description": "celadon green",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "138",
+        "g": "168",
+        "b": "143"
+      },
+      "cmyk": {
+        "c": "42",
+        "m": "13",
+        "y": "43",
+        "k": "12"
+      },
+      "multicolored": false
+    }
+  },
+  "000207-0003": {
+    "description": "celadon green",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "138",
+        "g": "168",
+        "b": "143"
+      },
+      "cmyk": {
+        "c": "42",
+        "m": "13",
+        "y": "43",
+        "k": "12"
+      },
+      "multicolored": false
+    }
+  },
+  "000207-0008": {
+    "description": "celadon green",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "138",
+        "g": "168",
+        "b": "143"
+      },
+      "cmyk": {
+        "c": "42",
+        "m": "13",
+        "y": "43",
+        "k": "12"
+      },
+      "multicolored": false
+    }
+  },
+  "000208-0001": {
+    "description": "dusty blue",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "84",
+        "g": "130",
+        "b": "162"
+      },
+      "cmyk": {
+        "c": "58",
+        "m": "24",
+        "y": "7",
+        "k": "26"
+      },
+      "multicolored": false
+    }
+  },
+  "000208-0002": {
+    "description": "dusty blue",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "84",
+        "g": "130",
+        "b": "162"
+      },
+      "cmyk": {
+        "c": "58",
+        "m": "24",
+        "y": "7",
+        "k": "26"
+      },
+      "multicolored": false
+    }
+  },
+  "000208-0003": {
+    "description": "dusty blue",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "84",
+        "g": "130",
+        "b": "162"
+      },
+      "cmyk": {
+        "c": "58",
+        "m": "24",
+        "y": "7",
+        "k": "26"
+      },
+      "multicolored": false
+    }
+  },
+  "000208-0008": {
+    "description": "dusty blue",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "84",
+        "g": "130",
+        "b": "162"
+      },
+      "cmyk": {
+        "c": "58",
+        "m": "24",
+        "y": "7",
+        "k": "26"
+      },
+      "multicolored": false
+    }
+  },
+  "000212-0001": {
+    "description": "Olive Green",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "100",
+        "g": "130",
+        "b": "49"
+      },
+      "cmyk": {
+        "c": "43",
+        "m": "4",
+        "y": "89",
+        "k": "41"
+      },
+      "multicolored": false
+    }
+  },
+  "000212-0002": {
+    "description": "Olive Green",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "100",
+        "g": "130",
+        "b": "49"
+      },
+      "cmyk": {
+        "c": "43",
+        "m": "4",
+        "y": "89",
+        "k": "41"
+      },
+      "multicolored": false
+    }
+  },
+  "000212-0003": {
+    "description": "Olive Green",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "100",
+        "g": "130",
+        "b": "49"
+      },
+      "cmyk": {
+        "c": "43",
+        "m": "4",
+        "y": "89",
+        "k": "41"
+      },
+      "multicolored": false
+    }
+  },
+  "000212-0008": {
+    "description": "Olive Green",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "100",
+        "g": "130",
+        "b": "49"
+      },
+      "cmyk": {
+        "c": "43",
+        "m": "4",
+        "y": "89",
+        "k": "41"
+      },
+      "multicolored": false
+    }
+  },
+  "000216-0001": {
+    "description": "Light Cyan",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "79",
+        "g": "192",
+        "b": "222"
+      },
+      "cmyk": {
+        "c": "61",
+        "m": "3",
+        "y": "9",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000216-0002": {
+    "description": "Light Cyan",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "79",
+        "g": "192",
+        "b": "222"
+      },
+      "cmyk": {
+        "c": "61",
+        "m": "3",
+        "y": "9",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000216-0003": {
+    "description": "Light Cyan",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "79",
+        "g": "192",
+        "b": "222"
+      },
+      "cmyk": {
+        "c": "61",
+        "m": "3",
+        "y": "9",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000216-0008": {
+    "description": "Light Cyan",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "79",
+        "g": "192",
+        "b": "222"
+      },
+      "cmyk": {
+        "c": "61",
+        "m": "3",
+        "y": "9",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000220-0001": {
+    "description": "Sunflower Yellow",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "218",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "12",
+        "y": "94",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000220-0002": {
+    "description": "Sunflower Yellow",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "218",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "12",
+        "y": "94",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000220-0003": {
+    "description": "Sunflower Yellow",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "218",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "12",
+        "y": "94",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000220-0008": {
+    "description": "Sunflower Yellow",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "218",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "12",
+        "y": "94",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000221-0001": {
+    "description": "citronelle",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "174",
+        "g": "185",
+        "b": "65"
+      },
+      "cmyk": {
+        "c": "37",
+        "m": "15",
+        "y": "94",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000221-0002": {
+    "description": "citronelle",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "174",
+        "g": "185",
+        "b": "65"
+      },
+      "cmyk": {
+        "c": "37",
+        "m": "15",
+        "y": "94",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000221-0003": {
+    "description": "citronelle",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "174",
+        "g": "185",
+        "b": "65"
+      },
+      "cmyk": {
+        "c": "37",
+        "m": "15",
+        "y": "94",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000221-0008": {
+    "description": "citronelle",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "174",
+        "g": "185",
+        "b": "65"
+      },
+      "cmyk": {
+        "c": "37",
+        "m": "15",
+        "y": "94",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000222-0001": {
+    "description": "avocado green",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "127",
+        "g": "159",
+        "b": "63"
+      },
+      "cmyk": {
+        "c": "57",
+        "m": "3",
+        "y": "100",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000222-0002": {
+    "description": "avocado green",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "127",
+        "g": "159",
+        "b": "63"
+      },
+      "cmyk": {
+        "c": "57",
+        "m": "3",
+        "y": "100",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000222-0003": {
+    "description": "avocado green",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "127",
+        "g": "159",
+        "b": "63"
+      },
+      "cmyk": {
+        "c": "57",
+        "m": "3",
+        "y": "100",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000222-0008": {
+    "description": "avocado green",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "127",
+        "g": "159",
+        "b": "63"
+      },
+      "cmyk": {
+        "c": "57",
+        "m": "3",
+        "y": "100",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000224-0001": {
+    "description": "Deep Red",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "139",
+        "g": "0",
+        "b": "55"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "100",
+        "y": "40",
+        "k": "50"
+      },
+      "multicolored": false
+    }
+  },
+  "000224-0002": {
+    "description": "Deep Red",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "139",
+        "g": "0",
+        "b": "55"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "100",
+        "y": "40",
+        "k": "50"
+      },
+      "multicolored": false
+    }
+  },
+  "000224-0003": {
+    "description": "Deep Red",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "139",
+        "g": "0",
+        "b": "55"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "100",
+        "y": "40",
+        "k": "50"
+      },
+      "multicolored": false
+    }
+  },
+  "000224-0008": {
+    "description": "Deep Red",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "139",
+        "g": "0",
+        "b": "55"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "100",
+        "y": "40",
+        "k": "50"
+      },
+      "multicolored": false
+    }
+  },
+  "000225-0001": {
+    "description": "Pimento Red",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "218",
+        "g": "80",
+        "b": "48"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "81",
+        "y": "87",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000225-0002": {
+    "description": "Pimento Red",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "218",
+        "g": "80",
+        "b": "48"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "81",
+        "y": "87",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000225-0003": {
+    "description": "Pimento Red",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "218",
+        "g": "80",
+        "b": "48"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "81",
+        "y": "87",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000225-0008": {
+    "description": "Pimento Red",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "218",
+        "g": "80",
+        "b": "48"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "81",
+        "y": "87",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000227-0001": {
+    "description": "Golden Green",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "163",
+        "g": "136",
+        "b": "31"
+      },
+      "cmyk": {
+        "c": "21",
+        "m": "30",
+        "y": "100",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000227-0002": {
+    "description": "Golden Green",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "163",
+        "g": "136",
+        "b": "31"
+      },
+      "cmyk": {
+        "c": "21",
+        "m": "30",
+        "y": "100",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000227-0003": {
+    "description": "Golden Green",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "163",
+        "g": "136",
+        "b": "31"
+      },
+      "cmyk": {
+        "c": "21",
+        "m": "30",
+        "y": "100",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000227-0008": {
+    "description": "Golden Green",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "163",
+        "g": "136",
+        "b": "31"
+      },
+      "cmyk": {
+        "c": "21",
+        "m": "30",
+        "y": "100",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000236-0001": {
+    "description": "Slate Gray",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "97",
+        "g": "105",
+        "b": "114"
+      },
+      "cmyk": {
+        "c": "48",
+        "m": "35",
+        "y": "28",
+        "k": "38"
+      },
+      "multicolored": false
+    }
+  },
+  "000236-0002": {
+    "description": "Slate Gray",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "97",
+        "g": "105",
+        "b": "114"
+      },
+      "cmyk": {
+        "c": "48",
+        "m": "35",
+        "y": "28",
+        "k": "38"
+      },
+      "multicolored": false
+    }
+  },
+  "000236-0003": {
+    "description": "Slate Gray",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "97",
+        "g": "105",
+        "b": "114"
+      },
+      "cmyk": {
+        "c": "48",
+        "m": "35",
+        "y": "28",
+        "k": "38"
+      },
+      "multicolored": false
+    }
+  },
+  "000236-0008": {
+    "description": "Slate Gray",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "97",
+        "g": "105",
+        "b": "114"
+      },
+      "cmyk": {
+        "c": "48",
+        "m": "35",
+        "y": "28",
+        "k": "38"
+      },
+      "multicolored": false
+    }
+  },
+  "000243-0001": {
+    "description": "Translucent White",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "255",
+        "b": "255"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "0",
+        "y": "0",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000243-0002": {
+    "description": "Translucent White",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "255",
+        "b": "255"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "0",
+        "y": "0",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000243-0003": {
+    "description": "Translucent White",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "255",
+        "b": "255"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "0",
+        "y": "0",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000243-0008": {
+    "description": "Translucent White",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "255",
+        "b": "255"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "0",
+        "y": "0",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000301-0001": {
+    "description": "Pink",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "193",
+        "g": "125",
+        "b": "159"
+      },
+      "cmyk": {
+        "c": "24",
+        "m": "59",
+        "y": "17",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000301-0002": {
+    "description": "Pink",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "193",
+        "g": "125",
+        "b": "159"
+      },
+      "cmyk": {
+        "c": "24",
+        "m": "59",
+        "y": "17",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000301-0003": {
+    "description": "Pink",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "193",
+        "g": "125",
+        "b": "159"
+      },
+      "cmyk": {
+        "c": "24",
+        "m": "59",
+        "y": "17",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000301-0008": {
+    "description": "Pink",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "193",
+        "g": "125",
+        "b": "159"
+      },
+      "cmyk": {
+        "c": "24",
+        "m": "59",
+        "y": "17",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000303-0001": {
+    "description": "Dusty Lilac",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "167",
+        "g": "145",
+        "b": "159"
+      },
+      "cmyk": {
+        "c": "34",
+        "m": "41",
+        "y": "25",
+        "k": "3"
+      },
+      "multicolored": false
+    }
+  },
+  "000303-0002": {
+    "description": "Dusty Lilac",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "167",
+        "g": "145",
+        "b": "159"
+      },
+      "cmyk": {
+        "c": "34",
+        "m": "41",
+        "y": "25",
+        "k": "3"
+      },
+      "multicolored": false
+    }
+  },
+  "000303-0003": {
+    "description": "Dusty Lilac",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "167",
+        "g": "145",
+        "b": "159"
+      },
+      "cmyk": {
+        "c": "34",
+        "m": "41",
+        "y": "25",
+        "k": "3"
+      },
+      "multicolored": false
+    }
+  },
+  "000303-0008": {
+    "description": "Dusty Lilac",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "167",
+        "g": "145",
+        "b": "159"
+      },
+      "cmyk": {
+        "c": "34",
+        "m": "41",
+        "y": "25",
+        "k": "3"
+      },
+      "multicolored": false
+    }
+  },
+  "000305-0001": {
+    "description": "Salmon Pink",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "202",
+        "g": "125",
+        "b": "131"
+      },
+      "cmyk": {
+        "c": "19",
+        "m": "59",
+        "y": "38",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000305-0002": {
+    "description": "Salmon Pink",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "202",
+        "g": "125",
+        "b": "131"
+      },
+      "cmyk": {
+        "c": "19",
+        "m": "59",
+        "y": "38",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000305-0003": {
+    "description": "Salmon Pink",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "202",
+        "g": "125",
+        "b": "131"
+      },
+      "cmyk": {
+        "c": "19",
+        "m": "59",
+        "y": "38",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000305-0008": {
+    "description": "Salmon Pink",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "202",
+        "g": "125",
+        "b": "131"
+      },
+      "cmyk": {
+        "c": "19",
+        "m": "59",
+        "y": "38",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000309-0001": {
+    "description": "Cinnabar",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "146",
+        "g": "75",
+        "b": "38"
+      },
+      "cmyk": {
+        "c": "30",
+        "m": "75",
+        "y": "95",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000309-0002": {
+    "description": "Cinnabar",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "146",
+        "g": "75",
+        "b": "38"
+      },
+      "cmyk": {
+        "c": "30",
+        "m": "75",
+        "y": "95",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000309-0003": {
+    "description": "Cinnabar",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "146",
+        "g": "75",
+        "b": "38"
+      },
+      "cmyk": {
+        "c": "30",
+        "m": "75",
+        "y": "95",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000309-0008": {
+    "description": "Cinnabar",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "146",
+        "g": "75",
+        "b": "38"
+      },
+      "cmyk": {
+        "c": "30",
+        "m": "75",
+        "y": "95",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000310-0001": {
+    "description": "Umber",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "123",
+        "g": "73",
+        "b": "24"
+      },
+      "cmyk": {
+        "c": "30",
+        "m": "65",
+        "y": "100",
+        "k": "40"
+      },
+      "multicolored": false
+    }
+  },
+  "000310-0002": {
+    "description": "Umber",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "123",
+        "g": "73",
+        "b": "24"
+      },
+      "cmyk": {
+        "c": "30",
+        "m": "65",
+        "y": "100",
+        "k": "40"
+      },
+      "multicolored": false
+    }
+  },
+  "000310-0003": {
+    "description": "Umber",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "123",
+        "g": "73",
+        "b": "24"
+      },
+      "cmyk": {
+        "c": "30",
+        "m": "65",
+        "y": "100",
+        "k": "40"
+      },
+      "multicolored": false
+    }
+  },
+  "000310-0008": {
+    "description": "Umber",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "123",
+        "g": "73",
+        "b": "24"
+      },
+      "cmyk": {
+        "c": "30",
+        "m": "65",
+        "y": "100",
+        "k": "40"
+      },
+      "multicolored": false
+    }
+  },
+  "000312-0001": {
+    "description": "Pea Pod Green",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "50",
+        "g": "167",
+        "b": "87"
+      },
+      "cmyk": {
+        "c": "45",
+        "m": "21",
+        "y": "82",
+        "k": "2"
+      },
+      "multicolored": false
+    }
+  },
+  "000312-0002": {
+    "description": "Pea Pod Green",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "50",
+        "g": "167",
+        "b": "87"
+      },
+      "cmyk": {
+        "c": "45",
+        "m": "21",
+        "y": "82",
+        "k": "2"
+      },
+      "multicolored": false
+    }
+  },
+  "000312-0003": {
+    "description": "Pea Pod Green",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "50",
+        "g": "167",
+        "b": "87"
+      },
+      "cmyk": {
+        "c": "45",
+        "m": "21",
+        "y": "82",
+        "k": "2"
+      },
+      "multicolored": false
+    }
+  },
+  "000312-0008": {
+    "description": "Pea Pod Green",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "50",
+        "g": "167",
+        "b": "87"
+      },
+      "cmyk": {
+        "c": "45",
+        "m": "21",
+        "y": "82",
+        "k": "2"
+      },
+      "multicolored": false
+    }
+  },
+  "000313-0001": {
+    "description": "Dense White",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "255",
+        "b": "255"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "0",
+        "y": "0",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000313-0002": {
+    "description": "Dense White",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "255",
+        "b": "255"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "0",
+        "y": "0",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000313-0003": {
+    "description": "Dense White",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "255",
+        "b": "255"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "0",
+        "y": "0",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000313-0008": {
+    "description": "Dense White",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "255",
+        "b": "255"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "0",
+        "y": "0",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000320-0001": {
+    "description": "Marigold Yellow",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "252",
+        "g": "175",
+        "b": "23"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "35",
+        "y": "100",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000320-0002": {
+    "description": "Marigold Yellow",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "252",
+        "g": "175",
+        "b": "23"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "35",
+        "y": "100",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000320-0003": {
+    "description": "Marigold Yellow",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "252",
+        "g": "175",
+        "b": "23"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "35",
+        "y": "100",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000320-0008": {
+    "description": "Marigold Yellow",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "252",
+        "g": "175",
+        "b": "23"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "35",
+        "y": "100",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000321-0001": {
+    "description": "Pumpkin Orange",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "224",
+        "g": "135",
+        "b": "26"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "50",
+        "y": "100",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000321-0002": {
+    "description": "Pumpkin Orange",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "224",
+        "g": "135",
+        "b": "26"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "50",
+        "y": "100",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000321-0003": {
+    "description": "Pumpkin Orange",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "224",
+        "g": "135",
+        "b": "26"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "50",
+        "y": "100",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000321-0008": {
+    "description": "Pumpkin Orange",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "224",
+        "g": "135",
+        "b": "26"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "50",
+        "y": "100",
+        "k": "10"
+      },
+      "multicolored": false
+    }
+  },
+  "000329-0001": {
+    "description": "Burnt Orange",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "160",
+        "g": "79",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "20",
+        "m": "73",
+        "y": "100",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000329-0002": {
+    "description": "Burnt Orange",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "160",
+        "g": "79",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "20",
+        "m": "73",
+        "y": "100",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000329-0003": {
+    "description": "Burnt Orange",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "160",
+        "g": "79",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "20",
+        "m": "73",
+        "y": "100",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000329-0008": {
+    "description": "Burnt Orange",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "160",
+        "g": "79",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "20",
+        "m": "73",
+        "y": "100",
+        "k": "25"
+      },
+      "multicolored": false
+    }
+  },
+  "000332-0001": {
+    "description": "Plum",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "125",
+        "g": "60",
+        "b": "118"
+      },
+      "cmyk": {
+        "c": "62",
+        "m": "92",
+        "y": "31",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000332-0002": {
+    "description": "Plum",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "125",
+        "g": "60",
+        "b": "118"
+      },
+      "cmyk": {
+        "c": "62",
+        "m": "92",
+        "y": "31",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000332-0003": {
+    "description": "Plum",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "125",
+        "g": "60",
+        "b": "118"
+      },
+      "cmyk": {
+        "c": "62",
+        "m": "92",
+        "y": "31",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000332-0008": {
+    "description": "Plum",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "125",
+        "g": "60",
+        "b": "118"
+      },
+      "cmyk": {
+        "c": "62",
+        "m": "92",
+        "y": "31",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
+  "000334-0001": {
+    "description": "Gold Purple",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "86",
+        "g": "37",
+        "b": "105"
+      },
+      "cmyk": {
+        "c": "66",
+        "m": "92",
+        "y": "6",
+        "k": "33"
+      },
+      "multicolored": false
+    }
+  },
+  "000334-0002": {
+    "description": "Gold Purple",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "86",
+        "g": "37",
+        "b": "105"
+      },
+      "cmyk": {
+        "c": "66",
+        "m": "92",
+        "y": "6",
+        "k": "33"
+      },
+      "multicolored": false
+    }
+  },
+  "000334-0003": {
+    "description": "Gold Purple",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "86",
+        "g": "37",
+        "b": "105"
+      },
+      "cmyk": {
+        "c": "66",
+        "m": "92",
+        "y": "6",
+        "k": "33"
+      },
+      "multicolored": false
+    }
+  },
+  "000334-0008": {
+    "description": "Gold Purple",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "86",
+        "g": "37",
+        "b": "105"
+      },
+      "cmyk": {
+        "c": "66",
+        "m": "92",
+        "y": "6",
+        "k": "33"
+      },
+      "multicolored": false
+    }
+  },
+  "000336-0001": {
+    "description": "Deep Gray",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "54",
+        "g": "69",
+        "b": "78"
+      },
+      "cmyk": {
+        "c": "63",
+        "m": "43",
+        "y": "35",
+        "k": "58"
+      },
+      "multicolored": false
+    }
+  },
+  "000336-0002": {
+    "description": "Deep Gray",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "54",
+        "g": "69",
+        "b": "78"
+      },
+      "cmyk": {
+        "c": "63",
+        "m": "43",
+        "y": "35",
+        "k": "58"
+      },
+      "multicolored": false
+    }
+  },
+  "000336-0003": {
+    "description": "Deep Gray",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "54",
+        "g": "69",
+        "b": "78"
+      },
+      "cmyk": {
+        "c": "63",
+        "m": "43",
+        "y": "35",
+        "k": "58"
+      },
+      "multicolored": false
+    }
+  },
+  "000336-0008": {
+    "description": "Deep Gray",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "54",
+        "g": "69",
+        "b": "78"
+      },
+      "cmyk": {
+        "c": "63",
+        "m": "43",
+        "y": "35",
+        "k": "58"
+      },
+      "multicolored": false
+    }
+  },
+  "000337-0001": {
+    "description": "Butterscotch",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "168",
+        "g": "104",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "17",
+        "m": "56",
+        "y": "100",
+        "k": "24"
+      },
+      "multicolored": false
+    }
+  },
+  "000337-0002": {
+    "description": "Butterscotch",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "168",
+        "g": "104",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "17",
+        "m": "56",
+        "y": "100",
+        "k": "24"
+      },
+      "multicolored": false
+    }
+  },
+  "000337-0003": {
+    "description": "Butterscotch",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "168",
+        "g": "104",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "17",
+        "m": "56",
+        "y": "100",
+        "k": "24"
+      },
+      "multicolored": false
+    }
+  },
+  "000337-0008": {
+    "description": "Butterscotch",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "168",
+        "g": "104",
+        "b": "30"
+      },
+      "cmyk": {
+        "c": "17",
+        "m": "56",
+        "y": "100",
+        "k": "24"
+      },
+      "multicolored": false
+    }
+  },
+  "000403-0001": {
+    "description": "Opaline",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "239",
+        "g": "233",
+        "b": "226"
+      },
+      "cmyk": {
+        "c": "5",
+        "m": "6",
+        "y": "9",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000403-0002": {
+    "description": "Opaline",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "239",
+        "g": "233",
+        "b": "226"
+      },
+      "cmyk": {
+        "c": "5",
+        "m": "6",
+        "y": "9",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000403-0003": {
+    "description": "Opaline",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "239",
+        "g": "233",
+        "b": "226"
+      },
+      "cmyk": {
+        "c": "5",
+        "m": "6",
+        "y": "9",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000403-0008": {
+    "description": "Opaline",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "239",
+        "g": "233",
+        "b": "226"
+      },
+      "cmyk": {
+        "c": "5",
+        "m": "6",
+        "y": "9",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000420-0001": {
+    "description": "Cream",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "244",
+        "g": "238",
+        "b": "200"
+      },
+      "cmyk": {
+        "c": "4",
+        "m": "3",
+        "y": "25",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000420-0002": {
+    "description": "Cream",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "244",
+        "g": "238",
+        "b": "200"
+      },
+      "cmyk": {
+        "c": "4",
+        "m": "3",
+        "y": "25",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000420-0003": {
+    "description": "Cream",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "244",
+        "g": "238",
+        "b": "200"
+      },
+      "cmyk": {
+        "c": "4",
+        "m": "3",
+        "y": "25",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000420-0008": {
+    "description": "Cream",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "244",
+        "g": "238",
+        "b": "200"
+      },
+      "cmyk": {
+        "c": "4",
+        "m": "3",
+        "y": "25",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000920-0001": {
+    "description": "warm white",
+    "type": "Opalescent Frit Fine",
+    "color": {
+      "rgb": {
+        "r": "246",
+        "g": "242",
+        "b": "221"
+      },
+      "cmyk": {
+        "c": "3",
+        "m": "2",
+        "y": "14",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000920-0002": {
+    "description": "warm white",
+    "type": "Opalescent Frit Medium",
+    "color": {
+      "rgb": {
+        "r": "246",
+        "g": "242",
+        "b": "221"
+      },
+      "cmyk": {
+        "c": "3",
+        "m": "2",
+        "y": "14",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000920-0003": {
+    "description": "warm white",
+    "type": "Opalescent Frit Coarse",
+    "color": {
+      "rgb": {
+        "r": "246",
+        "g": "242",
+        "b": "221"
+      },
+      "cmyk": {
+        "c": "3",
+        "m": "2",
+        "y": "14",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
+  "000920-0008": {
+    "description": "warm white",
+    "type": "Opalescent Frit Powder",
+    "color": {
+      "rgb": {
+        "r": "246",
+        "g": "242",
+        "b": "221"
+      },
+      "cmyk": {
+        "c": "3",
+        "m": "2",
+        "y": "14",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
   "001009-0001": {
     "description": "Reactive Ice Clear",
     "type": "Transparent Frit Fine",

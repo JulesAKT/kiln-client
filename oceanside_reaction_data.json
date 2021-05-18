@@ -1,0 +1,1302 @@
+{
+  "111RR-F": {
+    "reaction_type": "SULFUR",
+    "name": "Dark Amber Rough Rolled"
+  },
+  "111W-F": {
+    "reaction_type": "SULFUR",
+    "name": "Dark Amber Waterglass"
+  },
+  "161A-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Artique"
+  },
+  "161RR-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Rough Rolled"
+  },
+  "161S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Smooth"
+  },
+  "161W-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Waterglass"
+  },
+  "201-61S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Ivory Opalescent"
+  },
+  "210-73S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Vanilla Cream"
+  },
+  "260-72S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Opal"
+  },
+  "267-72S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Sunflower Opal"
+  },
+  "315-6S-F": {
+    "reaction_type": "SULFUR",
+    "name": "White/Dark Amber"
+  },
+  "317-6S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Dark Amber/White"
+  },
+  "319-6S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Dark Amber/White, Wispy"
+  },
+  "365-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "White/Yellow"
+  },
+  "367-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow/White"
+  },
+  "369-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow/White, Wispy"
+  },
+  "411-15G-F": {
+    "reaction_type": "SULFUR",
+    "name": "Brown/Gold Granite"
+  },
+  "411-15S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Brown/Gold Smooth"
+  },
+  "451-20W-F": {
+    "reaction_type": "SULFUR",
+    "name": "Red/Amber Waterglass"
+  },
+  "6061-81CC-F": {
+    "reaction_type": "SULFUR",
+    "name": "Meadowlark Pearl Opal"
+  },
+  "6067-83CC-F": {
+    "reaction_type": "SULFUR",
+    "name": "Mimosa Pearl Opal"
+  },
+  "6076-83CC-F": {
+    "reaction_type": "SULFUR",
+    "name": "Inferno Pearl Opal"
+  },
+  "110-4S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Light Amber Smooth"
+  },
+  "110-8A-F": {
+    "reaction_type": "SULFUR",
+    "name": " Amber Artique"
+  },
+  "110-8RR-F": {
+    "reaction_type": "SULFUR",
+    "name": " Amber Rough Rolled"
+  },
+  "110-8S-F": {
+    "reaction_type": "SULFUR",
+    "name": " Amber Smooth"
+  },
+  "110-8W-F": {
+    "reaction_type": "SULFUR",
+    "name": " Amber Waterglass"
+  },
+  "171A-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Artique"
+  },
+  "171RR-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Rough Rolled"
+  },
+  "171S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Smooth"
+  },
+  "171W-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Waterglass"
+  },
+  "226-72S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Lemongrass Opal"
+  },
+  "250-72S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Red Opal"
+  },
+  "270-72S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Opal"
+  },
+  "315-2S-F": {
+    "reaction_type": "SULFUR",
+    "name": "White/ Amber"
+  },
+  "317-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Light Amber/White"
+  },
+  "317-2S-F": {
+    "reaction_type": "SULFUR",
+    "name": " Amber/White"
+  },
+  "319-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Light Amber/White, Wispy"
+  },
+  "375-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "White/Orange Smooth"
+  },
+  "377-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange/White Smooth"
+  },
+  "379-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange/White, Wispy"
+  },
+  "60-355-F": {
+    "reaction_type": "SULFUR",
+    "name": "Marigold Opal"
+  },
+  "60-602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Flame Opal"
+  },
+  "60-611-F": {
+    "reaction_type": "SULFUR",
+    "name": "Light Cherry Red"
+  },
+  "6051-83CC-F": {
+    "reaction_type": "SULFUR",
+    "name": "Autumn Flame Pearl Opal"
+  },
+  "675-5S-F": {
+    "reaction_type": "SULFUR",
+    "name": "White/Orange-Red"
+  },
+  "SPIRIT-4361-76S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Atlantis Spirit"
+  },
+  "110-1A-F": {
+    "reaction_type": "SULFUR",
+    "name": "Palest Amber Artique"
+  },
+  "110-1RR-F": {
+    "reaction_type": "SULFUR",
+    "name": "Palest Amber Rough Rolled"
+  },
+  "110-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Palest Amber Smooth"
+  },
+  "110-2A-F": {
+    "reaction_type": "SULFUR",
+    "name": "Pale Amber Artique"
+  },
+  "110-2RR-F": {
+    "reaction_type": "SULFUR",
+    "name": "Pale Amber Rough Rolled"
+  },
+  "110-2S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Pale Amber Smooth"
+  },
+  "110-2W-F": {
+    "reaction_type": "SULFUR",
+    "name": "Pale Amber Waterglass"
+  },
+  "151RR-F": {
+    "reaction_type": "SULFUR",
+    "name": "Cherry Red Rough Rolled"
+  },
+  "151S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Cherry Red Smooth"
+  },
+  "151W-F": {
+    "reaction_type": "SULFUR",
+    "name": "Cherry Red Waterglass"
+  },
+  "152A-F": {
+    "reaction_type": "SULFUR",
+    "name": "Ruby Red Artique"
+  },
+  "152G-F": {
+    "reaction_type": "SULFUR",
+    "name": "Ruby Red Granite"
+  },
+  "152RR-F": {
+    "reaction_type": "SULFUR",
+    "name": "Ruby Red Rough Rolled"
+  },
+  "152S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Ruby Red Smooth"
+  },
+  "152W-F": {
+    "reaction_type": "SULFUR",
+    "name": "Ruby Red Waterglass"
+  },
+  "211-74S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Chestnut Brown Opal"
+  },
+  "215-72S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Terra Cotta Opal"
+  },
+  "271-71S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Persimmon Opal"
+  },
+  "315-02S-F": {
+    "reaction_type": "SULFUR",
+    "name": "White/Pale Amber"
+  },
+  "315-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "White/Light Amber"
+  },
+  "317-02S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Pale Amber/White"
+  },
+  "318-05S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Light Amber Lamp Mix"
+  },
+  "319-02S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Pale Amber/White, Wispy"
+  },
+  "357-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Red/White"
+  },
+  "359-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Red/White, Wispy"
+  },
+  "571-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Rust Smooth"
+  },
+  "621-7S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Amber/Green/White"
+  },
+  "641-7S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Purple/Amber/White"
+  },
+  "OA-355-1S-F": {
+    "reaction_type": "SULFUR",
+    "name": "Strawberries & Cream OpalArt"
+  },
+  "125RR-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Rough Rolled"
+  },
+  "125S-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Smooth"
+  },
+  "125W-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Waterglass"
+  },
+  "136A-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Artique"
+  },
+  "136RR-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Rough Rolled"
+  },
+  "136S-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Smooth"
+  },
+  "136W-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Waterglass"
+  },
+  "220-76S-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Opal"
+  },
+  "223-74S-F": {
+    "reaction_type": "COPPER",
+    "name": "Peacock Green Opal"
+  },
+  "230-76S-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Opal"
+  },
+  "233-74S-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue Opal"
+  },
+  "233-75S-F": {
+    "reaction_type": "COPPER",
+    "name": "Mariner Opal"
+  },
+  "327-6S-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green/White"
+  },
+  "329-6S-F": {
+    "reaction_type": "COPPER",
+    "name": "Pale Green/White, Wispy"
+  },
+  "337-6S-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green/White, Wispy"
+  },
+  "339-6S-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue/White, Wispy"
+  },
+  "422-1W-F": {
+    "reaction_type": "COPPER",
+    "name": "Olive/Sea Green Waterglass"
+  },
+  "433-1W-F": {
+    "reaction_type": "COPPER",
+    "name": "Steel/Sky Blue Waterglass"
+  },
+  "523-2RR-F": {
+    "reaction_type": "COPPER",
+    "name": "Teal Green Rough Rolled"
+  },
+  "523-2S-F": {
+    "reaction_type": "COPPER",
+    "name": "Teal Green Smooth"
+  },
+  "523-2W-F": {
+    "reaction_type": "COPPER",
+    "name": "Teal Green Waterglass"
+  },
+  "532-1S-F": {
+    "reaction_type": "COPPER",
+    "name": "Caribbean Blue Smooth"
+  },
+  "533-1A-F": {
+    "reaction_type": "COPPER",
+    "name": "Sky Blue Artique"
+  },
+  "533-1RR-F": {
+    "reaction_type": "COPPER",
+    "name": "Sky Blue Rough Rolled"
+  },
+  "533-1S-F": {
+    "reaction_type": "COPPER",
+    "name": "Sky Blue Smooth"
+  },
+  "533-1W-F": {
+    "reaction_type": "COPPER",
+    "name": "Sky Blue Waterglass"
+  },
+  "533-2S-F": {
+    "reaction_type": "COPPER",
+    "name": "Blue Topaz Smooth"
+  },
+  "533-3RR-F": {
+    "reaction_type": "COPPER",
+    "name": "Deep Aqua Rough Rolled"
+  },
+  "533-3S-F": {
+    "reaction_type": "COPPER",
+    "name": "Deep Aqua Smooth"
+  },
+  "533-3W-F": {
+    "reaction_type": "COPPER",
+    "name": "Deep Aqua Waterglass"
+  },
+  "6033-83CC-F": {
+    "reaction_type": "COPPER",
+    "name": "Blue Yonder Pearl Opal"
+  },
+  "6034-83CC-F": {
+    "reaction_type": "COPPER",
+    "name": "Aqua-Rose Pearl Opal"
+  },
+  "605-85CC-F": {
+    "reaction_type": "COPPER",
+    "name": "Sierra Red Pearl Opal"
+  },
+  "823-72S-F": {
+    "reaction_type": "COPPER",
+    "name": "Teal Green/White"
+  },
+  "823-92S-F": {
+    "reaction_type": "COPPER",
+    "name": "Teal Green/White, Wispy"
+  },
+  "833-91S-F": {
+    "reaction_type": "COPPER",
+    "name": "Sky Blue/White, Wispy"
+  },
+  "833-93S-F": {
+    "reaction_type": "COPPER",
+    "name": "Deep Aqua/White, Wispy"
+  },
+  "OA-623-52S-F": {
+    "reaction_type": "COPPER",
+    "name": "Lagoon OpalArt"
+  },
+  "OA-634-52S-F": {
+    "reaction_type": "COPPER",
+    "name": "Blackberry Cream OpalArt"
+  },
+  "123H-F": {
+    "reaction_type": "COPPER",
+    "name": " Green Hammered"
+  },
+  "123RR-F": {
+    "reaction_type": "COPPER",
+    "name": " Green Rough Rolled"
+  },
+  "123S-F": {
+    "reaction_type": "COPPER",
+    "name": " Green Smooth"
+  },
+  "123W-F": {
+    "reaction_type": "COPPER",
+    "name": " Green Waterglass"
+  },
+  "132A-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Blue Artique"
+  },
+  "132RR-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Blue Rough Rolled"
+  },
+  "132S-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Blue Smooth"
+  },
+  "132W-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Blue Waterglass"
+  },
+  "134H-F": {
+    "reaction_type": "COPPER",
+    "name": " Blue Hammered"
+  },
+  "134RR-F": {
+    "reaction_type": "COPPER",
+    "name": " Blue Rough Rolled"
+  },
+  "134W-F": {
+    "reaction_type": "COPPER",
+    "name": " Blue Waterglass"
+  },
+  "223-72S-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Green Opal"
+  },
+  "339-2S-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Blue/White, Wispy"
+  },
+  "538-2S-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Steel Blue"
+  },
+  "538-4S-F": {
+    "reaction_type": "COPPER",
+    "name": "Steel Blue Smooth"
+  },
+  "538-4W-F": {
+    "reaction_type": "COPPER",
+    "name": "Steel Blue Waterglass"
+  },
+  "60-726-F": {
+    "reaction_type": "COPPER",
+    "name": "Apple Jade Opal"
+  },
+  "60-755-F": {
+    "reaction_type": "COPPER",
+    "name": "Fern Green Opal"
+  },
+  "6022-81CC-F": {
+    "reaction_type": "COPPER",
+    "name": "Key Lime Pearl Opal"
+  },
+  "6022-82CC-F": {
+    "reaction_type": "COPPER",
+    "name": "Congo Pearl Opal"
+  },
+  "6023-83CC-F": {
+    "reaction_type": "COPPER",
+    "name": "Aqua-Lime Pearl Opal"
+  },
+  "622-7S-F": {
+    "reaction_type": "COPPER",
+    "name": "Forest Green Opal"
+  },
+  "623-7S-F": {
+    "reaction_type": "COPPER",
+    "name": "White/Dark Green/Blue"
+  },
+  "633-7S-F": {
+    "reaction_type": "COPPER",
+    "name": "Sky Blue/Dark Blue/White"
+  },
+  "833-51S-F": {
+    "reaction_type": "COPPER",
+    "name": "White/Sky Blue"
+  },
+  "838-52S-F": {
+    "reaction_type": "COPPER",
+    "name": "White/Colonial Blue"
+  },
+  "838-72S-F": {
+    "reaction_type": "COPPER",
+    "name": "Colonial Blue/White"
+  },
+  "838-74S-F": {
+    "reaction_type": "COPPER",
+    "name": "Steel Blue/White"
+  },
+  "838-94S-F": {
+    "reaction_type": "COPPER",
+    "name": "Steel Blue/White, Wispy"
+  },
+  "121A-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Green Artique"
+  },
+  "121RR-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Green Rough Rolled"
+  },
+  "121S-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Green Smooth"
+  },
+  "121W-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Green Waterglass"
+  },
+  "130-8A-F": {
+    "reaction_type": "COPPER",
+    "name": "Pale Blue Artique"
+  },
+  "130-8RR-F": {
+    "reaction_type": "COPPER",
+    "name": "Pale Blue Rough Rolled"
+  },
+  "130-8S-F": {
+    "reaction_type": "COPPER",
+    "name": "Pale Blue Smooth"
+  },
+  "130-8W-F": {
+    "reaction_type": "COPPER",
+    "name": "Pale Blue Waterglass"
+  },
+  "222-72S-F": {
+    "reaction_type": "COPPER",
+    "name": "Pastel Green Opal"
+  },
+  "226-74S-F": {
+    "reaction_type": "COPPER",
+    "name": "Amazon Green Opal"
+  },
+  "228-72S-F": {
+    "reaction_type": "COPPER",
+    "name": "Celadon Opal"
+  },
+  "327-2S-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Green/White"
+  },
+  "329-1S-F": {
+    "reaction_type": "COPPER",
+    "name": "Pale Green/White, Wispy"
+  },
+  "329-2S-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Green/White, Wispy"
+  },
+  "335-2S-F": {
+    "reaction_type": "COPPER",
+    "name": "White/Light Blue"
+  },
+  "337-1S-F": {
+    "reaction_type": "COPPER",
+    "name": "Pale Blue/White"
+  },
+  "337-2S-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Blue/White"
+  },
+  "339-1S-F": {
+    "reaction_type": "COPPER",
+    "name": "Pale Blue/White, Wispy"
+  },
+  "423-1W-F": {
+    "reaction_type": "COPPER",
+    "name": "Pale Green/Aqua Waterglass"
+  },
+  "528-1A-F": {
+    "reaction_type": "COPPER",
+    "name": "Sea Green Artique"
+  },
+  "528-1RR-F": {
+    "reaction_type": "COPPER",
+    "name": "Sea Green Rough Rolled"
+  },
+  "528-1S-F": {
+    "reaction_type": "COPPER",
+    "name": "Sea Green Smooth"
+  },
+  "528-1W-F": {
+    "reaction_type": "COPPER",
+    "name": "Sea Green Waterglass"
+  },
+  "528-2S-F": {
+    "reaction_type": "COPPER",
+    "name": "Light Olive Smooth"
+  },
+  "60-078-F": {
+    "reaction_type": "COPPER",
+    "name": "Paynes Gray Opal"
+  },
+  "60-079-F": {
+    "reaction_type": "COPPER",
+    "name": "Chambray Opal"
+  },
+  "6021-86CC-F": {
+    "reaction_type": "COPPER",
+    "name": "RainForest Pearl Opal"
+  },
+  "828-72S-F": {
+    "reaction_type": "COPPER",
+    "name": "Seafoam Green/White"
+  },
+  "828-91S-F": {
+    "reaction_type": "COPPER",
+    "name": "Sea Green/White, Wispy"
+  },
+  "828-94S-F": {
+    "reaction_type": "COPPER",
+    "name": "Olive/White"
+  },
+  "F1-078-F": {
+    "reaction_type": "COPPER",
+    "name": "Paynes Gray Opal"
+  },
+  "F2-078-F": {
+    "reaction_type": "COPPER",
+    "name": "Paynes Gray Opal"
+  },
+  "F3-078-F": {
+    "reaction_type": "COPPER",
+    "name": "Paynes Gray Opal"
+  },
+  "F5-078-F": {
+    "reaction_type": "COPPER",
+    "name": "Paynes Gray Opal"
+  },
+  "F1-079-F": {
+    "reaction_type": "COPPER",
+    "name": "Chambray Opal"
+  },
+  "F2-079-F": {
+    "reaction_type": "COPPER",
+    "name": "Chambray Opal"
+  },
+  "F3-079-F": {
+    "reaction_type": "COPPER",
+    "name": "Chambray Opal"
+  },
+  "F5-079-F": {
+    "reaction_type": "COPPER",
+    "name": "Chambray Opal"
+  },
+  "F1-2103-F": {
+    "reaction_type": "SULFUR",
+    "name": "Vanilla Cream"
+  },
+  "F2-2103-F": {
+    "reaction_type": "SULFUR",
+    "name": "Vanilla Cream"
+  },
+  "F3-2103-F": {
+    "reaction_type": "SULFUR",
+    "name": "Vanilla Cream"
+  },
+  "F5-2103-F": {
+    "reaction_type": "SULFUR",
+    "name": "Vanilla Cream"
+  },
+  "F1-2152-F": {
+    "reaction_type": "SULFUR",
+    "name": "Terra Cotta Opal"
+  },
+  "F2-2152-F": {
+    "reaction_type": "SULFUR",
+    "name": "Terra Cotta Opal"
+  },
+  "F3-2152-F": {
+    "reaction_type": "SULFUR",
+    "name": "Terra Cotta Opal"
+  },
+  "F5-2152-F": {
+    "reaction_type": "SULFUR",
+    "name": "Terra Cotta Opal"
+  },
+  "F1-2206-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Opal"
+  },
+  "F2-2206-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Opal"
+  },
+  "F3-2206-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Opal"
+  },
+  "F5-2206-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Opal"
+  },
+  "F1-2222-F": {
+    "reaction_type": "COPPER",
+    "name": "Pastel Green Opal"
+  },
+  "F2-2222-F": {
+    "reaction_type": "COPPER",
+    "name": "Pastel Green Opal"
+  },
+  "F3-2222-F": {
+    "reaction_type": "COPPER",
+    "name": "Pastel Green Opal"
+  },
+  "F5-2222-F": {
+    "reaction_type": "COPPER",
+    "name": "Pastel Green Opal"
+  },
+  "F1-2232-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Green Opal"
+  },
+  "F2-2232-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Green Opal"
+  },
+  "F3-2232-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Green Opal"
+  },
+  "F5-2232-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Green Opal"
+  },
+  "F1-2234-F": {
+    "reaction_type": "COPPER",
+    "name": "Peacock Green Opal"
+  },
+  "F2-2234-F": {
+    "reaction_type": "COPPER",
+    "name": "Peacock Green Opal"
+  },
+  "F3-2234-F": {
+    "reaction_type": "COPPER",
+    "name": "Peacock Green Opal"
+  },
+  "F5-2234-F": {
+    "reaction_type": "COPPER",
+    "name": "Peacock Green Opal"
+  },
+  "F1-2262-F": {
+    "reaction_type": "SULFUR",
+    "name": "Lemongrass Opal"
+  },
+  "F2-2262-F": {
+    "reaction_type": "SULFUR",
+    "name": "Lemongrass Opal"
+  },
+  "F3-2262-F": {
+    "reaction_type": "SULFUR",
+    "name": "Lemongrass Opal"
+  },
+  "F5-2262-F": {
+    "reaction_type": "SULFUR",
+    "name": "Lemongrass Opal"
+  },
+  "F1-2264-F": {
+    "reaction_type": "COPPER",
+    "name": "Amazon Green Opal"
+  },
+  "F2-2264-F": {
+    "reaction_type": "COPPER",
+    "name": "Amazon Green Opal"
+  },
+  "F3-2264-F": {
+    "reaction_type": "COPPER",
+    "name": "Amazon Green Opal"
+  },
+  "F5-2264-F": {
+    "reaction_type": "COPPER",
+    "name": "Amazon Green Opal"
+  },
+  "F1-2282-F": {
+    "reaction_type": "COPPER",
+    "name": "Celadon Opal"
+  },
+  "F2-2282-F": {
+    "reaction_type": "COPPER",
+    "name": "Celadon Opal"
+  },
+  "F3-2282-F": {
+    "reaction_type": "COPPER",
+    "name": "Celadon Opal"
+  },
+  "F5-2282-F": {
+    "reaction_type": "COPPER",
+    "name": "Celadon Opal"
+  },
+  "F1-2306-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Opal"
+  },
+  "F2-2306-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Opal"
+  },
+  "F3-2306-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Opal"
+  },
+  "F5-2306-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Opal"
+  },
+  "F1-2334-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue Opal"
+  },
+  "F2-2334-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue Opal"
+  },
+  "F3-2334-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue Opal"
+  },
+  "F5-2334-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue Opal"
+  },
+  "F1-2335-F": {
+    "reaction_type": "COPPER",
+    "name": "Mariner Opal"
+  },
+  "F2-2335-F": {
+    "reaction_type": "COPPER",
+    "name": "Mariner Opal"
+  },
+  "F3-2335-F": {
+    "reaction_type": "COPPER",
+    "name": "Mariner Opal"
+  },
+  "F5-2335-F": {
+    "reaction_type": "COPPER",
+    "name": "Mariner Opal"
+  },
+  "F1-2502-F": {
+    "reaction_type": "SULFUR",
+    "name": "Red Opal"
+  },
+  "F2-2502-F": {
+    "reaction_type": "SULFUR",
+    "name": "Red Opal"
+  },
+  "F3-2502-F": {
+    "reaction_type": "SULFUR",
+    "name": "Red Opal"
+  },
+  "F5-2502-F": {
+    "reaction_type": "SULFUR",
+    "name": "Red Opal"
+  },
+  "F1-2602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Opal"
+  },
+  "F2-2602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Opal"
+  },
+  "F3-2602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Opal"
+  },
+  "F5-2602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Opal"
+  },
+  "F1-2672-F": {
+    "reaction_type": "SULFUR",
+    "name": "Sunflower Opal"
+  },
+  "F2-2672-F": {
+    "reaction_type": "SULFUR",
+    "name": "Sunflower Opal"
+  },
+  "F3-2672-F": {
+    "reaction_type": "SULFUR",
+    "name": "Sunflower Opal"
+  },
+  "F5-2672-F": {
+    "reaction_type": "SULFUR",
+    "name": "Sunflower Opal"
+  },
+  "F1-2702-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Opal"
+  },
+  "F2-2702-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Opal"
+  },
+  "F3-2702-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Opal"
+  },
+  "F5-2702-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Opal"
+  },
+  "F1-2711-F": {
+    "reaction_type": "SULFUR",
+    "name": "Persimmon Opal"
+  },
+  "F2-2711-F": {
+    "reaction_type": "SULFUR",
+    "name": "Persimmon Opal"
+  },
+  "F3-2711-F": {
+    "reaction_type": "SULFUR",
+    "name": "Persimmon Opal"
+  },
+  "F5-2711-F": {
+    "reaction_type": "SULFUR",
+    "name": "Persimmon Opal"
+  },
+  "F1-355-F": {
+    "reaction_type": "SULFUR",
+    "name": "Marigold Opal"
+  },
+  "F2-355-F": {
+    "reaction_type": "SULFUR",
+    "name": "Marigold Opal"
+  },
+  "F3-355-F": {
+    "reaction_type": "SULFUR",
+    "name": "Marigold Opal"
+  },
+  "F5-355-F": {
+    "reaction_type": "SULFUR",
+    "name": "Marigold Opal"
+  },
+  "F1-602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Flame Opal"
+  },
+  "F2-602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Flame Opal"
+  },
+  "F3-602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Flame Opal"
+  },
+  "F5-602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Flame Opal"
+  },
+  "F1-6227-F": {
+    "reaction_type": "COPPER",
+    "name": "Forest Green Opal"
+  },
+  "F2-6227-F": {
+    "reaction_type": "COPPER",
+    "name": "Forest Green Opal"
+  },
+  "F3-6227-F": {
+    "reaction_type": "COPPER",
+    "name": "Forest Green Opal"
+  },
+  "F5-6227-F": {
+    "reaction_type": "COPPER",
+    "name": "Forest Green Opal"
+  },
+  "F1-726-F": {
+    "reaction_type": "COPPER",
+    "name": "Apple Jade Opal"
+  },
+  "F2-726-F": {
+    "reaction_type": "COPPER",
+    "name": "Apple Jade Opal"
+  },
+  "F3-726-F": {
+    "reaction_type": "COPPER",
+    "name": "Apple Jade Opal"
+  },
+  "F5-726-F": {
+    "reaction_type": "COPPER",
+    "name": "Apple Jade Opal"
+  },
+  "F1-755-F": {
+    "reaction_type": "COPPER",
+    "name": "Fern Green Opal"
+  },
+  "F2-755-F": {
+    "reaction_type": "COPPER",
+    "name": "Fern Green Opal"
+  },
+  "F3-755-F": {
+    "reaction_type": "COPPER",
+    "name": "Fern Green Opal"
+  },
+  "F5-755-F": {
+    "reaction_type": "COPPER",
+    "name": "Fern Green Opal"
+  },
+  "R-2103-F-6": {
+    "reaction_type": "SULFUR",
+    "name": "Vanilla Cream"
+  },
+  "R-2206-F-6": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Opal"
+  },
+  "R-2222-F-6": {
+    "reaction_type": "COPPER",
+    "name": "Pastel Green Opal"
+  },
+  "R-2232-F-6": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Green Opal"
+  },
+  "R-2234-F-6": {
+    "reaction_type": "COPPER",
+    "name": "Peacock Green Opal"
+  },
+  "R-2264-F-6": {
+    "reaction_type": "COPPER",
+    "name": "Amazon Green Opal"
+  },
+  "R-2306-F-6": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Opal"
+  },
+  "R-2334-F-6": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue Opal"
+  },
+  "R-2502-F-6": {
+    "reaction_type": "SULFUR",
+    "name": "Red Opal"
+  },
+  "R-2672-F-6": {
+    "reaction_type": "SULFUR",
+    "name": "Sunflower Opal"
+  },
+  "R-2702-F-6": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Opal"
+  },
+  "R-2711-F-6": {
+    "reaction_type": "SULFUR",
+    "name": "Persimmon Opal"
+  },
+  "R-355-F-6": {
+    "reaction_type": "SULFUR",
+    "name": "Marigold Opal"
+  },
+  "R-5711-F-6": {
+    "reaction_type": "SULFUR",
+    "name": "Rust Smooth"
+  },
+  "R-602-F-6": {
+    "reaction_type": "SULFUR",
+    "name": "Flame Opal"
+  },
+  "R-6227-F-6": {
+    "reaction_type": "COPPER",
+    "name": "Forest Green Opal"
+  },
+  "R-755-F-6": {
+    "reaction_type": "COPPER",
+    "name": "Fern Green Opal"
+  },
+  "S-078-F": {
+    "reaction_type": "COPPER",
+    "name": "Paynes Gray Opal"
+  },
+  "S-2103-F": {
+    "reaction_type": "SULFUR",
+    "name": "Vanilla Cream"
+  },
+  "S-2152-F": {
+    "reaction_type": "SULFUR",
+    "name": "Terra Cotta Opal"
+  },
+  "S-2206-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Opal"
+  },
+  "S-2222-F": {
+    "reaction_type": "COPPER",
+    "name": "Pastel Green Opal"
+  },
+  "S-2234-F": {
+    "reaction_type": "COPPER",
+    "name": "Peacock Green Opal"
+  },
+  "S-2262-F": {
+    "reaction_type": "SULFUR",
+    "name": "Lemongrass Opal"
+  },
+  "S-2264-F": {
+    "reaction_type": "COPPER",
+    "name": "Amazon Green Opal"
+  },
+  "S-2306-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Opal"
+  },
+  "S-2334-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue Opal"
+  },
+  "S-2502-F": {
+    "reaction_type": "SULFUR",
+    "name": "Red Opal"
+  },
+  "S-2602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Opal"
+  },
+  "S-2702-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Opal"
+  },
+  "S-2711-F": {
+    "reaction_type": "SULFUR",
+    "name": "Persimmon Opal"
+  },
+  "S-355-F": {
+    "reaction_type": "SULFUR",
+    "name": "Marigold Opal"
+  },
+  "S-602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Flame Opal"
+  },
+  "S-6227-F": {
+    "reaction_type": "COPPER",
+    "name": "Forest Green Opal"
+  },
+  "S-726-F": {
+    "reaction_type": "COPPER",
+    "name": "Apple Jade Opal"
+  },
+  "S-755-F": {
+    "reaction_type": "COPPER",
+    "name": "Fern Green Opal"
+  },
+  "N-078-F": {
+    "reaction_type": "COPPER",
+    "name": "Paynes Gray Opal"
+  },
+  "N-2103-F": {
+    "reaction_type": "SULFUR",
+    "name": "Vanilla Cream"
+  },
+  "N-2152-F": {
+    "reaction_type": "SULFUR",
+    "name": "Terra Cotta Opal"
+  },
+  "N-2206-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Green Opal"
+  },
+  "N-2222-F": {
+    "reaction_type": "COPPER",
+    "name": "Pastel Green Opal"
+  },
+  "N-2234-F": {
+    "reaction_type": "COPPER",
+    "name": "Peacock Green Opal"
+  },
+  "N-2262-F": {
+    "reaction_type": "SULFUR",
+    "name": "Lemongrass Opal"
+  },
+  "N-2264-F": {
+    "reaction_type": "COPPER",
+    "name": "Amazon Green Opal"
+  },
+  "N-2306-F": {
+    "reaction_type": "COPPER",
+    "name": "Dark Blue Opal"
+  },
+  "N-2334-F": {
+    "reaction_type": "COPPER",
+    "name": "Turquoise Blue Opal"
+  },
+  "N-2502-F": {
+    "reaction_type": "SULFUR",
+    "name": "Red Opal"
+  },
+  "N-2602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Yellow Opal"
+  },
+  "N-2702-F": {
+    "reaction_type": "SULFUR",
+    "name": "Orange Opal"
+  },
+  "N-2711-F": {
+    "reaction_type": "SULFUR",
+    "name": "Persimmon Opal"
+  },
+  "N-355-F": {
+    "reaction_type": "SULFUR",
+    "name": "Marigold Opal"
+  },
+  "N-602-F": {
+    "reaction_type": "SULFUR",
+    "name": "Flame Opal"
+  },
+  "N-6227-F": {
+    "reaction_type": "COPPER",
+    "name": "Forest Green Opal"
+  },
+  "N-726-F": {
+    "reaction_type": "COPPER",
+    "name": "Apple Jade Opal"
+  },
+  "N-755-F": {
+    "reaction_type": "COPPER",
+    "name": "Fern Green Opal"
+  }
+}
