@@ -130,6 +130,11 @@ const ProjectShowPage = (props) => {
     project.materials,
     glass_data
   );
+
+  const number_of_glass_types =
+    project.materials &&
+    [...new Set(Object.values(project?.materials).map((m) => m.glass))].length;
+  console.log(`Number of glass types: ${number_of_glass_types}`);
   console.log("REACTING MATERIALS");
   console.log(reacting_materials);
 
@@ -171,6 +176,14 @@ const ProjectShowPage = (props) => {
       {materials_key_array && (
         <>
           <Header as="h3">Materials</Header>
+          {number_of_glass_types > 1 && (
+            <p>
+              <b>
+                Please note: KilnHelper cannot correctly determine reactions for
+                projects that contain more than one glass manufacturer
+              </b>
+            </p>
+          )}
           <Card.Group>
             {materials_key_array.map(
               (key) =>
