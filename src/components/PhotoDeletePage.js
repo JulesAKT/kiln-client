@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { Button, Card } from "semantic-ui-react";
 import _ from "lodash";
-import { editProject } from "../actions";
+import { deleteFileFromURI, editProject } from "../actions";
 import Modal from "../Modal";
 import history from "../history";
 import useFirebaseProject from "../hooks/useFirebaseProject";
@@ -23,6 +23,19 @@ const PhotoDeletePage = (props) => {
           let newProject = _.cloneDeep(project);
           //console.log(newProject.photos);
           newProject.photos.splice(index, 1);
+          console.log("Trying to delete stored photo:");
+          //console.log(project.photos[index]);
+          const photo = project.photos[index];
+          if (photo?.photo) {
+            deleteFileFromURI(photo.photo);
+          }
+          if (photo?.photo256?.uri) {
+            deleteFileFromURI(photo.photo256.uri);
+          }
+          if (photo?.photo1024?.uri) {
+            deleteFileFromURI(photo.photo1024.uri);
+          }
+
           console.log("About to commit");
           //console.log(newProject.photos);
           dispatch(editProject(project.id, newProject));

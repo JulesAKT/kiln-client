@@ -64,9 +64,12 @@ const ProjectShowPage = (props) => {
   const onDrop = useCallback((accepted_files) => {
     console.log(accepted_files);
     let newProject = _.cloneDeep(project);
-    newProject.photos = newProject.photos.concat(
-      accepted_files.map((p) => ({ photo: p, type: "After" }))
-    );
+    // Ugly. But works. contact the list, but if there's nothing to concat TO... then just return the list.
+    newProject.photos = newProject.photos
+      ? newProject.photos.concat(
+          accepted_files.map((p) => ({ photo: p, type: "After" }))
+        )
+      : accepted_files.map((p) => ({ photo: p, type: "After" }));
     console.log(newProject);
     dispatch(editProject(project.id, newProject, true));
   });

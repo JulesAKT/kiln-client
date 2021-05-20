@@ -178,44 +178,57 @@ export const fetchProject = (id) => async (dispatch, getState) => {
   });
 };
 
-export const editProject = (id, formProps, ignoreNavigate = false) => (
-  dispatch,
-  getState
-) => {
-  console.log(formProps);
-  dispatch({ type: EDIT_PROJECT_REQUEST, payload: { ...formProps } });
-  formProps.id = id;
-  const handleUpload = (photo, index) => {
-    console.log("handleUpload - " + index);
-    if (typeof photo.photo === "string") {
-      console.log("Already uploaded - aborting");
-      return null;
-    }
-    return new Promise((resolve, reject) => {
-      console.log("Index: " + index);
-      console.log(photo);
+export const editProject =
+  (id, formProps, ignoreNavigate = false) =>
+  (dispatch, getState) => {
+    console.log(formProps);
+    dispatch({ type: EDIT_PROJECT_REQUEST, payload: { ...formProps } });
+    formProps.id = id;
+    const handleUpload = (photo, index) => {
+      console.log("handleUpload - " + index);
+      if (typeof photo.photo === "string") {
+        console.log("Already uploaded - aborting");
+        return null;
+      }
+      return new Promise((resolve, reject) => {
+        console.log("Index: " + index);
+        console.log(photo);
 
-      const uploadName = userPath() + `/${formProps.id}-${index}.jpg`;
-      cloudstore
-        .ref(uploadName)
-        .put(photo.photo)
-        .then(
-          () =>
-            cloudstore
-              .ref(uploadName)
-              .getDownloadURL()
-              .then((url) => {
-                console.log(index + " " + url);
-                formProps.photos[index].photo = url;
-                resolve("Uploaded");
-              })
-          //            .catch(reject("Upload Failed"))
-        );
-    });
-  };
-  if (formProps.photos) {
-    Promise.all(formProps.photos.map(handleUpload)).then((url, index) => {
-      console.log("setting stuff");
+        const uploadName = userPath() + `/${formProps.id}-${index}.jpg`;
+        cloudstore
+          .ref(uploadName)
+          .put(photo.photo)
+          .then(
+            () =>
+              cloudstore
+                .ref(uploadName)
+                .getDownloadURL()
+                .then((url) => {
+                  console.log(index + " " + url);
+                  formProps.photos[index].photo = url;
+                  resolve("Uploaded");
+                })
+            //            .catch(reject("Upload Failed"))
+          );
+      });
+    };
+    if (formProps.photos) {
+      Promise.all(formProps.photos.map(handleUpload)).then((url, index) => {
+        console.log("setting stuff");
+        db.ref(userPath() + `/projects/${formProps.id}`).set({
+          ...formProps,
+        });
+
+        dispatch({
+          type: EDIT_PROJECT_SUCCESS,
+          payload: { ...formProps },
+        });
+
+        if (!ignoreNavigate) {
+          history.goBack();
+        }
+      });
+    } else {
       db.ref(userPath() + `/projects/${formProps.id}`).set({
         ...formProps,
       });
@@ -228,22 +241,8 @@ export const editProject = (id, formProps, ignoreNavigate = false) => (
       if (!ignoreNavigate) {
         history.goBack();
       }
-    });
-  } else {
-    db.ref(userPath() + `/projects/${formProps.id}`).set({
-      ...formProps,
-    });
-
-    dispatch({
-      type: EDIT_PROJECT_SUCCESS,
-      payload: { ...formProps },
-    });
-
-    if (!ignoreNavigate) {
-      history.goBack();
     }
-  }
-};
+  };
 
 export const deleteProject = (id) => async (dispatch, getState) => {
   //const newName = FileSystem.documentDirectory + formProps.id + ".jpg";
@@ -324,33 +323,32 @@ export const deleteKiln = (id) => async (dispatch, getState) => {
 
 // FIRINGs Action Creators
 
-export const createFiring = (formProps, allowNavigate = true) => async (
-  dispatch,
-  getState
-) => {
-  console.log("createFiring");
-  console.log(formProps);
-  dispatch({ type: CREATE_FIRING_REQUEST });
-  if (!formProps.id) {
-    formProps.id = uuid();
-  }
-  let newProps = { ...formProps };
-  if (newProps?.date?.getMonth) {
-    newProps.date = newProps.date.getTime();
-  }
+export const createFiring =
+  (formProps, allowNavigate = true) =>
+  async (dispatch, getState) => {
+    console.log("createFiring");
+    console.log(formProps);
+    dispatch({ type: CREATE_FIRING_REQUEST });
+    if (!formProps.id) {
+      formProps.id = uuid();
+    }
+    let newProps = { ...formProps };
+    if (newProps?.date?.getMonth) {
+      newProps.date = newProps.date.getTime();
+    }
 
-  db.ref(userPath() + `/firings/${formProps.id}`).set({
-    ...newProps,
-  });
+    db.ref(userPath() + `/firings/${formProps.id}`).set({
+      ...newProps,
+    });
 
-  dispatch({
-    type: CREATE_FIRING_SUCCESS,
-    payload: { ...formProps },
-  });
-  if (allowNavigate) {
-    history.goBack();
-  }
-};
+    dispatch({
+      type: CREATE_FIRING_SUCCESS,
+      payload: { ...formProps },
+    });
+    if (allowNavigate) {
+      history.goBack();
+    }
+  };
 
 export const fetchFirings = () => async (dispatch, getState) => {
   dispatch({ type: FETCH_FIRINGS_REQUEST });
@@ -406,74 +404,71 @@ export const fetchFiringsByFavourite = () => async (dispatch, getState) => {
     });
 };
 
-export const editFiring = (id, formProps, allowNavigate = true) => async (
-  dispatch,
-  getState
-) => {
-  dispatch({ type: EDIT_FIRING_REQUEST });
-  let newProps = { ...formProps };
-  newProps.id = id;
-  if (newProps.notes === "") {
-    delete newProps.notes;
-  }
-  //console.log(newProps.date);
-  if (newProps?.date?.getMonth) {
-    newProps.date = newProps.date.getTime();
-  }
+export const editFiring =
+  (id, formProps, allowNavigate = true) =>
+  async (dispatch, getState) => {
+    dispatch({ type: EDIT_FIRING_REQUEST });
+    let newProps = { ...formProps };
+    newProps.id = id;
+    if (newProps.notes === "") {
+      delete newProps.notes;
+    }
+    //console.log(newProps.date);
+    if (newProps?.date?.getMonth) {
+      newProps.date = newProps.date.getTime();
+    }
 
-  db.ref(userPath() + `/firings/${id}`).set({
-    ...newProps,
-  });
+    db.ref(userPath() + `/firings/${id}`).set({
+      ...newProps,
+    });
 
-  dispatch({
-    type: EDIT_FIRING_SUCCESS,
-    payload: { ...newProps },
-  });
-  if (allowNavigate) {
-    history.goBack();
-  }
-};
+    dispatch({
+      type: EDIT_FIRING_SUCCESS,
+      payload: { ...newProps },
+    });
+    if (allowNavigate) {
+      history.goBack();
+    }
+  };
 
-export const deleteFiring = (id, allowNavigate = true) => async (
-  dispatch,
-  getState
-) => {
-  //  console.log("DeleteFiring");
-  dispatch({ type: DELETE_FIRING_REQUEST });
-  db.ref(userPath() + `/firings/${id}`).remove();
+export const deleteFiring =
+  (id, allowNavigate = true) =>
+  async (dispatch, getState) => {
+    //  console.log("DeleteFiring");
+    dispatch({ type: DELETE_FIRING_REQUEST });
+    db.ref(userPath() + `/firings/${id}`).remove();
 
-  //console.log("Removed from DB: " + id);
-  dispatch({
-    type: DELETE_FIRING_SUCCESS,
-    payload: id,
-  });
-  if (allowNavigate) {
-    console.log("Navigating back");
-    history.push("/");
-  }
-  //history.goBack();
-};
+    //console.log("Removed from DB: " + id);
+    dispatch({
+      type: DELETE_FIRING_SUCCESS,
+      payload: id,
+    });
+    if (allowNavigate) {
+      console.log("Navigating back");
+      history.push("/");
+    }
+    //history.goBack();
+  };
 
 // Segment Action Creators
 
-export const createSegment = (formProps, allowNavigate = true) => async (
-  dispatch,
-  getState
-) => {
-  dispatch({ type: CREATE_SEGMENT_REQUEST });
-  formProps.id = uuid();
-  db.ref(userPath() + `/segments/${formProps.id}`).set({
-    ...formProps,
-  });
+export const createSegment =
+  (formProps, allowNavigate = true) =>
+  async (dispatch, getState) => {
+    dispatch({ type: CREATE_SEGMENT_REQUEST });
+    formProps.id = uuid();
+    db.ref(userPath() + `/segments/${formProps.id}`).set({
+      ...formProps,
+    });
 
-  dispatch({
-    type: CREATE_SEGMENT_SUCCESS,
-    payload: { ...formProps },
-  });
-  if (allowNavigate) {
-    history.goBack();
-  }
-};
+    dispatch({
+      type: CREATE_SEGMENT_SUCCESS,
+      payload: { ...formProps },
+    });
+    if (allowNavigate) {
+      history.goBack();
+    }
+  };
 
 export const fetchSegments = () => async (dispatch, getState) => {
   dispatch({ type: FETCH_SEGMENTS_REQUEST });
@@ -523,41 +518,39 @@ export const fetchSegmentsByFiring = (id) => async (dispatch, getState) => {
     });
 };
 
-export const editSegment = (id, formProps, allowNavigate = true) => async (
-  dispatch,
-  getState
-) => {
-  dispatch({ type: EDIT_SEGMENT_REQUEST });
-  formProps.id = id;
-  db.ref(userPath() + `/segments/${id}`).set({
-    ...formProps,
-  });
+export const editSegment =
+  (id, formProps, allowNavigate = true) =>
+  async (dispatch, getState) => {
+    dispatch({ type: EDIT_SEGMENT_REQUEST });
+    formProps.id = id;
+    db.ref(userPath() + `/segments/${id}`).set({
+      ...formProps,
+    });
 
-  dispatch({
-    type: EDIT_SEGMENT_SUCCESS,
-    payload: { ...formProps },
-  });
-  if (allowNavigate) {
-    history.goBack();
-  }
-};
+    dispatch({
+      type: EDIT_SEGMENT_SUCCESS,
+      payload: { ...formProps },
+    });
+    if (allowNavigate) {
+      history.goBack();
+    }
+  };
 
-export const deleteSegment = (id, allowNavigate = true) => async (
-  dispatch,
-  getState
-) => {
-  dispatch({ type: DELETE_SEGMENT_REQUEST });
-  db.ref(userPath() + `/segments/${id}`).remove();
-  dispatch({
-    type: DELETE_SEGMENT_SUCCESS,
-    payload: id,
-  });
-  if (allowNavigate) {
-    history.goBack();
-  }
+export const deleteSegment =
+  (id, allowNavigate = true) =>
+  async (dispatch, getState) => {
+    dispatch({ type: DELETE_SEGMENT_REQUEST });
+    db.ref(userPath() + `/segments/${id}`).remove();
+    dispatch({
+      type: DELETE_SEGMENT_SUCCESS,
+      payload: id,
+    });
+    if (allowNavigate) {
+      history.goBack();
+    }
 
-  //history.goBack();
-};
+    //history.goBack();
+  };
 
 export const attemptLogin = (formProps) => async (dispatch) => {
   //const rFirebase = getFirebase();
@@ -707,6 +700,21 @@ export const getFileListing = async () => {
     });
   //console.log(files);
   return directory_listing;
+};
+
+export const deleteFileFromURI = async (uri) => {
+  //console.log(cloudstore);
+  const reference = cloudstore.refFromURL(uri);
+  console.log("Wanting to delete:");
+  console.log(reference.fullPath);
+  reference
+    .delete()
+    .then(() => {
+      console.log("File Deleted successfully");
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 };
 
 export const deleteFile = async (file) => {
