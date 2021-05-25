@@ -253,7 +253,7 @@ export const deleteProject = (id) => async (dispatch, getState) => {
     type: DELETE_PROJECT_REQUEST,
     payload: id,
   });
-  history.push("/");
+  history.push("/projects");
 };
 
 // KILNs Action Creators
@@ -445,7 +445,7 @@ export const deleteFiring =
     });
     if (allowNavigate) {
       console.log("Navigating back");
-      history.push("/");
+      history.push("/projects");
     }
     //history.goBack();
   };
@@ -565,7 +565,7 @@ export const attemptLogin = (formProps) => async (dispatch) => {
     //console.log("Response");
     //console.log(response);
     dispatch({ type: SIGN_IN_SUCCESS, payload: response });
-    history.push("/");
+    history.push("/projects");
   } catch (err) {
     dispatch({ type: SIGN_IN_FAILURE });
     //console.log("Err");

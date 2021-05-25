@@ -39,6 +39,7 @@ import PreferencePage from "./components/PreferencePage";
 import SuperUserPage from "./components/SuperUserPage";
 import FavouriteFiringsListPage from "./components/FavouriteFiringsListPage";
 import PhotoDeletePage from "./components/PhotoDeletePage";
+import AboutPage from "./components/AboutPage";
 import alertActions from "./actions/alertActions";
 import { AuthProvider } from "./helpers/Auth";
 import "semantic-ui-css/semantic.min.css";
@@ -64,12 +65,18 @@ class App extends React.Component {
             <div>
               <DndProvider backend={HTML5Backend}>
                 <Switch>
+                  <Route path="/" exact component={AboutPage} />
                   <Route path="/login" exact component={LoginPage} />
                   <Route path="/signup" exact component={SignupPage} />
                   <Route path="/signedup" exact component={SignedupPage} />
                   <Route path="/privacy" exact component={PrivacyPage} />
                   <Route path="/support" exact component={SupportPage} />
-                  <PrivateRoute path="/" exact component={ProjectListPage} />
+
+                  <PrivateRoute
+                    path="/projects"
+                    exact
+                    component={ProjectListPage}
+                  />
                   <PrivateRoute
                     path="/projects/:id"
                     exact

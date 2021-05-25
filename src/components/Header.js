@@ -5,7 +5,7 @@ import LoginButton from "./LoginButton";
 const Header = () => {
   return (
     <div className="ui secondary pointing menu">
-      <Link to="/" className="item">
+      <Link to="/projects" className="item">
         Projects
       </Link>
       <Link to="/kilns" className="item">
