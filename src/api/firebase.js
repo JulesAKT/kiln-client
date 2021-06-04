@@ -71,7 +71,7 @@ export const signInWithGoogle = () => {
     .signInWithPopup(googleProvider)
     .then(() => {
       console.log("Logged in!");
-      history.push("/");
+      history.push("/projects");
     });
 };
 
@@ -84,7 +84,7 @@ export const signInWithApple = () => {
     .signInWithPopup(appleProvider)
     .then(() => {
       console.log("Logged in!");
-      history.push("/");
+      history.push("/projects");
     });
 };
 
