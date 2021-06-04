@@ -129,15 +129,15 @@ const DatabaseIntegrity = () => {
   const findOrphanedFilesInStorage = (path, all_files) => {
     const relevantUserData = userData[path];
     let relevantFiles = [...all_files[path]];
-    console.log("Checking: ");
-    console.log(relevantFiles);
-    console.log("Against:");
-    console.log(relevantUserData);
+    //console.log("Checking: ");
+    //console.log(relevantFiles);
+    //console.log("Against:");
+    //console.log(relevantUserData);
     const stillRelevantFiles = relevantFiles.filter((file) => {
       const found = URIWithinUserData(relevantUserData, file);
-      console.log(found);
+      //console.log(found);
       if (found) {
-        console.log(`Deselecting: ${file}`);
+        //console.log(`Deselecting: ${file}`);
       }
       return !found;
     });
@@ -153,7 +153,7 @@ const DatabaseIntegrity = () => {
     /*    if (path !== "IGps1V6PNFPLmFKG98jTGTLTtZ32") {
       return { prefix: path, problems: [] };
     } */
-    console.log(`Prefix User: ${prefix_user}`);
+    //console.log(`Prefix User: ${prefix_user}`);
     if (!userData[prefix_user]) {
       console.log(`Can't find userData for ${prefix_user}`);
       duff_items.push({
@@ -163,8 +163,8 @@ const DatabaseIntegrity = () => {
       });
     }
     const orphanedFiles = findOrphanedFilesInStorage(path, all_files);
-    console.log("Orphaned Files:");
-    console.log(orphanedFiles);
+    //    console.log("Orphaned Files:");
+    //    console.log(orphanedFiles);
     const new_duff_items = orphanedFiles.map((file) => {
       return {
         message: `Orphaned File found at url: ${file}`,

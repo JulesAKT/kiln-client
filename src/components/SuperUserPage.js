@@ -35,6 +35,15 @@ const SuperUserPage = () => {
         Object.keys(userData[key].projects).length,
     }));
 
+  const totals = user_array?.reduce(
+    (acc, user) => ({
+      users: acc.users + 1,
+      kilns: acc.kilns + (user.num_kilns ? user.num_kilns : 0),
+      projects: acc.projects + (user.num_projects ? user.num_projects : 0),
+    }),
+    { users: 0, projects: 0, kilns: 0 }
+  );
+
   const user_columns = [
     {
       name: "Photo",
@@ -65,12 +74,18 @@ const SuperUserPage = () => {
       name: "# Kilns",
       selector: "num_kilns",
       sortable: true,
+      sortFunction: (a, b) =>
+        (a.num_kilns ? a.num_kilns : 0) - (b.num_kilns ? b.num_kilns : 0),
+
       cell: (row) => <div>{row.num_kilns}</div>,
     },
     {
       name: "# Projects",
       selector: "num_projects",
       sortable: true,
+      sortFunction: (a, b) =>
+        (a.num_projects ? a.num_projects : 0) -
+        (b.num_projects ? b.num_projects : 0),
       cell: (row) => <div>{row.num_projects}</div>,
     },
   ];
@@ -100,9 +115,25 @@ const SuperUserPage = () => {
           onClick={handleAccordion}
         >
           <Icon name="dropdown" />
-          Show Users
+          Statistics
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 1}>
+          Users: {totals?.users}
+          <br />
+          Kilns: {totals?.kilns}
+          <br />
+          Projects: {totals?.projects}
+          <br />
+        </Accordion.Content>
+        <Accordion.Title
+          active={activeIndex === 2}
+          index={2}
+          onClick={handleAccordion}
+        >
+          <Icon name="dropdown" />
+          Show Users
+        </Accordion.Title>
+        <Accordion.Content active={activeIndex === 2}>
           <DataTable
             title="Users"
             columns={user_columns}
@@ -115,14 +146,14 @@ const SuperUserPage = () => {
           />
         </Accordion.Content>
         <Accordion.Title
-          active={activeIndex === 2}
-          index={2}
+          active={activeIndex === 3}
+          index={3}
           onClick={handleAccordion}
         >
           <Icon name="dropdown" />
           Show Database Integrity
         </Accordion.Title>
-        <Accordion.Content active={activeIndex === 2}>
+        <Accordion.Content active={activeIndex === 3}>
           <DatabaseIntegrity />
         </Accordion.Content>
       </Accordion>
