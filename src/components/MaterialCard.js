@@ -85,6 +85,9 @@ const MaterialCard = (props) => {
         <Card.Meta>{props.glass_reference && type}</Card.Meta>
         <Card.Description>
           {props.glass_reference ? glass_item : props.description}
+          {props.glass_reference && props.description && (
+            <div>{props.description}</div>
+          )}
           {props.reacting && (
             <div>WILL REACT WITH OTHER MATERIALS IN THIS PROJECT</div>
           )}
