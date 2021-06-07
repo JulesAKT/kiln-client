@@ -104,7 +104,7 @@ const SuperUserPage = () => {
         <div>
           You are current impersonating a user.
           <div onClick={() => dispatch(editFakeUID(null))}>
-            STOP IMPERSONATING
+            STOP IMPERSONATING!
           </div>
         </div>
       )}
