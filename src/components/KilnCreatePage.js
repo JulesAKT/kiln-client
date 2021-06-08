@@ -21,6 +21,9 @@ const KilnCreatePage = (props) => {
           timed_controller: false,
           controller: "dumb",
           ambient_temperature: "16",
+          controller_username: "",
+          controller_password: "",
+          controller_serial: "",
         }}
       />
     </div>

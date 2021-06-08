@@ -306,6 +306,8 @@ export const HookInput = ({ control, name, ...props }) => {
   const className = `field ${props.inline && "inline"} ${
     props.errors[name] && isTouched ? "error" : ""
   }`;
+  //console.log(props.errors[name]);
+  const fieldError = props.errors[name] ? props.errors[name].message : false;
   return (
     <div className={className}>
       {props.multiline ? (
@@ -317,20 +319,11 @@ export const HookInput = ({ control, name, ...props }) => {
           />
         </>
       ) : (
-        <Form.Input label={props.label} {...inputProps}>
-          <input />
+        <Form.Input label={props.label} error={fieldError} {...inputProps}>
+          <input type={props.type} />
           {props.rightLabel && <Label basic>{props.rightLabel}</Label>}
         </Form.Input>
       )}
-      <ErrorMessage
-        errors={props.errors}
-        name={name}
-        render={({ message }) => (
-          <div className="ui error message">
-            <span>{message}</span>
-          </div>
-        )}
-      />
     </div>
   );
 };
