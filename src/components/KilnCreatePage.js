@@ -19,6 +19,7 @@ const KilnCreatePage = (props) => {
           manufacturer: "Paragon",
           name: "",
           timed_controller: false,
+          controller: "dumb",
           ambient_temperature: "16",
         }}
       />

@@ -30,6 +30,7 @@ const KilnForm = ({ initialValues, onSubmit }) => {
   //const timedControllerRef = useRef();
 
   const kilnTypes = [
+    { label: "Cone Art", value: "Cone Art" },
     { label: "Cress", value: "Cress" },
     { label: "Cromartie", value: "Cromartie" },
     { label: "Evenheat", value: "Evenheat" },
@@ -41,6 +42,11 @@ const KilnForm = ({ initialValues, onSubmit }) => {
     { label: "Paragon", value: "Paragon" },
     { label: "Skutt", value: "Skutt" },
     { label: "Rohde", value: "Rohde" },
+  ];
+
+  const controllerTypes = [
+    { label: "Built-In/Default", value: "dumb" },
+    { label: "Bartlett Genesis", value: "bartlett_genesis" },
   ];
 
   const timed_enabled = watch(
@@ -69,6 +75,16 @@ const KilnForm = ({ initialValues, onSubmit }) => {
           errorMessage={errors.manufacturer && "This field is required"}
           items={kilnTypes}
         />
+        <Select
+          control={control}
+          errors={errors}
+          defaultValue={initialValues.controller}
+          name="controller"
+          label="Controller"
+          errorMessage={errors.controller && "This field is required"}
+          items={controllerTypes}
+        />
+
         <CheckBox
           control={control}
           errors={errors}

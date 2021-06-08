@@ -25,9 +25,19 @@ export const kilnLogo = (manufacturer) => {
       return require("../assets/cress-logo.png").default;
     case "Cromartie":
       return require("../assets/cromartie-logo.png").default;
-
+    case "Cone Art":
+      return require("../assets/coneartlogo.png").default;
     default:
       return require("../assets/nabertherm.png").default;
+  }
+};
+
+export const controllerLogo = (controller) => {
+  switch (controller) {
+    case "bartlett_genesis":
+      return require("../assets/bartlett.png").default;
+    default:
+      return undefined;
   }
 };
 

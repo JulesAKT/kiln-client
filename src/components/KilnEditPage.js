@@ -20,6 +20,7 @@ const KilnEditPage = (props) => {
   const new_kiln = {
     timed_controller: false,
     ambient_temperature: "16",
+    controller: "dumb",
     ...kiln,
   };
 

@@ -3,7 +3,7 @@ import { Card, Image, Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import useFirebaseKiln from "../hooks/useFirebaseKiln";
 
-import { kilnLogo } from "../helpers/logoHelpers";
+import { kilnLogo, controllerLogo } from "../helpers/logoHelpers";
 
 const KilnShowPage = (props) => {
   console.log(props);
@@ -18,18 +18,23 @@ const KilnShowPage = (props) => {
       <Card>
         <Card.Header>{kiln.name}</Card.Header>
         <Card.Content>
-          <Image src={kilnLogo(kiln.manufacturer)} avatar />
-          <span>{kiln.manufacturer}</span>
+          <Image src={kilnLogo(kiln.manufacturer)} size="massive" />
+        </Card.Content>
+        <Card.Content extra>
+          {kiln.controller === "bartlett_genesis" && (
+            <Image size="medium" src={controllerLogo(kiln.controller)} />
+          )}
         </Card.Content>
       </Card>
-      <Card>
+
+      <div>
         <Link to={`/kilns/edit/${id}`}>
           <Button>Edit</Button>
         </Link>
         <Link to={`/kilns/delete/${id}`}>
           <Button>Delete</Button>
         </Link>
-      </Card>
+      </div>
     </div>
   );
 };
