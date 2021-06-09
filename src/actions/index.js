@@ -72,7 +72,12 @@ import {
   EDIT_USERDATA_REQUEST,
   EDIT_USERDATA_SUCCESS,
   EDIT_FAKEUID_SUCCESS,
+  BARTLETT_SIGN_IN_SUCCESS,
+  FETCH_BARTLETT_STATUS_REQUEST,
+  FETCH_BARTLETT_STATUS_SUCCESS,
 } from "./types";
+import bartlettReducer from "../reducers/bartlettReducer";
+import { bartkiln, bartlogin } from "../api/bartlett";
 
 const UNKNOWN_ERROR = "Unknown Error";
 
@@ -729,3 +734,53 @@ export const deleteFile = async (file) => {
       console.log(error);
     });
 };
+
+export const attemptBartlettLogin = (formProps) => async (dispatch) => {
+  dispatch(alertActions.clear());
+  console.log("Attempting Bartlett Login");
+  try {
+    const response = await bartlogin.post("login.json", {
+      user: { email: formProps.username, password: formProps.password },
+    });
+    dispatch({ type: BARTLETT_SIGN_IN_SUCCESS, payload: response.data });
+  } catch (err) {
+    if (err && err.response && err.response.data) {
+      const errorString = err.response.data.non_field_errors
+        ? err.response.data.non_field_errors
+        : UNKNOWN_ERROR;
+      console.log("BartlettLogin Error");
+      dispatch(alertActions.error(errorString));
+    } else {
+      dispatch(alertActions.error(UNKNOWN_ERROR));
+    }
+  }
+};
+
+export const fetchBartlettKiln =
+  (serial, username, password) => async (dispatch, getState) => {
+    // For now... let's try to log in every time.
+    await dispatch(
+      attemptBartlettLogin({ username: username, password: password })
+    );
+
+    const token = getState().bartlett.session;
+    console.log(`trying with token: ${token}`);
+    try {
+      const response = await bartkiln.post(
+        `view?token=${token}&user_email=${username}`,
+        { ids: [serial] },
+        { headers: { "x-app-name-token": "kiln-aid" } }
+      );
+      dispatch({ type: FETCH_BARTLETT_STATUS_SUCCESS, payload: response.data });
+    } catch (err) {
+      if (err && err.response && err.response.data) {
+        const errorString = err.response.data.non_field_errors
+          ? err.response.data.non_field_errors
+          : UNKNOWN_ERROR;
+        console.log("BartlettFetchError");
+        dispatch(alertActions.error(errorString));
+      } else {
+        dispatch(alertActions.error(UNKNOWN_ERROR));
+      }
+    }
+  };

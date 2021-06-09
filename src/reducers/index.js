@@ -10,6 +10,7 @@ import pendingReducer from "./pendingReducer";
 import preferencesReducer from "./preferencesReducer";
 import { authentication } from "./authReducer";
 import fakeUIDReducer from "./fakeUIDReducer";
+import bartlettReducer from "./bartlettReducer";
 
 export default combineReducers({
   alert: alert,
@@ -23,4 +24,5 @@ export default combineReducers({
   pending: pendingReducer,
   preferences: preferencesReducer,
   fakeUID: fakeUIDReducer,
+  bartlett: bartlettReducer,
 });
