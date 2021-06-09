@@ -97,6 +97,8 @@ const BartlettGenesisStatus = ({ kiln }) => {
       Mode: {bartlett?.status?.mode}
       <br />
       Step: {bartlett?.status?.firing?.step}
+      <br />
+      Set Point: {bartlett?.status?.firing?.set_pt}
     </div>
   );
 };

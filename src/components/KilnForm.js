@@ -152,7 +152,6 @@ const KilnForm = ({ initialValues, onSubmit }) => {
               defaultValue={initialValues.controller_serial}
               name="controller_serial"
               label="Genesis Controller Serial Number"
-              type="password"
               errorMessage={
                 errors.controller_serial && "This Field is Required"
               }
