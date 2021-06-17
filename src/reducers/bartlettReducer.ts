@@ -2,8 +2,17 @@ import {
   FETCH_BARTLETT_STATUS_SUCCESS,
   BARTLETT_SIGN_IN_SUCCESS,
 } from "../actions/types";
+import { BartlettActions, BartlettType } from "./types";
 
-const bartlettReducer = (state = {}, action) => {
+const initialState: BartlettType = {
+  session: undefined,
+  controller_ids: undefined,
+  controller_names: undefined,
+  auth_status: undefined,
+  kilns: {},
+};
+
+const bartlettReducer = (state = initialState, action: BartlettActions) => {
   switch (action.type) {
     case BARTLETT_SIGN_IN_SUCCESS:
       return {

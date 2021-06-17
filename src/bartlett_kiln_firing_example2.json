@@ -1,0 +1,52 @@
+{
+  "name": "default controller",
+  "users": [],
+  "status": {
+    "_id": "60c77fdfbf49b1000ad4f3da",
+    "alarm": "OFF",
+    "firing": {
+      "step": "Ramp 1 of 2",
+      "set_pt": 212,
+      "fire_min": 16,
+      "fire_hour": 0,
+      "hold_min": 0,
+      "hold_hour": 0,
+      "etr": "0h 0m"
+    },
+    "fw": "LT3140-3.26.0",
+    "num_fire": 54,
+    "mode": "Firing",
+    "t1": 196,
+    "t2": 196,
+    "t3": 196
+  },
+  "config": {
+    "_id": "60c77fdfbf49b1000ad4f3d9",
+    "err_codes": "On",
+    "t_scale": "C",
+    "num_zones": 1
+  },
+  "program": {
+    "_id": "60c77fdfbf49b1000ad4f3db",
+    "name": "Shelf fire",
+    "steps": []
+  },
+  "serial_number": "000620006",
+  "mac_address": "b4e62d01a5e2",
+  "product": null,
+  "external_id": "9panEgzcfDtJ",
+  "createdAt": "2020-01-03T18:29:17.216Z",
+  "updatedAt": "2021-06-14T16:12:15.977Z",
+  "firmware_version": null,
+  "firings_count": 54,
+  "is_premium": false,
+  "is_premium_updated": "2020-12-01T20:59:23.201+00:00",
+  "latest_firing": {
+    "start_time": "1623685268730",
+    "ended": false,
+    "update_time": "1623687075845",
+    "just_ended": false,
+    "ended_time": null
+  },
+  "latest_firing_start_time": "1623685268730"
+}

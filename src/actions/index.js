@@ -76,7 +76,7 @@ import {
   FETCH_BARTLETT_STATUS_REQUEST,
   FETCH_BARTLETT_STATUS_SUCCESS,
 } from "./types";
-import bartlettReducer from "../reducers/bartlettReducer";
+
 import { bartkiln, bartlogin } from "../api/bartlett";
 
 const UNKNOWN_ERROR = "Unknown Error";

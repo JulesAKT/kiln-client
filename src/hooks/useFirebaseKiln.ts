@@ -1,15 +1,12 @@
-import { useSelector } from "react-redux";
+import { useTypedSelector } from "../reducers";
 import { useFirebaseConnect } from "react-redux-firebase";
 import { useFakedUID } from "./useFakeUID";
 
-const useFirebaseKiln = (kiln_id) => {
+const useFirebaseKiln = (kiln_id: string) => {
   const uid = useFakedUID();
-  useFirebaseConnect(
-    [{ path: `/userdata/${uid}/kilns/${kiln_id}` }],
-    [kiln_id]
-  );
+  useFirebaseConnect({ path: `/userdata/${uid}/kilns/${kiln_id}` });
 
-  const kiln = useSelector(
+  const kiln = useTypedSelector(
     (state) =>
       kiln_id &&
       state.firebase.data.userdata &&

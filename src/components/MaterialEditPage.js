@@ -2,7 +2,6 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { editProject } from "../actions";
 import useFirebaseProject from "../hooks/useFirebaseProject";
-import uuid from "react-uuid";
 
 import MaterialForm from "./MaterialForm";
 
