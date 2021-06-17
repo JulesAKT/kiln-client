@@ -19,7 +19,6 @@ const FiringExportPage = (props) => {
   const kiln = useFirebaseKiln(props.match.params.kiln);
   const segments = useFirebaseSegments();
   const preferences = useFirebasePreferences();
-  const dispatch = useDispatch();
   const [naberthermProgramNumber, setNaberthermProgramNumber] = useState({
     value: 1,
   });

@@ -4,7 +4,10 @@ import { Card, Image, Grid, Feed, Icon, Container } from "semantic-ui-react";
 const AboutPage = () => (
   <>
     <div align="center">
-      <img src={require("../assets/kilnhelper_feature_graphic.png").default} />
+      <img
+        src={require("../assets/kilnhelper_feature_graphic.png").default}
+        alt="KilnHelper"
+      />
     </div>
     <h1 align="center">An app for Fused Glass Artists.</h1>
     <div align="center">

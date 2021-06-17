@@ -1,12 +1,12 @@
 import React from "react";
-import { Icon, List, Image, Card, Button, Label } from "semantic-ui-react";
+import { Icon, Image, Card, Button, Label } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
 import useFirebaseGlassData from "../hooks/useFirebaseGlassData";
 
 import {
   getGlassReactionTypeCharacters,
-  getGlassReactionTypeColour,
+  //  getGlassReactionTypeColour,
   getGlassReactionTypeColourName,
   getHexColor,
 } from "../helpers/glassHelpers";
@@ -64,8 +64,8 @@ const MaterialCard = (props) => {
   };
 
   const glass_item = getGlassItem();
-  const colour = getGlassReactionTypeColour(glass_ref, glass_data);
-  const characters = getGlassReactionTypeCharacters(glass_ref, glass_data);
+  //const colour = getGlassReactionTypeColour(glass_ref, glass_data);
+  //const characters = getGlassReactionTypeCharacters(glass_ref, glass_data);
   console.log(`MaterialCard: Reacting = ${props.reacting}`);
   return (
     <Card color={props.reacting ? "red" : undefined}>

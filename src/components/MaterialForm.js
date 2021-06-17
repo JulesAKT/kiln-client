@@ -14,11 +14,12 @@ import {
   HookDropdown as Dropdown,
 } from "../helpers/formHelpers";
 
-const myRenderLabel = (item) => {
+/* const myRenderLabel = (item) => {
   console.log("RenderItem");
   console.log(item);
   return { content: `<>!!!{item.text}</>` };
 };
+*/
 
 const getGlassDataDropdownOptionsFromInventory = (inventory) => {
   console.log(inventory);
@@ -27,7 +28,7 @@ const getGlassDataDropdownOptionsFromInventory = (inventory) => {
   //console.log(inventory);
   return Object.keys(inventory).map((key) => {
     //console.log(inventory[key]);
-    const { color, multicolored, description, type } = inventory[key];
+    const { color, description, type } = inventory[key];
     return {
       key: key,
       text: `${key} - ${description}:${type}`,
