@@ -8,7 +8,6 @@ import { alert } from "./alertReducer";
 //import firingReducer from "./firingReducer";
 //import segmentReducer from "./segmentReducer";
 import pendingReducer from "./pendingReducer";
-import preferencesReducer from "./preferencesReducer";
 import { authentication } from "./authReducer";
 import fakeUIDReducer from "./fakeUIDReducer";
 import bartlettReducer from "./bartlettReducer";
@@ -19,7 +18,7 @@ interface IRootState {
   auth: any;
   firebase: ReturnType<typeof firebaseReducer>;
   pending: any;
-  preferences: any;
+
   fakeUID: any;
   bartlett: ReturnType<typeof bartlettReducer>;
 }
@@ -34,7 +33,6 @@ const rootReducer = combineReducers<IRootState>({
   auth: authentication,
   firebase: firebaseReducer,
   pending: pendingReducer,
-  preferences: preferencesReducer,
   fakeUID: fakeUIDReducer,
   bartlett: bartlettReducer,
 });

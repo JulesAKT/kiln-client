@@ -53,8 +53,9 @@ const KilnForm = ({ initialValues, onSubmit }) => {
     { label: "Northern", value: "Northern" },
     { label: "Olympic", value: "Olympic" },
     { label: "Paragon", value: "Paragon" },
-    { label: "Skutt", value: "Skutt" },
     { label: "Rohde", value: "Rohde" },
+    { label: "Skutt", value: "Skutt" },
+    { label: "Woodrow", value: "Woodrow" },
   ];
 
   const controllerTypes = [

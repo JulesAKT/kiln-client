@@ -27,6 +27,8 @@ export const kilnLogo = (manufacturer) => {
       return require("../assets/cromartie-logo.png").default;
     case "Cone Art":
       return require("../assets/coneartlogo.png").default;
+    case "Woodrow":
+      return require("../assets/woodrow.png").default;
     default:
       return require("../assets/nabertherm.png").default;
   }
