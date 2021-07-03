@@ -14,6 +14,7 @@ import { useDropzone } from "react-dropzone";
 import { Link } from "react-router-dom";
 import _ from "lodash";
 import ImageGallery from "react-image-gallery";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { editProject } from "../actions";
 import useFirebaseKiln from "../hooks/useFirebaseKiln";
@@ -22,6 +23,7 @@ import useFirebaseProject from "../hooks/useFirebaseProject";
 import useFirebaseFirings from "../hooks/useFirebaseFirings";
 import useFirebasePreferences from "../hooks/useFirebasePreferences";
 import useFirebaseGlassData from "../hooks/useFirebaseGlassData";
+import useFirebaseSegments from "../hooks/useFirebaseSegments";
 import usePending from "../hooks/usePending";
 import { glassImage } from "../helpers/logoHelpers";
 import { getReactingMaterials } from "../helpers/glassHelpers";
@@ -31,6 +33,17 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 import FiringCard from "./FiringCard";
 import MaterialCard from "./MaterialCard";
+import { makeScaryURLQuery } from "../helpers/shareHelpers";
+
+const getProjectLink = (project, firings, segments) => {
+  const project_with_data = {
+    project: project,
+    firings: firings,
+    segments: segments,
+  };
+  const query = makeScaryURLQuery(project_with_data);
+  return query;
+};
 
 const ProjectShowPage = (props) => {
   const id = props.match.params.id;
@@ -42,12 +55,19 @@ const ProjectShowPage = (props) => {
   const pending = usePending();
   const upload_pending = pending?.EDIT_PROJECT?.pending;
   const all_firings = useFirebaseFirings();
+  const all_segments = useFirebaseSegments();
   const galleryRef = useRef();
   const firings = _.filter(
     all_firings,
     (firing) => (firing && firing.project_id) === id
   );
-
+  const segments = firings?.reduce(
+    (acc, firing) =>
+      acc.concat(
+        _.filter(all_segments, (segment) => segment?.firing_id === firing.id)
+      ),
+    []
+  );
   let firings_array;
   if (firings) {
     firings_array = Object.values(firings).sort((a, b) => {
@@ -224,6 +244,7 @@ const ProjectShowPage = (props) => {
               )
           )}
       </List>
+
       <div>
         <Link to={`/new_firing/${id}/${newOrder}`}>
           <Button primary>
@@ -239,6 +260,13 @@ const ProjectShowPage = (props) => {
         </Link>
       </div>
       <Divider />
+      <CopyToClipboard text={getProjectLink(project, firings, segments)}>
+        <Button>
+          <Icon name="share" />
+          Share Project Link (not yet completed)
+        </Button>
+      </CopyToClipboard>
+
       {upload_pending ? (
         <p>
           <Button>Uploading...</Button>
@@ -256,6 +284,7 @@ const ProjectShowPage = (props) => {
           )}
         </div>
       )}
+
       {gallery_photos && (
         <ImageGallery
           items={gallery_photos}
