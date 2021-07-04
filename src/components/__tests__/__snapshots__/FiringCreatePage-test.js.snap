@@ -3,56 +3,75 @@
 exports[`FiringCreatePage should render against a snapshot 1`] = `
 <div>
   <div>
-    <form
-      class="ui error form"
+    <div
+      class="ui segment"
     >
-      <div
-        class="ui card"
+      <form
+        class="ui form"
       >
         <div
-          class="field "
+          class="field undefined "
         >
-          <label>
-            Firing Name
-          </label>
-          <input
-            name="name"
-            value=""
-          />
           <div
-            class="ui error message"
-          />
+            class="field"
+          >
+            <label>
+              Firing Name
+            </label>
+            <div
+              class="ui input"
+            >
+              <input
+                name="name"
+                value=""
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div
-        class="ui card"
-      >
         <div
-          class="field "
+          class="field"
         >
           <label>
-            Notes
+            Firing Date
           </label>
-          <textarea
-            name="notes"
-            rows="3"
-          />
           <div
-            class="ui error message"
-          />
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                class=""
+                type="text"
+                value="04 Jul 2021"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div
-        class="ui card"
-      >
+        <div
+          class="field undefined "
+        >
+          <div
+            class="field"
+          >
+            <label>
+              Notes
+            </label>
+            <textarea
+              name="notes"
+              rows="8"
+            />
+          </div>
+        </div>
         <button
-          class="ui button"
-          type="submit"
+          class="ui disabled button"
+          disabled=""
+          tabindex="-1"
         >
           Update
         </button>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </div>
 `;

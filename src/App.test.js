@@ -14,6 +14,8 @@ it("renders without crashing", async () => {
     </Root>
   );
 
-  await waitForElement((content) => getByText(/Projects/));
-  expect(getByText(/Projects/));
+  await waitForElement((content) =>
+    getByText(/An app for Fused Glass Artists./)
+  );
+  expect(getByText(/An app for Fused Glass Artists./));
 });
