@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import { Button, Icon, Segment, Header, Table, Ref } from "semantic-ui-react";
 import { kilnIsExportable } from "../helpers/exportHelpers";
+import { decodeScaryURLQueryParameter } from "../helpers/shareHelpers";
 import FiringGraph from "./FiringGraph";
 
 import {
@@ -19,30 +20,63 @@ import {
 import { convertDegreesInSegment, degreeText } from "../helpers/unitHelpers";
 import { convertSegmentsToTimedController } from "../helpers/timedController";
 
-//import SegmentRow from "./SegmentRow";
-//import { DropTarget } from "react-dnd";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import _ from "lodash";
 
-//import { defined } from "react-native-reanimated";
-
 class FiringShowPage extends Component {
   componentDidMount() {
-    this.props.dispatch(fetchSegmentsByFiring(this.props.match.params.id));
-    this.props.dispatch(fetchFiring(this.props.match.params.id));
-    this.props.dispatch(fetchPreferences());
-    this.props.dispatch(fetchProjects());
-    this.props.dispatch(fetchKilns());
+    if (this.props.match.params.id) {
+      this.props.dispatch(fetchSegmentsByFiring(this.props.match.params.id));
+      this.props.dispatch(fetchFiring(this.props.match.params.id));
+      this.props.dispatch(fetchProjects());
+      this.props.dispatch(fetchKilns());
+      this.props.dispatch(fetchPreferences());
+    }
   }
-
   render() {
-    const firing = this.props.firing;
-    const segments = this.props.segments;
     const id = this.props.match.params.id;
     const preferences = this.props.preferences;
     const projects = this.props.projects;
-    const project = projects[firing?.project_id];
-    const kiln = this.props.kilns[project?.kiln];
+
+    let firings, firing, segments, project, kiln;
+
+    const searchParams = new URLSearchParams(this.props.location.search);
+    const shared_project_payload = searchParams.get("p");
+    if (!shared_project_payload) {
+      //console.log("Not Shared");
+      segments = this.props.segments;
+      project = projects[firing?.project_id];
+      kiln = this.props.kilns[project?.kiln];
+      firing = this.props.firing;
+    } else {
+      let firings_array, all_segments;
+      [project, firings_array, all_segments] = decodeScaryURLQueryParameter(
+        shared_project_payload
+      );
+      firings = firings_array.reduce(
+        (o, firing) => ({
+          ...o,
+          [firing.id]: firing,
+        }),
+        {}
+      );
+      segments = all_segments.filter((segment) => segment.firing_id === id);
+      //console.log(segments);
+      /*       segments = segments_array.reduce(
+        (o, segment) => ({
+          ...o,
+          [segment.id]: segment,
+        }),
+        {}
+      ); */
+      kiln = {};
+      //console.log(segments);
+      firing = firings?.[id];
+    }
+    //console.log(firing);
+    //console.log(segments);
+
+    const readOnly = !!shared_project_payload;
     const degrees =
       preferences && preferences.degrees
         ? preferences && preferences.degrees
@@ -77,7 +111,7 @@ class FiringShowPage extends Component {
     );
 
     const renderDeleteIcon = () => {
-      if (segments_array.length === 0) {
+      if (segments_array.length === 0 && !readOnly) {
         return (
           <span>
             <Link to={`/firing/delete/${id}`}>
@@ -119,6 +153,7 @@ class FiringShowPage extends Component {
               firing.favourite = true;
               this.props.dispatch(editFiring(id, firing, false));
             }}
+            disabled={readOnly}
           >
             Mark as Favourite
           </Button>
@@ -130,6 +165,7 @@ class FiringShowPage extends Component {
               firing.favourite = false;
               this.props.dispatch(editFiring(id, firing, false));
             }}
+            disabled={readOnly}
           >
             Unmark as Favourite
           </Button>
@@ -166,7 +202,7 @@ class FiringShowPage extends Component {
     };
 
     const onDragEnd = (result) => {
-      if (!result.destination) {
+      if (!result.destination || readOnly) {
         return;
       }
       console.log(
@@ -255,19 +291,20 @@ class FiringShowPage extends Component {
                 )}
               </Droppable>
             </Table>
-
-            <Link
-              to={`/new_segment/${id}/${
-                Math.max(...sorted_segments_array.map((s) => s.order), 0) + 1
-              }`}
-            >
-              <Icon name="add" />
-              Add Segment
-            </Link>
+            {!readOnly && (
+              <Link
+                to={`/new_segment/${id}/${
+                  Math.max(...sorted_segments_array.map((s) => s.order), 0) + 1
+                }`}
+              >
+                <Icon name="add" />
+                Add Segment
+              </Link>
+            )}
           </Segment>
 
           {renderFavouriteButton()}
-          {kilnIsExportable(kiln) && (
+          {kilnIsExportable(kiln) && !readOnly && (
             <Link to={`/firing/export/${kiln.id}/${id}/`}>
               <Button>Export Firing</Button>
             </Link>

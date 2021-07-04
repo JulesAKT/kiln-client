@@ -45,7 +45,7 @@ const getProjectLink = (project, firings, segments) => {
     segments: segments,
   };
   const query = makeScaryURLQuery(
-    "https://kilnhelper.web.app/shared_project/",
+    "https://kilnhelper.web.app/shared_project/?p=",
     project_with_data
   );
   return query;
@@ -53,7 +53,6 @@ const getProjectLink = (project, firings, segments) => {
 
 const ProjectShowPage = (props) => {
   const id = props.match.params.id;
-  const shared_project_payload = props.match.params.payload;
   const [copied, setCopied] = useState(false);
   const dispatch = useDispatch();
   let project, firings, segments, kiln;
@@ -61,7 +60,8 @@ const ProjectShowPage = (props) => {
   const firebase_kiln = useFirebaseKiln(firebase_project?.kiln);
   const all_firings = useFirebaseFirings();
   const all_segments = useFirebaseSegments();
-  console.log(id);
+  let shared_project_payload;
+  //console.log(id);
   if (id) {
     firings = _.filter(
       all_firings,
@@ -78,12 +78,14 @@ const ProjectShowPage = (props) => {
     kiln = firebase_kiln;
   } else {
     const searchParams = new URLSearchParams(props.location.search);
-    const shared_project_payload = searchParams.get("p");
+    shared_project_payload = searchParams.get("p");
     [project, firings, segments] = decodeScaryURLQueryParameter(
       shared_project_payload
     );
     kiln = {};
   }
+  const readOnly = !id;
+
   const preferences = useFirebasePreferences();
   const glass_data = useFirebaseGlassData(project?.glass);
   const pending = usePending();
@@ -104,7 +106,7 @@ const ProjectShowPage = (props) => {
   }
 
   const onDrop = useCallback((accepted_files) => {
-    console.log(accepted_files);
+    //console.log(accepted_files);
     let newProject = _.cloneDeep(project);
     // Ugly. But works. contact the list, but if there's nothing to concat TO... then just return the list.
     newProject.photos = newProject.photos
@@ -112,7 +114,7 @@ const ProjectShowPage = (props) => {
           accepted_files.map((p) => ({ photo: p, type: "After" }))
         )
       : accepted_files.map((p) => ({ photo: p, type: "After" }));
-    console.log(newProject);
+    //console.log(newProject);
     dispatch(editProject(project.id, newProject, true));
   });
 
@@ -134,7 +136,7 @@ const ProjectShowPage = (props) => {
     project.thickness
   );
   //console.log(firings_array);
-  console.log(project);
+  //console.log(project);
   const gallery_photos =
     project.photos &&
     project.photos.map((photo, index) => ({
@@ -144,20 +146,19 @@ const ProjectShowPage = (props) => {
       index: index,
       isFavourite: photo.isFavourite,
     }));
-
   const favouriteClicked = (index) => {
-    console.log(`Make Favourite: ${index}`);
+    //console.log(`Make Favourite: ${index}`);
     let newProject = _.cloneDeep(project);
     if (newProject.photos[index].isFavourite) {
-      console.log("Removing Favourite");
+      //console.log("Removing Favourite");
       newProject.photos[index].isFavourite = false;
     } else {
-      console.log("Adding Favourite");
+      //console.log("Adding Favourite");
       newProject.photos = newProject.photos.map((photo) => ({
         ...photo,
         isFavourite: false,
       }));
-      console.log(newProject.photos);
+      //console.log(newProject.photos);
       newProject.photos[index].isFavourite = true;
     }
 
@@ -179,13 +180,13 @@ const ProjectShowPage = (props) => {
   const number_of_glass_types =
     project.materials &&
     [...new Set(Object.values(project?.materials).map((m) => m.glass))].length;
-  console.log(`Number of glass types: ${number_of_glass_types}`);
-  console.log("REACTING MATERIALS");
-  console.log(reacting_materials);
+  //console.log(`Number of glass types: ${number_of_glass_types}`);
+  //console.log("REACTING MATERIALS");
+  //console.log(reacting_materials);
 
   return (
     <div>
-      {project.photo && <Image avatar src={project.photo} size="medium" />}
+      Name: {project.name}
       <div>
         Kiln:<span>{kiln.name}</span>
         <span>
@@ -203,20 +204,22 @@ const ProjectShowPage = (props) => {
         <Rating maxRating={5} rating={project.stars} disabled={true} />
       </div>
       {project.notes && <div>Notes: {project.notes}</div>}
-      <div>
-        <Link to={`/projects/edit/${id}`}>
-          <Button primary>
-            <Icon name="edit" />
-            Edit Project
-          </Button>
-        </Link>
-        <Link to={`/projects/delete/${id}`}>
-          <Button negative>
-            <Icon name="trash" />
-            Delete Project
-          </Button>
-        </Link>
-      </div>
+      {!readOnly && (
+        <div>
+          <Link to={`/projects/edit/${id}`}>
+            <Button primary>
+              <Icon name="edit" />
+              Edit Project
+            </Button>
+          </Link>
+          <Link to={`/projects/delete/${id}`}>
+            <Button negative>
+              <Icon name="trash" />
+              Delete Project
+            </Button>
+          </Link>
+        </div>
+      )}
       <Divider />
       {materials_key_array && (
         <>
@@ -245,42 +248,52 @@ const ProjectShowPage = (props) => {
         </>
       )}
       <div>
-        <Link to={`/new_material/${id}/${material_new_order}`}>
-          <Button primary>
-            <Icon name="add" />
-            Add Material
-          </Button>
-        </Link>
+        {!readOnly && (
+          <Link to={`/new_material/${id}/${material_new_order}`}>
+            <Button primary>
+              <Icon name="add" />
+              Add Material
+            </Button>
+          </Link>
+        )}
       </div>
-
       <Divider />
       <Header as="h3">Firings</Header>
       <List>
         {firings_array &&
           firings_array.map(
             (firing, index) =>
-              firing && (
+              firing &&
+              (!readOnly ? (
                 <Link to={`/firings/${firing.id}`} key={firing.id}>
                   <FiringCard {...firing} index={index} />
                 </Link>
-              )
+              ) : (
+                <Link
+                  to={`/shared_firing/${firing.id}?p=${shared_project_payload}`}
+                  key={firing.id}
+                >
+                  <FiringCard {...firing} index={index} />
+                </Link>
+              ))
           )}
       </List>
-
-      <div>
-        <Link to={`/new_firing/${id}/${newOrder}`}>
-          <Button primary>
-            <Icon name="add" />
-            Add Firing
-          </Button>
-        </Link>
-        <Link to={`/new_favourite_firing/${id}`}>
-          <Button primary>
-            <Icon name="star" />
-            Add Favourite
-          </Button>
-        </Link>
-      </div>
+      {!readOnly && (
+        <div>
+          <Link to={`/new_firing/${id}/${newOrder}`}>
+            <Button primary>
+              <Icon name="add" />
+              Add Firing
+            </Button>
+          </Link>
+          <Link to={`/new_favourite_firing/${id}`}>
+            <Button primary>
+              <Icon name="star" />
+              Add Favourite
+            </Button>
+          </Link>
+        </div>
+      )}
       <Divider />
       {id && (
         <>
