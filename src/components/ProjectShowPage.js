@@ -1,4 +1,4 @@
-import React, { useRef, useCallback } from "react";
+import React, { useRef, useCallback, useState } from "react";
 import { useDispatch } from "react-redux";
 import {
   List,
@@ -33,7 +33,10 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 import FiringCard from "./FiringCard";
 import MaterialCard from "./MaterialCard";
-import { makeScaryURLQuery } from "../helpers/shareHelpers";
+import {
+  makeScaryURLQuery,
+  decodeScaryURLQueryParameter,
+} from "../helpers/shareHelpers";
 
 const getProjectLink = (project, firings, segments) => {
   const project_with_data = {
@@ -41,33 +44,52 @@ const getProjectLink = (project, firings, segments) => {
     firings: firings,
     segments: segments,
   };
-  const query = makeScaryURLQuery(project_with_data);
+  const query = makeScaryURLQuery(
+    "https://kilnhelper.web.app/shared_project/",
+    project_with_data
+  );
   return query;
 };
 
 const ProjectShowPage = (props) => {
   const id = props.match.params.id;
+  const shared_project_payload = props.match.params.payload;
+  const [copied, setCopied] = useState(false);
   const dispatch = useDispatch();
-  const project = useFirebaseProject(id);
-  const kiln = useFirebaseKiln(project && project.kiln);
+  let project, firings, segments, kiln;
+  const firebase_project = useFirebaseProject(id);
+  const firebase_kiln = useFirebaseKiln(firebase_project?.kiln);
+  const all_firings = useFirebaseFirings();
+  const all_segments = useFirebaseSegments();
+  console.log(id);
+  if (id) {
+    firings = _.filter(
+      all_firings,
+      (firing) => (firing && firing.project_id) === id
+    );
+    segments = firings?.reduce(
+      (acc, firing) =>
+        acc.concat(
+          _.filter(all_segments, (segment) => segment?.firing_id === firing.id)
+        ),
+      []
+    );
+    project = firebase_project;
+    kiln = firebase_kiln;
+  } else {
+    const searchParams = new URLSearchParams(props.location.search);
+    const shared_project_payload = searchParams.get("p");
+    [project, firings, segments] = decodeScaryURLQueryParameter(
+      shared_project_payload
+    );
+    kiln = {};
+  }
   const preferences = useFirebasePreferences();
   const glass_data = useFirebaseGlassData(project?.glass);
   const pending = usePending();
   const upload_pending = pending?.EDIT_PROJECT?.pending;
-  const all_firings = useFirebaseFirings();
-  const all_segments = useFirebaseSegments();
+
   const galleryRef = useRef();
-  const firings = _.filter(
-    all_firings,
-    (firing) => (firing && firing.project_id) === id
-  );
-  const segments = firings?.reduce(
-    (acc, firing) =>
-      acc.concat(
-        _.filter(all_segments, (segment) => segment?.firing_id === firing.id)
-      ),
-    []
-  );
   let firings_array;
   if (firings) {
     firings_array = Object.values(firings).sort((a, b) => {
@@ -260,31 +282,40 @@ const ProjectShowPage = (props) => {
         </Link>
       </div>
       <Divider />
-      <CopyToClipboard text={getProjectLink(project, firings, segments)}>
-        <Button>
-          <Icon name="share" />
-          Share Project Link (not yet completed)
-        </Button>
-      </CopyToClipboard>
-
-      {upload_pending ? (
-        <p>
-          <Button>Uploading...</Button>
-        </p>
-      ) : (
-        <div {...getRootProps()}>
-          <input {...getInputProps()} />
-          {isDragActive ? (
-            <Button>Drop Photo Here</Button>
-          ) : (
-            <Button style={{ marginBottom: "10px" }}>
-              <Icon name="photo" />
-              Add Photo
+      {id && (
+        <>
+          <CopyToClipboard
+            text={getProjectLink(project, firings, segments)}
+            onCopy={() => setCopied(true)}
+          >
+            <Button>
+              <Icon name="share" />
+              Share Project Link (not yet completed)
             </Button>
+          </CopyToClipboard>
+          {copied && (
+            <span style={{ color: "red" }}>Link Copied to Clipboard</span>
           )}
-        </div>
-      )}
 
+          {upload_pending ? (
+            <p>
+              <Button>Uploading...</Button>
+            </p>
+          ) : (
+            <div {...getRootProps()}>
+              <input {...getInputProps()} />
+              {isDragActive ? (
+                <Button>Drop Photo Here</Button>
+              ) : (
+                <Button style={{ marginBottom: "10px" }}>
+                  <Icon name="photo" />
+                  Add Photo
+                </Button>
+              )}
+            </div>
+          )}
+        </>
+      )}
       {gallery_photos && (
         <ImageGallery
           items={gallery_photos}

@@ -82,6 +82,11 @@ class App extends React.Component {
                     exact
                     component={ProjectShowPage}
                   />
+                  <Route
+                    path="/shared_project/"
+                    exact
+                    component={ProjectShowPage}
+                  />
                   <PrivateRoute
                     path="/new_project"
                     exact
