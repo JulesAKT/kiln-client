@@ -10,6 +10,7 @@ import useFirebasePreferences from "../hooks/useFirebasePreferences";
 import history from "../history";
 import ProjectCard from "./ProjectCard";
 import { convertLengthUnit } from "../helpers/unitHelpers";
+import { findSuitablePhoto } from "../helpers/photoHelpers";
 
 const ProjectListPage = ({ navigation }) => {
   const [detail, setDetail] = useState(false);
@@ -44,7 +45,9 @@ const ProjectListPage = ({ navigation }) => {
       name: "Photo",
       selector: "photo",
       sortable: false,
-      cell: (row) => <Image size="small" src={row.photo} />,
+      cell: (row) => (
+        <Image size="mini" src={findSuitablePhoto(row, "small").uri} />
+      ),
     },
     {
       name: "Name",
