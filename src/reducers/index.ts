@@ -11,7 +11,9 @@ import pendingReducer from "./pendingReducer";
 import { authentication } from "./authReducer";
 import fakeUIDReducer from "./fakeUIDReducer";
 import bartlettReducer from "./bartlettReducer";
-
+import sharedProjectReducer from "./sharedProjectReducer";
+import sharedFiringReducer from "./sharedFiringReducer";
+import sharedSegmentReducer from "./sharedSegmentReducer";
 interface IRootState {
   alert: any;
   form: any;
@@ -24,6 +26,9 @@ interface IRootState {
   kilns: any;
   fakeUID: any;
   bartlett: ReturnType<typeof bartlettReducer>;
+  shared_projects: any;
+  shared_firings: any;
+  shared_segments: any;
 }
 
 const rootReducer = combineReducers<IRootState>({
@@ -38,6 +43,9 @@ const rootReducer = combineReducers<IRootState>({
   pending: pendingReducer,
   fakeUID: fakeUIDReducer,
   bartlett: bartlettReducer,
+  shared_projects: sharedProjectReducer,
+  shared_firings: sharedFiringReducer,
+  shared_segments: sharedSegmentReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

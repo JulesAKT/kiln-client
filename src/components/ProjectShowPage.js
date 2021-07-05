@@ -16,7 +16,12 @@ import _ from "lodash";
 import ImageGallery from "react-image-gallery";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { editProject } from "../actions";
+import {
+  editProject,
+  createSharedProject,
+  createSharedFiring,
+  createSharedSegment,
+} from "../actions";
 import useFirebaseKiln from "../hooks/useFirebaseKiln";
 import { findSuitablePhoto } from "../helpers/photoHelpers";
 import useFirebaseProject from "../hooks/useFirebaseProject";
@@ -24,6 +29,12 @@ import useFirebaseFirings from "../hooks/useFirebaseFirings";
 import useFirebasePreferences from "../hooks/useFirebasePreferences";
 import useFirebaseGlassData from "../hooks/useFirebaseGlassData";
 import useFirebaseSegments from "../hooks/useFirebaseSegments";
+
+import { useFakedUID } from "../hooks/useFakeUID";
+import useSharedFirebaseProject from "../hooks/useSharedFirebaseProject";
+import useSharedFirebaseFirings from "../hooks/useSharedFirebaseFirings";
+import useSharedFirebaseSegments from "../hooks/useSharedFirebaseSegments";
+
 import usePending from "../hooks/usePending";
 import { glassImage } from "../helpers/logoHelpers";
 import { getReactingMaterials } from "../helpers/glassHelpers";
@@ -36,23 +47,15 @@ import MaterialCard from "./MaterialCard";
 import {
   makeScaryURLQuery,
   decodeScaryURLQueryParameter,
+  storeSharedProject,
 } from "../helpers/shareHelpers";
-
-const getProjectLink = (project, firings, segments) => {
-  const project_with_data = {
-    project: project,
-    firings: firings,
-    segments: segments,
-  };
-  const query = makeScaryURLQuery(
-    "https://kilnhelper.web.app/shared_project/",
-    project_with_data
-  );
-  return query;
-};
 
 const ProjectShowPage = (props) => {
   const id = props.match.params.id;
+  const sharing_uid = props.match.params.sharing_user_id;
+  const shared_project_id = props.match.params.shared_project_id;
+  const uid = useFakedUID();
+
   const [copied, setCopied] = useState(false);
   const dispatch = useDispatch();
   let project, firings, segments, kiln;
@@ -60,7 +63,20 @@ const ProjectShowPage = (props) => {
   const firebase_kiln = useFirebaseKiln(firebase_project?.kiln);
   const all_firings = useFirebaseFirings();
   const all_segments = useFirebaseSegments();
-  let shared_project_payload;
+
+  const shared_project = useSharedFirebaseProject(
+    sharing_uid,
+    shared_project_id
+  );
+  const all_shared_firings = useSharedFirebaseFirings(sharing_uid);
+  const all_shared_segments = useSharedFirebaseSegments(sharing_uid);
+
+  const storeSharedProject = (project, firings, segments) => {
+    dispatch(createSharedProject(project));
+    firings.forEach((firing) => dispatch(createSharedFiring(firing)));
+    segments.forEach((segment) => dispatch(createSharedSegment(segment)));
+  };
+
   //console.log(id);
   if (id) {
     firings = _.filter(
@@ -77,13 +93,22 @@ const ProjectShowPage = (props) => {
     project = firebase_project;
     kiln = firebase_kiln;
   } else {
-    console.log(props.location);
-    [, shared_project_payload] =
-      props.location.pathname.match(/shared_project\/(.*)/);
-    //    shared_project_payload = props.match.params.payload;
-    [project, firings, segments] = decodeScaryURLQueryParameter(
-      shared_project_payload
+    project = shared_project;
+    firings = _.filter(
+      all_shared_firings,
+      (firing) => (firing && firing.project_id) === shared_project_id
     );
+    segments = firings?.reduce(
+      (acc, firing) =>
+        acc.concat(
+          _.filter(
+            all_shared_segments,
+            (segment) => segment?.firing_id === firing.id
+          )
+        ),
+      []
+    );
+
     kiln = {};
   }
   const readOnly = !id;
@@ -273,7 +298,7 @@ const ProjectShowPage = (props) => {
                 </Link>
               ) : (
                 <Link
-                  to={`/shared_firing/${firing.id}?p=${shared_project_payload}`}
+                  to={`/shared_firing/${sharing_uid}/${firing.id}`}
                   key={firing.id}
                 >
                   <FiringCard {...firing} index={index} />
@@ -301,8 +326,11 @@ const ProjectShowPage = (props) => {
       {id && (
         <>
           <CopyToClipboard
-            text={getProjectLink(project, firings, segments)}
-            onCopy={() => setCopied(true)}
+            text={`https://kilnhelper.web.app/shared_project/${uid}/${project.id}`}
+            onCopy={() => {
+              storeSharedProject(project, firings, segments);
+              setCopied(true);
+            }}
           >
             <Button>
               <Icon name="share" />

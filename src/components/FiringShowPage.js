@@ -13,6 +13,9 @@ import {
   fetchProjects,
   fetchKilns,
   fetchSegmentsByFiring,
+  fetchSharedSegmentsByFiring,
+  fetchSharedFiring,
+  fetchSharedProjects,
   editFiring,
   editSegment,
 } from "../actions";
@@ -22,15 +25,28 @@ import { convertSegmentsToTimedController } from "../helpers/timedController";
 
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import _ from "lodash";
+import { isThisTypeNode } from "typescript";
 
 class FiringShowPage extends Component {
   componentDidMount() {
-    if (this.props.match.params.id) {
-      this.props.dispatch(fetchSegmentsByFiring(this.props.match.params.id));
-      this.props.dispatch(fetchFiring(this.props.match.params.id));
+    const params = this.props.match.params;
+    this.props.dispatch(fetchPreferences());
+    if (params.id) {
+      this.props.dispatch(fetchSegmentsByFiring(params.id));
+      this.props.dispatch(fetchFiring(params.id));
       this.props.dispatch(fetchProjects());
       this.props.dispatch(fetchKilns());
-      this.props.dispatch(fetchPreferences());
+    } else {
+      this.props.dispatch(
+        fetchSharedSegmentsByFiring(
+          params.sharing_user_id,
+          params.shared_firing_id
+        )
+      );
+      this.props.dispatch(
+        fetchSharedFiring(params.sharing_user_id, params.shared_firing_id)
+      );
+      this.props.dispatch(fetchSharedProjects(params.sharing_user_id));
     }
   }
   render() {
@@ -42,25 +58,18 @@ class FiringShowPage extends Component {
 
     const searchParams = new URLSearchParams(this.props.location.search);
     const shared_project_payload = searchParams.get("p");
-    if (!shared_project_payload) {
+    if (id) {
       //console.log("Not Shared");
       segments = this.props.segments;
       project = projects[firing?.project_id];
       kiln = this.props.kilns[project?.kiln];
       firing = this.props.firing;
     } else {
+      console.log("NOT SHARED PROCESSING");
       let firings_array, all_segments;
-      [project, firings_array, all_segments] = decodeScaryURLQueryParameter(
-        shared_project_payload
-      );
-      firings = firings_array.reduce(
-        (o, firing) => ({
-          ...o,
-          [firing.id]: firing,
-        }),
-        {}
-      );
-      segments = all_segments.filter((segment) => segment.firing_id === id);
+      segments = this.props.shared_segments;
+      firing = this.props.shared_firing;
+      project = this.props.shared_projects?.[firing?.project_id];
       //console.log(segments);
       /*       segments = segments_array.reduce(
         (o, segment) => ({
@@ -71,7 +80,6 @@ class FiringShowPage extends Component {
       ); */
       kiln = {};
       //console.log(segments);
-      firing = firings?.[id];
     }
     //console.log(firing);
     //console.log(segments);
@@ -323,7 +331,8 @@ class FiringShowPage extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  return {
+  console.log(state);
+  const stateProps = {
     segments: _.filter(state.segments, (segment) => {
       return segment.firing_id === ownProps.match.params.id;
     }),
@@ -331,7 +340,19 @@ const mapStateToProps = (state, ownProps) => {
     preferences: state.preferences,
     projects: state.projects,
     kilns: state.kilns,
+    shared_projects:
+      state.shared_projects[ownProps.match.params.sharing_user_id],
+    shared_segments: _.filter(
+      state.shared_segments[ownProps.match.params.sharing_user_id],
+      (segment) => segment?.firing_id === ownProps.match.params.shared_firing_id
+    ),
+    shared_firing:
+      state.shared_firings[ownProps.match.params.sharing_user_id]?.[
+        ownProps.match.params.shared_firing_id
+      ],
   };
+  console.log(stateProps);
+  return stateProps;
 };
 
 export default connect(mapStateToProps)(FiringShowPage);

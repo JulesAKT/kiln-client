@@ -83,7 +83,7 @@ class App extends React.Component {
                     component={ProjectShowPage}
                   />
                   <Route
-                    path="/shared_project/:payload"
+                    path="/shared_project/:sharing_user_id/:shared_project_id"
                     component={ProjectShowPage}
                   />
                   <PrivateRoute
@@ -111,7 +111,10 @@ class App extends React.Component {
                     exact
                     component={FiringShowPage}
                   />
-                  <Route path="/shared_firing/:id" component={FiringShowPage} />
+                  <Route
+                    path="/shared_firing/:sharing_user_id/:shared_firing_id"
+                    component={FiringShowPage}
+                  />
                   <PrivateRoute
                     path="/new_firing/:id/:order"
                     exact

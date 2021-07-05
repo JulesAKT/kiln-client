@@ -74,6 +74,18 @@ import {
   EDIT_FAKEUID_SUCCESS,
   BARTLETT_SIGN_IN_SUCCESS,
   FETCH_BARTLETT_STATUS_SUCCESS,
+  CREATE_SHARED_PROJECT_REQUEST,
+  CREATE_SHARED_PROJECT_SUCCESS,
+  CREATE_SHARED_FIRING_REQUEST,
+  CREATE_SHARED_FIRING_SUCCESS,
+  CREATE_SHARED_SEGMENT_REQUEST,
+  CREATE_SHARED_SEGMENT_SUCCESS,
+  FETCH_SHARED_SEGMENTS_BY_FIRING_REQUEST,
+  FETCH_SHARED_SEGMENTS_BY_FIRING_SUCCESS,
+  FETCH_SHARED_FIRING_REQUEST,
+  FETCH_SHARED_FIRING_SUCCESS,
+  FETCH_SHARED_PROJECTS_REQUEST,
+  FETCH_SHARED_PROJECTS_SUCCESS,
 } from "./types";
 
 import { bartkiln, bartlogin } from "../api/bartlett";
@@ -347,7 +359,7 @@ export const createFiring =
 
     dispatch({
       type: CREATE_FIRING_SUCCESS,
-      payload: { ...formProps },
+      payload: { ...newProps },
     });
     if (allowNavigate) {
       history.goBack();
@@ -685,6 +697,17 @@ const userPath = () => {
   return "/userdata/" + uid;
 };
 
+const sharedUserPath = () => {
+  const fakeUID = store.getState().fakeUID.uid;
+  const uid = fakeUID ? fakeUID : store.getState().firebase.auth.uid;
+  return "/shared_userdata/" + uid;
+};
+
+const sharedUID = () => {
+  const fakeUID = store.getState().fakeUID.uid;
+  return fakeUID ? fakeUID : store.getState().firebase.auth.uid;
+};
+
 export const getFileListing = async () => {
   const directory_listing = {};
   await cloudstore
@@ -783,3 +806,108 @@ export const fetchBartlettKiln =
       }
     }
   };
+
+export const createSharedProject =
+  (formProps) => async (dispatch, getState) => {
+    //console.log(token);
+    console.log(formProps);
+    dispatch({ type: CREATE_SHARED_PROJECT_REQUEST });
+    db.ref(sharedUserPath() + `/projects/${formProps.id}`).set({
+      ...formProps,
+    });
+    dispatch({
+      type: CREATE_PROJECT_SUCCESS,
+      payload: { sharing_user_uid: sharedUID(), project: formProps },
+    });
+  };
+
+export const createSharedFiring = (formProps) => async (dispatch) => {
+  console.log("createFiring");
+  console.log(formProps);
+  dispatch({ type: CREATE_SHARED_FIRING_REQUEST });
+  let newProps = { ...formProps };
+
+  db.ref(sharedUserPath() + `/firings/${formProps.id}`).set({
+    ...newProps,
+  });
+
+  dispatch({
+    type: CREATE_SHARED_FIRING_SUCCESS,
+    payload: { sharing_user_uid: sharedUID(), firing: newProps },
+  });
+};
+
+export const createSharedSegment = (formProps) => async (dispatch) => {
+  dispatch({ type: CREATE_SHARED_SEGMENT_REQUEST });
+  db.ref(sharedUserPath() + `/segments/${formProps.id}`).set({
+    ...formProps,
+  });
+
+  dispatch({
+    type: CREATE_SHARED_SEGMENT_SUCCESS,
+    payload: { sharing_user_uid: sharedUID(), segment: formProps },
+  });
+};
+
+export const fetchSharedSegmentsByFiring =
+  (sharing_user_uid, firing_id) => async (dispatch, getState) => {
+    dispatch({ type: FETCH_SHARED_SEGMENTS_BY_FIRING_REQUEST });
+
+    db.ref(sharingUserPath(sharing_user_uid) + "/segments")
+      .orderByChild("firing_id")
+      .equalTo(firing_id)
+      .once("value", (snapshot) => {
+        //console.log("fetchFiringsByProject returned");
+        //console.log(snapshot.val());
+        dispatch({
+          type: FETCH_SHARED_SEGMENTS_BY_FIRING_SUCCESS,
+          payload: {
+            sharing_user_uid: sharing_user_uid,
+            firing_id: firing_id,
+            segments: snapshot.val(),
+          },
+        });
+      });
+  };
+export const fetchSharedFiring =
+  (sharing_user_uid, firing_id) => async (dispatch, getState) => {
+    dispatch({ type: FETCH_SHARED_FIRING_REQUEST });
+    db.ref(sharingUserPath(sharing_user_uid) + `/firings/${firing_id}`).once(
+      "value",
+      (snapshot) => {
+        //console.log("FetchProjects");
+        //console.log(snapshot.val());
+        dispatch({
+          type: FETCH_SHARED_FIRING_SUCCESS,
+          payload: {
+            sharing_user_uid: sharing_user_uid,
+            firing: snapshot.val(),
+          },
+        });
+      }
+    );
+  };
+
+export const fetchSharedProjects =
+  (sharing_user_uid) => async (dispatch, getState) => {
+    dispatch({ type: FETCH_SHARED_PROJECTS_REQUEST });
+    //console.log("Reading from: " + userPath() + "/projects");
+    db.ref(sharingUserPath(sharing_user_uid) + "/projects").once(
+      "value",
+      (snapshot) => {
+        //console.log("FetchProjects");
+        //console.log(snapshot.val());
+        dispatch({
+          type: FETCH_SHARED_PROJECTS_SUCCESS,
+          payload: {
+            sharing_user_uid: sharing_user_uid,
+            projects: snapshot.val(),
+          },
+        });
+      }
+    );
+  };
+
+export const sharingUserPath = (sharing_user_uid) => {
+  return "/shared_userdata/" + sharing_user_uid;
+};

@@ -44,7 +44,7 @@ export const controllerLogo = (controller) => {
 };
 
 export const glassImage = (glass) => {
-  console.log(`glassImage - ${glass}`);
+  //console.log(`glassImage - ${glass}`);
   switch (glass) {
     case "Spectrum":
       return require("../assets/spectrum.jpg").default;

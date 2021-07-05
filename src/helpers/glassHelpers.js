@@ -114,7 +114,7 @@ export const getGlassReactionTypeColourName = (code, glass_data) => {
 
 export const getReactingMaterials = (materials, glass_data) => {
   //console.log(glass_data);
-  console.log("getReactingMaterials");
+  //  console.log("getReactingMaterials");
   const materials_with_reaction_types = _.mapValues(materials, (material) => ({
     ...material,
     reaction_type:
@@ -122,7 +122,7 @@ export const getReactingMaterials = (materials, glass_data) => {
         ?.reaction_type ||
       glass_data?.reactions[material.glass_reference]?.reaction_type,
   }));
-  console.log(materials_with_reaction_types);
+  //console.log(materials_with_reaction_types);
   const all_reaction_types = [
     ...new Set(
       Object.values(materials_with_reaction_types).map(
@@ -131,16 +131,16 @@ export const getReactingMaterials = (materials, glass_data) => {
     ),
   ].filter((a) => a != null);
 
-  console.log("All Reaction Types");
-  console.log(all_reaction_types);
+  //console.log("All Reaction Types");
+  //console.log(all_reaction_types);
   // Annotate the materials list to contain only the entries that have a reaction within them.
   const reacting_materials = Object.fromEntries(
     Object.entries(materials_with_reaction_types).filter(([code, material]) =>
       reactsWith(material.reaction_type, all_reaction_types)
     )
   );
-  console.log("Reacting Materials");
-  console.log(reacting_materials);
+  //console.log("Reacting Materials");
+  //console.log(reacting_materials);
   return reacting_materials;
 };
 
