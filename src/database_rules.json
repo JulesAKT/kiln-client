@@ -2,28 +2,43 @@
   "rules": {
     ".read": false,
     ".write": false,
-      "userdata": {
-        "$user_id": {
-          ".read": "$user_id === auth.uid",
-          ".write": "$user_id === auth.uid",
-          "projects" : {
-            ".indexOn": "kiln"
-          },
-          "firings" : {
-            ".indexOn" : ["project_id","favourite"]
-          },
-            "segments" : {
-            ".indexOn" : "firing_id"
-          }
+    "userdata": {
+      ".read": "auth.uid==='68jLhdzhOAPhZVGnTsJBynJQEuG3'",
+      "$user_id": {
+        ".read": "$user_id === auth.uid",
+        ".write": "$user_id === auth.uid",
+        "projects": {
+          ".indexOn": "kiln"
+        },
+        "firings": {
+          ".indexOn": ["project_id", "favourite"]
+        },
+        "segments": {
+          ".indexOn": "firing_id"
         }
-      },
-        "users": {        "$user_id": {
-          ".read": "$user_id === auth.uid",
-          ".write": "$user_id === auth.uid"
+      }
+    },
+    "users": {
+      ".read": "auth.uid==='68jLhdzhOAPhZVGnTsJBynJQEuG3'",
+      "$user_id": {
+        ".read": "$user_id === auth.uid",
+        ".write": "$user_id === auth.uid"
+      }
+    },
+    "templates": { ".read": true, ".write": "false" },
+    "glassdata": { ".read": true, ".write": "false" },
+    "shared_userdata": {
+      ".read": "auth.uid==='68jLhdzhOAPhZVGnTsJBynJQEuG3'",
+      "$user_id": {
+        ".read": true,
+        ".write": "$user_id === auth.uid",
+        "firings": {
+          ".indexOn": ["project_id", "favourite"]
+        },
+        "segments": {
+          ".indexOn": "firing_id"
         }
-      },
-        "templates": { ".read": true,
-          ".write": "false"}
-    
+      }
+    }
   }
 }

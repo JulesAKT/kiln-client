@@ -67,6 +67,7 @@ const MaterialCard = (props) => {
   //const colour = getGlassReactionTypeColour(glass_ref, glass_data);
   //const characters = getGlassReactionTypeCharacters(glass_ref, glass_data);
   console.log(`MaterialCard: Reacting = ${props.reacting}`);
+  console.log(props.readOnly);
   return (
     <Card color={props.reacting ? "red" : undefined}>
       <Card.Content>
@@ -94,20 +95,22 @@ const MaterialCard = (props) => {
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <div className="ui two buttons">
-          <Link to={`/edit_material/${props.project.id}/${props.id}`}>
-            <Button primary>
-              <Icon name="edit" />
-              Edit
-            </Button>
-          </Link>
-          <Link to={`/delete_material/${props.project.id}/${props.id}`}>
-            <Button negative>
-              <Icon name="trash" />
-              Delete
-            </Button>
-          </Link>
-        </div>
+        {!props.readOnly && (
+          <div className="ui two buttons">
+            <Link to={`/edit_material/${props.project.id}/${props.id}`}>
+              <Button primary>
+                <Icon name="edit" />
+                Edit
+              </Button>
+            </Link>
+            <Link to={`/delete_material/${props.project.id}/${props.id}`}>
+              <Button negative>
+                <Icon name="trash" />
+                Delete
+              </Button>
+            </Link>
+          </div>
+        )}
       </Card.Content>
     </Card>
   );

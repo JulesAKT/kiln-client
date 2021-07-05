@@ -83,8 +83,7 @@ class App extends React.Component {
                     component={ProjectShowPage}
                   />
                   <Route
-                    path="/shared_project/"
-                    exact
+                    path="/shared_project/:payload"
                     component={ProjectShowPage}
                   />
                   <PrivateRoute

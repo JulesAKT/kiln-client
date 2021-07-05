@@ -45,7 +45,7 @@ const getProjectLink = (project, firings, segments) => {
     segments: segments,
   };
   const query = makeScaryURLQuery(
-    "https://kilnhelper.web.app/shared_project/?p=",
+    "https://kilnhelper.web.app/shared_project/",
     project_with_data
   );
   return query;
@@ -77,8 +77,10 @@ const ProjectShowPage = (props) => {
     project = firebase_project;
     kiln = firebase_kiln;
   } else {
-    const searchParams = new URLSearchParams(props.location.search);
-    shared_project_payload = searchParams.get("p");
+    console.log(props.location);
+    [, shared_project_payload] =
+      props.location.pathname.match(/shared_project\/(.*)/);
+    //    shared_project_payload = props.match.params.payload;
     [project, firings, segments] = decodeScaryURLQueryParameter(
       shared_project_payload
     );
@@ -241,6 +243,7 @@ const ProjectShowPage = (props) => {
                     {...project.materials[key]}
                     id={key}
                     reacting={typeof reacting_materials[key] !== "undefined"}
+                    readOnly={readOnly}
                   />
                 )
             )}
