@@ -247,6 +247,21 @@ const ProjectShowPage = (props) => {
           </Link>
         </div>
       )}
+      {readOnly && (
+        <div>
+          {uid ? (
+            <Button negative>
+              <Icon name="copy" />
+              Store a copy in your own List of Projects
+            </Button>
+          ) : (
+            <div>
+              If you were logged in to Kiln Helper, you would be able to save a
+              copy of this
+            </div>
+          )}
+        </div>
+      )}
       <Divider />
       {materials_key_array && (
         <>

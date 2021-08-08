@@ -3,6 +3,7 @@
       "details": [
            {
              "appIDs": ["BMC5RD847N.uk.org.ourhouse.kiln-helper"],
+             "paths":"/shared_project/*",
              "components": [
                {
                   "#": "no_universal_links",
