@@ -1,20 +1,27 @@
 {
   "applinks": {
-      "details": [
-           {
-             "appIDs": ["BMC5RD847N.uk.org.ourhouse.kiln-helper"],
-             "paths":"/shared_project/*",
-             "components": [
-               {
-                  "#": "no_universal_links",
-                  "exclude": true,
-                  "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
-               }
-             ]
-           }
-       ]
-   },
-   "webcredentials": {
-      "apps": [ "BMC5RD847N.uk.org.ourhouse.kiln-helper.web" ]
-   }
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "bmc5rd847n.uk.org.ourhouse.kiln-helper"
+        ],
+        "appID": "bmc5rd847n.uk.org.ourhouse.kiln-helper",
+        "components": [
+          {
+            "/": "/shared_project/*",
+            "comment": "Matches any URL whose path starts with /shared_project/"
+          }
+        ],
+        "paths": [
+          "/shared_project/*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "bmc5rd847n.uk.org.ourhouse.kiln-helper.web"
+    ]
+  }
 }
