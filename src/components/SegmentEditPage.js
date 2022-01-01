@@ -1,5 +1,5 @@
 import React from "react";
-//import { Text, ScrollView, Button, Alert } from "react-native";
+
 import { Segment, Header } from "semantic-ui-react";
 import { useDispatch } from "react-redux";
 import SegmentForm from "./SegmentForm";

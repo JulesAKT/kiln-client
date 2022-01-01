@@ -1,5 +1,5 @@
 import React from "react";
-//import { Text, ScrollView } from "react-native";
+
 import { useDispatch } from "react-redux";
 import { createKiln } from "../actions";
 import KilnForm from "./KilnForm";

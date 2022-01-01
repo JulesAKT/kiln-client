@@ -171,7 +171,7 @@ export const HookImageInput = ({ control, name, ...props }) => {
         <input
           type="file"
           {...omit(inputProps, ["onChange"])}
-          onChange={(event) => handleChange(event, inputProps)}
+          onChange={(event) => handleChange(event)}
           accept=".jpg,.jpeg,.gif,.png,.heic"
           id={name}
           style={{ opacity: 0 }}
@@ -239,7 +239,7 @@ export const ImageInput = ({ input, label, meta }) => {
             ></Image>
             <input
               type="file"
-              onChange={(event) => handleChange(event, input)}
+              onChange={(event) => handleChange(event)}
               {...input}
               accept=".jpg,.jpeg,.gif,.png,.heic"
               id={input.name}
@@ -280,11 +280,7 @@ export const FileInput = ({ input, label, meta }) => {
     <div className={className}>
       <label>{label}</label>
       <Image src={photo_url} size="small" />
-      <input
-        type="file"
-        onChange={(event) => handleChange(event, input)}
-        {...input}
-      />
+      <input type="file" onChange={(event) => handleChange(event)} {...input} />
       {renderError(meta)}
     </div>
   );

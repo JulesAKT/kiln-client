@@ -121,6 +121,7 @@ const DatabaseIntegrity = () => {
             }
           });
         }
+        return false;
       });
     }
     //console.log(`Couldn't find: ${file}`);
@@ -146,22 +147,22 @@ const DatabaseIntegrity = () => {
     return stillRelevantFiles;
   };
   const findStorageProblemInPrefix = (path, all_files) => {
-    let duff_items = [];
+    //let duff_items = [];
 
-    const prefix_user = path;
+    //const prefix_user = path;
     // Horrid debug stuff to limit the amount of work being done
     /*    if (path !== "IGps1V6PNFPLmFKG98jTGTLTtZ32") {
       return { prefix: path, problems: [] };
     } */
     //console.log(`Prefix User: ${prefix_user}`);
-    if (!userData[prefix_user]) {
+    /* if (!userData[prefix_user]) {
       console.log(`Can't find userData for ${prefix_user}`);
       duff_items.push({
         message: `Can't find userData for ${prefix_user}`,
         object_type: "MISSING_USERDATA",
         object_reference: prefix_user,
       });
-    }
+    } */
     const orphanedFiles = findOrphanedFilesInStorage(path, all_files);
     //    console.log("Orphaned Files:");
     //    console.log(orphanedFiles);
@@ -172,7 +173,7 @@ const DatabaseIntegrity = () => {
         object_reference: file,
       };
     });
-    duff_items.concat(new_duff_items);
+    // duff_items.concat(new_duff_items);
     return { prefix: path, problems: new_duff_items };
   };
   const userData = useFirebaseUserData();
@@ -234,7 +235,7 @@ const DatabaseIntegrity = () => {
         <div>
           Found Inconsistent Records:
           {Object.keys(usersWithDuffItems).map((key) => (
-            <ul>
+            <ul key={usersWithDuffItems[key].user_id}>
               {usersWithDuffItems[key].problems.length !== 0 && (
                 <li key={key}>
                   {usersWithDuffItems[key].user_id}

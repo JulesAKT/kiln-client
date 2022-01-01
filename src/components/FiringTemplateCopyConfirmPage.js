@@ -32,7 +32,7 @@ const FiringTemplateCopyConfirmPage = (props) => {
   );
 
   const sorted_segments_array = Object.values(my_segments).sort((a, b) => {
-    return a.order > b.order ? 1 : -1;
+    return a.order - b.order;
   });
 
   const dispatch = useDispatch();

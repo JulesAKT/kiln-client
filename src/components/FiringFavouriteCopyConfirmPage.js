@@ -23,7 +23,7 @@ const FiringFavouriteCopyConfirmPage = (props) => {
     (segment) => segment.firing_id === firing_id
   );
   const sorted_segments_array = Object.values(my_segments).sort((a, b) => {
-    return a.order > b.order ? 1 : -1;
+    return a.order - b.order;
   });
 
   const dispatch = useDispatch();
@@ -66,7 +66,7 @@ const FiringFavouriteCopyConfirmPage = (props) => {
             </Table.Row>
           </Table.Header>
           {sorted_segments_array.map((segment, index) => (
-            <Table.Row>
+            <Table.Row key={segment.id}>
               <Table.Cell>{segment.name}</Table.Cell>
               <Table.Cell>{segment.rate}</Table.Cell>
               <Table.Cell>{segment.temperature}</Table.Cell>

@@ -122,13 +122,13 @@ const ProjectShowPage = (props) => {
   let firings_array;
   if (firings) {
     firings_array = Object.values(firings).sort((a, b) => {
-      return a.order > b.order ? 1 : -1;
+      return a.order - b.order;
     });
   }
   let materials_key_array;
   if (project?.materials) {
     materials_key_array = Object.keys(project.materials).sort((a, b) => {
-      return project.materials[a].order > project.materials[b].order ? 1 : -1;
+      return project.materials[a].order - project.materials[b].order;
     });
   }
 

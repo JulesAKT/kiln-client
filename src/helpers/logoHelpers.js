@@ -29,6 +29,7 @@ export const kilnLogo = (manufacturer) => {
       return require("../assets/coneartlogo.png").default;
     case "Woodrow":
       return require("../assets/woodrow.png").default;
+    // deepcode ignore DuplicateCaseBody: Temporary fall-back
     default:
       return require("../assets/nabertherm.png").default;
   }

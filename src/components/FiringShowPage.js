@@ -109,7 +109,7 @@ class FiringShowPage extends Component {
     const segments_array = Object.values(correct_degrees_segments);
 
     const sorted_segments_array = segments_array.sort((a, b) => {
-      return a.order > b.order ? 1 : -1;
+      return a.order - b.order;
     });
 
     //const graph_segments_array = sorted_segments_array;

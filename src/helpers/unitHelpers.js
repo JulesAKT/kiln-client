@@ -247,7 +247,7 @@ export const convertLengthUnit = (sourceUnit = "mm", destUnit, length) => {
     return (length / 25.4).toFixed(2);
   }
   if (sourceUnit === "in" && destUnit === "mm") {
-    return Math.round(length * 25.4, 0);
+    return Math.round(length * 25.4);
   }
 };
 
@@ -257,6 +257,7 @@ export const lengthName = (length_unit) => {
       return "Inches";
     case "mm":
       return "Millimetres";
+    // deepcode ignore DuplicateCaseBody: In place in case we need more units later
     default:
       return "Millimetres";
   }

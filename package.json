@@ -14,7 +14,7 @@
     "@types/react-dom": "^17.0.7",
     "@types/react-router-dom": "^5.1.7",
     "@types/redux-form": "^8.3.1",
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "date-fns": "^2.15.0",
     "file-saver": "^2.0.5",
     "firebase": "^7.17.2",
@@ -37,7 +37,6 @@
     "react-redux": "^7.2.1",
     "react-redux-firebase": "^3.10.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
     "react-uuid": "^1.0.2",
     "react-widgets": "^4.5.0",
     "react-widgets-moment": "^4.0.28",
@@ -77,6 +76,7 @@
     ]
   },
   "devDependencies": {
-    "copyfiles": "^2.4.1"
+    "copyfiles": "^2.4.1",
+    "react-scripts": "4.0.3"
   }
 }

@@ -67,7 +67,6 @@ def GlassType(code):
         "0044": "Sheet Glass Reed texture 3mm Iridized",
         "0045": "Sheet Glass Accordion texture 3mm",
         "0046": "Sheet Glass Accordion texture 3mm Iridized",
-        "0046": "Sheet Glass Prismatic texture 3mm",
         "0047": "Sheet Glass Prismatic Texture 3mm Iridized",
         "0048": "Sheet Glass Prismatic 3mm Iridized",
         "0050": "Sheet Glass Thin rolled 2mm",

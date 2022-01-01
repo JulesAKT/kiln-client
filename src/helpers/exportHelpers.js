@@ -19,7 +19,7 @@ export const generateExportFile = (
   }
   //console.log(segments);
   const sorted_segments_array = segments.sort((a, b) => {
-    return a.order > b.order ? 1 : -1;
+    return a.order - b.order;
   });
 
   const correct_degrees_segments = sorted_segments_array.map((segment) =>
