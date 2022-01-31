@@ -1,4 +1,374 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.22.1
-ignore: {}
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-D3COLOR-1076592:
+    - victory > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-histogram > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-histogram > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-area > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-axis > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-bar > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-box-plot > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-brush-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-brush-line > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-candlestick > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-polar-axis > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-shared-events > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-chart > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-cursor-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-selection-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.583Z'
+    - victory > victory-tooltip > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-voronoi-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-zoom-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-create-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-errorbar > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-group > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-histogram > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-legend > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-line > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-pie > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-scatter > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-stack > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-voronoi > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-area > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-axis > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-bar > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-box-plot > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-brush-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-brush-line > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-candlestick > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-polar-axis > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-shared-events > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-chart > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-cursor-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-selection-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-tooltip > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-voronoi-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-zoom-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-create-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-errorbar > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-group > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-histogram > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-legend > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-line > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-pie > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-scatter > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-stack > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-voronoi > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-area > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-axis > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-bar > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-box-plot > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-brush-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-brush-line > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-candlestick > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-polar-axis > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-shared-events > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.584Z'
+    - victory > victory-chart > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-cursor-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-selection-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-tooltip > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-voronoi-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-zoom-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-create-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-errorbar > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-group > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-histogram > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-legend > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-line > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-pie > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-scatter > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-stack > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-voronoi > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-chart > victory-axis > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-histogram > victory-bar > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-create-container > victory-brush-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-chart > victory-polar-axis > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-chart > victory-shared-events > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-group > victory-shared-events > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-stack > victory-shared-events > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-create-container > victory-cursor-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-create-container > victory-selection-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-voronoi-container > victory-tooltip > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-create-container > victory-voronoi-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-create-container > victory-zoom-container > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-chart > victory-axis > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-histogram > victory-bar > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-create-container > victory-brush-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.585Z'
+    - victory > victory-chart > victory-polar-axis > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-chart > victory-shared-events > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-group > victory-shared-events > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-stack > victory-shared-events > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-cursor-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-selection-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-voronoi-container > victory-tooltip > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-voronoi-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-zoom-container > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-chart > victory-axis > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-histogram > victory-bar > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-brush-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-chart > victory-polar-axis > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-chart > victory-shared-events > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-group > victory-shared-events > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-stack > victory-shared-events > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-cursor-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-selection-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-voronoi-container > victory-tooltip > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-voronoi-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-zoom-container > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-voronoi-container > victory-tooltip > victory-core > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-voronoi-container > victory-tooltip > victory-core > d3-scale > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+    - victory > victory-create-container > victory-voronoi-container > victory-tooltip > victory-core > d3-scale > d3-interpolate > d3-color:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+  SNYK-JS-NANOID-2332193:
+    - react-data-table-component > shortid > nanoid:
+        reason: None given
+        expires: '2022-02-11T16:14:45.586Z'
+  SNYK-JS-NODEFETCH-2342118:
+    - firebase > @firebase/firestore > node-fetch:
+        reason: None given
+        expires: '2022-02-19T15:25:21.628Z'
+    - firebase > @firebase/functions > node-fetch:
+        reason: None given
+        expires: '2022-02-19T15:25:21.628Z'
 patch: {}
