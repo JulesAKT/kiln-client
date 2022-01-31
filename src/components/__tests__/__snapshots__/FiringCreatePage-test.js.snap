@@ -43,7 +43,7 @@ exports[`FiringCreatePage should render against a snapshot 1`] = `
               <input
                 class=""
                 type="text"
-                value="31 Dec 2021"
+                value="20 Jan 2022"
               />
             </div>
           </div>

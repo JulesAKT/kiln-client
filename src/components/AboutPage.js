@@ -86,6 +86,14 @@ const AboutPage = () => (
                   <Feed.Summary>Print Projects</Feed.Summary>
                 </Feed.Content>
               </Feed.Event>
+              <Feed.Event>
+                <Feed.Label>
+                  <Icon name="sun" />
+                </Feed.Label>
+                <Feed.Content>
+                  <Feed.Summary>Light or Dark Mode</Feed.Summary>
+                </Feed.Content>
+              </Feed.Event>
             </Feed>
           </Grid.Row>
         </Grid.Column>
@@ -109,6 +117,16 @@ const AboutPage = () => (
                 <Feed.Content>
                   <Feed.Summary>
                     Export Firings for Import to Nabertherm Kilns
+                  </Feed.Summary>
+                </Feed.Content>
+              </Feed.Event>
+              <Feed.Event>
+                <Feed.Label>
+                  <Icon name="magnify" />
+                </Feed.Label>
+                <Feed.Content>
+                  <Feed.Summary>
+                    Live Monitoring of supported smart Kiln Controllers
                   </Feed.Summary>
                 </Feed.Content>
               </Feed.Event>

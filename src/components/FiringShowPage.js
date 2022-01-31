@@ -61,9 +61,9 @@ class FiringShowPage extends Component {
     if (id) {
       //console.log("Not Shared");
       segments = this.props.segments;
+      firing = this.props.firing;
       project = projects[firing?.project_id];
       kiln = this.props.kilns[project?.kiln];
-      firing = this.props.firing;
     } else {
       console.log("NOT SHARED PROCESSING");
       let firings_array, all_segments;

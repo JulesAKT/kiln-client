@@ -257,7 +257,8 @@ const ProjectShowPage = (props) => {
           ) : (
             <div>
               If you were logged in to Kiln Helper, you would be able to save a
-              copy of this
+              copy of this. To log in, you need to have purchased a copy of the
+              Kilnhelper app on either the Apple or Google Play App Stores.
             </div>
           )}
         </div>

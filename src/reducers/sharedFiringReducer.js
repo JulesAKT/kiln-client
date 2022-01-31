@@ -1,5 +1,3 @@
-import _ from "lodash";
-
 import {
   CREATE_SHARED_FIRING_SUCCESS,
   FETCH_SHARED_FIRINGS_SUCCESS,
