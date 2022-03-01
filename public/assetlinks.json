@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mrtickle.kiln",
+      "sha256_cert_fingerprints": [
+        "8A:D7:75:93:C2:3D:AC:03:73:01:7B:BA:B6:D3:56:E6:03:6D:F5:6C:ED:53:1C:48:BA:23:D7:A4:1E:B4:8B:8D"
+      ]
+    }
+  }
+]

@@ -34,15 +34,9 @@
 -0057 Black, Thin, IRD, Silver
 -0058 Black, Thin, IRD, Gold
 -0060 Black, Sgl-rol, 6 mm
--0070 Black, Granite
--0071 Black, Granite, Iridised
--HR70 Black, Granitie, Herringbone Ripple
--HR71 Black, Granitie, Herringbone Ripple, IRD
--RI70 Black, Granite, Ripple
--RI71 Black, Granite, Ripple, IRD
 000101-0030 Stiff Black, Dbl-rol
 -0050 Stiff Black, Thin
-000102 Blue Black
+000102 Blue black
 000104-0030 glacier Blue, Dbl-rol
 -0050 glacier Blue, Thin
 000108-0030 Powder Blue, Dbl-rol
@@ -76,7 +70,6 @@
 -0050 artichoke, Thin
 000132-0030 Driftwood Gray, Dbl-rol
 -0050 Driftwood Gray, Thin
-000136-0000 Deco Gray
 000136-0030 Deco Gray, Dbl-rol
 -0050 Deco Gray, Thin
 000137-0000 French Vanilla, Sgl-rol
@@ -141,8 +134,6 @@
 -0050 Pink, Thin
 000303-0030 Dusty Lilac, Dbl-rol
 -0050 Dusty Lilac, Thin
-000304-0030 Lavender, Dbl-rol
--0050 Lavender, Thin
 000305-0030 Salmon Pink, Dbl-rol
 -0050 Salmon Pink, Thin
 000309-0030 Cinnabar, Dbl-rol
@@ -226,12 +217,6 @@
 -0057 Clear, Thin, IRD, Silver
 -0058 Clear, Thin, IRD, Gold
 -0060 Clear, 6 mm
--0070 Clear, Granite
--0071 Clear, Granite, IRD
--HR70 Clear, Granite, Herringbone Ripple
--HR71 Clear, Granite, Herringbone Ripple, IRD
--RI70 Clear, Granite, Ripple
--RI71 Clear, Granite, Ripple, IRD
 001105-0030 Deep Plum, Dbl-rol
 -0031 Deep Plum, Dbl-rol, IRD, RBW
 -0050 Deep Plum, Thin
@@ -317,10 +302,6 @@
 -0031 Caribbean Blue, dbl-RL, IRD, RBW
 -0050 Caribbean Blue, thin
 -0051 Caribbean Blue, thin, IRD, RBW
-00176-0030 Peacock Blue, Dbl-RL
--0031 Peacock Blue, Dbl-RL, IRD, RBW
--0050 Peacock Blue, Thin
--0051 Peacock Blue, Thin, RBW
 001205-0030 Light Coral, Dbl-RL
 -0031 Light Coral, Dbl-RL, IRD, RBW
 -0050 Light Coral, Thin
@@ -726,7 +707,6 @@
 000337 Butterscotch
 000403 Opaline
 000420 Cream
-000421 Petal Pink
 000920 warm white
 !Transparent Frit
 !!!-0001
@@ -905,12 +885,9 @@
 008418-0401 Mixed
 !Opalescent Rod
 !!!-0576
-000013 Opaque White
 000016 Turquoise Opaque
 000024 Tomato Red
 000034 Light Peach Cream
-000100 Black
-000101 Stiff Black
 000108 Powder Blue
 000112 Mint Green
 000114 Cobalt Blue
@@ -940,7 +917,6 @@
 000227 Golden Green
 000241 moss green
 000243 Translucent White
-000301 Pink
 000303 Dusty Lilac
 000309 Cinnabar
 000312 Pea Pod Green
@@ -1071,16 +1047,7 @@
 001714 Blue Lustre
 001717 Copper Green Lustre
 001806 Juniper Blue Tint
-001807 Juniper Blue Tint
-001807 Grass Green Tint
-001808 Aqua Blue Tint
 001812 Seaweed Aventurine
-001820 Pale Yellow Tint
-001821 Erbium Pink Tint
-001834 Coral Orange Tint
-001841 Spruce Green Tint
-001842 Light Neo-Lavender Shift Tint
-001859 Rhubarb Shift Tint
 !Transparent Stringer
 !!!-0507
 !!!-0272
