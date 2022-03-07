@@ -1,4 +1,4 @@
-!Opalescent Sheet Glass
+!Opalescent Sheet
 000009-0030 Reactive Cloud, Dbl-rol
 -0050 Reactive Cloud, Thin
 000013-0030 Opaque White, Dbl-rol
@@ -12,7 +12,7 @@
 000100-0000 Black, Sgl-rol
 -0021 Black, Soft Ripple
 -0022 Black, Herringbone Ripple
--0024 black, soft ripple, IRD
+-0024 Black, soft ripple, IRD
 -0025 Black, Herringbone Ripple, IRD, RBW
 -0030 Black, Dbl-rol
 -0031 Black, Dbl-rol, IRD, RBW
@@ -36,8 +36,8 @@
 -0060 Black, Sgl-rol, 6 mm
 -0070 Black, Granite
 -0071 Black, Granite, Iridised
--HR70 Black, Granitie, Herringbone Ripple
--HR71 Black, Granitie, Herringbone Ripple, IRD
+-HR70 Black, Granite, Herringbone Ripple
+-HR71 Black, Granite, Herringbone Ripple, IRD
 -RI70 Black, Granite, Ripple
 -RI71 Black, Granite, Ripple, IRD
 000101-0030 Stiff Black, Dbl-rol
@@ -179,7 +179,7 @@
 -0050 Petal Pink, Thin
 000920-0030 warm white, Dbl-rol
 -0050 warm white, Thin
-!Transparent Sheet Glass 
+!Transparent Sheet
 001009-0030 Reactive Ice Clear, Dbl-rol
 -0031 Reactive Ice Clear, Dbl-rol, IRD, RBW
 -0050 Reactive Ice Clear, Thin
@@ -317,7 +317,7 @@
 -0031 Caribbean Blue, dbl-RL, IRD, RBW
 -0050 Caribbean Blue, thin
 -0051 Caribbean Blue, thin, IRD, RBW
-00176-0030 Peacock Blue, Dbl-RL
+001176-0030 Peacock Blue, Dbl-RL
 -0031 Peacock Blue, Dbl-RL, IRD, RBW
 -0050 Peacock Blue, Thin
 -0051 Peacock Blue, Thin, RBW
@@ -502,7 +502,7 @@
 001401-0380 Crystal Clear 3 mm
 001401-0480 Crystal Clear 4 mm
 001401-0680 Crystal Clear 6 mm
-!Streaky Sheet Glass
+!Streaky Sheet
 002020-0030 Clear, Sunflower Yellow Opal, Dbl-RL
 002024-0030 Clear, Red Opal, Dbl-RL
 002026-0030 Clear, Spring Green Opal, Dbl-RL
@@ -590,7 +590,7 @@
 -0030 Cranberry Pink, Azure Blue, White, Dbl-RL
 003501-0000 White, Deep Forest Green, Caramel Opal
 -0030 White, Deep Forest Green, Caramel Opal, dbl-RL
-!Ring Mottles Sheet Glass
+!Ring Mottles Sheet
 006010-0000 Toffee
 006013-0000 White
 006045-0000 Patina Green
@@ -606,7 +606,7 @@
 006343-0000 White, Olive Green, Gold Pink
 006446-0000 White, Turquoise, Lime Green, Gold Pink
 006467-0000 White, Lime green, Turquoise, Gold Pink
-!Collage Sheet Glass
+!Collage Sheet
 !!FRACTURE-STREAMERS
 004010-0000 SPRING: Blue, Green, Aqua and Pink on White
 004011-0000 AUTUMN: Orange, Yellow and Red on White
@@ -657,7 +657,7 @@
 004237-0000 Vanilla and White Frit, Vanilla and White Streamers
 004242-0000 Neo-lavender and Purple Frit, Cobalt Blue and Purple Streamers
 004247-0000 Rainbow frit and Streamers
-!Opalescent Frit
+!Opal Frit
 !!!-0001
 !!!-0002
 !!!-0003
