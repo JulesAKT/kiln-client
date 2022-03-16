@@ -143,6 +143,10 @@
     "reaction_type": "SULFUR/SELENIUM",
     "name": "red amber tint"
   },
+  "002237": {
+    "reaction_type": "SULFUR/SELENIUM",
+    "name": "Warm White, Light Amber"
+  },
   "000104": {
     "reaction_type": "COPPER",
     "name": "GlACIER BLUE OPAL"
@@ -238,6 +242,10 @@
   "001917": {
     "reaction_type": "COPPER",
     "name": "Cilantro Green Tint"
+  },
+  "002176": {
+    "reaction_type": "COPPER",
+    "name": "Peacock Blue, White"
   },
   "000301": {
     "reaction_type": "LEAD",

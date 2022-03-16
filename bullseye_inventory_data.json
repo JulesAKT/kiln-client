@@ -3689,6 +3689,24 @@
       "multicolored": false
     }
   },
+  "001101-0027": {
+    "description": "Clear",
+    "type": "Transparent Seedy",
+    "color": {
+      "rgb": {
+        "r": "255",
+        "g": "255",
+        "b": "255"
+      },
+      "cmyk": {
+        "c": "0",
+        "m": "0",
+        "y": "0",
+        "k": "0"
+      },
+      "multicolored": false
+    }
+  },
   "001101-0030": {
     "description": "Clear",
     "type": "Transparent Sheet Double-rolled 3mm",
@@ -9000,7 +9018,7 @@
     }
   },
   "002020-0030": {
-    "description": "Clear",
+    "description": "Clear and Sunflower Yellow Opal",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9018,7 +9036,7 @@
     }
   },
   "002024-0030": {
-    "description": "Clear",
+    "description": "Clear and Red Opal",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9036,7 +9054,7 @@
     }
   },
   "002026-0030": {
-    "description": "Clear",
+    "description": "Clear and Spring Green Opal",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9054,7 +9072,7 @@
     }
   },
   "002037-0030": {
-    "description": "Clear",
+    "description": "Clear and French Vanilla Opal",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9072,7 +9090,7 @@
     }
   },
   "002047-0030": {
-    "description": "Clear",
+    "description": "Clear and Deep Cobalt Blue Opal",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9090,7 +9108,7 @@
     }
   },
   "002064-0030": {
-    "description": "Clear",
+    "description": "Clear and Egyptian Blue Opal",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9108,7 +9126,7 @@
     }
   },
   "002100-0000": {
-    "description": "Clear",
+    "description": "Clear and Black",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9126,7 +9144,7 @@
     }
   },
   "002100-0030": {
-    "description": "Clear",
+    "description": "Clear and Black",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9144,7 +9162,7 @@
     }
   },
   "002105-0000": {
-    "description": "Blue Opal",
+    "description": "Blue Opal and Plum",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9162,7 +9180,7 @@
     }
   },
   "002105-0030": {
-    "description": "Blue Opal",
+    "description": "Blue Opal and Plum",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9180,7 +9198,7 @@
     }
   },
   "002107-0000": {
-    "description": "White",
+    "description": "White and Light Green",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9198,7 +9216,7 @@
     }
   },
   "002107-0030": {
-    "description": "White",
+    "description": "White and Light Green",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9216,7 +9234,7 @@
     }
   },
   "002108-0000": {
-    "description": "Powder Blue Opal",
+    "description": "Powder Blue Opal and Marine Blue",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9234,7 +9252,7 @@
     }
   },
   "002108-0030": {
-    "description": "Powder Blue Opal",
+    "description": "Powder Blue Opal and Marine Blue",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9252,7 +9270,7 @@
     }
   },
   "002109-0000": {
-    "description": "White",
+    "description": "White and Dark Brown",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9270,7 +9288,7 @@
     }
   },
   "002109-0030": {
-    "description": "White",
+    "description": "White and Dark Brown",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9288,7 +9306,7 @@
     }
   },
   "002112-0000": {
-    "description": "Mint Opal",
+    "description": "Mint Opal and Deep Forest Green",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9306,7 +9324,7 @@
     }
   },
   "002112-0030": {
-    "description": "Mint Opal",
+    "description": "Mint Opal and Deep Forest Green",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9324,7 +9342,7 @@
     }
   },
   "002116-0030": {
-    "description": "Turquoise Blue",
+    "description": "Turquoise Blue and Deep Royal Blue",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9342,7 +9360,7 @@
     }
   },
   "002121-0000": {
-    "description": "Yellow Opal",
+    "description": "Yellow Opal and Deep Forest Green",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9360,7 +9378,7 @@
     }
   },
   "002121-0030": {
-    "description": "Yellow Opal",
+    "description": "Yellow Opal and Deep Forest Green",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9378,7 +9396,7 @@
     }
   },
   "002123-0000": {
-    "description": "White",
+    "description": "White and Orange Opal",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9414,7 +9432,7 @@
     }
   },
   "002124-0000": {
-    "description": "Red Opal",
+    "description": "Red Opal and White",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9432,7 +9450,7 @@
     }
   },
   "002124-0030": {
-    "description": "Red Opal",
+    "description": "Red Opal and White",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9450,7 +9468,7 @@
     }
   },
   "002125-0030": {
-    "description": "Yellow",
+    "description": "Yellow and Red Striker",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9468,7 +9486,7 @@
     }
   },
   "002128-0000": {
-    "description": "Royal Purple",
+    "description": "Royal Purple and Powder Blue Opal",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9486,7 +9504,7 @@
     }
   },
   "002128-0030": {
-    "description": "Royal Purple",
+    "description": "Royal Purple and Powder Blue Opal",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9504,7 +9522,7 @@
     }
   },
   "002129-0000": {
-    "description": "Charcoal Gray",
+    "description": "Charcoal Gray and White",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9522,7 +9540,7 @@
     }
   },
   "002129-0030": {
-    "description": "Charcoal Gray",
+    "description": "Charcoal Gray and White",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9540,7 +9558,7 @@
     }
   },
   "002130-0000": {
-    "description": "Clear",
+    "description": "Clear and White",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9558,7 +9576,7 @@
     }
   },
   "002130-0030": {
-    "description": "Clear",
+    "description": "Clear and White",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9576,7 +9594,7 @@
     }
   },
   "002137-0030": {
-    "description": "Medium Amber",
+    "description": "Medium Amber and White",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9594,7 +9612,7 @@
     }
   },
   "002140-0030": {
-    "description": "Aventurine Blue",
+    "description": "Aventurine Blue and Clear",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9612,7 +9630,7 @@
     }
   },
   "002140-0031": {
-    "description": "Aventurine Blue",
+    "description": "Aventurine Blue and Clear",
     "type": "2-Color Streaky Sheet Double-rolled 3mm Rainbow Iridized",
     "color": {
       "rgb": {
@@ -9630,7 +9648,25 @@
     }
   },
   "002164-0030": {
-    "description": "Caribbean Blue",
+    "description": "Caribbean Blue and White",
+    "type": "2-Color Streaky Sheet Double-rolled 3mm",
+    "color": {
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "cmyk": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 0
+      },
+      "multicolored": true
+    }
+  },
+  "002176-0030": {
+    "description": "Peacock Blue and White",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9648,7 +9684,7 @@
     }
   },
   "002209-0000": {
-    "description": "Dark Brown",
+    "description": "Dark Brown and White",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9666,7 +9702,7 @@
     }
   },
   "002209-0030": {
-    "description": "Dark Brown",
+    "description": "Dark Brown and White",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9684,7 +9720,7 @@
     }
   },
   "002212-0030": {
-    "description": "Olive Green Opal",
+    "description": "Olive Green Opal and Forest Green",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9702,7 +9738,7 @@
     }
   },
   "002213-CA30": {
-    "description": "Black",
+    "description": "Black and white cascade",
     "type": "2-Color Streaky Cascade 3mm",
     "color": {
       "rgb": {
@@ -9720,7 +9756,25 @@
     }
   },
   "002218-0030": {
-    "description": "Aqua Blue Tint",
+    "description": "Aqua Blue Tint and White",
+    "type": "2-Color Streaky Sheet Double-rolled 3mm",
+    "color": {
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "cmyk": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 0
+      },
+      "multicolored": true
+    }
+  },
+  "002237-0030": {
+    "description": "Warm White and Light Amber",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9738,7 +9792,7 @@
     }
   },
   "002249-ca30": {
-    "description": "white",
+    "description": "white and light silver gray",
     "type": "2-Color Streaky Cascade 3mm",
     "color": {
       "rgb": {
@@ -9756,7 +9810,7 @@
     }
   },
   "002249-CA37": {
-    "description": "white",
+    "description": "white and light silver gray cascade",
     "type": "2-Color Streaky Cascade 3mm Silver Iridized",
     "color": {
       "rgb": {
@@ -9774,7 +9828,7 @@
     }
   },
   "002250-0000": {
-    "description": "Soft Yellow Opal",
+    "description": "Soft Yellow Opal and Deep Red",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9792,7 +9846,7 @@
     }
   },
   "002250-0030": {
-    "description": "Soft Yellow Opal",
+    "description": "Soft Yellow Opal and Deep Red",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9810,7 +9864,7 @@
     }
   },
   "002302-0000": {
-    "description": "White",
+    "description": "White and Pink Opal",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9828,7 +9882,7 @@
     }
   },
   "002302-0030": {
-    "description": "White",
+    "description": "White and Pink Opal",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9846,7 +9900,7 @@
     }
   },
   "002304-0000": {
-    "description": "White",
+    "description": "White and Lavender Blue Opal",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9864,7 +9918,7 @@
     }
   },
   "002304-0030": {
-    "description": "White",
+    "description": "White and Lavender Blue Opal",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9882,7 +9936,7 @@
     }
   },
   "002305-0000": {
-    "description": "White",
+    "description": "White and Salmon Pink Opal",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9900,7 +9954,7 @@
     }
   },
   "002305-0030": {
-    "description": "White",
+    "description": "White and Salmon Pink Opal",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9918,7 +9972,7 @@
     }
   },
   "002310-0000": {
-    "description": "White",
+    "description": "White and Cranberry Pink",
     "type": "2-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -9936,7 +9990,7 @@
     }
   },
   "002310-0030": {
-    "description": "White",
+    "description": "White and Cranberry Pink",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9954,7 +10008,7 @@
     }
   },
   "002311-0030": {
-    "description": "Cranberry Pink",
+    "description": "Cranberry Pink and White",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9972,7 +10026,7 @@
     }
   },
   "002312-0030": {
-    "description": "Aventurine GreeN",
+    "description": "Aventurine Green and White",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -9990,7 +10044,7 @@
     }
   },
   "002416-0030": {
-    "description": "Light Turquoise Blue",
+    "description": "Light Turquoise Blue and True Blue",
     "type": "2-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10008,7 +10062,7 @@
     }
   },
   "002537-CA30": {
-    "description": "french vanilla",
+    "description": "french vanilla and light turquoise blue",
     "type": "2-Color Streaky Cascade 3mm",
     "color": {
       "rgb": {
@@ -10026,7 +10080,7 @@
     }
   },
   "002537-in30": {
-    "description": "french vanilla",
+    "description": "french vanilla and light turquoise blue",
     "type": "2-Color Streaky Infusion 3mm",
     "color": {
       "rgb": {
@@ -10044,7 +10098,7 @@
     }
   },
   "002941-CA30": {
-    "description": "warm white",
+    "description": "warm white and pine green cascade",
     "type": "2-Color Streaky Cascade 3mm",
     "color": {
       "rgb": {
@@ -10062,7 +10116,7 @@
     }
   },
   "002964-ca30": {
-    "description": "warm white",
+    "description": "warm white and true blue cascade",
     "type": "2-Color Streaky Cascade 3mm",
     "color": {
       "rgb": {
@@ -10098,7 +10152,7 @@
     }
   },
   "003026-0021": {
-    "description": "Cranberry Pink",
+    "description": "Cranberry Pink; Royal Blue; Spring Green; White",
     "type": "3-Color Streaky Sheet Soft Ripple",
     "color": {
       "rgb": {
@@ -10116,7 +10170,7 @@
     }
   },
   "003026-0030": {
-    "description": "Cranberry Pink",
+    "description": "Cranberry Pink; Royal Blue; Spring Green; White",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10134,7 +10188,7 @@
     }
   },
   "003045-0021": {
-    "description": "Azure Blue Opal",
+    "description": "Azure Blue Opal; Jade Green Opal; Neo-lavender",
     "type": "3-Color Streaky Sheet Soft Ripple",
     "color": {
       "rgb": {
@@ -10152,7 +10206,7 @@
     }
   },
   "003045-0030": {
-    "description": "Azure Blue Opal",
+    "description": "Azure Blue Opal; Jade Green Opal; Neo-lavender; Dbl-RL",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10170,7 +10224,7 @@
     }
   },
   "003086-0030": {
-    "description": "white",
+    "description": "white; turquoise; midnight blue",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10188,7 +10242,7 @@
     }
   },
   "003100-0030": {
-    "description": "clear",
+    "description": "clear; white; black",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10206,7 +10260,7 @@
     }
   },
   "003100-GR30": {
-    "description": "CLEAR",
+    "description": "CLEAR; WHITE OPAL; BLACK OPAL",
     "type": "3-Color Streaky Graffiti 3mm",
     "color": {
       "rgb": {
@@ -10224,7 +10278,7 @@
     }
   },
   "003116-0030": {
-    "description": "Clear",
+    "description": "Clear; Turquoise Blue; White",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10242,7 +10296,7 @@
     }
   },
   "003123-0000": {
-    "description": "White",
+    "description": "White; Orange Opal; Deep Forest Green",
     "type": "3-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10260,7 +10314,7 @@
     }
   },
   "003123-0030": {
-    "description": "White",
+    "description": "White; Orange Opal; Deep Forest Green",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10278,7 +10332,7 @@
     }
   },
   "003126-0021": {
-    "description": "Cranberry",
+    "description": "Cranberry; Royal Blue; Spring Green",
     "type": "3-Color Streaky Sheet Soft Ripple",
     "color": {
       "rgb": {
@@ -10296,7 +10350,7 @@
     }
   },
   "003126-0030": {
-    "description": "Cranberry",
+    "description": "Cranberry; Royal Blue; Spring Green",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10314,7 +10368,7 @@
     }
   },
   "003203-0021": {
-    "description": "Woodland Brown Opal",
+    "description": "Woodland Brown Opal; Ivory; Black",
     "type": "3-Color Streaky Sheet Soft Ripple",
     "color": {
       "rgb": {
@@ -10332,7 +10386,7 @@
     }
   },
   "003203-0030": {
-    "description": "Woodland Brown Opal",
+    "description": "Woodland Brown Opal; Ivory; Black",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10350,7 +10404,7 @@
     }
   },
   "003212-0030": {
-    "description": "Olive Green Opal",
+    "description": "Olive Green Opal; Forest Green; Deep Brown",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10368,7 +10422,7 @@
     }
   },
   "003328-0000": {
-    "description": "White",
+    "description": "White; Deep Royal Purple; Cranberry Pink",
     "type": "3-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10386,7 +10440,7 @@
     }
   },
   "003328-0030": {
-    "description": "White",
+    "description": "White; Deep Royal Purple; Cranberry Pink",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10404,7 +10458,7 @@
     }
   },
   "003334-0021": {
-    "description": "Cranberry Pink",
+    "description": "Cranberry Pink; Gold Purple; White",
     "type": "3-Color Streaky Sheet Soft Ripple",
     "color": {
       "rgb": {
@@ -10422,7 +10476,7 @@
     }
   },
   "003334-0030": {
-    "description": "Cranberry Pink",
+    "description": "Cranberry Pink; Gold Purple; White",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10440,7 +10494,7 @@
     }
   },
   "003345-0021": {
-    "description": "Cranberry Pink",
+    "description": "Cranberry Pink; Emerald Green; White",
     "type": "3-Color Streaky Sheet Soft Ripple",
     "color": {
       "rgb": {
@@ -10458,7 +10512,7 @@
     }
   },
   "003345-0030": {
-    "description": "Cranberry Pink",
+    "description": "Cranberry Pink; Emerald Green; White",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10476,7 +10530,7 @@
     }
   },
   "003346-0021": {
-    "description": "Cranberry Pink",
+    "description": "Cranberry Pink; Azure Blue; White",
     "type": "3-Color Streaky Sheet Soft Ripple",
     "color": {
       "rgb": {
@@ -10494,7 +10548,7 @@
     }
   },
   "003346-0030": {
-    "description": "Cranberry Pink",
+    "description": "Cranberry Pink; Azure Blue; White",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10512,7 +10566,7 @@
     }
   },
   "003501-0000": {
-    "description": "White",
+    "description": "White; Deep Forest Green; Caramel Opal",
     "type": "3-Color Streaky Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10530,7 +10584,7 @@
     }
   },
   "003501-0030": {
-    "description": "White",
+    "description": "White; Deep Forest Green; Caramel Opal",
     "type": "3-Color Streaky Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -10602,7 +10656,7 @@
     }
   },
   "006207-0000": {
-    "description": "Light Celery",
+    "description": "Light Celery and LIME GREEN",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10620,7 +10674,7 @@
     }
   },
   "006210-0000": {
-    "description": "White",
+    "description": "White and Gold Pink",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10638,7 +10692,7 @@
     }
   },
   "006212-0000": {
-    "description": "Medium Celery",
+    "description": "Medium Celery and Emerald Green",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10674,7 +10728,7 @@
     }
   },
   "006231-0000": {
-    "description": "White",
+    "description": "White and Burgundy",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10692,7 +10746,7 @@
     }
   },
   "006247-0000": {
-    "description": "Medium Leaf",
+    "description": "Medium Leaf and Emerald Green",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10710,7 +10764,7 @@
     }
   },
   "006264-0000": {
-    "description": "LIGHT BLUE",
+    "description": "LIGHT BLUE and COBALT Blue",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10728,7 +10782,7 @@
     }
   },
   "006323-0000": {
-    "description": "Lemon Yellow",
+    "description": "Lemon Yellow and White and Gold-Pink",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10746,7 +10800,7 @@
     }
   },
   "006336-0000": {
-    "description": "White",
+    "description": "White; Turquoise; GOLD PURPLE",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10764,7 +10818,7 @@
     }
   },
   "006343-0000": {
-    "description": "White",
+    "description": "White; Olive Green; Gold Pink",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10782,7 +10836,7 @@
     }
   },
   "006446-0000": {
-    "description": "White",
+    "description": "White; Turquoise; Lime Green; Gold Pink",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10800,7 +10854,7 @@
     }
   },
   "006467-0000": {
-    "description": "White",
+    "description": "White; Lime green; Turquoise; Gold Pink",
     "type": "Ring mottle Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10818,7 +10872,7 @@
     }
   },
   "004010-0000": {
-    "description": "SPRING: Blue",
+    "description": "SPRING: Blue; Green; Aqua; Pink on White",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10836,7 +10890,7 @@
     }
   },
   "004011-0000": {
-    "description": "AUTUMN: Orange",
+    "description": "AUTUMN: Orange; Yellow; Red on White",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10854,7 +10908,7 @@
     }
   },
   "004014-0000": {
-    "description": "Spring Green and Deep Pink on White",
+    "description": "Spring Green; Deep Pink on White",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10872,7 +10926,7 @@
     }
   },
   "004110-0000": {
-    "description": "SPRING: Blue",
+    "description": "SPRING: Blue; Green; Aqua and Pink on Clear",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10890,7 +10944,7 @@
     }
   },
   "004111-0000": {
-    "description": "AUTUMN: Orange",
+    "description": "AUTUMN: Orange and Yellow and Red on Clear",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10926,7 +10980,7 @@
     }
   },
   "004113-0000": {
-    "description": "WINTER: White",
+    "description": "WINTER: White and Clear Streamers on Clear",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10962,7 +11016,7 @@
     }
   },
   "004116-0000": {
-    "description": "Light Pink",
+    "description": "Light Pink; Green and White on Clear",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -10998,7 +11052,7 @@
     }
   },
   "004118-0000": {
-    "description": "White",
+    "description": "White with Black Streamers on Clear",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11052,7 +11106,7 @@
     }
   },
   "004128-0000": {
-    "description": "Deep Pink",
+    "description": "Deep Pink; Plum; Spring Green; Aqua; Pink Streamers on Clear",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11070,7 +11124,7 @@
     }
   },
   "004136-0000": {
-    "description": "Black",
+    "description": "Black streamers on Clear",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11376,7 +11430,7 @@
     }
   },
   "004212-0000": {
-    "description": "Dark Green",
+    "description": "Dark Green; Spring Green; Yellow Frit; Spring Green Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11394,7 +11448,7 @@
     }
   },
   "004215-0000": {
-    "description": "Pink and Cranberry Frit",
+    "description": "Pink and Cranberry Frit; Pink Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11412,7 +11466,7 @@
     }
   },
   "004216-0000": {
-    "description": "Royal Blue and Turquoise Frit",
+    "description": "Royal Blue and Turquoise Frit; Cobalt Blue and Turquoise Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11448,7 +11502,7 @@
     }
   },
   "004218-0000": {
-    "description": "Gray and Black Frit",
+    "description": "Gray and Black Frit; White Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11484,7 +11538,7 @@
     }
   },
   "004220-0000": {
-    "description": "Canary and Sunflower Yellow Frit",
+    "description": "Canary and Sunflower Yellow Frit; Sunflower Yellow Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11502,7 +11556,7 @@
     }
   },
   "004223-0000": {
-    "description": "Yellow",
+    "description": "Yellow; Blue and Red Frit",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11520,7 +11574,7 @@
     }
   },
   "004224-0000": {
-    "description": "Red Frit",
+    "description": "Red Frit; Red Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11538,7 +11592,7 @@
     }
   },
   "004229-0000": {
-    "description": "Gray and Bronze Frit",
+    "description": "Gray and Bronze Frit; Gray and Vanilla Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11556,7 +11610,7 @@
     }
   },
   "004234-0000": {
-    "description": "Cranberry and Purple Frit",
+    "description": "Cranberry and Purple Frit; Cranberry and Purple Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11574,7 +11628,7 @@
     }
   },
   "004237-0000": {
-    "description": "Vanilla and White Frit",
+    "description": "Vanilla and White Frit; Vanilla and White Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11592,7 +11646,7 @@
     }
   },
   "004242-0000": {
-    "description": "Neo-lavender and Purple Frit",
+    "description": "Neo-lavender and Purple Frit; Cobalt Blue and Purple Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {

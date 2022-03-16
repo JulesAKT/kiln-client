@@ -206,6 +206,7 @@
 -0022 Clear, Herringbone Ripple
 -0024 clear, soft ripple, IRD
 -0025 Clear, Herringbone Ripple, IRD, RBW
+-0027 Clear, Seedy
 -0030 Clear, Dbl-rol
 -0031 Clear, Dbl-rol, IRD, RBW
 -0032 Clear, Dbl-rol, IRD, Patterned
@@ -503,126 +504,128 @@
 001401-0480 Crystal Clear 4 mm
 001401-0680 Crystal Clear 6 mm
 !Streaky Sheet
-002020-0030 Clear, Sunflower Yellow Opal, Dbl-RL
-002024-0030 Clear, Red Opal, Dbl-RL
-002026-0030 Clear, Spring Green Opal, Dbl-RL
-002037-0030 Clear, French Vanilla Opal, Dbl-RL
-002047-0030 Clear, Deep Cobalt Blue Opal, Dbl-RL
-002064-0030 Clear, Egyptian Blue Opal, Dbl-RL
-002100-0000 Clear, Black
--0030 Clear, Black, dbl-RL
-002105-0000 Blue Opal, Plum
--0030 Blue Opal, Plum, dbl-RL
-002107-0000 White, Light Green
--0030 White, Light Green, dbl-RL
-002108-0000 Powder Blue Opal, Marine Blue
--0030 Powder Blue Opal, Marine Blue, dbl-RL
-002109-0000 White, Dark Brown
--0030 White, Dark Brown, dbl-RL
-002112-0000 Mint Opal, Deep Forest Green
--0030 Mint Opal, Deep Forest Green, dbl-RL
-002116-0030 Turquoise Blue, Deep Royal Blue, Dbl-RL
-002121-0000 Yellow Opal, Deep Forest Green
--0030 Yellow Opal, Deep Forest Green, dbl-RL
-002123-0000 White, Orange Opal
--0030 White, Orange Opal, dbl-RL
-002124-0000 Red Opal, White
--0030 Red Opal, White, dbl-RL
-002125-0030 Yellow, Red Striker, Dbl-RL
-002128-0000 Royal Purple, Powder Blue Opal
--0030 Royal Purple, Powder Blue Opal, dbl-RL
-002129-0000 Charcoal Gray, White
--0030 Charcoal Gray, White, dbl-RL
-002130-0000 Clear, White
--0030 Clear, White, dbl-RL
-002137-0030 Medium Amber, White, Dbl-RL
-002140-0030 Aventurine Blue, Clear, Dbl-RL
--0031 Aventurine Blue, Clear, Dbl-RL, IRD, rainbow
-002146 -0030 Copper Blue, white, dbl-RL
-002164-0030 Caribbean Blue, White, Dbl-RL
-002209-0000 Dark Brown, White
--0030 Dark Brown, White, dbl-RL
-002212-0030 Olive Green Opal, Forest Green, Dbl-RL
-002213-CA30 Black, white cascade
-002218-0030 Aqua Blue Tint, White, dbl-RL
-002249-ca30 white, light silver gray, cascade
--CA37 white, light silver gray, cascade, silver IRD
-002250-0000 Soft Yellow Opal, Deep Red
--0030 Soft Yellow Opal, Deep Red, dbl-RL
-002302-0000 White, Pink Opal
--0030 White, Pink Opal, dbl-RL
-002304-0000 White, Lavender Blue Opal
--0030 White, Lavender Blue Opal, dbl-RL
-002305-0000 White, Salmon Pink Opal
--0030 White, Salmon Pink Opal, dbl-RL
-002310-0000 White, Cranberry Pink
--0030 White, Cranberry Pink, dbl-RL
-002311-0030 Cranberry Pink, White, Dbl-RL
-002312-0030 Aventurine GreeN, White, Dbl-RL
-002416-0030 Light Turquoise Blue, True Blue, dbl-RL
-002537-CA30 french vanilla, light turquoise blue, cascade
-002537-in30 french vanilla, light turquoise blue, infusion
-002941-CA30 warm white, pine green cascade
-002964-ca30 warm white, true blue cascade
+002020-0030 Clear and Sunflower Yellow Opal, Dbl-RL
+002024-0030 Clear and Red Opal, Dbl-RL
+002026-0030 Clear and Spring Green Opal, Dbl-RL
+002037-0030 Clear and French Vanilla Opal, Dbl-RL
+002047-0030 Clear and Deep Cobalt Blue Opal, Dbl-RL
+002064-0030 Clear and Egyptian Blue Opal, Dbl-RL
+002100-0000 Clear and Black
+-0030 Clear and Black, dbl-RL
+002105-0000 Blue Opal and Plum
+-0030 Blue Opal and Plum, dbl-RL
+002107-0000 White and Light Green
+-0030 White and Light Green, dbl-RL
+002108-0000 Powder Blue Opal and Marine Blue
+-0030 Powder Blue Opal and Marine Blue, dbl-RL
+002109-0000 White and Dark Brown
+-0030 White and Dark Brown, dbl-RL
+002112-0000 Mint Opal and Deep Forest Green
+-0030 Mint Opal and Deep Forest Green, dbl-RL
+002116-0030 Turquoise Blue and Deep Royal Blue, Dbl-RL
+002121-0000 Yellow Opal and Deep Forest Green
+-0030 Yellow Opal and Deep Forest Green, dbl-RL
+002123-0000 White and Orange Opal
+-0030 White, Orange Opal and dbl-RL
+002124-0000 Red Opal and White
+-0030 Red Opal and White, dbl-RL
+002125-0030 Yellow and Red Striker, Dbl-RL
+002128-0000 Royal Purple and Powder Blue Opal
+-0030 Royal Purple and Powder Blue Opal, dbl-RL
+002129-0000 Charcoal Gray and White
+-0030 Charcoal Gray and White, dbl-RL
+002130-0000 Clear and White
+-0030 Clear and White, dbl-RL
+002137-0030 Medium Amber and White, Dbl-RL
+002140-0030 Aventurine Blue and Clear, Dbl-RL
+-0031 Aventurine Blue and Clear, Dbl-RL, IRD, rainbow
+002146 -0030 Copper Blue and white, dbl-RL
+002164-0030 Caribbean Blue and White, Dbl-RL
+002176-0030 Peacock Blue and White, Dbl-RL
+002209-0000 Dark Brown and White
+-0030 Dark Brown and White, dbl-RL
+002212-0030 Olive Green Opal and Forest Green, Dbl-RL
+002213-CA30 Black and white cascade
+002218-0030 Aqua Blue Tint and White, dbl-RL
+002237-0030 Warm White and Light Amber, Dbl-RL
+002249-ca30 white and light silver gray, cascade
+-CA37 white and light silver gray cascade, silver IRD
+002250-0000 Soft Yellow Opal and Deep Red
+-0030 Soft Yellow Opal and Deep Red, dbl-RL
+002302-0000 White and Pink Opal
+-0030 White and Pink Opal, dbl-RL
+002304-0000 White and Lavender Blue Opal
+-0030 White and Lavender Blue Opal, dbl-RL
+002305-0000 White and Salmon Pink Opal
+-0030 White and Salmon Pink Opal, dbl-RL
+002310-0000 White and Cranberry Pink
+-0030 White and Cranberry Pink, dbl-RL
+002311-0030 Cranberry Pink and White, Dbl-RL
+002312-0030 Aventurine Green and White, Dbl-RL
+002416-0030 Light Turquoise Blue and True Blue, dbl-RL
+002537-CA30 french vanilla and light turquoise blue, cascade
+002537-in30 french vanilla and light turquoise blue, infusion
+002941-CA30 warm white and pine green cascade
+002964-ca30 warm white and true blue cascade
 002971-0030 petrified wood, dbl-RL
-003026-0021 Cranberry Pink, Royal Blue, Spring Green, White, Ripple
--0030 Cranberry Pink, Royal Blue, Spring Green, White, Dbl-RL
-003045-0021 Azure Blue Opal, Jade Green Opal, Neo-lavender, Ripple
--0030 Azure Blue Opal, Jade Green Opal, Neo-lavender, Dbl-RL
-003086-0030 white, turquoise, midnight blue, DBL-RL
-003100-0030 clear, white, black, dbl-RL
--GR30 CLEAR, WHITE OPAL, BLACK OPAL, GRAFFITI
-003116-0030 Clear, Turquoise Blue, White, dbl-RL
-003123-0000 White, Orange Opal, Deep Forest Green
--0030 White, Orange Opal, Deep Forest Green, dbl-RL
-003126-0021 Cranberry, Royal Blue, Spring Green, Ripple
--0030 Cranberry, Royal Blue, Spring Green, Dbl-RL
-003203-0021 Woodland Brown Opal, Ivory, Black, Ripple
--0030 Woodland Brown Opal, Ivory, Black, Dbl-RL
-003212-0030 Olive Green Opal, Forest Green, Deep Brown, Dbl-RL
-003328-0000 White, Deep Royal Purple, Cranberry Pink
--0030 White, Deep Royal Purple, Cranberry Pink, dbl-RL
-003334-0021 Cranberry Pink, Gold Purple, White, Ripple
--0030 Cranberry Pink, Gold Purple, White, Dbl-RL
-003345-0021 Cranberry Pink, Emerald Green, White, Ripple
--0030 Cranberry Pink, Emerald Green, White, Dbl-RL
-003346-0021 Cranberry Pink, Azure Blue, White, Ripple
--0030 Cranberry Pink, Azure Blue, White, Dbl-RL
-003501-0000 White, Deep Forest Green, Caramel Opal
--0030 White, Deep Forest Green, Caramel Opal, dbl-RL
+003026-0021 Cranberry Pink; Royal Blue; Spring Green; White, Ripple
+-0030 Cranberry Pink; Royal Blue; Spring Green; White, Dbl-RL
+003045-0021 Azure Blue Opal; Jade Green Opal; Neo-lavender, Ripple
+-0030 Azure Blue Opal; Jade Green Opal; Neo-lavender; Dbl-RL
+003086-0030 white; turquoise; midnight blue, DBL-RL
+003100-0030 clear; white; black, dbl-RL
+-GR30 CLEAR; WHITE OPAL; BLACK OPAL, GRAFFITI
+003116-0030 Clear; Turquoise Blue; White, dbl-RL
+003123-0000 White; Orange Opal; Deep Forest Green
+-0030 White; Orange Opal; Deep Forest Green, dbl-RL
+003126-0021 Cranberry; Royal Blue; Spring Green, Ripple
+-0030 Cranberry; Royal Blue; Spring Green, Dbl-RL
+003203-0021 Woodland Brown Opal; Ivory; Black, Ripple
+-0030 Woodland Brown Opal; Ivory; Black, Dbl-RL
+003212-0030 Olive Green Opal; Forest Green; Deep Brown, Dbl-RL
+003328-0000 White; Deep Royal Purple; Cranberry Pink
+-0030 White; Deep Royal Purple; Cranberry Pink, dbl-RL
+003334-0021 Cranberry Pink; Gold Purple; White, Ripple
+-0030 Cranberry Pink; Gold Purple; White, Dbl-RL
+003345-0021 Cranberry Pink; Emerald Green; White, Ripple
+-0030 Cranberry Pink; Emerald Green; White, Dbl-RL
+003346-0021 Cranberry Pink; Azure Blue; White, Ripple
+-0030 Cranberry Pink; Azure Blue; White, Dbl-RL
+003501-0000 White; Deep Forest Green; Caramel Opal
+-0030 White; Deep Forest Green; Caramel Opal, dbl-RL
 !Ring Mottles Sheet
 006010-0000 Toffee
 006013-0000 White
 006045-0000 Patina Green
-006207-0000 Light Celery, LIME GREEN
-006210-0000 White, Gold Pink
-006212-0000 Medium Celery, Emerald Green
+006207-0000 Light Celery and LIME GREEN
+006210-0000 White and Gold Pink
+006212-0000 Medium Celery and Emerald Green
 006218-0000 Blue-Gray, White
-006231-0000 White, Burgundy
-006247-0000 Medium Leaf, Emerald Green
-006264-0000 LIGHT BLUE, COBALT Blue
-006323-0000 Lemon Yellow, White, Gold-Pink
-006336-0000 White, Turquoise, GOLD PURPLE
-006343-0000 White, Olive Green, Gold Pink
-006446-0000 White, Turquoise, Lime Green, Gold Pink
-006467-0000 White, Lime green, Turquoise, Gold Pink
+006231-0000 White and Burgundy
+006247-0000 Medium Leaf and Emerald Green
+006264-0000 LIGHT BLUE and COBALT Blue
+006323-0000 Lemon Yellow and White and Gold-Pink
+006336-0000 White; Turquoise; GOLD PURPLE
+006343-0000 White; Olive Green; Gold Pink
+006446-0000 White; Turquoise; Lime Green; Gold Pink
+006467-0000 White; Lime green; Turquoise; Gold Pink
 !Collage Sheet
 !!FRACTURE-STREAMERS
-004010-0000 SPRING: Blue, Green, Aqua and Pink on White
-004011-0000 AUTUMN: Orange, Yellow and Red on White
-004014-0000 Spring Green and Deep Pink on White
-004110-0000 SPRING: Blue, Green, Aqua and Pink on Clear
-004111-0000 AUTUMN: Orange, Yellow and Red on Clear
+004010-0000 SPRING: Blue; Green; Aqua; Pink on White
+004011-0000 AUTUMN: Orange; Yellow; Red on White
+004014-0000 Spring Green; Deep Pink on White
+004110-0000 SPRING: Blue; Green; Aqua and Pink on Clear
+004111-0000 AUTUMN: Orange and Yellow and Red on Clear
 004112-0000 SUMMER: Green and Yellow on Clear
-004113-0000 WINTER: White, Clear Streamers on Clear
+004113-0000 WINTER: White and Clear Streamers on Clear
 004114-0000 Spring Green and Deep Pink on Clear
-004116-0000 Light Pink, Green, and White on Clear
+004116-0000 Light Pink; Green and White on Clear
 004117-0000 Green and White on Clear
-004118-0000 White, with Black Streamers on Clear
+004118-0000 White with Black Streamers on Clear
 004119-0000 Blue and White on Clear
 004121-0000 Light Pink and White on Clear
-004128-0000 Deep Pink, Plum, Spring Green, Aqua, Pink Streamers on Clear
-004136-0000 Black, black streamers on Clear
+004128-0000 Deep Pink; Plum; Spring Green; Aqua; Pink Streamers on Clear
+004136-0000 Black streamers on Clear
 !!STREAMERS
 004100-0000 Black
 004151-0000 Royal Blue
@@ -642,20 +645,20 @@
 004402-0031 Clear Chopstix, IRD, RBW
 !! Mardi Gras
 004200-0000 Black Frit, Black Streamers
-004211-0000 Red, Orange and Yellow Frit, Orange Streamers
-004212-0000 Dark Green, Spring Green, and Yellow Frit, Spring Green Streamers
-004215-0000 Pink and Cranberry Frit, Pink Streamers
-004216-0000 Royal Blue and Turquoise Frit, Cobalt Blue and Turquoise Streamers
-004217-0000 Dark Green, Jade Green Frit, Dark Green Streamers
-004218-0000 Gray and Black Frit, White Streamers
-004219-0000 Cobalt Blue, Gray Blue, and Aqua Frit, Blue Streamers
-004220-0000 Canary and Sunflower Yellow Frit, Sunflower Yellow Streamers
-004223-0000 Yellow, Blue, and Red Frit, Blue Streamers
-004224-0000 Red Frit, Red Streamers
-004229-0000 Gray and Bronze Frit, Gray and Vanilla Streamers
-004234-0000 Cranberry and Purple Frit, Cranberry and Purple Streamers
-004237-0000 Vanilla and White Frit, Vanilla and White Streamers
-004242-0000 Neo-lavender and Purple Frit, Cobalt Blue and Purple Streamers
+004211-0000 Red, Orange and Yellow Frit; Orange Streamers
+004212-0000 Dark Green; Spring Green; Yellow Frit; Spring Green Streamers
+004215-0000 Pink and Cranberry Frit; Pink Streamers
+004216-0000 Royal Blue and Turquoise Frit; Cobalt Blue and Turquoise Streamers
+004217-0000 Dark Green, Jade Green Frit; Dark Green Streamers
+004218-0000 Gray and Black Frit; White Streamers
+004219-0000 Cobalt Blue, Gray Blue; and Aqua Frit, Blue Streamers
+004220-0000 Canary and Sunflower Yellow Frit; Sunflower Yellow Streamers
+004223-0000 Yellow; Blue and Red Frit, Blue Streamers
+004224-0000 Red Frit; Red Streamers
+004229-0000 Gray and Bronze Frit; Gray and Vanilla Streamers
+004234-0000 Cranberry and Purple Frit; Cranberry and Purple Streamers
+004237-0000 Vanilla and White Frit; Vanilla and White Streamers
+004242-0000 Neo-lavender and Purple Frit; Cobalt Blue and Purple Streamers
 004247-0000 Rainbow frit and Streamers
 !Opal Frit
 !!!-0001

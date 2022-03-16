@@ -57,6 +57,7 @@ def GlassType(code):
         "0021": "Sheet Soft Ripple",
         "0022": "Sheet Herringbone Ripple",
         "0024": "Sheet Soft Ripple Iridized",
+        "0027": "Seedy",
         "0025": "Sheet Herringbone Ripple Iridized",
         "0030": "Sheet Double-rolled 3mm",
         "0031": "Sheet Double-rolled 3mm Rainbow Iridized",

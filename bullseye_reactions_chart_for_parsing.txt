@@ -35,6 +35,7 @@
 001422 LEMON LIME GREEN
 001437 Light Amber
 001857 red amber tint
+002237 Warm White, Light Amber
 !COPPER-BEARING
 000104 GlACIER BLUE OPAL
 000116 Turquoise Blue Opal
@@ -60,6 +61,7 @@
 001816 Turquoise Blue Tint
 001845 MING GREEN Tint
 001917 Cilantro Green Tint
+002176 Peacock Blue, White
 !LEAD-BEARING
 000301 Pink Opal
 000303 Dusty Lilac Opal
