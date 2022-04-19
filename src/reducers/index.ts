@@ -14,6 +14,7 @@ import bartlettReducer from "./bartlettReducer";
 import sharedProjectReducer from "./sharedProjectReducer";
 import sharedFiringReducer from "./sharedFiringReducer";
 import sharedSegmentReducer from "./sharedSegmentReducer";
+import inventoryReducer from "./inventoryReducer";
 interface IRootState {
   alert: any;
   form: any;
@@ -29,6 +30,7 @@ interface IRootState {
   shared_projects: any;
   shared_firings: any;
   shared_segments: any;
+  inventory: any;
 }
 
 const rootReducer = combineReducers<IRootState>({
@@ -46,6 +48,7 @@ const rootReducer = combineReducers<IRootState>({
   shared_projects: sharedProjectReducer,
   shared_firings: sharedFiringReducer,
   shared_segments: sharedSegmentReducer,
+  inventory: inventoryReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

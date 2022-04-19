@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Header, Accordion, Icon } from "semantic-ui-react";
+import { Accordion, Icon } from "semantic-ui-react";
 
 const PrivacyPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);

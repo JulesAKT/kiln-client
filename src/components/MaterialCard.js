@@ -9,6 +9,7 @@ import {
   //  getGlassReactionTypeColour,
   getGlassReactionTypeColourName,
   getHexColor,
+  getGlassItem,
 } from "../helpers/glassHelpers";
 import { glassImage } from "../helpers/logoHelpers";
 const MaterialCard = (props) => {
@@ -32,38 +33,8 @@ const MaterialCard = (props) => {
     description = "Unknown Glass Item";
     type = "Unknown";
   }
-  const getGlassItem = () => {
-    //const colour = getGlassReactionTypeColour(glass_ref, glass_data);
-    const colour_name = getGlassReactionTypeColourName(glass_ref, glass_data);
-    const characters = getGlassReactionTypeCharacters(glass_ref, glass_data);
-    console.log(`Color:`);
-    console.log(color);
-    console.log(`Characters: ${characters}`);
-    return (
-      <>
-        <span
-          style={{
-            color: color?.multicolored ? "black" : getHexColor(color?.rgb),
-            fontSize: color?.multicolored ? 18 : 32,
-          }}
-        >
-          {color?.multicolored ? (
-            <span>Multicoloured</span>
-          ) : (
-            color && <Icon name="square full" />
-          )}
 
-          {characters && (
-            <Label circular floating color={colour_name} size="large">
-              {characters}
-            </Label>
-          )}
-        </span>
-      </>
-    );
-  };
-
-  const glass_item = getGlassItem();
+  const glass_item = getGlassItem(glass_ref, glass_data);
   //const colour = getGlassReactionTypeColour(glass_ref, glass_data);
   //const characters = getGlassReactionTypeCharacters(glass_ref, glass_data);
   console.log(`MaterialCard: Reacting = ${props.reacting}`);

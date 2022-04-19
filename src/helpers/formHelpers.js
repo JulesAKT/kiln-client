@@ -484,7 +484,7 @@ export const HookDropdown = ({
     defaultValue: props.defaultValue,
   });
   const className = `field ${errors[name] && isTouched ? "error" : ""}`;
-  console.log(inputProps);
+  //console.log(inputProps);
   return (
     <div className={className}>
       <label style={props.labelStyle}>{label}</label>

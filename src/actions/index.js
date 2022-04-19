@@ -86,6 +86,12 @@ import {
   FETCH_SHARED_FIRING_SUCCESS,
   FETCH_SHARED_PROJECTS_REQUEST,
   FETCH_SHARED_PROJECTS_SUCCESS,
+  CREATE_INVENTORY_ITEM_REQUEST,
+  CREATE_INVENTORY_ITEM_SUCCESS,
+  EDIT_INVENTORY_ITEM_REQUEST,
+  EDIT_INVENTORY_ITEM_SUCCESS,
+  DELETE_INVENTORY_ITEM_REQUEST,
+  DELETE_INVENTORY_ITEM_SUCCESS,
 } from "./types";
 
 import { bartkiln, bartlogin } from "../api/bartlett";
@@ -911,3 +917,56 @@ export const fetchSharedProjects =
 export const sharingUserPath = (sharing_user_uid) => {
   return "/shared_userdata/" + sharing_user_uid;
 };
+
+export const createInventoryItem =
+  (formProps, allowNavigate = false) =>
+  async (dispatch) => {
+    dispatch({ type: CREATE_INVENTORY_ITEM_REQUEST });
+    //console.log(token);
+    formProps.id = uuid();
+
+    db.ref(userPath() + `/inventory/${formProps.id}`).set({
+      ...formProps,
+    });
+    dispatch({
+      type: CREATE_INVENTORY_ITEM_SUCCESS,
+      payload: { ...formProps },
+    });
+    if (allowNavigate) {
+      history.goBack();
+    }
+  };
+
+export const editInventoryItem =
+  (id, formProps, allowNavigate = false) =>
+  async (dispatch) => {
+    dispatch({ type: EDIT_INVENTORY_ITEM_REQUEST });
+    //console.log(token);
+    formProps.id = id;
+
+    db.ref(userPath() + `/inventory/${formProps.id}`).set({
+      ...formProps,
+    });
+    dispatch({
+      type: EDIT_INVENTORY_ITEM_SUCCESS,
+      payload: { ...formProps },
+    });
+    if (allowNavigate) {
+      history.goBack();
+    }
+  };
+export const deleteInventoryItem =
+  (id, allowNavigate = false) =>
+  async (dispatch) => {
+    dispatch({ type: DELETE_INVENTORY_ITEM_REQUEST });
+    //console.log(token);
+
+    db.ref(userPath() + `/inventory/${id}`).remove();
+    dispatch({
+      type: DELETE_INVENTORY_ITEM_SUCCESS,
+      payload: id,
+    });
+    if (allowNavigate) {
+      history.goBack();
+    }
+  };

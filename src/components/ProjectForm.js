@@ -3,6 +3,7 @@ import { Segment, Button, Form, Image } from "semantic-ui-react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { glassIcon, kilnLogo } from "../helpers/logoHelpers";
+import { glasstypes } from "../helpers/glassHelpers";
 import * as yup from "yup";
 
 import useFirebaseKilns from "../hooks/useFirebaseKilns";
@@ -54,17 +55,6 @@ const ProjectForm = (props) => {
   });
   //console.log("Kiln Selections:");
   //console.log(kiln_selections);
-
-  const glasstypes = [
-    { label: "Bullseye", value: "Bullseye" },
-    { label: "Spectrum", value: "Spectrum" },
-    { label: "Wissmach", value: "Wissmach" },
-    { label: "Baoili COE 85", value: "Baoli COE 85" },
-    { label: "Baoili COE 90", value: "Baoli COE 90" },
-    { label: "Bottle", value: "Bottle" },
-    { label: "Float", value: "Float" },
-  ];
-
   return (
     <>
       <Form onSubmit={handleSubmit(props.onSubmit)}>

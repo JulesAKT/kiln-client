@@ -33,6 +33,7 @@ import KilnDeletePage from "./components/KilnDeletePage";
 import SegmentCreatePage from "./components/SegmentCreatePage";
 import SegmentEditPage from "./components/SegmentEditPage";
 import PrivacyPage from "./components/PrivacyPage";
+import RockChoirPrivacyPage from "./components/RockChoirPrivacyPage";
 import SupportPage from "./components/SupportPage";
 import SegmentDeletePage from "./components/SegmentDeletePage";
 import PreferencePage from "./components/PreferencePage";
@@ -40,6 +41,7 @@ import SuperUserPage from "./components/SuperUserPage";
 import FavouriteFiringsListPage from "./components/FavouriteFiringsListPage";
 import PhotoDeletePage from "./components/PhotoDeletePage";
 import AboutPage from "./components/AboutPage";
+import InventoryPage from "./components/InventoryPage";
 import alertActions from "./actions/alertActions";
 import { AuthProvider } from "./helpers/Auth";
 import "semantic-ui-css/semantic.min.css";
@@ -70,6 +72,11 @@ class App extends React.Component {
                   <Route path="/signup" exact component={SignupPage} />
                   <Route path="/signedup" exact component={SignedupPage} />
                   <Route path="/privacy" exact component={PrivacyPage} />
+                  <Route
+                    path="/rock_choir_privacy"
+                    exact
+                    component={RockChoirPrivacyPage}
+                  />
                   <Route path="/support" exact component={SupportPage} />
 
                   <PrivateRoute
@@ -187,6 +194,11 @@ class App extends React.Component {
                     path="/kilns/delete/:id"
                     exact
                     component={KilnDeletePage}
+                  />
+                  <PrivateRoute
+                    path="/inventory"
+                    exact
+                    component={InventoryPage}
                   />
                   <PrivateRoute
                     path="/new_segment/:id/:order"

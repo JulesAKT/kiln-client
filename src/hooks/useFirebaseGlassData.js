@@ -12,4 +12,10 @@ const useFirebaseGlassData = (glasstype) => {
   return glass_data;
 };
 
+export const useAllFirebaseGlassData = () => {
+  useFirebaseConnect([{ path: "/glassdata/" }]);
+
+  return useSelector((state) => state?.firebase?.data?.glassdata);
+};
+
 export default useFirebaseGlassData;

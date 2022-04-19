@@ -1,9 +1,7 @@
 import {
   CREATE_SHARED_FIRING_SUCCESS,
-  FETCH_SHARED_FIRINGS_SUCCESS,
   FETCH_SHARED_FIRING_SUCCESS,
   EDIT_SHARED_FIRING_SUCCESS,
-  DELETE_SHARED_FIRING_SUCCESS,
 } from "../actions/types";
 
 const sharedFiringReducer = (state = {}, action) => {

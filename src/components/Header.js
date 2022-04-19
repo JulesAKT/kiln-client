@@ -11,6 +11,9 @@ const Header = () => {
       <Link to="/kilns" className="item">
         Kilns
       </Link>
+      <Link to="/inventory" className="item">
+        Inventory
+      </Link>
 
       <div className="right menu">
         <LoginButton />

@@ -1,0 +1,12 @@
+Maria's API key
+
+APP NAMEKiln Helper
+KEYSTRING nhrla0xoq4xooc8r8986tye9
+SHARED SECRET 2cbipa6ekj
+
+
+Jules API Key:
+
+Kiln Helper
+KEYSTRING: 01g46wm0sf3fu9d56b7l1362
+SHARED SECRET: la5tekok8t

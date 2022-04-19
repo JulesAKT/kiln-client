@@ -1,3 +1,4 @@
+import { Icon, Label } from "semantic-ui-react";
 import _ from "lodash";
 
 const rgbToHex = (value) => {
@@ -17,6 +18,49 @@ export const getHexColor = (color) => {
   var green = rgbToHex(g);
   var blue = rgbToHex(b);
   return `#${red}${green}${blue}`;
+};
+
+export const glasstypes = [
+  { label: "Bullseye", value: "Bullseye" },
+  { label: "Spectrum", value: "Spectrum" },
+  { label: "Wissmach", value: "Wissmach" },
+  { label: "Baoili COE 85", value: "Baoli COE 85" },
+  { label: "Baoili COE 90", value: "Baoli COE 90" },
+  { label: "Bottle", value: "Bottle" },
+  { label: "Float", value: "Float" },
+];
+
+export const getGlassItem = (glass_ref, glass_data) => {
+  //console.log(glass_data);
+  const color = glass_data?.inventory?.[glass_ref]?.color;
+  //const colour = getGlassReactionTypeColour(glass_ref, glass_data);
+  const colour_name = getGlassReactionTypeColourName(glass_ref, glass_data);
+  const characters = getGlassReactionTypeCharacters(glass_ref, glass_data);
+  //console.log(`Color:`);
+  //console.log(color);
+  //console.log(`Characters: ${characters}`);
+  return (
+    <>
+      <span
+        style={{
+          color: color?.multicolored ? "black" : getHexColor(color?.rgb),
+          fontSize: color?.multicolored ? 18 : 32,
+        }}
+      >
+        {color?.multicolored ? (
+          <span>Multicoloured</span>
+        ) : (
+          color && <Icon name="square full" />
+        )}
+
+        {characters && (
+          <Label circular floating color={colour_name} size="large">
+            {characters}
+          </Label>
+        )}
+      </span>
+    </>
+  );
 };
 
 export const getGlassReactionTypeCharacters = (code, glass_data) => {
