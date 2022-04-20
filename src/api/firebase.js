@@ -72,7 +72,8 @@ export const signInWithGoogle = () => {
     .then(() => {
       console.log("Logged in!");
       history.push("/projects");
-    });
+    })
+    .catch((e) => console.log("Error: ", e?.message));
 };
 
 const appleProvider = new firebase.auth.OAuthProvider("apple.com");
@@ -85,7 +86,8 @@ export const signInWithApple = () => {
     .then(() => {
       console.log("Logged in!");
       history.push("/projects");
-    });
+    })
+    .catch((e) => console.log("Error: ", e?.message));
 };
 
 export default Firebase;

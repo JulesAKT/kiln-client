@@ -75,7 +75,7 @@ import {
   BARTLETT_SIGN_IN_SUCCESS,
   FETCH_BARTLETT_STATUS_SUCCESS,
   CREATE_SHARED_PROJECT_REQUEST,
-  CREATE_SHARED_PROJECT_SUCCESS,
+  //  CREATE_SHARED_PROJECT_SUCCESS,
   CREATE_SHARED_FIRING_REQUEST,
   CREATE_SHARED_FIRING_SUCCESS,
   CREATE_SHARED_SEGMENT_REQUEST,
@@ -131,21 +131,24 @@ export const createProject = (formProps) => async (dispatch, getState) => {
                 resolve("Uploaded");
               })
           //            .catch(reject("Upload Failed"))
-        );
+        )
+        .catch((e) => console.log("Error", e.message));
     });
   };
   if (formProps.photos) {
-    Promise.all(formProps.photos.map(handleUpload)).then((url, index) => {
-      console.log("setting stuff");
-      db.ref(userPath() + `/projects/${formProps.id}`).set({
-        ...formProps,
-      });
-      dispatch({
-        type: CREATE_PROJECT_SUCCESS,
-        payload: { ...formProps },
-      });
-      history.goBack();
-    });
+    Promise.all(formProps.photos.map(handleUpload))
+      .then((url, index) => {
+        console.log("setting stuff");
+        db.ref(userPath() + `/projects/${formProps.id}`).set({
+          ...formProps,
+        });
+        dispatch({
+          type: CREATE_PROJECT_SUCCESS,
+          payload: { ...formProps },
+        });
+        history.goBack();
+      })
+      .catch((e) => console.log("Error", e.message));
   } else {
     db.ref(userPath() + `/projects/${formProps.id}`).set({
       ...formProps,
@@ -231,25 +234,28 @@ export const editProject =
                   resolve("Uploaded");
                 })
             //            .catch(reject("Upload Failed"))
-          );
+          )
+          .catch((e) => console.log("Error", e.message));
       });
     };
     if (formProps.photos) {
-      Promise.all(formProps.photos.map(handleUpload)).then((url, index) => {
-        console.log("setting stuff");
-        db.ref(userPath() + `/projects/${formProps.id}`).set({
-          ...formProps,
-        });
+      Promise.all(formProps.photos.map(handleUpload))
+        .then((url, index) => {
+          console.log("setting stuff");
+          db.ref(userPath() + `/projects/${formProps.id}`).set({
+            ...formProps,
+          });
 
-        dispatch({
-          type: EDIT_PROJECT_SUCCESS,
-          payload: { ...formProps },
-        });
+          dispatch({
+            type: EDIT_PROJECT_SUCCESS,
+            payload: { ...formProps },
+          });
 
-        if (!ignoreNavigate) {
-          history.goBack();
-        }
-      });
+          if (!ignoreNavigate) {
+            history.goBack();
+          }
+        })
+        .catch((e) => console.log("Error", e.message));
     } else {
       db.ref(userPath() + `/projects/${formProps.id}`).set({
         ...formProps,
@@ -611,7 +617,8 @@ export const signOut = () => async (dispatch) => {
       dispatch({
         type: SIGN_OUT_SUCCESS,
       });
-    });
+    })
+    .catch((e) => console.log("Error", e.message));
   //NavigationService.navigate("Login");
 };
 
@@ -721,14 +728,17 @@ export const getFileListing = async () => {
     .listAll()
     .then((res) => {
       res.prefixes.forEach((folderRef) =>
-        folderRef.listAll().then((res) => {
-          //console.log(res);
-          const user = folderRef.location.path_.substring(9);
-          directory_listing[user] = [];
-          res.items.forEach((itemRef) => {
-            directory_listing[user].push(itemRef?.location.path_);
-          });
-        })
+        folderRef
+          .listAll()
+          .then((res) => {
+            //console.log(res);
+            const user = folderRef.location.path_.substring(9);
+            directory_listing[user] = [];
+            res.items.forEach((itemRef) => {
+              directory_listing[user].push(itemRef?.location.path_);
+            });
+          })
+          .catch((e) => console.log("Error: ", e?.message))
       );
     });
   //console.log(files);

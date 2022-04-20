@@ -30,16 +30,9 @@ export function authentication(state = initialState, action) {
         verified: false,
       };
     case SIGN_OUT_SUCCESS:
+    case SIGN_UP_SUCCESS:
       //console.log("Logging out (Reducer)");
       //localStorage.setItem("token", null);
-      return {
-        loggingIn: false,
-        loggedIn: false,
-        email: null,
-        uid: null,
-        verified: false,
-      };
-    case SIGN_UP_SUCCESS:
       return {
         loggingIn: false,
         loggedIn: false,

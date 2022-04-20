@@ -10,7 +10,7 @@ import {
   deleteInventoryItem,
 } from "../actions";
 import { glassImage } from "../helpers/logoHelpers";
-import { getGlassItem, getHexColor } from "../helpers/glassHelpers";
+import { getHexColor } from "../helpers/glassHelpers";
 
 const InventoryPage = () => {
   const columns = [
@@ -79,7 +79,7 @@ const InventoryPage = () => {
   const changeQuantity = (increment, id) => {
     const new_item = { ...inventory?.[id] };
     const count = Number(new_item.count);
-    new_item.count = !isNaN(count) ? count + increment : 0;
+    new_item.count = !Number.isNaN(count) ? count + increment : 0;
     if (new_item.count === 0) {
       dispatch(deleteInventoryItem(id));
     } else {
