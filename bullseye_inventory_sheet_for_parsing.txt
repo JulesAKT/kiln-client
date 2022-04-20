@@ -184,14 +184,14 @@
 -0031 Reactive Ice Clear, Dbl-rol, IRD, RBW
 -0050 Reactive Ice Clear, Thin
 -0051 Reactive Ice Clear, Thin, IRD, RBW
-001015-0030 clear, silver to gold, dbl-rol
--0031 clear, silver to gold, dbl-rol, IRD, RBW
--0050 clear, silver to gold, thin
--0051 clear, silver to gold, thin, IRD, RBW
-001016-0030 clear, silver to bronze, dbl-rol
--0031 clear, silver to bronze, dbl-rol, IRD, rb0w
--0050 clear, silver to bronze, thin
--0051 clear, silver to bronze, thin, IRD, RBW
+001015-0030 clear silver to gold, dbl-rol
+-0031 clear silver to gold, dbl-rol, IRD, RBW
+-0050 clear silver to gold, thin
+-0051 clear silver to gold, thin, IRD, RBW
+001016-0030 clear silver to bronze, dbl-rol
+-0031 clear silver to bronze, dbl-rol, IRD, rb0w
+-0050 clear silver to bronze, thin
+-0051 clear silver to bronze, thin, IRD, RBW
 001019-0030 red reactive clear, dbl-rol
 -0031 red reactive clear, IRD, rb0w
 -0050 red reactive clear, thin

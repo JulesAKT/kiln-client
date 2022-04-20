@@ -3294,7 +3294,7 @@
     }
   },
   "001015-0030": {
-    "description": "clear",
+    "description": "clear silver to gold",
     "type": "Transparent Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -3312,7 +3312,7 @@
     }
   },
   "001015-0031": {
-    "description": "clear",
+    "description": "clear silver to gold",
     "type": "Transparent Sheet Double-rolled 3mm Rainbow Iridized",
     "color": {
       "rgb": {
@@ -3330,7 +3330,7 @@
     }
   },
   "001015-0050": {
-    "description": "clear",
+    "description": "clear silver to gold",
     "type": "Transparent Sheet Thin rolled 2mm",
     "color": {
       "rgb": {
@@ -3348,7 +3348,7 @@
     }
   },
   "001015-0051": {
-    "description": "clear",
+    "description": "clear silver to gold",
     "type": "Transparent Sheet Thin rolled 2mm Rainbow Iridized",
     "color": {
       "rgb": {
@@ -3366,7 +3366,7 @@
     }
   },
   "001016-0030": {
-    "description": "clear",
+    "description": "clear silver to bronze",
     "type": "Transparent Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -3384,7 +3384,7 @@
     }
   },
   "001016-0031": {
-    "description": "clear",
+    "description": "clear silver to bronze",
     "type": "Transparent Sheet Double-rolled 3mm Rainbow Iridized",
     "color": {
       "rgb": {
@@ -3402,7 +3402,7 @@
     }
   },
   "001016-0050": {
-    "description": "clear",
+    "description": "clear silver to bronze",
     "type": "Transparent Sheet Thin rolled 2mm",
     "color": {
       "rgb": {
@@ -3420,7 +3420,7 @@
     }
   },
   "001016-0051": {
-    "description": "clear",
+    "description": "clear silver to bronze",
     "type": "Transparent Sheet Thin rolled 2mm Rainbow Iridized",
     "color": {
       "rgb": {
