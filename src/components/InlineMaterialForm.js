@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
@@ -51,10 +52,15 @@ const InlineMaterialForm = ({ initialValues, onSubmit }) => {
     count: yup.number().required().positive().integer(),
   });
 
-  const { control, handleSubmit, errors, formState, watch } = useForm({
+  const { control, handleSubmit, errors, formState, watch, reset } = useForm({
     resolver: yupResolver(schema),
     defaultValues: initialValues,
   });
+  console.log("InlineMaterialForm initialValues:", initialValues);
+  useEffect(() => {
+    console.log("(UseEffect) InlineMaterialForm initialValues:", initialValues);
+    reset(initialValues);
+  }, [initialValues, reset]);
 
   const glass_type = watch("glass_type", initialValues.glass_type);
   const glass_data = useFirebaseGlassData(glass_type);
@@ -66,6 +72,9 @@ const InlineMaterialForm = ({ initialValues, onSubmit }) => {
   const options = getGlassDataDropdownOptionsFromInventory(
     glass_data?.inventory
   );
+  const added_glasstypes = [...glasstypes, { label: "Other", value: "Other" }];
+  const dropdown_enabled =
+    glass_type === "Spectrum" || glass_type === "Bullseye";
   return (
     <div>
       <Form onSubmit={handleSubmit(onSubmit)}>
@@ -75,7 +84,7 @@ const InlineMaterialForm = ({ initialValues, onSubmit }) => {
           name="glass_type"
           label="Manufacturer"
           defaultValue={initialValues.manufacturer}
-          items={glasstypes}
+          items={added_glasstypes}
         />
         <Input
           control={control}
@@ -83,17 +92,19 @@ const InlineMaterialForm = ({ initialValues, onSubmit }) => {
           name="description"
           label="Description"
         />
-        <Dropdown
-          control={control}
-          errors={errors}
-          name="glass_reference"
-          label={`${glass_type} Glass Reference`}
-          defaultValue={initialValues.glass_reference}
-          search
-          clearable
-          options={options}
-          placeholder={`Select a ${glass_type} item`}
-        />
+        {dropdown_enabled && (
+          <Dropdown
+            control={control}
+            errors={errors}
+            name="glass_reference"
+            label={`${glass_type} Glass Reference`}
+            defaultValue={initialValues.glass_reference}
+            search
+            clearable
+            options={options}
+            placeholder={`Select a ${glass_type} item`}
+          />
+        )}
         <Input
           control={control}
           errors={errors}
@@ -107,7 +118,7 @@ const InlineMaterialForm = ({ initialValues, onSubmit }) => {
           disabled={!formState.isDirty || formState.isSubmitting}
           loading={formState.isSubmitting}
         >
-          Add
+          {initialValues.id ? "Edit" : "Add"}
         </Button>
       </Form>
     </div>

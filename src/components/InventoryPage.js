@@ -1,3 +1,4 @@
+import { useState } from "react";
 import DataTable from "react-data-table-component";
 import { Image, Icon } from "semantic-ui-react";
 import { useDispatch } from "react-redux";
@@ -13,6 +14,14 @@ import { glassImage } from "../helpers/logoHelpers";
 import { getHexColor } from "../helpers/glassHelpers";
 
 const InventoryPage = () => {
+  const default_form_values = {
+    description: "",
+    glass_reference: "",
+    glass_type: "Bullseye",
+    count: "1",
+  };
+  const [form_initial_values, setFormInitialValues] =
+    useState(default_form_values);
   const columns = [
     {
       name: "Manufacturer",
@@ -70,6 +79,16 @@ const InventoryPage = () => {
         </div>
       ),
     },
+    {
+      name: "",
+      selector: "buttons",
+      sortable: false,
+      cell: (row) => (
+        <div>
+          <Icon name="edit" onClick={() => editRow(row.id)} />
+        </div>
+      ),
+    },
   ];
 
   const inventory = useFirebaseInventory();
@@ -87,6 +106,10 @@ const InventoryPage = () => {
     }
   };
 
+  const editRow = (id) => {
+    console.log("EditRow called against: ", id, "Passing: ", inventory?.[id]);
+    setFormInitialValues(inventory?.[id]);
+  };
   const inventory_array = inventory && Object.values(inventory);
   // Enrich the array by handling descriptions properly
   const enriched_inventory_array = inventory_array?.map((item) => {
@@ -94,16 +117,26 @@ const InventoryPage = () => {
     if (new_item.glass_reference) {
       const glass_item =
         all_glass_data?.[item.glass_type]?.inventory?.[item.glass_reference];
-      new_item.description = glass_item?.description;
+      new_item.description = new_item.description
+        ? glass_item?.description + "-" + new_item.description
+        : glass_item?.description;
       new_item.type = glass_item?.type;
       new_item.color = glass_item?.color;
     }
     return new_item;
   });
-  console.log("Inventory", inventory_array);
+  //console.log("Inventory", inventory_array);
+  console.log(form_initial_values);
 
   const handleSubmit = (formValues) => {
-    dispatch(createInventoryItem(formValues));
+    console.log("submitting:", formValues);
+    if (!form_initial_values.id) {
+      dispatch(createInventoryItem(formValues));
+    } else {
+      console.log("Editing!");
+      dispatch(editInventoryItem(form_initial_values.id, formValues));
+    }
+    setFormInitialValues(default_form_values);
   };
   return (
     <>
@@ -119,12 +152,7 @@ const InventoryPage = () => {
       )}
       <InlineMaterialForm
         onSubmit={handleSubmit}
-        initialValues={{
-          description: "",
-          glass_reference: "",
-          glass_type: "Bullseye",
-          count: "1",
-        }}
+        initialValues={form_initial_values}
       />
     </>
   );

@@ -539,7 +539,7 @@ export const HookSelect = ({
   const className = `field ${errors[name] && isTouched ? "error" : ""}`;
   return (
     <div className={className}>
-      <label style={props.labelStyle}>{label}</label>
+      {!props.hideLabel && <label style={props.labelStyle}>{label}</label>}
       <select {...inputProps} style={props.selectStyle}>
         {items.map(({ label, value }) => {
           return (
