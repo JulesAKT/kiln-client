@@ -934,6 +934,7 @@
 000144 Teal Green
 000145 Jade Green
 000146 Steel Blue
+000147 Deep Cobalt Blue
 000148 indigo Blue
 000164 Egyptian Blue
 000203 Woodland Brown

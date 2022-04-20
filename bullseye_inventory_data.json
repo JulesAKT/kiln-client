@@ -23939,6 +23939,24 @@
       "multicolored": false
     }
   },
+  "000147-0576": {
+    "description": "Deep Cobalt Blue",
+    "type": "Opal Rod 4-6mm",
+    "color": {
+      "rgb": {
+        "r": "16",
+        "g": "74",
+        "b": "154"
+      },
+      "cmyk": {
+        "c": "100",
+        "m": "82",
+        "y": "3",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
   "000148-0576": {
     "description": "indigo Blue",
     "type": "Opal Rod 4-6mm",
