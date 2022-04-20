@@ -568,6 +568,7 @@
 002941-CA30 warm white and pine green cascade
 002964-ca30 warm white and true blue cascade
 002971-0030 petrified wood, dbl-RL
+003022-0030 Spring Green; Aventurine Green, Dbl-RL
 003026-0021 Cranberry Pink; Royal Blue; Spring Green; White, Ripple
 -0030 Cranberry Pink; Royal Blue; Spring Green; White, Dbl-RL
 003045-0021 Azure Blue Opal; Jade Green Opal; Neo-lavender, Ripple
@@ -645,13 +646,13 @@
 004402-0031 Clear Chopstix, IRD, RBW
 !! Mardi Gras
 004200-0000 Black Frit, Black Streamers
-004211-0000 Red, Orange and Yellow Frit; Orange Streamers
+004211-0000 Red; Orange and Yellow Frit; Orange Streamers
 004212-0000 Dark Green; Spring Green; Yellow Frit; Spring Green Streamers
 004215-0000 Pink and Cranberry Frit; Pink Streamers
 004216-0000 Royal Blue and Turquoise Frit; Cobalt Blue and Turquoise Streamers
-004217-0000 Dark Green, Jade Green Frit; Dark Green Streamers
+004217-0000 Dark Green; Jade Green Frit; Dark Green Streamers
 004218-0000 Gray and Black Frit; White Streamers
-004219-0000 Cobalt Blue, Gray Blue; and Aqua Frit, Blue Streamers
+004219-0000 Cobalt Blue; Gray Blue; and Aqua Frit, Blue Streamers
 004220-0000 Canary and Sunflower Yellow Frit; Sunflower Yellow Streamers
 004223-0000 Yellow; Blue and Red Frit, Blue Streamers
 004224-0000 Red Frit; Red Streamers

@@ -10151,6 +10151,24 @@
       "multicolored": true
     }
   },
+  "003022-0030": {
+    "description": "Spring Green; Aventurine Green",
+    "type": "3-Color Streaky Sheet Double-rolled 3mm",
+    "color": {
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "cmyk": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 0
+      },
+      "multicolored": true
+    }
+  },
   "003026-0021": {
     "description": "Cranberry Pink; Royal Blue; Spring Green; White",
     "type": "3-Color Streaky Sheet Soft Ripple",
@@ -11412,7 +11430,7 @@
     }
   },
   "004211-0000": {
-    "description": "Red",
+    "description": "Red; Orange and Yellow Frit; Orange Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11484,7 +11502,7 @@
     }
   },
   "004217-0000": {
-    "description": "Dark Green",
+    "description": "Dark Green; Jade Green Frit; Dark Green Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -11520,7 +11538,7 @@
     }
   },
   "004219-0000": {
-    "description": "Cobalt Blue",
+    "description": "Cobalt Blue; Gray Blue; and Aqua Frit",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
