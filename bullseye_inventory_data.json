@@ -25631,6 +25631,42 @@
       "multicolored": false
     }
   },
+  "000236-0107": {
+    "description": "Slate Gray",
+    "type": "Opal Stringer 1mm",
+    "color": {
+      "rgb": {
+        "r": "97",
+        "g": "105",
+        "b": "114"
+      },
+      "cmyk": {
+        "c": "48",
+        "m": "35",
+        "y": "28",
+        "k": "38"
+      },
+      "multicolored": false
+    }
+  },
+  "000236-0272": {
+    "description": "Slate Gray",
+    "type": "Opal Stringer 2mm",
+    "color": {
+      "rgb": {
+        "r": "97",
+        "g": "105",
+        "b": "114"
+      },
+      "cmyk": {
+        "c": "48",
+        "m": "35",
+        "y": "28",
+        "k": "38"
+      },
+      "multicolored": false
+    }
+  },
   "000301-0107": {
     "description": "Pink",
     "type": "Opal Stringer 1mm",

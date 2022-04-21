@@ -1006,6 +1006,8 @@
 000220 Sunflower Yellow
 000224-0107 Deep Red
 000224-0272 Deep Red
+000236-0107 Slate Gray
+000236-0272 Slate Gray
 000301-0107 Pink
 000301-0272 Pink
 000312-0107 Pea Pod Green
