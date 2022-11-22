@@ -1,4 +1,4 @@
-import json
+7import json
 
 bullseye_colors = {}
 
@@ -131,11 +131,12 @@ with open("./bullseye_color_conversion_chart_for_parsing.txt") as color_file:
     for line in color_lines:
         words = line.split(" ")
         product_code = words[0]
+        name = " ".join(words[1:-2])
         rgb = ConvertToRGB(words[-1].strip())
         cmyk = ConvertToCMYK(words[-2])
         # print(words[0])
         # print(words[-1].strip())
-        bullseye_colors[product_code] = {"rgb": rgb, "cmyk": cmyk}
+        bullseye_colors[product_code] = {"rgb": rgb, "cmyk": cmyk, "name": name}
     # Add magic missing colors back in. They're clear, as far as I'm concerned.
     bullseye_colors["001015"] = bullseye_colors["001016"] = bullseye_colors[
         "001019"
