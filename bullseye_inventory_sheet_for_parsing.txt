@@ -52,6 +52,7 @@
 000113-0000 White, Sgl-rol
 -0030 White, Dbl-rol
 -0031 White, Dbl-rol, IRD, RBW
+-0380 White Tekta
 -0050 White, Thin
 -0051 White, Thin, IRD, RBW
 000114-0030 Cobalt Blue, Dbl-rol
@@ -356,6 +357,10 @@
 -0031 Pine Green, Dbl-RL, IRD, RBW
 -0050 Pine Green, Sgl-RL
 -0051 Pine Green, Thin, IRD, RBW
+001242-0030 Medieval Green, Dbl-RL
+-0031 Medieval Green, Dbl Rl, IRD, RBW
+-0050 Medieval Green, Thin
+-0051 Medieval Green, Thin, IRD, RBW
 001246-0030 COPPER BLUE, DBL-RL
 -0050 COPPER BLUE, SGL-RL
 001305-0030 Sunset Coral, Dbl-RL
@@ -771,6 +776,7 @@
 001226 LILY PAD GREEN
 001234 Violet
 001241 Pine Green
+001242 Medieval Green
 001305 Sunset Coral
 001311 Cranberry Pink
 001320 Marigold Yellow

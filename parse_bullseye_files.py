@@ -1,4 +1,4 @@
-7import json
+import json
 
 bullseye_colors = {}
 

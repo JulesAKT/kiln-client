@@ -207,6 +207,10 @@
     "reaction_type": "COPPER",
     "name": "LILY PAD GREEN"
   },
+  "001242": {
+    "reaction_type": "COPPER",
+    "name": "Medieval Green"
+  },
   "001246": {
     "reaction_type": "COPPER",
     "name": "Copper Blue"

@@ -52,6 +52,7 @@
 001176 Peacock Blue
 001217 LEAF GREEN
 001226 LILY PAD GREEN
+001242 Medieval Green
 001246 Copper Blue
 001408 Light Aquamarine
 001416 Light Turquoise Blue
