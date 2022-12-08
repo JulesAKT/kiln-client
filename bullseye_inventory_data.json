@@ -3496,7 +3496,7 @@
     }
   },
   "001015-0030": {
-    "description": "clear",
+    "description": "clear silver to gold",
     "type": "Transparent Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -3514,7 +3514,7 @@
     }
   },
   "001015-0031": {
-    "description": "clear",
+    "description": "clear silver to gold",
     "type": "Transparent Sheet Double-rolled 3mm Rainbow Iridized",
     "color": {
       "rgb": {
@@ -3532,7 +3532,7 @@
     }
   },
   "001015-0050": {
-    "description": "clear",
+    "description": "clear silver to gold",
     "type": "Transparent Sheet Thin rolled 2mm",
     "color": {
       "rgb": {
@@ -3550,7 +3550,7 @@
     }
   },
   "001015-0051": {
-    "description": "clear",
+    "description": "clear silver to gold",
     "type": "Transparent Sheet Thin rolled 2mm Rainbow Iridized",
     "color": {
       "rgb": {
@@ -3568,7 +3568,7 @@
     }
   },
   "001016-0030": {
-    "description": "clear",
+    "description": "clear silver to bronze",
     "type": "Transparent Sheet Double-rolled 3mm",
     "color": {
       "rgb": {
@@ -3586,7 +3586,7 @@
     }
   },
   "001016-0031": {
-    "description": "clear",
+    "description": "clear silver to bronze",
     "type": "Transparent Sheet Double-rolled 3mm Rainbow Iridized",
     "color": {
       "rgb": {
@@ -3604,7 +3604,7 @@
     }
   },
   "001016-0050": {
-    "description": "clear",
+    "description": "clear silver to bronze",
     "type": "Transparent Sheet Thin rolled 2mm",
     "color": {
       "rgb": {
@@ -3622,7 +3622,7 @@
     }
   },
   "001016-0051": {
-    "description": "clear",
+    "description": "clear silver to bronze",
     "type": "Transparent Sheet Thin rolled 2mm Rainbow Iridized",
     "color": {
       "rgb": {
@@ -10732,6 +10732,24 @@
       "multicolored": true
     }
   },
+  "003022-0030": {
+    "description": "Spring Green; Aventurine Green",
+    "type": "3-Color Streaky Sheet Double-rolled 3mm",
+    "color": {
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "cmyk": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 0
+      },
+      "multicolored": true
+    }
+  },
   "003026-0021": {
     "description": "Cranberry Pink; Royal Blue; Spring Green; White",
     "type": "3-Color Streaky Sheet Soft Ripple",
@@ -11993,7 +12011,7 @@
     }
   },
   "004211-0000": {
-    "description": "Red",
+    "description": "Red; Orange and Yellow Frit; Orange Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -12065,7 +12083,7 @@
     }
   },
   "004217-0000": {
-    "description": "Dark Green",
+    "description": "Dark Green; Jade Green Frit; Dark Green Streamers",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -12101,7 +12119,7 @@
     }
   },
   "004219-0000": {
-    "description": "Cobalt Blue",
+    "description": "Cobalt Blue; Gray Blue; and Aqua Frit",
     "type": "Collage Sheet Single-rolled 3mm",
     "color": {
       "rgb": {
@@ -25243,6 +25261,24 @@
       "multicolored": false
     }
   },
+  "000147-0576": {
+    "description": "Deep Cobalt Blue",
+    "type": "Opal Rod 4-6mm",
+    "color": {
+      "rgb": {
+        "r": "16",
+        "g": "74",
+        "b": "154"
+      },
+      "cmyk": {
+        "c": "100",
+        "m": "82",
+        "y": "3",
+        "k": "1"
+      },
+      "multicolored": false
+    }
+  },
   "000148-0576": {
     "description": "indigo Blue",
     "type": "Opal Rod 4-6mm",
@@ -27007,6 +27043,42 @@
         "k": "38"
       },
       "name": "Deep Red",
+      "multicolored": false
+    }
+  },
+  "000236-0107": {
+    "description": "Slate Gray",
+    "type": "Opal Stringer 1mm",
+    "color": {
+      "rgb": {
+        "r": "97",
+        "g": "105",
+        "b": "114"
+      },
+      "cmyk": {
+        "c": "48",
+        "m": "35",
+        "y": "28",
+        "k": "38"
+      },
+      "multicolored": false
+    }
+  },
+  "000236-0272": {
+    "description": "Slate Gray",
+    "type": "Opal Stringer 2mm",
+    "color": {
+      "rgb": {
+        "r": "97",
+        "g": "105",
+        "b": "114"
+      },
+      "cmyk": {
+        "c": "48",
+        "m": "35",
+        "y": "28",
+        "k": "38"
+      },
       "multicolored": false
     }
   },

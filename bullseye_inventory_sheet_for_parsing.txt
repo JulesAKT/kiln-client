@@ -185,14 +185,14 @@
 -0031 Reactive Ice Clear, Dbl-rol, IRD, RBW
 -0050 Reactive Ice Clear, Thin
 -0051 Reactive Ice Clear, Thin, IRD, RBW
-001015-0030 clear, silver to gold, dbl-rol
--0031 clear, silver to gold, dbl-rol, IRD, RBW
--0050 clear, silver to gold, thin
--0051 clear, silver to gold, thin, IRD, RBW
-001016-0030 clear, silver to bronze, dbl-rol
--0031 clear, silver to bronze, dbl-rol, IRD, rb0w
--0050 clear, silver to bronze, thin
--0051 clear, silver to bronze, thin, IRD, RBW
+001015-0030 clear silver to gold, dbl-rol
+-0031 clear silver to gold, dbl-rol, IRD, RBW
+-0050 clear silver to gold, thin
+-0051 clear silver to gold, thin, IRD, RBW
+001016-0030 clear silver to bronze, dbl-rol
+-0031 clear silver to bronze, dbl-rol, IRD, rb0w
+-0050 clear silver to bronze, thin
+-0051 clear silver to bronze, thin, IRD, RBW
 001019-0030 red reactive clear, dbl-rol
 -0031 red reactive clear, IRD, rb0w
 -0050 red reactive clear, thin
@@ -573,6 +573,7 @@
 002941-CA30 warm white and pine green cascade
 002964-ca30 warm white and true blue cascade
 002971-0030 petrified wood, dbl-RL
+003022-0030 Spring Green; Aventurine Green, Dbl-RL
 003026-0021 Cranberry Pink; Royal Blue; Spring Green; White, Ripple
 -0030 Cranberry Pink; Royal Blue; Spring Green; White, Dbl-RL
 003045-0021 Azure Blue Opal; Jade Green Opal; Neo-lavender, Ripple
@@ -650,13 +651,13 @@
 004402-0031 Clear Chopstix, IRD, RBW
 !! Mardi Gras
 004200-0000 Black Frit, Black Streamers
-004211-0000 Red, Orange and Yellow Frit; Orange Streamers
+004211-0000 Red; Orange and Yellow Frit; Orange Streamers
 004212-0000 Dark Green; Spring Green; Yellow Frit; Spring Green Streamers
 004215-0000 Pink and Cranberry Frit; Pink Streamers
 004216-0000 Royal Blue and Turquoise Frit; Cobalt Blue and Turquoise Streamers
-004217-0000 Dark Green, Jade Green Frit; Dark Green Streamers
+004217-0000 Dark Green; Jade Green Frit; Dark Green Streamers
 004218-0000 Gray and Black Frit; White Streamers
-004219-0000 Cobalt Blue, Gray Blue; and Aqua Frit, Blue Streamers
+004219-0000 Cobalt Blue; Gray Blue; and Aqua Frit, Blue Streamers
 004220-0000 Canary and Sunflower Yellow Frit; Sunflower Yellow Streamers
 004223-0000 Yellow; Blue and Red Frit, Blue Streamers
 004224-0000 Red Frit; Red Streamers
@@ -939,6 +940,7 @@
 000144 Teal Green
 000145 Jade Green
 000146 Steel Blue
+000147 Deep Cobalt Blue
 000148 indigo Blue
 000164 Egyptian Blue
 000203 Woodland Brown
@@ -1010,6 +1012,8 @@
 000220 Sunflower Yellow
 000224-0107 Deep Red
 000224-0272 Deep Red
+000236-0107 Slate Gray
+000236-0272 Slate Gray
 000301-0107 Pink
 000301-0272 Pink
 000312-0107 Pea Pod Green
