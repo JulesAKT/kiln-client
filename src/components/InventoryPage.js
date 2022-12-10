@@ -99,7 +99,7 @@ const InventoryPage = () => {
     const new_item = { ...inventory?.[id] };
     const count = Number(new_item.count);
     new_item.count = (!Number.isNaN(count) ? count + increment : 0).toString();
-    if (new_item.count == 0) {
+    if (new_item.count === 0) {
       dispatch(deleteInventoryItem(id));
     } else {
       dispatch(editInventoryItem(id, new_item));

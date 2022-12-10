@@ -94,6 +94,14 @@ const AboutPage = () => (
                   <Feed.Summary>Light or Dark Mode</Feed.Summary>
                 </Feed.Content>
               </Feed.Event>
+              <Feed.Event>
+                <Feed.Label>
+                  <Icon name="share" />
+                </Feed.Label>
+                <Feed.Content>
+                  <Feed.Summary>Share your Projects with Others</Feed.Summary>
+                </Feed.Content>
+              </Feed.Event>
             </Feed>
           </Grid.Row>
         </Grid.Column>
@@ -127,6 +135,27 @@ const AboutPage = () => (
                 <Feed.Content>
                   <Feed.Summary>
                     Live Monitoring of supported smart Kiln Controllers
+                  </Feed.Summary>
+                </Feed.Content>
+              </Feed.Event>
+              <Feed.Event>
+                <Feed.Label>
+                  <Icon name="boxes" />
+                </Feed.Label>
+                <Feed.Content>
+                  <Feed.Summary>
+                    Keep an Inventory of all your Materials (Premium Feature)
+                  </Feed.Summary>
+                </Feed.Content>
+              </Feed.Event>
+              <Feed.Event>
+                <Feed.Label>
+                  <Icon name="eye" />
+                </Feed.Label>
+                <Feed.Content>
+                  <Feed.Summary>
+                    Interactive Colour Wheel for Bullseye Glass (Preimum
+                    Feature)
                   </Feed.Summary>
                 </Feed.Content>
               </Feed.Event>
