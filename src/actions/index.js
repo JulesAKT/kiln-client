@@ -677,8 +677,8 @@ export const editPreferences = (formProps) => async (dispatch, getState) => {
 export const fetchPreferences = () => async (dispatch, getState) => {
   dispatch({ type: FETCH_PREFERENCES_REQUEST });
   db.ref(userPath() + "/preferences").once("value", (snapshot) => {
-    //console.log("FetchProjects");
-    //console.log(snapshot.val());
+    console.log("FetchPreferences");
+    console.log(snapshot.val());
     dispatch({
       type: FETCH_PREFERENCES_SUCCESS,
       payload: snapshot.val(),

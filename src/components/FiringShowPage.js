@@ -25,11 +25,11 @@ import { convertSegmentsToTimedController } from "../helpers/timedController";
 
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import _ from "lodash";
-import { isThisTypeNode } from "typescript";
 
 class FiringShowPage extends Component {
   componentDidMount() {
     const params = this.props.match.params;
+    //console.log("Fetching Preferences");
     this.props.dispatch(fetchPreferences());
     if (params.id) {
       this.props.dispatch(fetchSegmentsByFiring(params.id));
@@ -52,6 +52,10 @@ class FiringShowPage extends Component {
   render() {
     const id = this.props.match.params.id;
     const preferences = this.props.preferences;
+    console.log(
+      "🚀 ~ file: FiringShowPage.js:54 ~ FiringShowPage ~ render ~ preferences",
+      preferences
+    );
     const projects = this.props.projects;
 
     let firings, firing, segments, project, kiln;
@@ -331,7 +335,7 @@ class FiringShowPage extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(state);
+  //console.log(state);
   const stateProps = {
     segments: _.filter(state.segments, (segment) => {
       return segment.firing_id === ownProps.match.params.id;
