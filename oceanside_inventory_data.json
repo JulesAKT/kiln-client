@@ -1,1931 +1,2413 @@
 {
   "A-100A-F": {
     "description": "Clear Artique Fusible (Large Sheet 26in.x72in.)",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "B"
   },
   "A-100C-F": {
     "description": "Clear Cord Fusible (Large Sheet 30in.x72in.)",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "B"
   },
   "A-100H-F": {
     "description": "Clear Hammered Fusible (Large Sheet 26in.x72in.)",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "B"
   },
   "A-100RW-F": {
     "description": "Clear RainWater Fusible (Large Sheet 30in.x72in.)",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "B"
   },
   "A-100SEEDY-F": {
     "description": "Clear Seedy Fusible (Large Sheet 30in.x72in.)",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100SEEDY-SL-48-X30-F": {
     "description": "Clear Seedy Fusible (Wide Sheet 30in.x48in.)",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "A-100V-F": {
     "description": "Clear Vecchio Fusible (Large Sheet 30in.x72in.)",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "B"
   },
   "A-100W-F": {
     "description": "Clear Waterglass Fusible (Large Sheet 24in.x72in.)",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "B"
   },
   "100A-F": {
     "description": "Clear Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "B"
   },
   "100C-F": {
     "description": "Clear Cord Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100CC-F": {
     "description": "Clear Corsica Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100CRACKLE-F": {
     "description": "Clear Crackle Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100CZ-F": {
     "description": "Clear Corteza Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100G-F": {
     "description": "Clear Granite Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100G-F-IR": {
     "description": "Clear Granite Fusible Iridescent",
-    "type": "IRIDESCENT"
+    "type": "IRIDESCENT",
+    "price_band": "E"
   },
   "100GG-F": {
     "description": "Clear Crystal Ice Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100H-F": {
     "description": "Clear Hammered Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100H-F-IR": {
     "description": "Clear Hammered Fusible Iridescent",
-    "type": "IRIDESCENT"
+    "type": "IRIDESCENT",
+    "price_band": "E"
   },
   "100HS-F": {
     "description": "Clear (Small) Hammered Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100K-F": {
     "description": "Clear Krinkle Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100QR-F": {
     "description": "Clear Quarter-Reed Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100RR-F": {
     "description": "Clear Rough Rolled Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100RW-F": {
     "description": "Clear RainWater Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100S-F": {
     "description": "Clear Smooth Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "D"
   },
   "100S-ICE-F": {
     "description": "Icicle Clear Smooth Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100S-ICE-2MM-F": {
     "description": "Icicle Clear Smooth Thin 2MM Fusible",
-    "type": "2MM - THIN"
+    "type": "2MM - THIN",
+    "price_band": "A"
   },
   "100S-ICE-5MM-F": {
     "description": "Icicle Clear Smooth Double Thick 5MM Fusible",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "E"
   },
   "100S-ICE-F-IR": {
     "description": "Icicle Clear Fusible Iridescent",
-    "type": "IRIDESCENT"
+    "type": "IRIDESCENT",
+    "price_band": "E"
   },
   "100S-2MM-F": {
     "description": "Clear Smooth Thin 2MM Fusible",
-    "type": "2MM - THIN"
+    "type": "2MM - THIN",
+    "price_band": "D"
   },
   "100S-5MM-F": {
     "description": "Clear Smooth Double Thick 5MM Fusible",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "G"
   },
   "100SN-F": {
     "description": "Clear Satin Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100SNSeedy-F": {
     "description": "Clear Satin Seedy Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100Seedy-F": {
     "description": "Clear Seedy Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100SXTL-F": {
     "description": "Crystal Clear Smooth Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "E"
   },
   "100SXTL-5MM-F": {
     "description": "Crystal Clear Smooth Double Thick 5MM Fusible",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "G"
   },
   "100V-F": {
     "description": "Clear Vecchio Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "A"
   },
   "100W-F": {
     "description": "Clear Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "B"
   },
   "100W-F-IR": {
     "description": "Clear Waterglass Fusible Iridescent",
-    "type": "IRIDESCENT"
+    "type": "IRIDESCENT",
+    "price_band": "E"
   },
   "200S-F": {
     "description": "White Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "B"
   },
   "200S-F-IR": {
     "description": "White Opal Fusible Iridescent",
-    "type": "IRIDESCENT"
+    "type": "IRIDESCENT",
+    "price_band": "E"
   },
   "200S-2MM-F": {
     "description": "White Opal Thin 2MM Fusible",
-    "type": "2MM - THIN"
+    "type": "2MM - THIN",
+    "price_band": "B"
   },
   "200S-5MM-F": {
     "description": "White Opal Double Thick 5MM Fusible",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "H"
   },
   "209FL-F": {
     "description": "FireLight White Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "F"
   },
   "209S-F": {
     "description": "Crystal Opal Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "F"
   },
   "200-91W-F": {
     "description": "White Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "G"
   },
   "210-71S-F": {
     "description": "Ivory Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "210-72S-F": {
     "description": "Almond Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "G"
   },
   "210-73S-F": {
     "description": "Vanilla Cream Opal Fusible (Lightens Upon Fusing)",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "305S-F": {
     "description": "White/Clear Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "C"
   },
   "307S-F": {
     "description": "Clear/White Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "C"
   },
   "308S-F": {
     "description": "Clear/White Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "C"
   },
   "309S-F": {
     "description": "Clear/White, Wispy Fusible",
-    "type": "CLEAR/WHITE/OFF-WHITE"
+    "type": "CLEAR/WHITE/OFF-WHITE",
+    "price_band": "C"
   },
   "110-1A-F": {
     "description": "Palest Amber Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "C"
   },
   "110-1RR-F": {
     "description": "Palest Amber Rough Rolled Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "110-1S-F": {
     "description": "Palest Amber Smooth Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "110-2A-F": {
     "description": "Pale Amber Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "110-2RR-F": {
     "description": "Pale Amber Rough Rolled Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "110-2S-F": {
     "description": "Pale Amber Smooth Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "110-2W-F": {
     "description": "Pale Amber Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "110-4S-F": {
     "description": "Light Amber Smooth Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "110-8A-F": {
     "description": "Medium Amber Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "110-8RR-F": {
     "description": "Medium Amber Rough Rolled Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "110-8S-F": {
     "description": "Medium Amber Smooth Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "110-8W-F": {
     "description": "Medium Amber Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "111RR-F": {
     "description": "Dark Amber Rough Rolled Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "111W-F": {
     "description": "Dark Amber Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "201-61S-F": {
     "description": "Clear/Ivory Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "D"
   },
   "211-74S-F": {
     "description": "Chestnut Brown Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "H"
   },
   "211-76S-F": {
     "description": "Chocolate Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "215-72S-F": {
     "description": "Terra Cotta Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "H"
   },
   "315-02S-F": {
     "description": "White/Pale Amber Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "315-02S-5MM-F": {
     "description": "White/Pale Amber Fusible Double Thick 5MM",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "G"
   },
   "315-1S-F": {
     "description": "White/Light Amber Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "315-2S-F": {
     "description": "White/Medium Amber Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "E"
   },
   "315-6S-F": {
     "description": "White/Dark Amber Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "E"
   },
   "317-02S-F": {
     "description": "Pale Amber/White Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "E"
   },
   "317-1S-F": {
     "description": "Light Amber/White Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "E"
   },
   "317-2S-F": {
     "description": "Medium Amber/White Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "E"
   },
   "317-6S-F": {
     "description": "Dark Amber/White Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "318-05S-F": {
     "description": "Light Amber Lamp Mix Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "E"
   },
   "319-02S-F": {
     "description": "Pale Amber/White, Wispy Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "319-1S-F": {
     "description": "Light Amber/White, Wispy Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "E"
   },
   "319-6S-F": {
     "description": "Dark Amber/White, Wispy Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "411-15G-F": {
     "description": "Brown/Gold Streaky, Granite Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "D"
   },
   "411-15S-F": {
     "description": "Brown/Gold Streaky, Smooth Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "D"
   },
   "518-1RR-F": {
     "description": "Bronze Rough Rolled Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "518-1S-F": {
     "description": "Bronze Smooth Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "518-1W-F": {
     "description": "Bronze Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "518-2S-F": {
     "description": "Antique Bronze Smooth Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "818-54S-F": {
     "description": "White/Gray Taupe, Wispy Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "818-54S-5MM-F": {
     "description": "White/Gray Taupe, Wispy Fusible Double Thick 5MM",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "H"
   },
   "818-56S-F": {
     "description": "Gray Blue Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "E"
   },
   "818-56S-5MM-F": {
     "description": "Gray Blue Fusible Double Thick 5MM",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "H"
   },
   "818-91S-F": {
     "description": "Bronze/White, Wispy Fusible",
-    "type": "AMBER & BROWN"
+    "type": "AMBER & BROWN",
+    "price_band": "C"
   },
   "121A-F": {
     "description": "Light Green Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "121RR-F": {
     "description": "Light Green Rough Rolled Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "121S-F": {
     "description": "Light Green Smooth Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "121W-F": {
     "description": "Light Green Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "123H-F": {
     "description": "Medium Green, Hammered Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "123RR-F": {
     "description": "Medium Green Rough Rolled Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "123S-F": {
     "description": "Medium Green Smooth Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "123W-F": {
     "description": "Medium Green Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "125RR-F": {
     "description": "Dark Green Rough Rolled Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "125S-F": {
     "description": "Dark Green Smooth Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "125S-F-IR": {
     "description": "Dark Green Smooth Fusible Iridescent",
-    "type": "IRIDESCENT"
+    "type": "IRIDESCENT",
+    "price_band": "F"
   },
   "125W-F": {
     "description": "Dark Green Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "220-76S-F": {
     "description": "Dark Green Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "222-72S-F": {
     "description": "Pastel Green Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "223-72S-F": {
     "description": "Turquoise Green Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "223-74S-F": {
     "description": "Peacock Green Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "226-72S-F": {
     "description": "Lemongrass Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "226-74S-F": {
     "description": "Amazon Green Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "228-72S-F": {
     "description": "Celadon Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "327-2S-F": {
     "description": "Light Green/White Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "327-6S-F": {
     "description": "Dark Green/White Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "329-1S-F": {
     "description": "Pale Green/White, Wispy Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "329-2S-F": {
     "description": "Light Green/White, Wispy Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "329-6S-F": {
     "description": "Dark Green/White, Wispy Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "422-1W-F": {
     "description": "Deep Olive/Sea Green Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "E"
   },
   "423-1W-F": {
     "description": "Pale Green/Aqua Blue Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "E"
   },
   "523-2RR-F": {
     "description": "Teal Green Rough Rolled Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "523-2S-F": {
     "description": "Teal Green Smooth Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "523-2W-F": {
     "description": "Teal Green Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "526-2RR-F": {
     "description": "Moss Green Rough Rolled Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "526-2S-F": {
     "description": "Moss Green Smooth Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "526-2W-F": {
     "description": "Moss Green Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "528-1A-F": {
     "description": "Sea Green Artique  Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "528-1RR-F": {
     "description": "Sea Green Rough Rolled Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "528-1S-F": {
     "description": "Sea Green Smooth Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "528-1W-F": {
     "description": "Sea Green Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "528-2S-F": {
     "description": "Light Olive Smooth Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "D"
   },
   "60-726-F": {
     "description": "Apple Jade Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "60-7312-F": {
     "description": "Lime Green Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "60-755-F": {
     "description": "Fern Green Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "60-782-F": {
     "description": "Olive Green Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "621-7S-F": {
     "description": "Amber, Green/White Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "F"
   },
   "622-7S-F": {
     "description": "Forest Green Opal Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "F"
   },
   "623-7S-F": {
     "description": "White/Dark Green/Blue Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "F"
   },
   "823-72S-F": {
     "description": "Teal Green/White Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "823-92S-F": {
     "description": "Teal Green/White, Wispy Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "826-71S-F": {
     "description": "Lime Green/White Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "E"
   },
   "826-92S-F": {
     "description": "Moss Green/White, Wispy Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "828-72S-F": {
     "description": "Seafoam Green/White Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "E"
   },
   "828-91S-F": {
     "description": "Sea Green/White, Wispy Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "828-94S-F": {
     "description": "Olive/White Streaky Fusible",
-    "type": "GREEN"
+    "type": "GREEN",
+    "price_band": "C"
   },
   "130-8A-F": {
     "description": "Pale Blue Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "130-8RR-F": {
     "description": "Pale Blue Rough Rolled Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "130-8S-F": {
     "description": "Pale Blue Smooth Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "130-8W-F": {
     "description": "Pale Blue Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "132A-F": {
     "description": "Light Blue Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "132RR-F": {
     "description": "Light Blue Rough Rolled Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "132S-F": {
     "description": "Light Blue Smooth Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "132W-F": {
     "description": "Light Blue Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "134H-F": {
     "description": "Medium Blue, Hammered Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "134RR-F": {
     "description": "Medium Blue Rough Rolled Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "134W-F": {
     "description": "Medium Blue Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "136A-F": {
     "description": "Dark Blue Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "136RR-F": {
     "description": "Dark Blue Rough Rolled Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "136S-F": {
     "description": "Dark Blue Smooth Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "136S-F-IR": {
     "description": "Dark Blue Smooth Fusible Iridescent",
-    "type": "IRIDESCENT"
+    "type": "IRIDESCENT",
+    "price_band": " "
   },
   "136W-F": {
     "description": "Dark Blue Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "230-71S-F": {
     "description": "Hydrangea Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "230-72S-F": {
     "description": "Medium Blue Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "230-76S-F": {
     "description": "Dark Blue Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "233-74S-F": {
     "description": "Turquoise Blue Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "233-75S-F": {
     "description": "Mariner Blue Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "335-2S-F": {
     "description": "White/Light Blue Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "E"
   },
   "337-1S-F": {
     "description": "Pale Blue/White Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "E"
   },
   "337-2S-F": {
     "description": "Light Blue/White Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "E"
   },
   "337-6S-F": {
     "description": "Dark Blue/White Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "E"
   },
   "339-1S-F": {
     "description": "Pale Blue/White, Wispy Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "339-2S-F": {
     "description": "Light Blue/White, Wispy Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "339-6S-F": {
     "description": "Dark Blue/White, Wispy Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "433-1W-F": {
     "description": "Deep Steel/Sky Blue Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "E"
   },
   "532-1S-F": {
     "description": "Caribbean Blue Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "533-1A-F": {
     "description": "Sky Blue Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "533-1RR-F": {
     "description": "Sky Blue Rough Rolled Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "533-1S-F": {
     "description": "Sky Blue Smooth Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "533-1W-F": {
     "description": "Sky Blue Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "533-2S-F": {
     "description": "Blue Topaz Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "533-3RR-F": {
     "description": "Deep Aqua Rough Rolled Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "533-3S-F": {
     "description": "Deep Aqua Smooth Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "533-3W-F": {
     "description": "Deep Aqua Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "538-2S-F": {
     "description": "Light Steel Blue Smooth Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "538-4S-F": {
     "description": "Steel Blue Smooth Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "538-4W-F": {
     "description": "Steel Blue Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "538-6W-F": {
     "description": "Navy Blue Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "60-078-F": {
     "description": "Payne's Gray Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "60-079-F": {
     "description": "Chambray Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "633-7S-F": {
     "description": "Sky Blue, Dark Blue/White Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "F"
   },
   "833-51S-F": {
     "description": "White/Sky Blue Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "E"
   },
   "833-91S-F": {
     "description": "Sky Blue/White, Wispy Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "833-93S-F": {
     "description": "Deep Aqua/White, Wispy Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "838-52S-F": {
     "description": "White/Colonial Blue Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "838-52S-5MM-F": {
     "description": "White/Colonial Blue Fusible Double Thick 5MM",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "H"
   },
   "838-72S-F": {
     "description": "Colonial Blue/White Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "838-74S-F": {
     "description": "Steel Blue/White Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "838-74S-5MM-F": {
     "description": "Steel Blue/White Fusible Double Thick 5MM",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "H"
   },
   "838-94S-F": {
     "description": "Steel Blue/White, Wispy Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "C"
   },
   "838-96S-F": {
     "description": "Navy Blue/White, Wispy Fusible",
-    "type": "BLUE"
+    "type": "BLUE",
+    "price_band": "D"
   },
   "140-8A-F": {
     "description": "Pale Purple Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "140-8RR-F": {
     "description": "Pale Purple Rough Rolled Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "140-8S-F": {
     "description": "Pale Purple Smooth Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "140-8W-F": {
     "description": "Pale Purple Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "142RR-F": {
     "description": "Light Purple Rough Rolled Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "142S-F": {
     "description": "Light Purple Smooth Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "142W-F": {
     "description": "Light Purple Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "146W-F": {
     "description": "Dark Purple Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "240-74S-F": {
     "description": "Lilac Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "347-1S-F": {
     "description": "Pale Purple/White Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "E"
   },
   "349-1S-F": {
     "description": "Pale Purple/White, Wispy Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "349-2S-F": {
     "description": "Light Purple/White, Wispy Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "349-6S-F": {
     "description": "Dark Purple/White, Wispy Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "444-1W-F": {
     "description": "Deep Violet/Pale Purple Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "E"
   },
   "543-1S-F": {
     "description": "Light Grape Smooth Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "543-2A-F": {
     "description": "Grape Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "543-2RR-F": {
     "description": "Grape Rough Rolled Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "543-2S-F": {
     "description": "Grape Smooth Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "543-2W-F": {
     "description": "Grape Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "641-7S-F": {
     "description": "Purple, Amber/White Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "F"
   },
   "843-71S-F": {
     "description": "Pale Lavender/White Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "E"
   },
   "843-92S-F": {
     "description": "Light Grape/White, Wispy Fusible",
-    "type": "PURPLE & PINK"
+    "type": "PURPLE & PINK",
+    "price_band": "C"
   },
   "151RR-F": {
     "description": "Cherry Red Rough Rolled Fusible",
-    "type": "RED"
+    "type": "RED",
+    "price_band": "G"
   },
   "151S-F": {
     "description": "Cherry Red Smooth Fusible",
-    "type": "RED"
+    "type": "RED",
+    "price_band": "G"
   },
   "151S-F-IR": {
     "description": "Cherry Red Smooth Fusible Iridescent",
-    "type": "IRIDESCENT"
+    "type": "IRIDESCENT",
+    "price_band": "H"
   },
   "151W-F": {
     "description": "Cherry Red Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "G"
   },
   "152A-F": {
     "description": "Ruby Red Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "G"
   },
   "152G-F": {
     "description": "Ruby Red Granite Fusible",
-    "type": "RED"
+    "type": "RED",
+    "price_band": "G"
   },
   "152RR-F": {
     "description": "Ruby Red Rough Rolled Fusible",
-    "type": "RED"
+    "type": "RED",
+    "price_band": "G"
   },
   "152S-F": {
     "description": "Ruby Red Smooth Fusible",
-    "type": "RED"
+    "type": "RED",
+    "price_band": "G"
   },
   "152W-F": {
     "description": "Ruby Red Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "G"
   },
   "250-72S-F": {
     "description": "Red Opal Fusible..",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "G"
   },
   "357-1S-F": {
     "description": "Red/White Fusible",
-    "type": "RED"
+    "type": "RED",
+    "price_band": "G"
   },
   "359-1S-F": {
     "description": "Red/White, Wispy Fusible",
-    "type": "RED"
+    "type": "RED",
+    "price_band": "G"
   },
   "451-20W-F": {
     "description": "Ruby Red/Amber Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "G"
   },
   "60-602-F": {
     "description": "Flame Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "H"
   },
   "60-611-F": {
     "description": "Light Cherry Red Fusible",
-    "type": "RED"
+    "type": "RED",
+    "price_band": "G"
   },
   "675-5S-F": {
     "description": "White/Orange-Red Fusible",
-    "type": "RED"
+    "type": "RED",
+    "price_band": "H"
   },
   "161A-F": {
     "description": "Yellow Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "G"
   },
   "161RR-F": {
     "description": "Yellow Rough Rolled Fusible",
-    "type": "YELLOW"
+    "type": "YELLOW",
+    "price_band": "G"
   },
   "161S-F": {
     "description": "Yellow Smooth Fusible",
-    "type": "YELLOW"
+    "type": "YELLOW",
+    "price_band": "G"
   },
   "161W-F": {
     "description": "Yellow Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "G"
   },
   "260-72S-F": {
     "description": "Yellow Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "G"
   },
   "267-72S-F": {
     "description": "Sunflower Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "G"
   },
   "365-1S-F": {
     "description": "White/Yellow Fusible",
-    "type": "YELLOW"
+    "type": "YELLOW",
+    "price_band": "H"
   },
   "367-1S-F": {
     "description": "Yellow/White Fusible",
-    "type": "YELLOW"
+    "type": "YELLOW",
+    "price_band": "G"
   },
   "369-1S-F": {
     "description": "Yellow/White, Wispy Fusible",
-    "type": "YELLOW"
+    "type": "YELLOW",
+    "price_band": "G"
   },
   "171A-F": {
     "description": "Orange Artique Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "G"
   },
   "171RR-F": {
     "description": "Orange Rough Rolled Fusible",
-    "type": "ORANGE"
+    "type": "ORANGE",
+    "price_band": "G"
   },
   "171S-F": {
     "description": "Orange Smooth Fusible",
-    "type": "ORANGE"
+    "type": "ORANGE",
+    "price_band": "G"
   },
   "171W-F": {
     "description": "Orange Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "G"
   },
   "270-72S-F": {
     "description": "Orange Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "G"
   },
   "271-71S-F": {
     "description": "Persimmon Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "H"
   },
   "375-1S-F": {
     "description": "White/Orange Fusible",
-    "type": "ORANGE"
+    "type": "ORANGE",
+    "price_band": "G"
   },
   "377-1S-F": {
     "description": "Orange/White Fusible",
-    "type": "ORANGE"
+    "type": "ORANGE",
+    "price_band": "G"
   },
   "379-1S-F": {
     "description": "Orange/White, Wispy Fusible",
-    "type": "ORANGE"
+    "type": "ORANGE",
+    "price_band": "G"
   },
   "571-1S-F": {
     "description": "Rust Fusible",
-    "type": "ORANGE"
+    "type": "ORANGE",
+    "price_band": "G"
   },
   "60-355-F": {
     "description": "Marigold Opal Fusible (Strikes)",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "H"
   },
   "1009S-F": {
     "description": "Black Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "D"
   },
   "1009S-F-IR": {
     "description": "Black Opal Smooth Fusible Iridescent",
-    "type": "IRIDESCENT"
+    "type": "IRIDESCENT",
+    "price_band": "G"
   },
   "1009S-2MM-F": {
     "description": "Black Opal Smooth Thin 2 MM Fusible",
-    "type": "2MM - THIN"
+    "type": "2MM - THIN",
+    "price_band": "D"
   },
   "1009W-F": {
     "description": "Black Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "180-8A-F": {
     "description": "Pale Artique Gray Fusible",
-    "type": "ARTIQUE"
+    "type": "ARTIQUE",
+    "price_band": "D"
   },
   "180-8RR-F": {
     "description": "Pale Gray Rough Rolled Fusible",
-    "type": "BLACK & GRAY"
+    "type": "BLACK & GRAY",
+    "price_band": "C"
   },
   "180-8S-F": {
     "description": "Pale Gray Smooth Fusible",
-    "type": "BLACK & GRAY"
+    "type": "BLACK & GRAY",
+    "price_band": "C"
   },
   "180-8W-F": {
     "description": "Pale Gray Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "D"
   },
   "280-72S-F": {
     "description": "Pewter Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "280-76S-F": {
     "description": "Charcoal Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "E"
   },
   "385-1S-F": {
     "description": "White/Raincloud Fusible",
-    "type": "BLACK & GRAY"
+    "type": "BLACK & GRAY",
+    "price_band": "E"
   },
   "385-1S-5MM-F": {
     "description": "White/Raincloud Fusible Double Thick 5MM",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "H"
   },
   "385-2S-F": {
     "description": "White/Gray Fusible",
-    "type": "BLACK & GRAY"
+    "type": "BLACK & GRAY",
+    "price_band": "C"
   },
   "385-2S-5MM-F": {
     "description": "White/Gray Fusible Double Thick 5MM",
-    "type": "5MM - DOUBLE THICK"
+    "type": "5MM - DOUBLE THICK",
+    "price_band": "H"
   },
   "387-2S-F": {
     "description": "Gray/White Fusible",
-    "type": "BLACK & GRAY"
+    "type": "BLACK & GRAY",
+    "price_band": "C"
   },
   "389-1S-F": {
     "description": "Pale Gray/White, Wispy Fusible",
-    "type": "BLACK & GRAY"
+    "type": "BLACK & GRAY",
+    "price_band": "C"
   },
   "291-61S-F": {
     "description": "Champagne Opal Fusible",
-    "type": "SOLID OPALESCENT"
+    "type": "SOLID OPALESCENT",
+    "price_band": "H"
   },
   "591-1RR-F": {
     "description": "Pink Champagne Rough Rolled Fusible",
-    "type": "CHAMPAGNE"
+    "type": "CHAMPAGNE",
+    "price_band": "G"
   },
   "591-1W-F": {
     "description": "Pink Champagne Waterglass Fusible",
-    "type": "WATERGLASS"
+    "type": "WATERGLASS",
+    "price_band": "G"
   },
   "891-61S-F": {
     "description": "Pink Champagne/White Fusible",
-    "type": "CHAMPAGNE"
+    "type": "CHAMPAGNE",
+    "price_band": "E"
   },
   "891-81S-F": {
     "description": "Pink Champagne, Wispy Fusible",
-    "type": "CHAMPAGNE"
+    "type": "CHAMPAGNE",
+    "price_band": "G"
   },
   "60-003-F": {
     "description": "Red Reactive Transparent Fusible",
-    "type": "RED REACTIVE"
+    "type": "RED REACTIVE",
+    "price_band": "G"
   },
   "60-045-F": {
     "description": "Red Reactive Opal Fusible",
-    "type": "RED REACTIVE"
+    "type": "RED REACTIVE",
+    "price_band": "H"
   },
   "1009AV-F": {
     "description": "Aventurine Black Fusible",
-    "type": "AVENTURINE"
+    "type": "AVENTURINE",
+    "price_band": "G"
   },
   "128AV-F": {
     "description": "Aventurine Green Fusible",
-    "type": "AVENTURINE"
+    "type": "AVENTURINE",
+    "price_band": "G"
   },
   "138AV-F": {
     "description": "Aventurine Blue Fusible",
-    "type": "AVENTURINE"
+    "type": "AVENTURINE",
+    "price_band": "G"
   },
   "Spirit-4001S-F": {
     "description": "Murano Fusible",
-    "type": "SPIRIT"
+    "type": "SPIRIT",
+    "price_band": "F"
   },
   "Spirit-410-7S-F": {
     "description": "Monterrey Fusible",
-    "type": "SPIRIT"
+    "type": "SPIRIT",
+    "price_band": "F"
   },
   "Spirit-431-76S-F": {
     "description": "Vienna Fusible",
-    "type": "SPIRIT"
+    "type": "SPIRIT",
+    "price_band": "F"
   },
   "Spirit-4361-76S-F": {
     "description": "Atlantis Fusible",
-    "type": "SPIRIT"
+    "type": "SPIRIT",
+    "price_band": "F"
   },
   "Spirit-480-2S-F": {
     "description": "London Fog Fusible",
-    "type": "SPIRIT"
+    "type": "SPIRIT",
+    "price_band": "F"
   },
   "Spirit-480-6S-F": {
     "description": "Harbor Gray Fusible",
-    "type": "SPIRIT"
+    "type": "SPIRIT",
+    "price_band": "F"
   },
   "OA-3005-9S-F": {
     "description": "Licorice Swirl Fusible",
-    "type": "OPALART"
+    "type": "OPALART",
+    "price_band": "F"
   },
   "OA-355-1S-F": {
     "description": "Strawberries & Cream Fusible",
-    "type": "OPALART"
+    "type": "OPALART",
+    "price_band": "H"
   },
   "OA-623-52S-F": {
     "description": "Lagoon Fusible",
-    "type": "OPALART"
+    "type": "OPALART",
+    "price_band": "F"
   },
   "OA-634-52S-F": {
     "description": "Blackberry Cream Fusible",
-    "type": "OPALART"
+    "type": "OPALART",
+    "price_band": "F"
   },
   "FUSERSRESERVE-SW-F": {
     "description": "Southwest Fusers' Reserve Fusible",
-    "type": "FUSERS RESERVE"
+    "type": "FUSERS RESERVE",
+    "price_band": "E"
   },
   "6000-81CC-F": {
     "description": "Pearl Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6011-85CC-F": {
     "description": "Hawkwings Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6021-86CC-F": {
     "description": "RainForest Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6022-81CC-F": {
     "description": "Key Lime Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6022-82CC-F": {
     "description": "Congo Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6023-83CC-F": {
     "description": "Aqua-Lime Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "603-81CC-F": {
     "description": "Blue Skies Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6033-83CC-F": {
     "description": "Blue Yonder Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6034-83CC-F": {
     "description": "Aqua-Rose Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "605-85CC-F": {
     "description": "Sierra Red Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6051-83CC-F": {
     "description": "Autumn Flame Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6061-81CC-F": {
     "description": "Meadowlark Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6067-83CC-F": {
     "description": "Mimosa Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "6076-83CC-F": {
     "description": "Inferno Fusible",
-    "type": "PEARL OPAL MIXES"
+    "type": "PEARL OPAL MIXES",
+    "price_band": "F"
   },
   "BR-308": {
     "description": "Baroque White/Clear (Non Fusible)",
-    "type": "BAROQUE NON FUSIBLE"
+    "type": "BAROQUE NON FUSIBLE",
+    "price_band": "D"
   },
   "BR-Burgundy": {
     "description": "Baroque Burgundy/Clear (Non Fusible)",
-    "type": "BAROQUE NON FUSIBLE"
+    "type": "BAROQUE NON FUSIBLE",
+    "price_band": "D"
   },
   "BR-Clear": {
     "description": "Baroque Clear/Clear (Non Fusible)",
-    "type": "BAROQUE NON FUSIBLE"
+    "type": "BAROQUE NON FUSIBLE",
+    "price_band": "D"
   },
   "R-00-F-6": {
     "description": "Rods Clear 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "A"
   },
   "R-003-F-6": {
     "description": "Rods Red Reactive Transparent 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "D"
   },
   "R-045-F-6": {
     "description": "Rods Red Reactive Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "D"
   },
   "R-1102-F-6": {
     "description": "Rods Pale Amber 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-1104-F-6": {
     "description": "Rods Light Amber 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-1108-F-6": {
     "description": "Rods Medium Amber 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-111-F-6": {
     "description": "Rods Dark Amber 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-121-F-6": {
     "description": "Rods Light Green 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-125-F-6": {
     "description": "Rods Dark Green 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-1308-F-6": {
     "description": "Rods Pale Blue 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-132-F-6": {
     "description": "Rods Light Blue 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-136-F-6": {
     "description": "Rods Dark Blue 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-142-F-6": {
     "description": "Rods Light Purple 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-151-F-6": {
     "description": "Rods Cherry Red Semi-Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-161-F-6": {
     "description": "Rods Yellow Semi-Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-171-F-6": {
     "description": "Rods Orange Semi-Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-1808-F-6": {
     "description": "Rods Pale Gray 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-200-F-6": {
     "description": "Rods White Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-2103-F-6": {
     "description": "Rods Vanilla Cream Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "D"
   },
   "R-2107-F-6": {
     "description": "Rods Almond Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2206-F-6": {
     "description": "Rods Dark Green Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2222-F-6": {
     "description": "Rods Pastel Green Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2232-F-6": {
     "description": "Rods Turquoise Green Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2234-F-6": {
     "description": "Rods Peacock Green Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2264-F-6": {
     "description": "Rods Amazon Green Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2301-F-6": {
     "description": "Rods Hydrangea Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2302-F-6": {
     "description": "Rods Medium Blue Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2306-F-6": {
     "description": "Rods Dark Blue Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2334-F-6": {
     "description": "Rods Turquoise Blue Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2404-F-6": {
     "description": "Rods Lilac Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2502-F-6": {
     "description": "Rods Red Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2672-F-6": {
     "description": "Rods Sunflower Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2702-F-6": {
     "description": "Rods Orange Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2711-F-6": {
     "description": "Rods Persimmon Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2802-F-6": {
     "description": "Rods Pewter Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-2911-F-6": {
     "description": "Rods Champagne Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-355-F-6": {
     "description": "Rods Marigold Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-5181-F-6": {
     "description": "Rods Bronze 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-5232-F-6": {
     "description": "Rods Teal Green 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-5262-F-6": {
     "description": "Rods Moss Green 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-5281-F-6": {
     "description": "Rods Sea Green 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-5282-F-6": {
     "description": "Rods Light Olive Green 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-5331-F-6": {
     "description": "Rods Sky Blue 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-5333-F-6": {
     "description": "Rods Deep Aqua 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-5432-F-6": {
     "description": "Rods Grape 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-56-F-6": {
     "description": "Rods Black 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-5711-F-6": {
     "description": "Rods Rust 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-5911-F-6": {
     "description": "Rods Champagne 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "R-602-F-6": {
     "description": "Rods Flame Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-6227-F-6": {
     "description": "Rods Forest Green Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-755-F-6": {
     "description": "Rods Fern Green Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-782-F-6": {
     "description": "Rods Olive Green Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-8261-F-6": {
     "description": "Rods Key Lime Opal 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "C"
   },
   "R-MG-F-6": {
     "description": "Rods Mardi Gras 6MM",
-    "type": "6MM RODS"
+    "type": "6MM RODS",
+    "price_band": "B"
   },
   "S-00-F": {
     "description": "Stringers Clear",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-003-F": {
     "description": "Stringers Red Reactive Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-045-F": {
     "description": "Stringers Red Reactive Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-078-F": {
     "description": "Stringers Payne's Gray Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-1102-F": {
     "description": "Stringers Pale Amber Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-1108-F": {
     "description": "Stringers Medium Amber Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-111-F": {
     "description": "Stringers Dark Amber Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-125-F": {
     "description": "Stringers Dark Green Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-132-F": {
     "description": "Stringers Light Blue Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-136-F": {
     "description": "Stringers Dark Blue Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-146-F": {
     "description": "Stringers Dark Purple Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-151-F": {
     "description": "Stringers Cherry Red Transparent (May Strike to Semi-Opal)",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-161-F": {
     "description": "Stringers Yellow Transparent (May Strike to Semi-Opal)",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-171-F": {
     "description": "Stringers Orange Transparent (May Strike to Semi-Opal)",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-1808-F": {
     "description": "Stringers Pale Gray Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-200-F": {
     "description": "Stringers White Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-209-F": {
     "description": "Stringers Crystal Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2103-F": {
     "description": "Stringers Vanilla Cream Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2107-F": {
     "description": "Stringers Almond Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2116-F": {
     "description": "Stringers Chocolate Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2152-F": {
     "description": "Stringers Terra Cotta Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2206-F": {
     "description": "Stringers Dark Green Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2222-F": {
     "description": "Stringers Pastel Green Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2234-F": {
     "description": "Stringers Peacock Green Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2262-F": {
     "description": "Stringers Lemongrass Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2264-F": {
     "description": "Stringers Amazon Green Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2301-F": {
     "description": "Stringers Hydrangea Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2302-F": {
     "description": "Stringers Medium Blue Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2306-F": {
     "description": "Stringers Dark Blue Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2334-F": {
     "description": "Stringers Turquoise Blue Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2404-F": {
     "description": "Stringers Lilac Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2502-F": {
     "description": "Stringers Red Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2602-F": {
     "description": "Stringers Yellow Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2702-F": {
     "description": "Stringers Orange Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2711-F": {
     "description": "Stringers Persimmon Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-2806-F": {
     "description": "Stringers Charcoal Gray Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-3491-F": {
     "description": "Stringers Pale Purple Semi-Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-3492-F": {
     "description": "Stringers Light Purple Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-355-F": {
     "description": "Stringers Marigold Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-5182-F": {
     "description": "Stringers Antique Bronze Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-5232-F": {
     "description": "Stringers Teal Green Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-5262-F": {
     "description": "Stringers Moss Green Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-5281-F": {
     "description": "Stringers Sea Green Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-5282-F": {
     "description": "Stringers Light Olive Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-5331-F": {
     "description": "Stringers Sky Blue Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-5333-F": {
     "description": "Stringers Deep Aqua Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-5384-F": {
     "description": "Stringers Steel Blue Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-5432-F": {
     "description": "Stringers Grape Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-56-F": {
     "description": "Stringers Black",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-5711-F": {
     "description": "Stringers Rust Transparent (May Strike to Semi-Opal)",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-602-F": {
     "description": "Stringers Flame Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-6227-F": {
     "description": "Stringers Forest Green Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-726-F": {
     "description": "Stringers Apple Jade Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-7312-F": {
     "description": "Stringers Lime Transparent",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-755-F": {
     "description": "Stringers Fern Green Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-782-F": {
     "description": "Stringers Olive Green Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-8261-F": {
     "description": "Stringers Key Lime Opal",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "S-MG-F": {
     "description": "Stringers Mardi Gras",
-    "type": "STRINGERS"
+    "type": "STRINGERS",
+    "price_band": "?"
   },
   "N-00-F": {
     "description": "Noodles Clear",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-003-F": {
     "description": "Noodles Red Reactive Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-045-F": {
     "description": "Noodles Red Reactive Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-078-F": {
     "description": "Noodles Payne's Gray Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-1102-F": {
     "description": "Noodles Pale Amber Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-1108-F": {
     "description": "Noodles Medium Amber Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-111-F": {
     "description": "Noodles Dark Amber Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-125-F": {
     "description": "Noodles Dark Green Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-132-F": {
     "description": "Noodles Light Blue Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-136-F": {
     "description": "Noodles Dark Blue Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-146-F": {
     "description": "Noodles Dark Purple Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-151-F": {
     "description": "Noodles Cherry Red Transparent (May Strike to Semi-Opal)",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-161-F": {
     "description": "Noodles Yellow Transparent (May Strike to Semi-Opal)",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-171-F": {
     "description": "Noodles Orange Transparent (May Strike to Semi-Opal)",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-1808-F": {
     "description": "Noodles Pale Gray Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-200-F": {
     "description": "Noodles White Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-209-F": {
     "description": "Noodles Crystal Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2103-F": {
     "description": "Noodles Vanilla Cream Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2107-F": {
     "description": "Noodles Almond Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2116-F": {
     "description": "Noodles Chocolate Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2152-F": {
     "description": "Noodles Terra Cotta Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2206-F": {
     "description": "Noodles Dark Green Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2222-F": {
     "description": "Noodles Pastel Green Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2234-F": {
     "description": "Noodles Peacock Green Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2262-F": {
     "description": "Noodles Lemongrass Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2264-F": {
     "description": "Noodles Amazon Green Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2301-F": {
     "description": "Noodles Hydrangea Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2302-F": {
     "description": "Noodles Medium Blue Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2306-F": {
     "description": "Noodles Dark Blue Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2334-F": {
     "description": "Noodles Turquoise Blue Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2404-F": {
     "description": "Noodles Lilac Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2502-F": {
     "description": "Noodles Red Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2602-F": {
     "description": "Noodles Yellow Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2702-F": {
     "description": "Noodles Orange Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2711-F": {
     "description": "Noodles Persimmon Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-2806-F": {
     "description": "Noodles Charcoal Gray Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-3491-F": {
     "description": "Noodles Pale Purple Semi-Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-3492-F": {
     "description": "Noodles Light Purple Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-355-F": {
     "description": "Noodles Marigold Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-5182-F": {
     "description": "Noodles Antique Bronze Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-5232-F": {
     "description": "Noodles Teal Green Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-5262-F": {
     "description": "Noodles Moss Green Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-5281-F": {
     "description": "Noodles Sea Green Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-5282-F": {
     "description": "Noodles Light Olive Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-5331-F": {
     "description": "Noodles Sky Blue Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-5333-F": {
     "description": "Noodles Deep Aqua Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-5384-F": {
     "description": "Noodles Steel Blue Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-5432-F": {
     "description": "Noodles Grape Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-56-F": {
     "description": "Noodles Black",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-5711-F": {
     "description": "Noodles Rust Transparent (May Strike to Semi-Opal)",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-602-F": {
     "description": "Noodles Flame Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-6227-F": {
     "description": "Noodles Forest Green Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-726-F": {
     "description": "Noodles Apple Jade Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-7312-F": {
     "description": "Noodles Lime Transparent",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-755-F": {
     "description": "Noodles Fern Green Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-782-F": {
     "description": "Noodles Olive Green Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-8261-F": {
     "description": "Noodles Key Lime Opal",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "N-MG-F": {
     "description": "Noodles Mardi Gras",
-    "type": "NOODLES"
+    "type": "NOODLES",
+    "price_band": "?"
   },
   "F1-00-F": {
     "type": "FRIT",

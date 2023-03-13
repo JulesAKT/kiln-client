@@ -174,7 +174,7 @@ const FiringGraph = ({
                 backgroundColor:
                   !!enabledAnnotations[key] && temperatureRangeColours[key],
               }}
-              onClick={() => {
+              onPress={() => {
                 handleChangedCheckbox(key);
               }}
             >

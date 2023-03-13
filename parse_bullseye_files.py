@@ -1,6 +1,7 @@
 import json
 
 bullseye_colors = {}
+bullseye_prices = {}
 
 
 def GetBullsEyeColor(code):
@@ -125,6 +126,17 @@ def GlassType(code):
     return style + " " + type
 
 
+with open("./bullseye_price_bands.csv") as bullseye_price_file:
+    price_lines = bullseye_price_file.readlines()
+    for line in price_lines:
+        words = line.rstrip("\n").split(",")
+        product_code = words[0]
+        band = words[1]
+        bullseye_prices[product_code] = band
+
+
+print(bullseye_prices)
+
 with open("./bullseye_color_conversion_chart_for_parsing.txt") as color_file:
     color_lines = color_file.readlines()
 
@@ -196,18 +208,22 @@ with open("./bullseye_inventory_sheet_for_parsing.txt") as inventory_file:
             # So... if our line has a full code, then we can just output it.
             if "-" in code:
                 print("Outputting for: " + code)
+                short_code = code.split("-")[0]
                 bullseye_inventory[code] = {
                     "description": DescribeGlass(code, color_name),
                     "type": GlassType(code),
                     "color": GetBullsEyeColor(code.split("-")[0]),
+                    "price_band": bullseye_prices[short_code],
                 }
             else:
                 # We're not a full code, so extend it.
+                short_code = code.split("-")[0]
                 for s in variant_list:
                     bullseye_inventory[code + "-" + s] = {
                         "description": DescribeGlass(code, color_name),
                         "type": GlassType(code + "-" + s),
                         "color": GetBullsEyeColor(code.split("-")[0]),
+                        "price_band": bullseye_prices[short_code],
                     }
 
 with open("./bullseye_reactions_chart_for_parsing.txt") as reactions_file:

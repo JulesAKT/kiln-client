@@ -3,10 +3,22 @@ import csv
 import re
 
 oceanside_colors = {}
+oceanside_prices = {}
 
 
 def DescribeGlass(code, color_name):
     return color_name
+
+
+with open("./oceanside_price_bands.txt") as oceanside_price_file:
+    price_lines = oceanside_price_file.readlines()
+    for line in price_lines:
+        words = line.rstrip("\n").split(" ")
+        product_code = words[0]
+        band = line.rstrip("\n")[-1]
+        oceanside_prices[product_code] = band
+
+print(oceanside_prices)
 
 
 with open("./oceanside_catalogue.csv", newline="") as inventory_file:
@@ -31,6 +43,7 @@ with open("./oceanside_catalogue.csv", newline="") as inventory_file:
             oceanside_inventory[code] = {
                 "description": description,
                 "type": last_style,
+                "price_band": oceanside_prices[code],
             }
             shortname = description.split(" Fusible")[0]
             # print("Adding shortname:" + shortname)
