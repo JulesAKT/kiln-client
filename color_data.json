@@ -11,7 +11,8 @@
       "y": "1",
       "k": "0"
     },
-    "name": "Reactive Cloud"
+    "name": "Reactive Cloud",
+    "price_band": "D"
   },
   "000013": {
     "rgb": {
@@ -25,7 +26,8 @@
       "y": "2",
       "k": "1"
     },
-    "name": "Opaque White"
+    "name": "Opaque White",
+    "price_band": "D"
   },
   "000016": {
     "rgb": {
@@ -39,7 +41,8 @@
       "y": "27",
       "k": "6"
     },
-    "name": "Turquoise Opaque Rod"
+    "name": "Turquoise Opaque Rod",
+    "price_band": "D"
   },
   "000024": {
     "rgb": {
@@ -53,7 +56,8 @@
       "y": "81",
       "k": "16"
     },
-    "name": "Tomato Red"
+    "name": "Tomato Red",
+    "price_band": "C"
   },
   "000025": {
     "rgb": {
@@ -67,7 +71,8 @@
       "y": "100",
       "k": "0"
     },
-    "name": "Tangerine Orange"
+    "name": "Tangerine Orange",
+    "price_band": "C"
   },
   "000034": {
     "rgb": {
@@ -81,7 +86,8 @@
       "y": "15",
       "k": "0"
     },
-    "name": "Light Peach Cream"
+    "name": "Light Peach Cream",
+    "price_band": "C"
   },
   "000100": {
     "rgb": {
@@ -95,7 +101,8 @@
       "y": "60",
       "k": "91"
     },
-    "name": "Black"
+    "name": "Black",
+    "price_band": "C"
   },
   "000101": {
     "rgb": {
@@ -109,7 +116,8 @@
       "y": "60",
       "k": "91"
     },
-    "name": "Stiff Black"
+    "name": "Stiff Black",
+    "price_band": "C"
   },
   "000102": {
     "rgb": {
@@ -123,7 +131,8 @@
       "y": "64",
       "k": "85"
     },
-    "name": "Blue Black"
+    "name": "Blue Black",
+    "price_band": "C"
   },
   "000104": {
     "rgb": {
@@ -137,7 +146,8 @@
       "y": "5",
       "k": "0"
     },
-    "name": "Glacier Blue"
+    "name": "Glacier Blue",
+    "price_band": "B"
   },
   "000108": {
     "rgb": {
@@ -151,7 +161,8 @@
       "y": "11",
       "k": "3"
     },
-    "name": "Powder Blue"
+    "name": "Powder Blue",
+    "price_band": "B"
   },
   "000112": {
     "rgb": {
@@ -165,7 +176,8 @@
       "y": "49",
       "k": "2"
     },
-    "name": "Mint Green"
+    "name": "Mint Green",
+    "price_band": "B"
   },
   "000113": {
     "rgb": {
@@ -179,7 +191,8 @@
       "y": "5",
       "k": "0"
     },
-    "name": "White"
+    "name": "White",
+    "price_band": "B"
   },
   "000114": {
     "rgb": {
@@ -193,7 +206,8 @@
       "y": "0",
       "k": "0"
     },
-    "name": "Cobalt Blue"
+    "name": "Cobalt Blue",
+    "price_band": "B"
   },
   "000116": {
     "rgb": {
@@ -207,7 +221,8 @@
       "y": "21",
       "k": "1"
     },
-    "name": "Turquoise Blue"
+    "name": "Turquoise Blue",
+    "price_band": "B"
   },
   "000117": {
     "rgb": {
@@ -221,7 +236,8 @@
       "y": "64",
       "k": "27"
     },
-    "name": "Mineral Green"
+    "name": "Mineral Green",
+    "price_band": "B"
   },
   "000118": {
     "rgb": {
@@ -235,7 +251,8 @@
       "y": "1",
       "k": "0"
     },
-    "name": "Periwinkle"
+    "name": "Periwinkle",
+    "price_band": "C"
   },
   "000119": {
     "rgb": {
@@ -249,7 +266,8 @@
       "y": "37",
       "k": "28"
     },
-    "name": "Mink"
+    "name": "Mink",
+    "price_band": "D"
   },
   "000120": {
     "rgb": {
@@ -263,7 +281,8 @@
       "y": "99",
       "k": "1"
     },
-    "name": "Canary Yellow"
+    "name": "Canary Yellow",
+    "price_band": "C"
   },
   "000124": {
     "rgb": {
@@ -277,7 +296,8 @@
       "y": "95",
       "k": "28"
     },
-    "name": "Red"
+    "name": "Red",
+    "price_band": "C"
   },
   "000125": {
     "rgb": {
@@ -291,7 +311,8 @@
       "y": "100",
       "k": "0"
     },
-    "name": "Orange"
+    "name": "Orange",
+    "price_band": "C"
   },
   "000126": {
     "rgb": {
@@ -305,7 +326,8 @@
       "y": "99",
       "k": "1"
     },
-    "name": "Spring Green"
+    "name": "Spring Green",
+    "price_band": "C"
   },
   "000127": {
     "rgb": {
@@ -319,7 +341,8 @@
       "y": "30",
       "k": "3"
     },
-    "name": "Nougat Rod"
+    "name": "Nougat Rod",
+    "price_band": "E"
   },
   "000131": {
     "rgb": {
@@ -333,7 +356,8 @@
       "y": "34",
       "k": "4"
     },
-    "name": "Artichoke"
+    "name": "Artichoke",
+    "price_band": "D"
   },
   "000132": {
     "rgb": {
@@ -347,7 +371,8 @@
       "y": "29",
       "k": "0"
     },
-    "name": "Driftwood Gray"
+    "name": "Driftwood Gray",
+    "price_band": "B"
   },
   "000136": {
     "rgb": {
@@ -361,7 +386,8 @@
       "y": "33",
       "k": "32"
     },
-    "name": "Deco Gray"
+    "name": "Deco Gray",
+    "price_band": "B"
   },
   "000137": {
     "rgb": {
@@ -375,7 +401,8 @@
       "y": "27",
       "k": "0"
     },
-    "name": "French Vanilla"
+    "name": "French Vanilla",
+    "price_band": "B"
   },
   "000138": {
     "rgb": {
@@ -389,7 +416,8 @@
       "y": "23",
       "k": "4"
     },
-    "name": "Marzipan"
+    "name": "Marzipan",
+    "price_band": "D"
   },
   "000139": {
     "rgb": {
@@ -403,7 +431,8 @@
       "y": "26",
       "k": "1"
     },
-    "name": "Almond"
+    "name": "Almond",
+    "price_band": "D"
   },
   "000141": {
     "rgb": {
@@ -417,7 +446,8 @@
       "y": "78",
       "k": "45"
     },
-    "name": "Dark Forest Green"
+    "name": "Dark Forest Green",
+    "price_band": "B"
   },
   "000142": {
     "rgb": {
@@ -431,7 +461,8 @@
       "y": "1",
       "k": "0"
     },
-    "name": "Neo-lavender"
+    "name": "Neo-lavender",
+    "price_band": "E"
   },
   "000143": {
     "rgb": {
@@ -445,7 +476,8 @@
       "y": "5",
       "k": "0"
     },
-    "name": "Lacy White"
+    "name": "Lacy White",
+    "price_band": "B"
   },
   "000144": {
     "rgb": {
@@ -459,7 +491,8 @@
       "y": "51",
       "k": "27"
     },
-    "name": "Teal Green"
+    "name": "Teal Green",
+    "price_band": "B"
   },
   "000145": {
     "rgb": {
@@ -473,7 +506,8 @@
       "y": "65",
       "k": "42"
     },
-    "name": "Jade Green"
+    "name": "Jade Green",
+    "price_band": "B"
   },
   "000146": {
     "rgb": {
@@ -487,7 +521,8 @@
       "y": "14",
       "k": "36"
     },
-    "name": "Steel Blue"
+    "name": "Steel Blue",
+    "price_band": "B"
   },
   "000147": {
     "rgb": {
@@ -501,7 +536,8 @@
       "y": "0",
       "k": "5"
     },
-    "name": "Deep Cobalt Blue"
+    "name": "Deep Cobalt Blue",
+    "price_band": "C"
   },
   "000148": {
     "rgb": {
@@ -515,7 +551,8 @@
       "y": "7",
       "k": "33"
     },
-    "name": "Indigo Blue"
+    "name": "Indigo Blue",
+    "price_band": "C"
   },
   "000161": {
     "rgb": {
@@ -529,7 +566,8 @@
       "y": "16",
       "k": "0"
     },
-    "name": "Robin\u00e2\u20ac\u2122s Egg Blue"
+    "name": "Robin\u00e2\u20ac\u2122s Egg Blue",
+    "price_band": "B"
   },
   "000164": {
     "rgb": {
@@ -543,7 +581,8 @@
       "y": "0",
       "k": "0"
     },
-    "name": "Egyptian Blue"
+    "name": "Egyptian Blue",
+    "price_band": "B"
   },
   "000176": {
     "rgb": {
@@ -557,7 +596,8 @@
       "y": "44",
       "k": "15"
     },
-    "name": "Peacock Blue"
+    "name": "Peacock Blue",
+    "price_band": "?"
   },
   "000203": {
     "rgb": {
@@ -571,7 +611,8 @@
       "y": "87",
       "k": "49"
     },
-    "name": "Woodland Brown"
+    "name": "Woodland Brown",
+    "price_band": "C"
   },
   "000206": {
     "rgb": {
@@ -585,7 +626,8 @@
       "y": "32",
       "k": "18"
     },
-    "name": "Elephant Gray"
+    "name": "Elephant Gray",
+    "price_band": "C"
   },
   "000207": {
     "rgb": {
@@ -599,7 +641,8 @@
       "y": "46",
       "k": "13"
     },
-    "name": "Celadon Green"
+    "name": "Celadon Green",
+    "price_band": "C"
   },
   "000208": {
     "rgb": {
@@ -613,7 +656,8 @@
       "y": "9",
       "k": "28"
     },
-    "name": "Dusty Blue"
+    "name": "Dusty Blue",
+    "price_band": "C"
   },
   "000212": {
     "rgb": {
@@ -627,7 +671,8 @@
       "y": "91",
       "k": "40"
     },
-    "name": "Olive Green"
+    "name": "Olive Green",
+    "price_band": "B"
   },
   "000216": {
     "rgb": {
@@ -641,7 +686,8 @@
       "y": "9",
       "k": "0"
     },
-    "name": "Light Cyan"
+    "name": "Light Cyan",
+    "price_band": "B"
   },
   "000217": {
     "rgb": {
@@ -655,7 +701,8 @@
       "y": "83",
       "k": "13"
     },
-    "name": "Green Gold Stringer"
+    "name": "Green Gold Stringer",
+    "price_band": "B"
   },
   "000220": {
     "rgb": {
@@ -669,7 +716,8 @@
       "y": "99",
       "k": "1"
     },
-    "name": "Sunflower Yellow"
+    "name": "Sunflower Yellow",
+    "price_band": "C"
   },
   "000221": {
     "rgb": {
@@ -683,7 +731,8 @@
       "y": "95",
       "k": "1"
     },
-    "name": "Citronelle"
+    "name": "Citronelle",
+    "price_band": "C"
   },
   "000222": {
     "rgb": {
@@ -697,7 +746,8 @@
       "y": "100",
       "k": "2"
     },
-    "name": "Avocado Green"
+    "name": "Avocado Green",
+    "price_band": "C"
   },
   "000224": {
     "rgb": {
@@ -711,7 +761,8 @@
       "y": "73",
       "k": "38"
     },
-    "name": "Deep Red"
+    "name": "Deep Red",
+    "price_band": "C"
   },
   "000225": {
     "rgb": {
@@ -725,7 +776,8 @@
       "y": "99",
       "k": "11"
     },
-    "name": "Pimento Red"
+    "name": "Pimento Red",
+    "price_band": "C"
   },
   "000227": {
     "rgb": {
@@ -739,7 +791,8 @@
       "y": "97",
       "k": "34"
     },
-    "name": "Golden Green"
+    "name": "Golden Green",
+    "price_band": "C"
   },
   "000236": {
     "rgb": {
@@ -753,7 +806,8 @@
       "y": "38",
       "k": "40"
     },
-    "name": "Slate Gray"
+    "name": "Slate Gray",
+    "price_band": "B"
   },
   "000241": {
     "rgb": {
@@ -767,7 +821,8 @@
       "y": "98",
       "k": "40"
     },
-    "name": "Moss Green"
+    "name": "Moss Green",
+    "price_band": "C"
   },
   "000243": {
     "rgb": {
@@ -781,7 +836,8 @@
       "y": "4",
       "k": "1"
     },
-    "name": "Translucent White"
+    "name": "Translucent White",
+    "price_band": "C"
   },
   "000301": {
     "rgb": {
@@ -795,7 +851,8 @@
       "y": "22",
       "k": "10"
     },
-    "name": "Pink"
+    "name": "Pink",
+    "price_band": "F"
   },
   "000303": {
     "rgb": {
@@ -809,7 +866,8 @@
       "y": "17",
       "k": "24"
     },
-    "name": "Dusty Lilac"
+    "name": "Dusty Lilac",
+    "price_band": "C"
   },
   "000304": {
     "rgb": {
@@ -823,7 +881,8 @@
       "y": "25",
       "k": "5"
     },
-    "name": "Lavender"
+    "name": "Lavender",
+    "price_band": "?"
   },
   "000305": {
     "rgb": {
@@ -837,7 +896,8 @@
       "y": "55",
       "k": "10"
     },
-    "name": "Salmon Pink"
+    "name": "Salmon Pink",
+    "price_band": "F"
   },
   "000309": {
     "rgb": {
@@ -851,7 +911,8 @@
       "y": "94",
       "k": "47"
     },
-    "name": "Cinnabar"
+    "name": "Cinnabar",
+    "price_band": "D"
   },
   "000310": {
     "rgb": {
@@ -865,7 +926,8 @@
       "y": "93",
       "k": "44"
     },
-    "name": "Umber"
+    "name": "Umber",
+    "price_band": "D"
   },
   "000312": {
     "rgb": {
@@ -879,7 +941,8 @@
       "y": "98",
       "k": "24"
     },
-    "name": "Pea Pod Green"
+    "name": "Pea Pod Green",
+    "price_band": "B"
   },
   "000313": {
     "rgb": {
@@ -893,7 +956,8 @@
       "y": "0",
       "k": "0"
     },
-    "name": "Dense White"
+    "name": "Dense White",
+    "price_band": "C"
   },
   "000320": {
     "rgb": {
@@ -907,7 +971,8 @@
       "y": "100",
       "k": "0"
     },
-    "name": "Marigold Yellow"
+    "name": "Marigold Yellow",
+    "price_band": "C"
   },
   "000321": {
     "rgb": {
@@ -921,7 +986,8 @@
       "y": "99",
       "k": "0"
     },
-    "name": "Pumpkin Orange"
+    "name": "Pumpkin Orange",
+    "price_band": "C"
   },
   "000329": {
     "rgb": {
@@ -935,7 +1001,8 @@
       "y": "98",
       "k": "29"
     },
-    "name": "Burnt Orange"
+    "name": "Burnt Orange",
+    "price_band": "C"
   },
   "000332": {
     "rgb": {
@@ -949,7 +1016,8 @@
       "y": "10",
       "k": "37"
     },
-    "name": "Plum"
+    "name": "Plum",
+    "price_band": "F"
   },
   "000334": {
     "rgb": {
@@ -963,7 +1031,8 @@
       "y": "7",
       "k": "35"
     },
-    "name": "Gold Purple"
+    "name": "Gold Purple",
+    "price_band": "F"
   },
   "000336": {
     "rgb": {
@@ -977,7 +1046,8 @@
       "y": "42",
       "k": "65"
     },
-    "name": "Deep Gray"
+    "name": "Deep Gray",
+    "price_band": "B"
   },
   "000337": {
     "rgb": {
@@ -991,7 +1061,8 @@
       "y": "97",
       "k": "28"
     },
-    "name": "Butterscotch"
+    "name": "Butterscotch",
+    "price_band": "C"
   },
   "000345": {
     "rgb": {
@@ -1005,7 +1076,8 @@
       "y": "60",
       "k": "11"
     },
-    "name": "Steel Jade"
+    "name": "Steel Jade",
+    "price_band": "C"
   },
   "000349": {
     "rgb": {
@@ -1019,7 +1091,8 @@
       "y": "55",
       "k": "25"
     },
-    "name": "Gray Green"
+    "name": "Gray Green",
+    "price_band": "B"
   },
   "000403": {
     "rgb": {
@@ -1033,7 +1106,8 @@
       "y": "6",
       "k": "1"
     },
-    "name": "Opaline"
+    "name": "Opaline",
+    "price_band": "D"
   },
   "000420": {
     "rgb": {
@@ -1047,7 +1121,8 @@
       "y": "25",
       "k": "1"
     },
-    "name": "Cream"
+    "name": "Cream",
+    "price_band": "D"
   },
   "000421": {
     "rgb": {
@@ -1061,7 +1136,8 @@
       "y": "1",
       "k": "0"
     },
-    "name": "Petal Pink"
+    "name": "Petal Pink",
+    "price_band": "E"
   },
   "000459": {
     "rgb": {
@@ -1075,7 +1151,8 @@
       "y": "22",
       "k": "0"
     },
-    "name": "Rhubarb Pastel"
+    "name": "Rhubarb Pastel",
+    "price_band": "E"
   },
   "000920": {
     "rgb": {
@@ -1089,7 +1166,8 @@
       "y": "15",
       "k": "1"
     },
-    "name": "Warm White"
+    "name": "Warm White",
+    "price_band": "C"
   },
   "001009": {
     "rgb": {
@@ -1103,7 +1181,8 @@
       "y": "1",
       "k": "2"
     },
-    "name": "Reactive Ice Clear"
+    "name": "Reactive Ice Clear",
+    "price_band": "D"
   },
   "001022": {
     "rgb": {
@@ -1117,7 +1196,8 @@
       "y": "98",
       "k": "0"
     },
-    "name": "Red Orange Rod"
+    "name": "Red Orange Rod",
+    "price_band": "B"
   },
   "001025": {
     "rgb": {
@@ -1131,7 +1211,8 @@
       "y": "100",
       "k": "0"
     },
-    "name": "Light Orange"
+    "name": "Light Orange",
+    "price_band": "C"
   },
   "001101": {
     "rgb": {
@@ -1145,7 +1226,8 @@
       "y": "0",
       "k": "0"
     },
-    "name": "Clear"
+    "name": "Clear",
+    "price_band": "A"
   },
   "001105": {
     "rgb": {
@@ -1159,7 +1241,8 @@
       "y": "28",
       "k": "44"
     },
-    "name": "Deep Plum"
+    "name": "Deep Plum",
+    "price_band": "B"
   },
   "001107": {
     "rgb": {
@@ -1173,7 +1256,8 @@
       "y": "69",
       "k": "0"
     },
-    "name": "Light Green"
+    "name": "Light Green",
+    "price_band": "B"
   },
   "001108": {
     "rgb": {
@@ -1187,7 +1271,8 @@
       "y": "25",
       "k": "41"
     },
-    "name": "Aquamarine Blue"
+    "name": "Aquamarine Blue",
+    "price_band": "B"
   },
   "001109": {
     "rgb": {
@@ -1201,7 +1286,8 @@
       "y": "54",
       "k": "77"
     },
-    "name": "Dark Rose Brown"
+    "name": "Dark Rose Brown",
+    "price_band": "B"
   },
   "001112": {
     "rgb": {
@@ -1215,7 +1301,8 @@
       "y": "66",
       "k": "62"
     },
-    "name": "Aventurine Green"
+    "name": "Aventurine Green",
+    "price_band": "B"
   },
   "001114": {
     "rgb": {
@@ -1229,7 +1316,8 @@
       "y": "1",
       "k": "0"
     },
-    "name": "Deep Royal Blue"
+    "name": "Deep Royal Blue",
+    "price_band": "B"
   },
   "001116": {
     "rgb": {
@@ -1243,7 +1331,8 @@
       "y": "2",
       "k": "0"
     },
-    "name": "Turquoise Blue"
+    "name": "Turquoise Blue",
+    "price_band": "B"
   },
   "001118": {
     "rgb": {
@@ -1257,7 +1346,8 @@
       "y": "1",
       "k": "28"
     },
-    "name": "Midnight Blue"
+    "name": "Midnight Blue",
+    "price_band": "B"
   },
   "001119": {
     "rgb": {
@@ -1271,7 +1361,8 @@
       "y": "62",
       "k": "57"
     },
-    "name": "Sienna"
+    "name": "Sienna",
+    "price_band": "C"
   },
   "001120": {
     "rgb": {
@@ -1285,7 +1376,8 @@
       "y": "100",
       "k": "4"
     },
-    "name": "Yellow"
+    "name": "Yellow",
+    "price_band": "C"
   },
   "001122": {
     "rgb": {
@@ -1299,7 +1391,8 @@
       "y": "65",
       "k": "29"
     },
-    "name": "Red"
+    "name": "Red",
+    "price_band": "C"
   },
   "001125": {
     "rgb": {
@@ -1313,7 +1406,8 @@
       "y": "100",
       "k": "1"
     },
-    "name": "Orange"
+    "name": "Orange",
+    "price_band": "C"
   },
   "001126": {
     "rgb": {
@@ -1327,7 +1421,8 @@
       "y": "93",
       "k": "24"
     },
-    "name": "Chartreuse"
+    "name": "Chartreuse",
+    "price_band": "C"
   },
   "001128": {
     "rgb": {
@@ -1341,7 +1436,8 @@
       "y": "1",
       "k": "45"
     },
-    "name": "Deep Royal Purple"
+    "name": "Deep Royal Purple",
+    "price_band": "B"
   },
   "001129": {
     "rgb": {
@@ -1355,7 +1451,8 @@
       "y": "44",
       "k": "44"
     },
-    "name": "Charcoal Gray"
+    "name": "Charcoal Gray",
+    "price_band": "B"
   },
   "001137": {
     "rgb": {
@@ -1369,7 +1466,8 @@
       "y": "87",
       "k": "0"
     },
-    "name": "Medium Amber"
+    "name": "Medium Amber",
+    "price_band": "B"
   },
   "001138": {
     "rgb": {
@@ -1383,7 +1481,8 @@
       "y": "100",
       "k": "2"
     },
-    "name": "Dark Amber"
+    "name": "Dark Amber",
+    "price_band": "B"
   },
   "001140": {
     "rgb": {
@@ -1397,7 +1496,8 @@
       "y": "27",
       "k": "69"
     },
-    "name": "Aventurine Blue"
+    "name": "Aventurine Blue",
+    "price_band": "E"
   },
   "001141": {
     "rgb": {
@@ -1411,7 +1511,8 @@
       "y": "75",
       "k": "27"
     },
-    "name": "Olive Green"
+    "name": "Olive Green",
+    "price_band": "B"
   },
   "001145": {
     "rgb": {
@@ -1425,7 +1526,8 @@
       "y": "83",
       "k": "49"
     },
-    "name": "Kelly Green"
+    "name": "Kelly Green",
+    "price_band": "B"
   },
   "001164": {
     "rgb": {
@@ -1439,7 +1541,8 @@
       "y": "1",
       "k": "0"
     },
-    "name": "Caribbean Blue"
+    "name": "Caribbean Blue",
+    "price_band": "B"
   },
   "001176": {
     "rgb": {
@@ -1453,7 +1556,8 @@
       "y": "44",
       "k": "15"
     },
-    "name": "Peacock Blue"
+    "name": "Peacock Blue",
+    "price_band": "?"
   },
   "001205": {
     "rgb": {
@@ -1467,7 +1571,8 @@
       "y": "55",
       "k": "0"
     },
-    "name": "Light Coral"
+    "name": "Light Coral",
+    "price_band": "F"
   },
   "001207": {
     "rgb": {
@@ -1481,7 +1586,8 @@
       "y": "98",
       "k": "21"
     },
-    "name": "Fern Green"
+    "name": "Fern Green",
+    "price_band": "B"
   },
   "001215": {
     "rgb": {
@@ -1495,7 +1601,8 @@
       "y": "17",
       "k": "2"
     },
-    "name": "Light Pink"
+    "name": "Light Pink",
+    "price_band": "F"
   },
   "001217": {
     "rgb": {
@@ -1509,7 +1616,8 @@
       "y": "44",
       "k": "0"
     },
-    "name": "Leaf Green"
+    "name": "Leaf Green",
+    "price_band": "C"
   },
   "001226": {
     "rgb": {
@@ -1523,7 +1631,8 @@
       "y": "100",
       "k": "12"
     },
-    "name": "Lily Pad Green"
+    "name": "Lily Pad Green",
+    "price_band": "C"
   },
   "001228": {
     "rgb": {
@@ -1537,7 +1646,8 @@
       "y": "34",
       "k": "27"
     },
-    "name": "Amethyst"
+    "name": "Amethyst",
+    "price_band": "B"
   },
   "001229": {
     "rgb": {
@@ -1551,7 +1661,8 @@
       "y": "35",
       "k": "9"
     },
-    "name": "Pewter"
+    "name": "Pewter",
+    "price_band": "B"
   },
   "001232": {
     "rgb": {
@@ -1565,7 +1676,8 @@
       "y": "2",
       "k": "7"
     },
-    "name": "Light Fuchsia Rod"
+    "name": "Light Fuchsia Rod",
+    "price_band": "F"
   },
   "001234": {
     "rgb": {
@@ -1579,7 +1691,8 @@
       "y": "0",
       "k": "7"
     },
-    "name": "Violet"
+    "name": "Violet",
+    "price_band": "F"
   },
   "001241": {
     "rgb": {
@@ -1593,7 +1706,8 @@
       "y": "95",
       "k": "29"
     },
-    "name": "Pine Green"
+    "name": "Pine Green",
+    "price_band": "B"
   },
   "001242": {
     "rgb": {
@@ -1607,7 +1721,8 @@
       "y": "95",
       "k": "29"
     },
-    "name": "Medieval Green"
+    "name": "Medieval Green",
+    "price_band": "?"
   },
   "001246": {
     "rgb": {
@@ -1621,7 +1736,8 @@
       "y": "36",
       "k": "15"
     },
-    "name": "Copper Blue"
+    "name": "Copper Blue",
+    "price_band": "C"
   },
   "001305": {
     "rgb": {
@@ -1635,7 +1751,8 @@
       "y": "85",
       "k": "7"
     },
-    "name": "Sunset Coral"
+    "name": "Sunset Coral",
+    "price_band": "F"
   },
   "001311": {
     "rgb": {
@@ -1649,7 +1766,8 @@
       "y": "25",
       "k": "23"
     },
-    "name": "Cranberry Pink"
+    "name": "Cranberry Pink",
+    "price_band": "G"
   },
   "001320": {
     "rgb": {
@@ -1663,7 +1781,8 @@
       "y": "98",
       "k": "1"
     },
-    "name": "Marigold Yellow"
+    "name": "Marigold Yellow",
+    "price_band": "C"
   },
   "001321": {
     "rgb": {
@@ -1677,7 +1796,8 @@
       "y": "97",
       "k": "25"
     },
-    "name": "Carnelian"
+    "name": "Carnelian",
+    "price_band": "F"
   },
   "001322": {
     "rgb": {
@@ -1691,7 +1811,8 @@
       "y": "58",
       "k": "39"
     },
-    "name": "Garnet Red"
+    "name": "Garnet Red",
+    "price_band": "C"
   },
   "001332": {
     "rgb": {
@@ -1705,7 +1826,8 @@
       "y": "20",
       "k": "16"
     },
-    "name": "Fuchsia"
+    "name": "Fuchsia",
+    "price_band": "G"
   },
   "001334": {
     "rgb": {
@@ -1719,7 +1841,8 @@
       "y": "0",
       "k": "22"
     },
-    "name": "Gold Purple"
+    "name": "Gold Purple",
+    "price_band": "G"
   },
   "001342": {
     "rgb": {
@@ -1733,7 +1856,8 @@
       "y": "54",
       "k": "6"
     },
-    "name": "Cranberry Sapphirine Rod"
+    "name": "Cranberry Sapphirine Rod",
+    "price_band": "G"
   },
   "001401": {
     "rgb": {
@@ -1747,7 +1871,8 @@
       "y": "0",
       "k": "0"
     },
-    "name": "Crystal Clear"
+    "name": "Crystal Clear",
+    "price_band": "B"
   },
   "001405": {
     "rgb": {
@@ -1761,7 +1886,8 @@
       "y": "20",
       "k": "1"
     },
-    "name": "Light Plum"
+    "name": "Light Plum",
+    "price_band": "B"
   },
   "001406": {
     "rgb": {
@@ -1775,7 +1901,8 @@
       "y": "16",
       "k": "11"
     },
-    "name": "Steel Blue"
+    "name": "Steel Blue",
+    "price_band": "B"
   },
   "001408": {
     "rgb": {
@@ -1789,7 +1916,8 @@
       "y": "15",
       "k": "0"
     },
-    "name": "Light Aquamarine Blue"
+    "name": "Light Aquamarine Blue",
+    "price_band": "B"
   },
   "001409": {
     "rgb": {
@@ -1803,7 +1931,8 @@
       "y": "46",
       "k": "13"
     },
-    "name": "Light Bronze"
+    "name": "Light Bronze",
+    "price_band": "B"
   },
   "001412": {
     "rgb": {
@@ -1817,7 +1946,8 @@
       "y": "91",
       "k": "62"
     },
-    "name": "Light Aventurine Green"
+    "name": "Light Aventurine Green",
+    "price_band": "B"
   },
   "001414": {
     "rgb": {
@@ -1831,7 +1961,8 @@
       "y": "1",
       "k": "0"
     },
-    "name": "Light Sky Blue"
+    "name": "Light Sky Blue",
+    "price_band": "B"
   },
   "001416": {
     "rgb": {
@@ -1845,7 +1976,8 @@
       "y": "15",
       "k": "1"
     },
-    "name": "Light Turquoise Blue"
+    "name": "Light Turquoise Blue",
+    "price_band": "B"
   },
   "001417": {
     "rgb": {
@@ -1859,7 +1991,8 @@
       "y": "50",
       "k": "0"
     },
-    "name": "Emerald Green"
+    "name": "Emerald Green",
+    "price_band": "B"
   },
   "001419": {
     "rgb": {
@@ -1873,7 +2006,8 @@
       "y": "70",
       "k": "31"
     },
-    "name": "Tan"
+    "name": "Tan",
+    "price_band": "C"
   },
   "001422": {
     "rgb": {
@@ -1887,7 +2021,8 @@
       "y": "96",
       "k": "0"
     },
-    "name": "Lemon Lime"
+    "name": "Lemon Lime",
+    "price_band": "C"
   },
   "001426": {
     "rgb": {
@@ -1901,7 +2036,8 @@
       "y": "100",
       "k": "2"
     },
-    "name": "Spring Green"
+    "name": "Spring Green",
+    "price_band": "C"
   },
   "001428": {
     "rgb": {
@@ -1915,7 +2051,8 @@
       "y": "8",
       "k": "18"
     },
-    "name": "Light Violet"
+    "name": "Light Violet",
+    "price_band": "B"
   },
   "001429": {
     "rgb": {
@@ -1929,7 +2066,8 @@
       "y": "28",
       "k": "7"
     },
-    "name": "Light Silver Gray"
+    "name": "Light Silver Gray",
+    "price_band": "B"
   },
   "001437": {
     "rgb": {
@@ -1943,7 +2081,8 @@
       "y": "33",
       "k": "4"
     },
-    "name": "Light Amber"
+    "name": "Light Amber",
+    "price_band": "B"
   },
   "001439": {
     "rgb": {
@@ -1957,7 +2096,8 @@
       "y": "43",
       "k": "18"
     },
-    "name": "Khaki"
+    "name": "Khaki",
+    "price_band": "B"
   },
   "001442": {
     "rgb": {
@@ -1971,7 +2111,8 @@
       "y": "1",
       "k": "0"
     },
-    "name": "Neo-Lavender Shift"
+    "name": "Neo-Lavender Shift",
+    "price_band": "E"
   },
   "001444": {
     "rgb": {
@@ -1985,7 +2126,8 @@
       "y": "18",
       "k": "23"
     },
-    "name": "Sea Blue"
+    "name": "Sea Blue",
+    "price_band": "B"
   },
   "001449": {
     "rgb": {
@@ -1999,7 +2141,8 @@
       "y": "30",
       "k": "17"
     },
-    "name": "Oregon Gray"
+    "name": "Oregon Gray",
+    "price_band": "B"
   },
   "001464": {
     "rgb": {
@@ -2013,7 +2156,8 @@
       "y": "0",
       "k": "0"
     },
-    "name": "True Blue"
+    "name": "True Blue",
+    "price_band": "B"
   },
   "001506": {
     "rgb": {
@@ -2027,7 +2171,8 @@
       "y": "15",
       "k": "0"
     },
-    "name": "Pale Steel Blue Rod"
+    "name": "Pale Steel Blue Rod",
+    "price_band": "B"
   },
   "001514": {
     "rgb": {
@@ -2041,7 +2186,8 @@
       "y": "0",
       "k": "0"
     },
-    "name": "Pale Sky Blue Rod"
+    "name": "Pale Sky Blue Rod",
+    "price_band": "B"
   },
   "001517": {
     "rgb": {
@@ -2055,7 +2201,8 @@
       "y": "42",
       "k": "0"
     },
-    "name": "Pale Emerald Rod"
+    "name": "Pale Emerald Rod",
+    "price_band": "B"
   },
   "001528": {
     "rgb": {
@@ -2069,7 +2216,8 @@
       "y": "15",
       "k": "1"
     },
-    "name": "Pale Amethyst Rod"
+    "name": "Pale Amethyst Rod",
+    "price_band": "B"
   },
   "001806": {
     "rgb": {
@@ -2083,7 +2231,8 @@
       "y": "8",
       "k": "0"
     },
-    "name": "Juniper Blue Tint"
+    "name": "Juniper Blue Tint",
+    "price_band": "B"
   },
   "001807": {
     "rgb": {
@@ -2097,7 +2246,8 @@
       "y": "12",
       "k": "0"
     },
-    "name": "Grass Green Tint"
+    "name": "Grass Green Tint",
+    "price_band": "B"
   },
   "001808": {
     "rgb": {
@@ -2111,7 +2261,8 @@
       "y": "7",
       "k": "0"
     },
-    "name": "Aqua Blue Tint"
+    "name": "Aqua Blue Tint",
+    "price_band": "C"
   },
   "001812": {
     "rgb": {
@@ -2125,7 +2276,8 @@
       "y": "73",
       "k": "0"
     },
-    "name": "Seaweed Aventurine Rod"
+    "name": "Seaweed Aventurine Rod",
+    "price_band": "D"
   },
   "001814": {
     "rgb": {
@@ -2139,7 +2291,8 @@
       "y": "0",
       "k": "0"
     },
-    "name": "Sapphire Blue Tint"
+    "name": "Sapphire Blue Tint",
+    "price_band": "B"
   },
   "001816": {
     "rgb": {
@@ -2153,7 +2306,8 @@
       "y": "3",
       "k": "0"
     },
-    "name": "Turquoise Blue Tint"
+    "name": "Turquoise Blue Tint",
+    "price_band": "B"
   },
   "001818": {
     "rgb": {
@@ -2167,7 +2321,8 @@
       "y": "4",
       "k": "0"
     },
-    "name": "Indigo Tint"
+    "name": "Indigo Tint",
+    "price_band": "C"
   },
   "001819": {
     "rgb": {
@@ -2194,7 +2349,8 @@
       "y": "13",
       "k": "0"
     },
-    "name": "Pale Yellow Tint"
+    "name": "Pale Yellow Tint",
+    "price_band": "D"
   },
   "001821": {
     "rgb": {
@@ -2208,7 +2364,8 @@
       "y": "2",
       "k": "0"
     },
-    "name": "Erbium Pink Tint"
+    "name": "Erbium Pink Tint",
+    "price_band": "F"
   },
   "001823": {
     "rgb": {
@@ -2222,7 +2379,8 @@
       "y": "29",
       "k": "9"
     },
-    "name": "Burnt Scarlet Tint"
+    "name": "Burnt Scarlet Tint",
+    "price_band": "F"
   },
   "001824": {
     "rgb": {
@@ -2236,7 +2394,8 @@
       "y": "15",
       "k": "1"
     },
-    "name": "Ruby Red Tint"
+    "name": "Ruby Red Tint",
+    "price_band": "F"
   },
   "001826": {
     "rgb": {
@@ -2250,7 +2409,8 @@
       "y": "9",
       "k": "0"
     },
-    "name": "Green Tea Tint"
+    "name": "Green Tea Tint",
+    "price_band": "C"
   },
   "001827": {
     "rgb": {
@@ -2264,7 +2424,8 @@
       "y": "11",
       "k": "0"
     },
-    "name": "Light Amber Tint"
+    "name": "Light Amber Tint",
+    "price_band": "C"
   },
   "001829": {
     "rgb": {
@@ -2278,7 +2439,8 @@
       "y": "5",
       "k": "0"
     },
-    "name": "Gray Tint"
+    "name": "Gray Tint",
+    "price_band": "C"
   },
   "001831": {
     "rgb": {
@@ -2292,7 +2454,8 @@
       "y": "1",
       "k": "1"
     },
-    "name": "Ruby Pink Tint"
+    "name": "Ruby Pink Tint",
+    "price_band": "F"
   },
   "001834": {
     "rgb": {
@@ -2306,7 +2469,8 @@
       "y": "5",
       "k": "0"
     },
-    "name": "Coral Orange Tint"
+    "name": "Coral Orange Tint",
+    "price_band": "D"
   },
   "001837": {
     "rgb": {
@@ -2320,7 +2484,8 @@
       "y": "15",
       "k": "0"
     },
-    "name": "Medium Amber Tint"
+    "name": "Medium Amber Tint",
+    "price_band": "C"
   },
   "001841": {
     "rgb": {
@@ -2334,7 +2499,8 @@
       "y": "14",
       "k": "0"
     },
-    "name": "Spruce Green Tint"
+    "name": "Spruce Green Tint",
+    "price_band": "B"
   },
   "001842": {
     "rgb": {
@@ -2348,7 +2514,8 @@
       "y": "2",
       "k": "0"
     },
-    "name": "Light Neo-lavender Shift Tint"
+    "name": "Light Neo-lavender Shift Tint",
+    "price_band": "E"
   },
   "001844": {
     "rgb": {
@@ -2362,7 +2529,8 @@
       "y": "2",
       "k": "0"
     },
-    "name": "Lavender Green Shift Tint"
+    "name": "Lavender Green Shift Tint",
+    "price_band": "D"
   },
   "001845": {
     "rgb": {
@@ -2376,7 +2544,8 @@
       "y": "17",
       "k": "0"
     },
-    "name": "Ming Green Tint"
+    "name": "Ming Green Tint",
+    "price_band": "B"
   },
   "001857": {
     "rgb": {
@@ -2390,7 +2559,8 @@
       "y": "31",
       "k": "0"
     },
-    "name": "Red Amber Tint"
+    "name": "Red Amber Tint",
+    "price_band": "D"
   },
   "001858": {
     "rgb": {
@@ -2404,7 +2574,8 @@
       "y": "13",
       "k": "0"
     },
-    "name": "Light Rhubarb Shift Tint"
+    "name": "Light Rhubarb Shift Tint",
+    "price_band": "D"
   },
   "001859": {
     "rgb": {
@@ -2418,7 +2589,8 @@
       "y": "18",
       "k": "0"
     },
-    "name": "Rhubarb Shift Tint"
+    "name": "Rhubarb Shift Tint",
+    "price_band": "F"
   },
   "001864": {
     "rgb": {
@@ -2432,7 +2604,8 @@
       "y": "2",
       "k": "0"
     },
-    "name": "Gray Blue Tint"
+    "name": "Gray Blue Tint",
+    "price_band": "C"
   },
   "001867": {
     "rgb": {
@@ -2446,7 +2619,8 @@
       "y": "8",
       "k": "0"
     },
-    "name": "Olive Smoke Tint"
+    "name": "Olive Smoke Tint",
+    "price_band": "C"
   },
   "001877": {
     "rgb": {
@@ -2460,7 +2634,8 @@
       "y": "14",
       "k": "0"
     },
-    "name": "Olivine Tint"
+    "name": "Olivine Tint",
+    "price_band": "B"
   },
   "001917": {
     "rgb": {
@@ -2474,7 +2649,8 @@
       "y": "5",
       "k": "0"
     },
-    "name": "Cilantro Green Tint"
+    "name": "Cilantro Green Tint",
+    "price_band": "B"
   },
   "001920": {
     "rgb": {
@@ -2488,7 +2664,8 @@
       "y": "9",
       "k": "0"
     },
-    "name": "Lemon Tint"
+    "name": "Lemon Tint",
+    "price_band": "D"
   },
   "001932": {
     "rgb": {
@@ -2502,7 +2679,8 @@
       "y": "1",
       "k": "0"
     },
-    "name": "Fuchsia Tint"
+    "name": "Fuchsia Tint",
+    "price_band": "F"
   },
   "001934": {
     "rgb": {
@@ -2516,7 +2694,8 @@
       "y": "7",
       "k": "0"
     },
-    "name": "Copper Tint"
+    "name": "Copper Tint",
+    "price_band": "F"
   },
   "001948": {
     "rgb": {
@@ -2530,7 +2709,8 @@
       "y": "2",
       "k": "0"
     },
-    "name": "Purple Blue Tint"
+    "name": "Purple Blue Tint",
+    "price_band": "F"
   },
   "001964": {
     "rgb": {
@@ -2544,7 +2724,8 @@
       "y": "2",
       "k": "0"
     },
-    "name": "Lavender Gray Tint"
+    "name": "Lavender Gray Tint",
+    "price_band": "D"
   },
   "001977": {
     "rgb": {
@@ -2558,7 +2739,8 @@
       "y": "6",
       "k": "0"
     },
-    "name": "Pine Green Tint"
+    "name": "Pine Green Tint",
+    "price_band": "D"
   },
   "001015": {
     "rgb": {

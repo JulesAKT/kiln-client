@@ -148,7 +148,16 @@ with open("./bullseye_color_conversion_chart_for_parsing.txt") as color_file:
         cmyk = ConvertToCMYK(words[-2])
         # print(words[0])
         # print(words[-1].strip())
-        bullseye_colors[product_code] = {"rgb": rgb, "cmyk": cmyk, "name": name}
+        price_band = "?"
+        if product_code in bullseye_prices:
+            price_band = bullseye_prices[product_code]
+
+        bullseye_colors[product_code] = {
+            "rgb": rgb,
+            "cmyk": cmyk,
+            "name": name,
+            "price_band": price_band,
+        }
     # Add magic missing colors back in. They're clear, as far as I'm concerned.
     bullseye_colors["001015"] = bullseye_colors["001016"] = bullseye_colors[
         "001019"
@@ -166,6 +175,10 @@ with open("./bullseye_color_conversion_chart_for_parsing.txt") as color_file:
         "rgb": {"r": 252, "g": 247, "b": 221},
         "cmyk": {"c": 1, "m": 1, "y": 15, "k": 0},
     }
+
+    #    for code in bullseye_colors.keys():
+    #        bullseye_colors[code]["price_band"] = bullseye_prices[code]
+
     f = open("color_data.json", "w")
     f.write(json.dumps(bullseye_colors, indent=2))
     f.close()

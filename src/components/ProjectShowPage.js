@@ -356,10 +356,6 @@ const ProjectShowPage = (props) => {
           {copied && (
             <span style={{ color: "red" }}>Link Copied to Clipboard</span>
           )}
-          <Button>
-            <Icon name="etsy" />
-            List on Etsy
-          </Button>
           {upload_pending ? (
             <p>
               <Button>Uploading...</Button>
