@@ -38,7 +38,9 @@ const ProjectListPage = ({ navigation }) => {
     );
   };
 
-  const project_array = projects && Object.values(projects);
+  const unsorted_project_array = projects && Object.values(projects);
+
+  const project_array = unsorted_project_array?.sort((a,b)=> a?.name.toLowerCase().localeCompare(b?.name.toLowerCase()));
 
   const columns = [
     {

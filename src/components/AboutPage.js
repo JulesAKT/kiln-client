@@ -102,13 +102,7 @@ const AboutPage = () => (
                   <Feed.Summary>Share your Projects with Others</Feed.Summary>
                 </Feed.Content>
               </Feed.Event>
-            </Feed>
-          </Grid.Row>
-        </Grid.Column>
-        <Grid.Column>
-          <Grid.Row>
-            <Feed>
-              <Feed.Event>
+                            <Feed.Event>
                 <Feed.Label>
                   <Icon name="cloud" />
                 </Feed.Label>
@@ -118,6 +112,13 @@ const AboutPage = () => (
                   </Feed.Summary>
                 </Feed.Content>
               </Feed.Event>
+
+            </Feed>
+          </Grid.Row>
+        </Grid.Column>
+        <Grid.Column>
+          <Grid.Row>
+            <Feed>
               <Feed.Event>
                 <Feed.Label>
                   <Icon name="external share" />
@@ -138,6 +139,17 @@ const AboutPage = () => (
                   </Feed.Summary>
                 </Feed.Content>
               </Feed.Event>
+              <Feed.Event>
+                <Feed.Label>
+                  <Icon name="weight" />
+                </Feed.Label>
+                <Feed.Content>
+                  <Feed.Summary>
+                    Glass Weight Calculator for Scrap or Mesh Melts
+                  </Feed.Summary>
+                </Feed.Content>
+              </Feed.Event>
+
               <Feed.Event>
                 <Feed.Label>
                   <Icon name="boxes" />
