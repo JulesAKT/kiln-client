@@ -1,11 +1,13 @@
 {
   "000024": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Tomato Red Opal"
+    "name": "Tomato Red Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000025": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Tangerine Orange Opal"
+    "name": "Tangerine Orange Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000120": {
     "reaction_type": "SULFUR/SELENIUM",
@@ -13,15 +15,18 @@
   },
   "000124": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Red Opal"
+    "name": "Red Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000125": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Orange Opal"
+    "name": "Orange Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000126": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Spring Green Opal"
+    "name": "Spring Green Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000137": {
     "reaction_type": "SULFUR/SELENIUM",
@@ -29,55 +34,68 @@
   },
   "000203": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Woodland Brown Opal"
+    "name": "Woodland Brown Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000220": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Sunflower Yellow Opal"
+    "name": "Sunflower Yellow Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000221": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "CITRONELLE OPAL"
+    "name": "CITRONELLE OPAL",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000222": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "AVOCADO GREEN OPAL"
+    "name": "AVOCADO GREEN OPAL",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000224": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Deep Red Opal"
+    "name": "Deep Red Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000225": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Pimento Red Opal"
+    "name": "Pimento Red Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000227": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Golden Green Opal"
+    "name": "Golden Green Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000309": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Cinnabar Opal"
+    "name": "Cinnabar Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000310": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Umber Opal"
+    "name": "Umber Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000320": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Marigold Yellow Opal"
+    "name": "Marigold Yellow Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000321": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Pumpkin Orange Opal"
+    "name": "Pumpkin Orange Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000329": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "burnt orange opal"
+    "name": "burnt orange opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "000337": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Butterscotch Opal"
+    "name": "Butterscotch Opal",
+    "instability_type": "CADMIUM-BEARING"
   },
   "001025": {
     "reaction_type": "SULFUR/SELENIUM",
@@ -85,23 +103,28 @@
   },
   "001119": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Sienna"
+    "name": "Sienna",
+    "instability_type": "CADMIUM-BEARING"
   },
   "001120": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Yellow"
+    "name": "Yellow",
+    "instability_type": "CADMIUM-BEARING"
   },
   "001122": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Red"
+    "name": "Red",
+    "instability_type": "CADMIUM-BEARING"
   },
   "001125": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Orange"
+    "name": "Orange",
+    "instability_type": "CADMIUM-BEARING"
   },
   "001126": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Chartreuse"
+    "name": "Chartreuse",
+    "instability_type": "CADMIUM-BEARING"
   },
   "001137": {
     "reaction_type": "SULFUR/SELENIUM",
@@ -121,19 +144,23 @@
   },
   "001320": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Marigold Yellow"
+    "name": "Marigold Yellow",
+    "instability_type": "CADMIUM-BEARING"
   },
   "001321": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Carnelian"
+    "name": "Carnelian",
+    "instability_type": "CADMIUM-BEARING"
   },
   "001322": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "Garnet Red"
+    "name": "Garnet Red",
+    "instability_type": "CADMIUM-BEARING"
   },
   "001422": {
     "reaction_type": "SULFUR/SELENIUM",
-    "name": "LEMON LIME GREEN"
+    "name": "LEMON LIME GREEN",
+    "instability_type": "CADMIUM-BEARING"
   },
   "001437": {
     "reaction_type": "SULFUR/SELENIUM",
@@ -297,7 +324,7 @@
   },
   "001332": {
     "reaction_type": "LEAD",
-    "name": "FuCHSia"
+    "name": "Fuchsia"
   },
   "001334": {
     "reaction_type": "LEAD",
@@ -334,5 +361,45 @@
   "001016": {
     "reaction_type": "ALCHEMY SERIES",
     "name": "clear, silver to bronze"
+  },
+  "001024": {
+    "instability_type": "CADMIUM-BEARING",
+    "name": "Light Orange"
+  },
+  "002020": {
+    "instability_type": "CADMIUM-BEARING",
+    "name": "Clear, Sunflower Yellow Opal"
+  },
+  "002024": {
+    "instability_type": "CADMIUM-BEARING",
+    "name": "Clear, Red Opal"
+  },
+  "002026": {
+    "instability_type": "CADMIUM-BEARING",
+    "name": "Clear, Spring Green Opal"
+  },
+  "002121": {
+    "instability_type": "CADMIUM-BEARING",
+    "name": "Yellow, Deep Forest Green"
+  },
+  "002123": {
+    "instability_type": "CADMIUM-BEARING",
+    "name": "White, Orange Opal"
+  },
+  "002124": {
+    "instability_type": "CADMIUM-BEARING",
+    "name": "Red Opal, White"
+  },
+  "002125": {
+    "instability_type": "CADMIUM-BEARING",
+    "name": "Yellow, Red"
+  },
+  "003123": {
+    "instability_type": "CADMIUM-BEARING",
+    "name": "White, Orange Opal, Deep Forest Green"
+  },
+  "003203": {
+    "instability_type": "CADMIUM-BEARING",
+    "name": "Woodland Brown Opal, Ivory, Black"
   }
 }

@@ -239,9 +239,10 @@ with open("./bullseye_inventory_sheet_for_parsing.txt") as inventory_file:
                         "price_band": bullseye_prices[short_code],
                     }
 
+reaction_types = {}
+
 with open("./bullseye_reactions_chart_for_parsing.txt") as reactions_file:
     reactions_lines = reactions_file.readlines()
-    reaction_types = {}
     reaction_type = ""
     for line in reactions_lines:
         if line[0] == "!":
@@ -249,8 +250,23 @@ with open("./bullseye_reactions_chart_for_parsing.txt") as reactions_file:
 
         else:
             (code, name) = line.strip().split(" ", 1)
-
             reaction_types[code] = {"reaction_type": reaction_type, "name": name}
+
+# Add a second, instability, column for cadmium, and other oddness.
+with open("./bullseye_instabilities_for_parsing.txt") as reactions_file:
+    reactions_lines = reactions_file.readlines()
+    reaction_type = ""
+    for line in reactions_lines:
+        if line[0] == "!":
+            reaction_type = line[1:].strip()
+
+        else:
+            (code, name) = line.strip().split(" ", 1)
+            if code in reaction_types:
+                reaction_types[code]["instability_type"] = reaction_type
+            else:
+                reaction_types[code] = {"instability_type": reaction_type, "name": name}
+
 
 
 f = open("bullseye_inventory_data.json", "w")
