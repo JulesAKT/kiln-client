@@ -17,6 +17,14 @@ class LoginPage extends Component {
       <div>
         <Container text={true}>
           <Header as="h1">KilnHelper</Header>
+          {this.props.location?.state?.from?.pathname === "/user_delete" && (
+            <font color="red">
+              In order to delete your user, you must first log in. Once Logged
+              in, click on your profile icon on the top right, and select
+              'Preferences'. In there you will find a link to the user deletion
+              page.
+            </font>
+          )}
           <LoginForm onSubmit={this.onSubmit} />
           <Button onClick={signInWithGoogle}>Sign In With Google</Button>
           <Button onClick={signInWithApple}>Sign In With Apple</Button>

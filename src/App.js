@@ -42,6 +42,7 @@ import FavouriteFiringsListPage from "./components/FavouriteFiringsListPage";
 import PhotoDeletePage from "./components/PhotoDeletePage";
 import AboutPage from "./components/AboutPage";
 import InventoryPage from "./components/InventoryPage";
+import UserDeletePage from "./components/UserDeletePage";
 import alertActions from "./actions/alertActions";
 import { AuthProvider } from "./helpers/Auth";
 import "semantic-ui-css/semantic.min.css";
@@ -143,7 +144,6 @@ class App extends React.Component {
                     exact
                     component={FiringTemplateCopyConfirmPage}
                   />
-
                   <PrivateRoute
                     path="/firing/delete/:id"
                     exact
@@ -219,6 +219,11 @@ class App extends React.Component {
                     path="/preferences"
                     exact
                     component={PreferencePage}
+                  />
+                  <PrivateRoute
+                    path="/user_delete"
+                    exact
+                    component={UserDeletePage}
                   />
                   <PrivateRoute
                     path="/superuser"

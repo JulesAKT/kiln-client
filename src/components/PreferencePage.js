@@ -81,6 +81,9 @@ const PreferencePage = () => {
         Login
       </Button>
       <EtsyStatus />
+      <Header as="h1">Delete User</Header>
+      You can delete your user, including all your data, by clicking{" "}
+      <a href="/user_delete">Here.</a>
     </div>
   );
 };

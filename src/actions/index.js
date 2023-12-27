@@ -1,6 +1,7 @@
 //import history from "../history";
 import alertActions from "./alertActions";
 import { stopSubmit } from "redux-form";
+import firebase from "firebase/app";
 //import { exportDate } from "../helpers/dates";
 //import NavigationService from "../NavigationService";
 //import * as firebase from "firebase";
@@ -978,5 +979,95 @@ export const deleteInventoryItem =
     });
     if (allowNavigate) {
       history.goBack();
+    }
+  };
+
+// This doesn't tidy the project up afterwards. Only safe to use as part of deleteUser.
+const deleteImagesFromProject = (project_to_delete) => {
+  console.log("DeleteProject: ");
+  console.log(project_to_delete);
+  if (project_to_delete?.photo) {
+    deleteFileFromURI(project_to_delete.photo);
+  }
+  project_to_delete?.photos &&
+    project_to_delete.photos.forEach((photo) => {
+      if (photo?.photo) {
+        deleteFileFromURI(photo.photo);
+      }
+      if (photo?.photo256?.uri) {
+        deleteFileFromURI(photo.photo256.uri);
+      }
+      if (photo?.photo1024?.uri) {
+        deleteFileFromURI(photo.photo1024.uri);
+      }
+    });
+};
+
+export const deleteUser =
+  (provider_id, email, password) => async (dispatch, getState) => {
+    console.log("Delete User called - provider_id = ", provider_id);
+    console.log("Deleting all projects");
+    if (typeof password !== "undefined") {
+      console.log("Re-authenticating");
+      Firebase.auth()
+        .signInWithEmailAndPassword(email, password)
+        .then(() => {
+          console.log("Retrieving Data");
+          db.ref(userPath() + "/").once("value", (snapshot) => {
+            //console.log(Object.keys(snapshot.val()));
+            const projects = snapshot.val()?.projects;
+            if (projects) {
+              Object.values(projects).forEach((project) => {
+                deleteImagesFromProject(project);
+              });
+            }
+          });
+          console.log("Deleting Realtime Database data");
+          db.ref(userPath()).remove();
+          console.log("Deleting User");
+          const user = Firebase.auth().currentUser;
+          console.log("User: ", user);
+
+          user.delete().catch((e) => {
+            console.log("Can't delete User - need to re-authenticate first", e);
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+          dispatch(alertActions.error("Incorrect Password"));
+        });
+    } else {
+      console.log("provider_id: ", provider_id);
+      // Not logged in by password
+      if (provider_id === "apple.com") {
+        console.log("Re-authenticating with Apple");
+        //await reauthenticateWithApple();
+      } else {
+        console.log("Re-authenticating with Google");
+        //await attemptGoogleLogin();
+        const provider = new firebase.auth.OAuthProvider(provider_id);
+        await Firebase.auth()
+          .currentUser.reauthenticateWithPopup(provider)
+          .then((result) => console.log(result));
+      }
+      console.log("Retrieving Data - non-password");
+      db.ref(userPath() + "/").once("value", (snapshot) => {
+        //console.log(Object.keys(snapshot.val()));
+        const projects = snapshot.val()?.projects;
+        if (projects) {
+          Object.values(projects).forEach((project) => {
+            deleteImagesFromProject(project);
+          });
+        }
+      });
+      console.log("Deleting Realtime Database data");
+      db.ref(userPath()).remove();
+      console.log("Deleting User");
+      const user = Firebase.auth().currentUser;
+      //console.log("User: ", user);
+
+      user.delete().catch((e) => {
+        console.log("Can't delete User - need to re-authenticate first", e);
+      });
     }
   };
